@@ -40,7 +40,10 @@ export default function Home() {
 
         <div className="stack">
           <div className="photoFrame">
-            <img src={person.photoPath} alt={`${person.name} photo`} />
+            <img
+              src={`${import.meta.env.BASE_URL}${(person.photoPath ?? "").replace(/^\//, "")}`}
+              alt={`${person.name} photo`}
+            />
           </div>
 
           <Card className="compactCard">
