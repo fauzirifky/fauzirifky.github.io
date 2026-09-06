@@ -1,4 +1,5 @@
 import generatedCourses from "./courses.generated.json";
+import aliases from "./course-aliases.json";
 
 export type CourseMaterial = {
   name: string;
@@ -24,15 +25,9 @@ export type Course = {
 };
 
 export const courses = generatedCourses as Course[];
-
 export const featuredCourses = courses.filter((course) => course.featured);
 
-export const courseAliases: Record<string, string> = {
-  "mathematical-modeling": "mathematical-simulation-and-computation",
-  "computational-modeling-and-numerical-analysis": "numerical-methods",
-  "programming-for-data-science-and-scientific-computing":
-    "fundamentals-of-programming",
-};
+export const courseAliases = aliases as Record<string, string>;
 
 export function normalizeCourseSlug(input?: string) {
   if (!input) return "";
@@ -42,7 +37,7 @@ export function normalizeCourseSlug(input?: string) {
   try {
     value = decodeURIComponent(value);
   } catch {
-    // Keep the original value if malformed URL encoding is encountered.
+    // Keep original value.
   }
 
   value = value

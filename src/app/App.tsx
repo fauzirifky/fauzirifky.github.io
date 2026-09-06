@@ -1,5 +1,9 @@
-import { Routes } from "./routes";
+import PathRouter from "./PathRouter";
 
 export default function App() {
-  return <div className="app">{Routes}</div>;
+  return (
+    <div className="app">
+      <PathRouter />
+    </div>
+  );
 }
