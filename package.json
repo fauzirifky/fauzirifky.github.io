@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -p tsconfig.json && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild": "node scripts/create-spa-pages.mjs"
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.4.5",
