@@ -1,0 +1,184 @@
+[
+  {
+    "slug": "numerical-methods",
+    "title": "Pemodelan Komputasi dan Analisis Numerik",
+    "titleEn": "Computational Modeling and Numerical Analysis",
+    "code": "MA25-31017",
+    "credits": "4",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "year": "2026",
+    "summary": "Pemodelan komputasi, formulasi masalah, metode numerik, simulasi, dan interpretasi hasil.",
+    "featured": true,
+    "order": 1,
+    "description": "Mata kuliah ini membahas pemodelan komputasi dan analisis numerik untuk menerjemahkan masalah menjadi model, memilih metode numerik yang sesuai, mengimplementasikan algoritma, mengevaluasi galat dan konvergensi, serta menginterpretasikan hasil komputasi.",
+    "projects": [],
+    "materials": [
+      {
+        "name": "Lembar Kerja / LKM",
+        "pdf": "https://raw.githubusercontent.com/fauzirifky/Pemodelan-Komputasi-dan-Analisis-Numerik/main/Lembar_Kerja/Lembar_Kerja_Praktikum_MA25-31017.pdf",
+        "source": "https://github.com/fauzirifky/Pemodelan-Komputasi-dan-Analisis-Numerik/blob/main/Lembar_Kerja/Lembar_Kerja_Praktikum_MA25-31017.tex"
+      },
+      {
+        "name": "Pertemuan 01 — Kontrak & Pencarian Akar",
+        "pdf": "https://raw.githubusercontent.com/fauzirifky/Pemodelan-Komputasi-dan-Analisis-Numerik/main/Slide/Pertemuan_01/MA25-31017%20Pertemuan%201%20Kontrak_dan_Pencarian_Akar.pdf",
+        "source": "https://github.com/fauzirifky/Pemodelan-Komputasi-dan-Analisis-Numerik/blob/main/Slide/Pertemuan_01/MA25-31017%20Pertemuan%201%20Kontrak_dan_Pencarian_Akar.tex"
+      },
+      {
+        "name": "Pertemuan 02 — SPL, SPNL, Regresi & Curve Fitting",
+        "pdf": "https://raw.githubusercontent.com/fauzirifky/Pemodelan-Komputasi-dan-Analisis-Numerik/main/Slide/Pertemuan_02/MA2531017_Pertemuan_2_SPL_SPNL_Regresi_Curve_Fitting.pdf",
+        "source": "https://github.com/fauzirifky/Pemodelan-Komputasi-dan-Analisis-Numerik/blob/main/Slide/Pertemuan_02/MA2531017_Pertemuan_2_SPL_SPNL_Regresi_Curve_Fitting.tex"
+      },
+      {
+        "name": "Modul Praktikum",
+        "pdf": "https://raw.githubusercontent.com/fauzirifky/Pemodelan-Komputasi-dan-Analisis-Numerik/main/Modul_Praktikum/modul.pdf",
+        "source": "https://github.com/fauzirifky/Pemodelan-Komputasi-dan-Analisis-Numerik/blob/main/Modul_Praktikum/modul.tex"
+      }
+    ]
+  },
+  {
+    "slug": "fundamentals-of-programming",
+    "title": "Pemrograman untuk Ilmu Data dan Komputasi",
+    "titleEn": "Programming for Data Science and Scientific Computing",
+    "code": "MA25-21008",
+    "credits": "4",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "year": "2026",
+    "summary": "Dasar pemrograman untuk pemecahan masalah, pengolahan data, dan komputasi ilmiah.",
+    "featured": true,
+    "order": 2,
+    "description": "Mata kuliah ini memperkenalkan pemrograman sebagai alat kerja untuk pemecahan masalah, pengolahan data, dan komputasi ilmiah. Fokusnya mencakup logika program, struktur kode, representasi data, pengolahan data, visualisasi dasar, dan praktik komputasi yang dapat direproduksi.",
+    "projects": [],
+    "materials": [
+      {
+        "name": "Lembar Kerja / LKM",
+        "pdf": "https://raw.githubusercontent.com/fauzirifky/Pemrograman-untuk-Ilmu-Data-dan-Komputasi/main/Lembar_Kerja/lembar_kerja_PIDK.pdf",
+        "source": "https://github.com/fauzirifky/Pemrograman-untuk-Ilmu-Data-dan-Komputasi/blob/main/Lembar_Kerja/lembar_kerja_PIDK.tex"
+      },
+      {
+        "name": "Materi M01",
+        "pdf": "https://raw.githubusercontent.com/fauzirifky/Pemrograman-untuk-Ilmu-Data-dan-Komputasi/main/Materi/M01/slides_M01.pdf",
+        "source": "https://github.com/fauzirifky/Pemrograman-untuk-Ilmu-Data-dan-Komputasi/blob/main/Materi/M01/slides_M01.tex"
+      },
+      {
+        "name": "Materi M02",
+        "pdf": "https://raw.githubusercontent.com/fauzirifky/Pemrograman-untuk-Ilmu-Data-dan-Komputasi/main/Materi/M02/slides_M02.pdf",
+        "source": "https://github.com/fauzirifky/Pemrograman-untuk-Ilmu-Data-dan-Komputasi/blob/main/Materi/M02/slides_M02.tex"
+      },
+      {
+        "name": "Modul Praktikum",
+        "pdf": "https://raw.githubusercontent.com/fauzirifky/Pemrograman-untuk-Ilmu-Data-dan-Komputasi/main/Modul_Praktikum/modul_praktikum_PIDK.pdf",
+        "source": "https://github.com/fauzirifky/Pemrograman-untuk-Ilmu-Data-dan-Komputasi/blob/main/Modul_Praktikum/modul_praktikum_PIDK.tex"
+      }
+    ]
+  },
+  {
+    "slug": "mathematical-simulation-and-computation",
+    "title": "Pemodelan Matematika",
+    "titleEn": "Mathematical Modeling",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "summary": "Formulasi model, analisis, estimasi parameter, simulasi, validasi, dan interpretasi.",
+    "featured": true,
+    "order": 3,
+    "description": "Mata kuliah ini membahas proses membangun model matematika dari suatu fenomena: menyusun asumsi, menentukan variabel dan parameter, memformulasikan model, menganalisis perilaku model, melakukan estimasi parameter dan simulasi, memvalidasi model, serta menginterpretasikan hasilnya.",
+    "projects": [],
+    "materials": []
+  },
+  {
+    "slug": "artificial-neural-networks",
+    "title": "Jaringan Syaraf Tiruan",
+    "titleEn": "Artificial Neural Networks",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "summary": "Fundamental jaringan syaraf, pelatihan model, evaluasi, dan aplikasi komputasional.",
+    "featured": true,
+    "order": 4,
+    "description": "Mata kuliah ini membahas dasar jaringan syaraf tiruan, representasi model, fungsi aktivasi, proses pelatihan, evaluasi kinerja, dan penerapannya pada permasalahan komputasional dan berbasis data.",
+    "projects": [],
+    "materials": []
+  },
+  {
+    "slug": "partial-differential-equations",
+    "title": "Persamaan Diferensial Parsial",
+    "titleEn": "Partial Differential Equations",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "year": "2024",
+    "summary": "Teori PDP, pemodelan, dan hubungan antara solusi analitik dan numerik.",
+    "featured": true,
+    "order": 5,
+    "description": "Mata kuliah ini membahas persamaan diferensial parsial sebagai bahasa pemodelan fenomena kontinu, klasifikasi model, teknik solusi analitik, serta hubungan antara formulasi matematis dan pendekatan numerik.",
+    "projects": [],
+    "materials": []
+  },
+  {
+    "slug": "selected-topics-in-computational-mathematics",
+    "title": "Topik Pilihan Matematika Komputasi",
+    "titleEn": "Selected Topics in Computational Mathematics",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "year": "2024",
+    "summary": "Topik khusus metode komputasi, pemodelan, dan riset komputasional yang dapat direproduksi.",
+    "featured": true,
+    "order": 6,
+    "description": "Mata kuliah ini memuat topik pilihan dalam matematika komputasi yang dapat berubah sesuai fokus pembelajaran, perkembangan metode, dan kebutuhan proyek atau riset.",
+    "projects": [],
+    "materials": []
+  },
+  {
+    "slug": "basic-mathematics-ii",
+    "title": "Matematika Dasar II",
+    "titleEn": "Basic Mathematics II",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "year": "2024",
+    "summary": "Fondasi matematika dasar untuk sains dan rekayasa.",
+    "featured": false,
+    "order": 20,
+    "description": "Mata kuliah fondasi matematika untuk mendukung pembelajaran lanjutan pada sains, rekayasa, dan komputasi.",
+    "projects": [],
+    "materials": []
+  },
+  {
+    "slug": "visualization-in-science",
+    "title": "Visualisasi dalam Sains",
+    "titleEn": "Visualization in Science",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "summary": "Visualisasi data dan hasil komputasi untuk komunikasi ilmiah.",
+    "featured": false,
+    "order": 21,
+    "description": "Mata kuliah ini membahas prinsip dan praktik visualisasi data serta hasil komputasi untuk eksplorasi, analisis, dan komunikasi ilmiah.",
+    "projects": [],
+    "materials": []
+  },
+  {
+    "slug": "computational-geodesic",
+    "title": "Geodesik Komputasional",
+    "titleEn": "Computational Geodesics",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "year": "2024",
+    "summary": "Pendekatan komputasional untuk geometri, geodesik, dan persoalan numerik terkait.",
+    "featured": false,
+    "order": 22,
+    "description": "Mata kuliah ini membahas pendekatan komputasional untuk persoalan geometri dan geodesik, termasuk formulasi numerik dan interpretasi hasil komputasi.",
+    "projects": [],
+    "materials": []
+  },
+  {
+    "slug": "computational-hydrodynamic",
+    "title": "Hidrodinamika Komputasional",
+    "titleEn": "Computational Hydrodynamics",
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "summary": "Model aliran, diskretisasi, simulasi numerik, dan evaluasi hasil komputasi.",
+    "featured": false,
+    "order": 23,
+    "description": "Mata kuliah ini membahas formulasi model hidrodinamika dan penyelesaiannya secara komputasional melalui diskretisasi, simulasi numerik, serta evaluasi kestabilan dan hasil.",
+    "projects": [],
+    "materials": []
+  }
+]

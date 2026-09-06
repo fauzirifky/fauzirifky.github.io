@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -p tsconfig.json && vite build",
     "preview": "vite preview",
-    "postbuild": "node scripts/create-spa-pages.mjs"
+    "postbuild": "node scripts/create-spa-pages.mjs",
+    "generate:courses": "node scripts/generate-courses.mjs",
+    "prebuild": "npm run generate:courses"
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.4.5",

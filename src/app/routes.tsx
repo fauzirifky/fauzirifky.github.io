@@ -8,18 +8,34 @@ import TeachingDetail from "../pages/TeachingDetail";
 import Publications from "../pages/Publications";
 import Grants from "../pages/Grants";
 import NotFound from "../pages/NotFound";
+import { courses, courseAliases } from "../data/courses";
 
 export const Routes = (
   <RouterRoutes>
-    {/* Landing (no sidebar) */}
     <Route element={<PublicLayout />}>
       <Route path="/" element={<Home />} />
     </Route>
 
-    {/* Pages (with sidebar) */}
     <Route element={<Layout />}>
       <Route path="/research-products" element={<ResearchProducts />} />
       <Route path="/teaching" element={<Teaching />} />
+
+      {courses.map((course) => (
+        <Route
+          key={course.slug}
+          path={`/teaching/${course.slug}`}
+          element={<TeachingDetail forcedSlug={course.slug} />}
+        />
+      ))}
+
+      {Object.entries(courseAliases).map(([alias, canonical]) => (
+        <Route
+          key={alias}
+          path={`/teaching/${alias}`}
+          element={<TeachingDetail forcedSlug={canonical} />}
+        />
+      ))}
+
       <Route path="/teaching/:slug" element={<TeachingDetail />} />
       <Route path="/publications" element={<Publications />} />
       <Route path="/grants" element={<Grants />} />
