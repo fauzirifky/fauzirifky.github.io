@@ -4,9 +4,10 @@ import Section from "../components/ui/Section";
 import { cvData } from "../data/cv";
 import { featuredCourses } from "../data/courses";
 import publicationData from "../data/publications.json";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
   const { person, currentPosition, education, certifications, researchProducts, skills, grants } = cvData;
 
   const pubsSorted = [...publicationData].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
@@ -121,9 +122,9 @@ export default function Home() {
               className="card--click"
               role="link"
               tabIndex={0}
-              onClick={() => (window.location.href = `/teaching/${course.slug}`)}
+              onClick={() => navigate(`/teaching/${course.slug}`)}
               onKeyDown={(e) => {
-                if (e.key === "Enter") window.location.href = `/teaching/${course.slug}`;
+                if (e.key === "Enter") navigate(`/teaching/${course.slug}`);
               }}
             >
               <h3>

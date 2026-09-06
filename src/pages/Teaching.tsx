@@ -2,9 +2,11 @@ import Container from "../components/layout/Container";
 import Section from "../components/ui/Section";
 import Card from "../components/ui/Card";
 import { courses } from "../data/courses";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Teaching() {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <div className="pageHeader">
@@ -22,9 +24,9 @@ export default function Teaching() {
               className="card--click"
               role="link"
               tabIndex={0}
-              onClick={() => (window.location.href = `/teaching/${course.slug}`)}
+              onClick={() => navigate(`/teaching/${course.slug}`)}
               onKeyDown={(e) => {
-                if (e.key === "Enter") window.location.href = `/teaching/${course.slug}`;
+                if (e.key === "Enter") navigate(`/teaching/${course.slug}`);
               }}
             >
               <h3>
