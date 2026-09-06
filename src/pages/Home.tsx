@@ -2,12 +2,14 @@ import Container from "../components/layout/Container";
 import Card from "../components/ui/Card";
 import Section from "../components/ui/Section";
 import { cvData } from "../data/cv";
+import { featuredCourses } from "../data/courses";
+import publicationData from "../data/publications.json";
 import { Link } from "react-router-dom";
 
 export default function Home() {
-  const { person, currentPosition, education, certifications, researchProducts, skills, teaching, publications, grants } = cvData;
+  const { person, currentPosition, education, certifications, researchProducts, skills, grants } = cvData;
 
-  const pubsSorted = [...publications].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+  const pubsSorted = [...publicationData].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
   const grantsSorted = [...grants].sort((a, b) => Number(b.year) - Number(a.year));
 
   return (
@@ -113,13 +115,27 @@ export default function Home() {
 
       <Section title="Teaching (click a course for details)" right={<Link className="link" to="/teaching">All courses</Link>}>
         <div className="grid">
-          {teaching.slice(0, 6).map((t) => (
-            <Card key={t.slug} className="card--click" role="link" tabIndex={0} onClick={() => (window.location.href = `/teaching/${t.slug}`)} onKeyDown={(e) => { if (e.key === "Enter") window.location.href = `/teaching/${t.slug}`; }}>
+          {featuredCourses.slice(0, 6).map((course) => (
+            <Card
+              key={course.slug}
+              className="card--click"
+              role="link"
+              tabIndex={0}
+              onClick={() => (window.location.href = `/teaching/${course.slug}`)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") window.location.href = `/teaching/${course.slug}`;
+              }}
+            >
               <h3>
-                <Link className="link" to={`/teaching/${t.slug}`}>{t.course}</Link>
+                <Link className="link" to={`/teaching/${course.slug}`}>{course.title}</Link>
               </h3>
-              <div className="small">{t.institution} • {t.role}{t.year ? ` • ${t.year}` : ""}</div>
-              <p className="muted">{t.summary}</p>
+              <div className="small">{course.titleEn}</div>
+              <div className="small" style={{ marginTop: 4 }}>
+                {course.code ? `${course.code} • ` : ""}
+                {course.credits ? `${course.credits} SKS • ` : ""}
+                {course.institution}
+              </div>
+              {course.summary ? <p className="muted">{course.summary}</p> : null}
             </Card>
           ))}
         </div>

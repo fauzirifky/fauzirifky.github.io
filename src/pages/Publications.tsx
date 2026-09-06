@@ -2,10 +2,11 @@ import Container from "../components/layout/Container";
 import Section from "../components/ui/Section";
 import Card from "../components/ui/Card";
 import { cvData } from "../data/cv";
+import publicationData from "../data/publications.json";
 
 export default function Publications() {
-  const { publications, books } = cvData;
-  const pubs = [...publications].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
+  const { books } = cvData;
+  const pubs = [...publicationData].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
 
   return (
     <Container>
