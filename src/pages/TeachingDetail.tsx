@@ -1,19 +1,25 @@
+import type { ReactNode } from "react";
 import { Link, useLocation, useParams } from "react-router-dom";
 import Container from "../components/layout/Container";
 import Section from "../components/ui/Section";
 import Card from "../components/ui/Card";
 import { getCourse } from "../data/courses";
 
-type Props = {
-  forcedSlug?: string;
-};
+type Props = { forcedSlug?: string };
+
+function InfoItem({ label, children }: { label: string; children: ReactNode }) {
+  return (
+    <div>
+      <div className="small" style={{ marginBottom: 4 }}>{label}</div>
+      <div>{children}</div>
+    </div>
+  );
+}
 
 export default function TeachingDetail({ forcedSlug }: Props) {
   const { slug: paramSlug } = useParams();
   const location = useLocation();
 
-  // Use three independent sources so GitHub Pages trailing slashes,
-  // physical index routes, and React Router params all resolve identically.
   const course =
     getCourse(forcedSlug) ??
     getCourse(paramSlug) ??
@@ -25,12 +31,7 @@ export default function TeachingDetail({ forcedSlug }: Props) {
       <Container>
         <div className="pageHeader">
           <h1>Course not found</h1>
-          <p className="muted">
-            Route: <code>{location.pathname}</code>
-          </p>
-          <Link className="link" to="/teaching">
-            Back to Teaching
-          </Link>
+          <Link className="link" to="/teaching">Back to Teaching</Link>
         </div>
       </Container>
     );
@@ -40,92 +41,74 @@ export default function TeachingDetail({ forcedSlug }: Props) {
     <Container>
       <div className="pageHeader">
         <h1>{course.title}</h1>
-        <p className="muted" style={{ marginBottom: 6 }}>
-          {course.titleEn}
-        </p>
+        <p className="muted" style={{ marginBottom: 6 }}>{course.titleEn}</p>
         <div className="small">
           {course.code ? `${course.code} • ` : ""}
-          SKS: {course.credits || "—"} • {course.institution} • {course.role}
+          {course.credits ? `${course.credits} SKS • ` : ""}
+          {course.institution}
           {course.year ? ` • ${course.year}` : ""}
         </div>
         <div style={{ marginTop: 8 }}>
-          <Link className="link" to="/teaching">
-            ← Back to Teaching
-          </Link>
+          <Link className="link" to="/teaching">← Back to Teaching</Link>
         </div>
       </div>
 
-      <Section title="Deskripsi Mata Kuliah">
+      <Section title="Informasi Mata Kuliah">
         <Card>
-          <p style={{ whiteSpace: "pre-line" }}>
-            {course.description ||
-              "Deskripsi belum ditambahkan pada file Markdown mata kuliah."}
-          </p>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(210px, 1fr))", gap: 18 }}>
+            <InfoItem label="SKS / Prasyarat">
+              {course.credits ? `${course.credits} SKS` : "—"}
+              {course.prerequisite ? ` / ${course.prerequisite}` : ""}
+            </InfoItem>
+            <InfoItem label="Team Teaching">
+              {course.teamTeaching.length ? course.teamTeaching.join(", ") : "—"}
+            </InfoItem>
+            <InfoItem label="Software / Media">
+              {course.media.length ? course.media.join(", ") : "—"}
+            </InfoItem>
+            <InfoItem label="Komposisi Penilaian">
+              {course.assessment.length ? course.assessment.join(", ") : "—"}
+            </InfoItem>
+          </div>
         </Card>
       </Section>
 
-      <Section title="SKS">
-        <Card>
-          <strong>{course.credits || "—"} SKS</strong>
-          {course.code ? (
-            <div className="small" style={{ marginTop: 4 }}>
-              Kode mata kuliah: {course.code}
-            </div>
-          ) : null}
-        </Card>
-      </Section>
+      {course.description ? (
+        <Section title="Deskripsi Mata Kuliah">
+          <Card><p style={{ whiteSpace: "pre-line" }}>{course.description}</p></Card>
+        </Section>
+      ) : null}
 
-      <Section title="Daftar Project">
-        <Card>
-          {course.projects.length ? (
-            <ul className="list">
-              {course.projects.map((project) => (
-                <li key={project}>{project}</li>
-              ))}
-            </ul>
-          ) : (
-            <p className="muted">Daftar project belum ditambahkan.</p>
-          )}
-        </Card>
-      </Section>
+      {course.focus ? (
+        <Section title="Fokus Utama"><Card><p>{course.focus}</p></Card></Section>
+      ) : null}
 
-      <Section title="Bahan Ajar">
-        {course.materials.length ? (
+      {course.topics.length ? (
+        <Section title="Pokok Bahasan">
+          <Card><ul className="list">{course.topics.map((x) => <li key={x}>{x}</li>)}</ul></Card>
+        </Section>
+      ) : null}
+
+      {course.projects.length ? (
+        <Section title="Daftar Project">
+          <Card><ul className="list">{course.projects.map((x) => <li key={x}>{x}</li>)}</ul></Card>
+        </Section>
+      ) : null}
+
+      {course.materials.length ? (
+        <Section title="Bahan Ajar">
           <div className="grid">
-            {course.materials.map((material) => (
-              <Card key={`${material.name}-${material.pdf ?? material.source}`}>
-                <h3>{material.name}</h3>
-                <div className="row" style={{ marginTop: 10 }}>
-                  {material.pdf ? (
-                    <a
-                      className="link"
-                      href={material.pdf}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      PDF langsung
-                    </a>
-                  ) : null}
-                  {material.source ? (
-                    <a
-                      className="link"
-                      href={material.source}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Source LaTeX
-                    </a>
-                  ) : null}
+            {course.materials.map((m) => (
+              <Card key={`${m.name}-${m.pdf}`}>
+                <h3>{m.name}</h3>
+                <div style={{ marginTop: 10 }}>
+                  <a className="link" href={m.pdf} target="_blank" rel="noreferrer">PDF</a>
                 </div>
               </Card>
             ))}
           </div>
-        ) : (
-          <Card>
-            <p className="muted">Bahan ajar belum ditambahkan.</p>
-          </Card>
-        )}
-      </Section>
+        </Section>
+      ) : null}
     </Container>
   );
 }

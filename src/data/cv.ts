@@ -187,10 +187,6 @@ export const cvData: CVData = {
       ],
     },
     {
-      title: "Tools",
-      items: ["Git", "Docker", "Tableau"],
-    },
-    {
       title: "Focus Areas",
       items: [
         "Predictive Modeling",

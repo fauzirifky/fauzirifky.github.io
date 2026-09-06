@@ -3,24 +3,43 @@ published: true
 slug: partial-differential-equations
 title: Persamaan Diferensial Parsial
 title_en: Partial Differential Equations
-code:
-credits:
+code: MA25-31018
+credits: 3
+prerequisite: MA25-22011
+team_teaching: Dr. Dewi Suhika | Dr. Rifky Fauzi | Dear Michiko Mutiara Noor | Prof. Dr. L. Hari Wiryanto
+media: Analitik / teori
+assessment: Proyek 20% | Presentasi 20% | UTS 20% | UAS 20% | Tes Lisan 10% | Tugas 10%
 institution: Institut Teknologi Sumatera
 role: Lecturer
-year: 2024
-summary: Teori PDP, pemodelan, dan hubungan antara solusi analitik dan numerik.
+year: 2026
+summary: Analisis persamaan diferensial parsial dan penerapannya pada fenomena fisik melalui Case-Based Learning.
 featured: true
 order: 5
 ---
 
 ## Deskripsi Mata Kuliah
 
-Mata kuliah ini membahas persamaan diferensial parsial sebagai bahasa pemodelan fenomena kontinu, klasifikasi model, teknik solusi analitik, serta hubungan antara formulasi matematis dan pendekatan numerik.
+Mata kuliah ini membahas konsep dan metode analitik pada persamaan diferensial parsial, mulai dari klasifikasi, metode penyelesaian, transformasi, hingga formulasi model untuk berbagai fenomena fisik.
+
+## Fokus Utama
+
+Pemahaman analitik sifat-sifat persamaan diferensial parsial serta penerapannya pada fenomena fisik melalui Case-Based Learning.
+
+## Pokok Bahasan
+
+- Klasifikasi PDP orde 1 dan orde 2
+- Metode Karakteristik
+- Transformasi Koordinat
+- Separasi Variabel
+- Deret Fourier dan perluasan fungsi
+- Persamaan Gelombang sebagai model hiperbolik
+- Persamaan Panas sebagai model parabolik
+- Persamaan Laplace dan Poisson sebagai model eliptik
 
 ## Daftar Project
 
-<!-- Tambahkan project dengan format: - Nama project -->
+<!-- Tambahkan case/project apabila telah ditetapkan. -->
 
 ## Bahan Ajar
 
-<!-- Tambahkan tabel bahan ajar mengikuti contoh di _TEMPLATE.md -->
+<!-- Publikasikan hanya bahan ajar yang memang tersedia untuk akses publik. -->

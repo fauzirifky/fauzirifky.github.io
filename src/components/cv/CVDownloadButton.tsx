@@ -15,9 +15,16 @@ export default function CVDownloadButton() {
 
       const cvForPdf = {
         ...cvData,
+        sidebarSkills: cvData.sidebarSkills.filter(
+          (group) => group.title.toLowerCase() !== "tools",
+        ),
         publications: publicationData,
         teaching: courses.map((course) => ({
-          course: `${course.title} (${course.titleEn})`,
+          course: [
+            course.title,
+            course.code ? `(${course.code})` : "",
+            course.credits ? `— ${course.credits} SKS` : "",
+          ].filter(Boolean).join(" "),
           institution: course.institution,
           role: course.role,
           year: course.year,

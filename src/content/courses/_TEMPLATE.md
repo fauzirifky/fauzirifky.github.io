@@ -1,29 +1,36 @@
 ---
 published: false
-slug: example-course
-title: Nama Mata Kuliah
-title_en: English Course Name
+slug:
+title:
+title_en:
 code:
 credits:
+prerequisite:
+team_teaching:
+media:
+assessment:
 institution: Institut Teknologi Sumatera
 role: Lecturer
 year:
-summary: Ringkasan singkat untuk kartu Teaching.
+summary:
 featured: false
-order: 100
+order: 999
 ---
 
 ## Deskripsi Mata Kuliah
 
-Tuliskan deskripsi mata kuliah di sini.
+## Fokus Utama
+
+## Pokok Bahasan
+
+- 
 
 ## Daftar Project
 
-- Nama project pertama
-- Nama project kedua
+- 
 
 ## Bahan Ajar
 
-| Dokumen | PDF langsung | Source LaTeX |
-| --- | --- | --- |
-| Contoh Materi | [PDF](https://example.com/material.pdf) | [LaTeX](https://github.com/example/material.tex) |
+| Dokumen | PDF |
+| --- | --- |
+| Nama bahan ajar | [PDF](https://example.com/file.pdf) |

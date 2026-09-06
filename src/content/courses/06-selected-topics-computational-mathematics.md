@@ -1,26 +1,44 @@
 ---
 published: true
 slug: selected-topics-in-computational-mathematics
-title: Topik Pilihan Matematika Komputasi
-title_en: Selected Topics in Computational Mathematics
-code:
-credits:
+title: Kapita Selekta Matematika Komputasi I
+title_en: Selected Topics in Computational Mathematics I
+code: MA25-40127
+credits: 3
+prerequisite: MA25-31017
+team_teaching: Dr. Rifky Fauzi
+media: Python | Jupyter Notebook | Google Colab
+assessment: Praktikum 35% | Proyek 25% | Tugas 25% | Quiz 15%
 institution: Institut Teknologi Sumatera
 role: Lecturer
-year: 2024
-summary: Topik khusus metode komputasi, pemodelan, dan riset komputasional yang dapat direproduksi.
+year: 2026
+summary: Pemodelan dan simulasi komputasional fenomena transport pada sistem lingkungan dan rekayasa.
 featured: true
 order: 6
 ---
 
 ## Deskripsi Mata Kuliah
 
-Mata kuliah ini memuat topik pilihan dalam matematika komputasi yang dapat berubah sesuai fokus pembelajaran, perkembangan metode, dan kebutuhan proyek atau riset.
+Mata kuliah ini mengembangkan kemampuan pemodelan, simulasi, visualisasi, dan evaluasi komputasional melalui studi kasus fenomena transport pada sistem lingkungan dan rekayasa.
+
+## Fokus Utama
+
+Pemodelan dan simulasi komputasional fenomena transport pada sistem lingkungan/rekayasa berbasis Project-Based Learning.
+
+## Pokok Bahasan
+
+- Pemodelan pencemaran air
+- Persamaan panas
+- Transport dan difusi
+- Simulasi Persamaan Air Dangkal (Shallow Water Equations)
+- Visualisasi data hasil simulasi
+- Peer review kode program
+- Penyusunan laporan ilmiah siap publikasi
 
 ## Daftar Project
 
-<!-- Tambahkan project dengan format: - Nama project -->
+<!-- Tambahkan project apabila telah ditetapkan. -->
 
 ## Bahan Ajar
 
-<!-- Tambahkan tabel bahan ajar mengikuti contoh di _TEMPLATE.md -->
+<!-- Publikasikan hanya bahan ajar yang memang tersedia untuk akses publik. -->

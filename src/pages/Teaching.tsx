@@ -12,7 +12,7 @@ export default function Teaching() {
       <div className="pageHeader">
         <h1>Teaching</h1>
         <p className="muted">
-          Click a course for description, credits, projects, slides, worksheets, practical modules, and source files.
+          Course information, learning focus, assessment, and publicly available teaching materials.
         </p>
       </div>
 
@@ -25,18 +25,14 @@ export default function Teaching() {
               role="link"
               tabIndex={0}
               onClick={() => navigate(`/teaching/${course.slug}`)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") navigate(`/teaching/${course.slug}`);
-              }}
+              onKeyDown={(e) => { if (e.key === "Enter") navigate(`/teaching/${course.slug}`); }}
             >
-              <h3>
-                <Link className="link" to={`/teaching/${course.slug}`}>{course.title}</Link>
-              </h3>
+              <h3><Link className="link" to={`/teaching/${course.slug}`}>{course.title}</Link></h3>
               <div className="small">{course.titleEn}</div>
-              <div className="small" style={{ marginTop: 4 }}>
+              <div className="small" style={{ marginTop: 6 }}>
                 {course.code ? `${course.code} • ` : ""}
-                {course.credits ? `${course.credits} SKS • ` : ""}
-                {course.institution}
+                {course.credits ? `${course.credits} SKS` : ""}
+                {course.prerequisite ? ` • Prasyarat: ${course.prerequisite}` : ""}
               </div>
               {course.summary ? <p className="muted">{course.summary}</p> : null}
             </Card>

@@ -49,8 +49,6 @@ export default function ResearchProducts() {
           ))}
         </div>
       </Section>
-
-      <p className="small">Tip: Put product images in <code>public/products/</code> and set <code>featuredImage</code> in <code>src/data/cv.ts</code>.</p>
     </Container>
   );
 }
