@@ -47,6 +47,10 @@ export type ResearchProduct = {
   links?: Link[];
   tags?: string[];
   featuredImage?: string;
+  readiness?: string;
+  partners?: string;
+  commercialization?: string;
+  challenge?: string;
 };
 
 export type Certification = {
@@ -200,14 +204,28 @@ export const cvData: CVData = {
 
   researchProducts: [
     {
-      name: "DBDKlim Provinsi Lampung",
-      category: "Decision Support System",
-      description:
-        "Web-based dengue early warning and decision support system using climate data for Lampung Province.",
-      collaborators: ["ITERA", "BMKG", "Dinas Kesehatan Provinsi Lampung"],
-      links: [{ label: "Demo", url: "#" }],
-      tags: ["Dengue", "Climate", "Early warning", "Web app"],
-      featuredImage: "/products/dbdklim.png",
+      name: "DBDKlim-LAMPUNG",
+      category: "Early Warning System",
+      description: "Platform prediksi insidensi DBD berbasis data iklim. Mengintegrasikan kelembapan relatif dan curah hujan dengan machine learning untuk prediksi per 100.000 penduduk pada tingkat kabupaten/kota, dengan horizon H0–H2.",
+      challenge: "Kebutuhan informasi prediktif berbasis iklim untuk mendukung pemetaan kerawanan dan perencanaan pencegahan DBD.",
+      collaborators: ["Rifky Fauzi", "Tiara Shofi Edriani", "Aswan Anggun Pribadi"],
+      readiness: "TKT 4–6 · Purwarupa / blueprint lengkap",
+      partners: "Dinas Kesehatan, Kementerian Kesehatan, BMKG, Bappeda, BPBD, Puskesmas, rumah sakit, dan asuransi kesehatan.",
+      commercialization: "Kontrak implementasi dan konsultasi profesional.",
+      links: [{ label: "Buka demo DBDKlim", url: "https://dbdklim-v2.vercel.app/?region=all&layer=rh_probability" }],
+      tags: ["Iklim", "Prediksi DBD", "Analytics-as-a-Service"],
+    },
+    {
+      name: "SUAR-TKA",
+      category: "Research Software",
+      description: "Sistem Ujian Adaptif dan Responsif — Tes Kompetensi Akademik. Platform asesmen digital dan diagnostik kompetensi dengan bank soal, sesi ujian, koreksi otomatis, serta analitik kelas, individu, dan butir soal.",
+      challenge: "Administrasi asesmen berulang dan kebutuhan informasi diagnostik yang melampaui skor akhir.",
+      collaborators: ["Rifky Fauzi", "Dewi Suhika", "Nurul Indah Safitri"],
+      readiness: "TKT 7–9 · Sudah diuji coba di lingkungan nyata",
+      partners: "Sekolah SD/SMP/SMA, yayasan pendidikan, MGMP, Dinas Pendidikan, bimbingan belajar, penyelenggara asesmen, dan penyedia teknologi pendidikan.",
+      commercialization: "Jual putus produk, lisensi, royalti penggunaan, kontrak implementasi, dan konsultasi profesional.",
+      links: [{ label: "Buka SUAR-TKA", url: "https://suar-tka.vercel.app" }],
+      tags: ["Asesmen Digital", "Diagnostik Kompetensi", "Assessment-as-a-Service"],
     },
     {
       name: "Early Warning System Serangan Hama (PT Gunung Madu Plantations)",
@@ -215,9 +233,9 @@ export const cvData: CVData = {
       description:
         "Early warning web system for pest attacks in sugarcane plantations, built with PT Gunung Madu Plantations.",
       collaborators: ["PT Gunung Madu Plantations"],
-      links: [{ label: "Demo", url: "#" }],
+      links: [],
       tags: ["Agriculture", "Forecasting", "Decision support"],
-      featuredImage: "/products/pest-ew.png",
+
     },
   ],
 

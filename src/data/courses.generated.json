@@ -245,6 +245,27 @@
     "materials": []
   },
   {
+    "slug": "matematika-3-teknik-kelautan",
+    "title": "Matematika 3 — Teknik Kelautan",
+    "titleEn": "Mathematics III — Ocean Engineering",
+    "teamTeaching": [],
+    "media": [],
+    "assessment": [],
+    "institution": "Institut Teknologi Sumatera",
+    "role": "Lecturer",
+    "featured": true,
+    "order": 7,
+    "description": "Materi perkuliahan, lembar kerja mandiri, dan tugas Matematika 3 untuk Teknik Kelautan.",
+    "focus": "",
+    "topics": [
+      "Penyegaran prasyarat",
+      "Transformasi Laplace",
+      "Persamaan diferensial biasa"
+    ],
+    "projects": [],
+    "materials": []
+  },
+  {
     "slug": "basic-mathematics-ii",
     "title": "Matematika Dasar II",
     "titleEn": "Basic Mathematics II",

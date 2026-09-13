@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Container from "../components/layout/Container";
 import Section from "../components/ui/Section";
@@ -7,12 +8,13 @@ import { cvData } from "../data/cv";
 import { slugify } from "../components/ui/slug";
 
 export default function ResearchProducts() {
+  const location = useLocation();
   useEffect(() => {
     const id = window.location.hash?.replace("#", "");
     if (!id) return;
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  }, []);
+  }, [location.hash]);
 
   const { researchProducts } = cvData;
 
@@ -26,17 +28,21 @@ export default function ResearchProducts() {
       <Section title="Products">
         <div className="grid">
           {researchProducts.map((p) => (
-            <Card key={p.name} className={p.links?.[0]?.url && p.links?.[0]?.url !== "#" ? "card--click" : undefined} role={p.links?.[0]?.url && p.links?.[0]?.url !== "#" ? "link" : undefined} tabIndex={p.links?.[0]?.url && p.links?.[0]?.url !== "#" ? 0 : undefined} onClick={() => { const u = p.links?.[0]?.url; if (u && u !== "#") window.open(u, "_blank", "noreferrer"); }} onKeyDown={(e) => { const u = p.links?.[0]?.url; if (e.key === "Enter" && u && u !== "#") window.open(u, "_blank", "noreferrer"); }}>
+            <Card key={p.name}>
               <div id={slugify(p.name)} />
               <h3>{p.name}</h3>
               <div className="small">{p.category}</div>
               <p>{p.description}</p>
+              {p.challenge && <p><strong>Tantangan:</strong> {p.challenge}</p>}
+              {p.readiness && <p className="small">{p.readiness}</p>}
+              {p.partners && <p><strong>Potensi mitra:</strong> {p.partners}</p>}
+              {p.commercialization && <p><strong>Skema kerja sama:</strong> {p.commercialization}</p>}
               {p.featuredImage ? (
                 <div className="productMedia">
                   <img src={p.featuredImage} alt={`${p.name} screenshot`} />
                 </div>
               ) : null}
-              {p.collaborators?.length ? <div className="small" style={{ marginTop: 8 }}>Collaborators: {p.collaborators.join(", ")}</div> : null}
+              {p.collaborators?.length ? <div className="small" style={{ marginTop: 8 }}>Inventor / Tim: {p.collaborators.join(", ")}</div> : null}
               {p.links?.length ? (
                 <div className="row" style={{ marginTop: 8 }}>
                   {p.links.map((l) => (
@@ -44,6 +50,7 @@ export default function ResearchProducts() {
                   ))}
                 </div>
               ) : null}
+              {!p.links?.length && <p className="small">Demo publik belum tersedia.</p>}
               <TagList tags={p.tags} />
             </Card>
           ))}

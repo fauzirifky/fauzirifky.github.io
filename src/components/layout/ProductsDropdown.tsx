@@ -10,7 +10,7 @@ export default function ProductsDropdown() {
 
   useEffect(() => {
     setOpen(false);
-  }, [location.pathname]);
+  }, [location.pathname, location.hash]);
 
   useEffect(() => {
     function onDocClick(e: MouseEvent) {
@@ -34,7 +34,7 @@ export default function ProductsDropdown() {
       {open ? (
         <div className="dropdownPanel" role="menu" aria-label="Research Products menu">
           {products.map((p) => (
-            <Link key={p.id} className="dropdownItem" to={`/research-products#${p.id}`} role="menuitem">
+            <Link key={p.id} className="dropdownItem" onClick={() => setOpen(false)} to={`/research-products#${p.id}`} role="menuitem">
               <div>
                 <strong>{p.name}</strong>
               </div>

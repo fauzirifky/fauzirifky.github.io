@@ -1,0 +1,275 @@
+{
+  "numerical-methods": {
+    "repo": "Pemodelan-Komputasi-dan-Analisis-Numerik",
+    "branch": "main",
+    "tree": [
+      {
+        "path": "Modul_Praktikum/matlab/akar_demo.m",
+        "sha": "f32c089a52155ba6194b44277e8b1449f61386b2",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/bisection_fun.m",
+        "sha": "79545af02c74fcee776d3fce14722d22349ad42b",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/curvefit_demo.m",
+        "sha": "edd3d1c9080513b387292c0fbe821b1b25bf074d",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/euler_ivp.m",
+        "sha": "f253847e2f6d947508005e0e9cc8a11963624511",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/finite_difference.m",
+        "sha": "b5ad0f9c7b322b35c047eed4b1b3c6ca4fa063ac",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/fixedpoint_fun.m",
+        "sha": "82b36acdd761f646179dabbac626c56f7c059ebd",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/gauss_newton_damped.m",
+        "sha": "4b4a62cc273bc355da7240e7cc178fad7692abfd",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/gauss_seidel_iter.m",
+        "sha": "a6ee2e2a66586b92f5c2d681af38da53be94bd01",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/integrated_review.m",
+        "sha": "e0a037ae56f1057ce7977bc8307dd52df793eb82",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/integration_basic.m",
+        "sha": "adb12c652696fdc40cc8a778b17e2641d7f2d752",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/jacobi_iter.m",
+        "sha": "e42e5e3d56d84f54daae803d04f5f25743209068",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/midpoint_comp.m",
+        "sha": "558c4d452e8cfae7d2905c73213389c347d3e2f8",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/newton_fun.m",
+        "sha": "20efbccb1accdaf3a622a45cab2704c6a6b84d17",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/newton_system.m",
+        "sha": "46cce70c6e6cf2715e6821eb5812067eddfd20ec",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/numdiff.m",
+        "sha": "c3a37d83bf9fdd4bd9a13d4654b60fd06b326ed2",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/ode_euler_rk4.m",
+        "sha": "1789d8d6665db333e82361069b30fab6d3d8f0e1",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/ode_stability.m",
+        "sha": "499642288b75cc15c80ff182208f84f1277b3c0d",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/regula_falsi_fun.m",
+        "sha": "23bb021e1380c04b737c3fd92087bdf98c0c1a67",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/relerr.m",
+        "sha": "12aa2fee0f50bd6e7fdc76bb97dbc8626d232c25",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/richardson_diff.m",
+        "sha": "be0deeefadf15db549501552a9ff8f545dd64b30",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/rk4_ivp.m",
+        "sha": "2b5c64695d66c48c56990fb71f75cfb57f715018",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/romberg_demo.m",
+        "sha": "31b5fe177ae4a91a7f170fa944ed3f51644066df",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/romberg_fun.m",
+        "sha": "b37238a5799051b128aaeecb75c2fd28673a4cf7",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/root_compare.m",
+        "sha": "4b114d5e6c4452f9a9e7f76c3d6cf055fa749b28",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/secant_fun.m",
+        "sha": "95b8025eae08cf8304c1d34410d426960ccae046",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/simpson_comp.m",
+        "sha": "fac240ab7be31aa8cbbce8ba36ed4cce7d09a0e7",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/spl_demo.m",
+        "sha": "731d188feec4df857521e467cb33d4aa114426d8",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/spl_iterative.m",
+        "sha": "3e7341cb6d2a5d6cf4ea5ba9d2385d6c62783b97",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/spnl_curvefit.m",
+        "sha": "f0b83dddb366e78be9906cd625440056b2cf0612",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/spnl_demo.m",
+        "sha": "fe3ee2dbc981db2d90da41cb90c1d0845ca4b15f",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/matlab/trap_comp.m",
+        "sha": "3b13064385c0816b69927f7584fcf2248cab4096",
+        "type": "blob"
+      },
+      {
+        "path": "Lembar_Kerja/Lembar_Kerja_Praktikum_MA25-31017.pdf",
+        "sha": "e14465499f524ac440aaaae4ddfc00bfb3e7d1ae",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/modul.pdf",
+        "sha": "e06f4945ef283ba0b0391e2e977192357f325985",
+        "type": "blob"
+      },
+      {
+        "path": "Slide/Pertemuan_01/MA25-31017 Pertemuan 1 Kontrak_dan_Pencarian_Akar.pdf",
+        "sha": "50443d7e4e1e40a9e2b43be9b27413526cb4b842",
+        "type": "blob"
+      },
+      {
+        "path": "Slide/Pertemuan_02/MA2531017_Pertemuan_2_SPL_SPNL_Regresi_Curve_Fitting.pdf",
+        "sha": "5edf53622c78e68c41a283994a0accfb89e33706",
+        "type": "blob"
+      }
+    ]
+  },
+  "fundamentals-of-programming": {
+    "repo": "Pemrograman-untuk-Ilmu-Data-dan-Komputasi",
+    "branch": "main",
+    "tree": [
+      {
+        "path": "Lembar_Kerja/lembar_kerja_PIDK.pdf",
+        "sha": "743f26432a8027a420ab7288ab570a174e06d6b3",
+        "type": "blob"
+      },
+      {
+        "path": "Modul_Praktikum/modul_praktikum_PIDK.pdf",
+        "sha": "ac0c8a8b69f1ec02c02f519092704fb1e0e78c66",
+        "type": "blob"
+      },
+      {
+        "path": "Materi/M01/slides_M01.pdf",
+        "sha": "f62ea5938a0478768c254956d60579722fa50b7a",
+        "type": "blob"
+      },
+      {
+        "path": "Materi/M02/slides_M02.pdf",
+        "sha": "48083d9646b927c5b87b1b581ade5d982ced0434",
+        "type": "blob"
+      },
+      {
+        "path": "Materi/M03/slides_M03.pdf",
+        "sha": "8bc77b3866b4812f31dbc1533fc2df52a07712b1",
+        "type": "blob"
+      }
+    ]
+  },
+  "matematika-3-teknik-kelautan": {
+    "repo": "Matematika-3-Teknik-Kelautan",
+    "branch": "main",
+    "tree": [
+      {
+        "path": "Lembar Kerja Mandiri/MAT3_LKM_Bank-Soal.pdf",
+        "sha": "041ee03dd05e7bf56d3f863b0076c08244686570",
+        "type": "blob"
+      },
+      {
+        "path": "Laplace.pdf",
+        "sha": "bb2617ec45ee055c7f635be23e618be540124802",
+        "type": "blob"
+      },
+      {
+        "path": "Slide Perkuliahan/P01_Refresh-Prasyarat/MAT3_SLIDE_P01_Refresh-Prasyarat.pdf",
+        "sha": "9c1bb438c5b8980e9cb5c0e3a031f5b1782aef80",
+        "type": "blob"
+      },
+      {
+        "path": "Slide Perkuliahan/P02_Transformasi-Laplace-PDB-Dasar/MAT3_SLIDE_P02_Transformasi-Laplace-PDB-Dasar.pdf",
+        "sha": "91d146e6c95631b76c91034874efa8fc9df46af4",
+        "type": "blob"
+      },
+      {
+        "path": "Slide Perkuliahan/P03_Transformasi-Laplace-II/MAT3_SLIDE_P03_Transformasi-Laplace-II.pdf",
+        "sha": "aa60951591834d8534b091213fa75d34c2da6467",
+        "type": "blob"
+      },
+      {
+        "path": "Tugas/T01_Pekan-01/MAT3_TUGAS_T01_Pekan-01.pdf",
+        "sha": "ae195ed74ca6250f320ba8a0fec6fdec23d63112",
+        "type": "blob"
+      },
+      {
+        "path": "Tugas/T02_Pekan-02-04/MAT3_TUGAS_T02_Pekan-02-04.pdf",
+        "sha": "b85338d3e87ecb9a137d14375382ccfc3ae8ab8d",
+        "type": "blob"
+      },
+      {
+        "path": "Tugas/T03_Pekan-05-07/MAT3_TUGAS_T03_Pekan-05-07.pdf",
+        "sha": "2e912372e32c46e55bfaebdf153fddd495a77f7e",
+        "type": "blob"
+      },
+      {
+        "path": "Tugas/T04_Pekan-09/MAT3_TUGAS_T04_Pekan-09.pdf",
+        "sha": "26a357f3d23ad77bad3e502f9848b527f7ea0caf",
+        "type": "blob"
+      },
+      {
+        "path": "Tugas/T05_Pekan-10-12/MAT3_TUGAS_T05_Pekan-10-12.pdf",
+        "sha": "31477fefc394fa17137c7b85aa44fa0241f53bde",
+        "type": "blob"
+      },
+      {
+        "path": "Tugas/T06_Pekan-13-14/MAT3_TUGAS_T06_Pekan-13-14.pdf",
+        "sha": "356fa780324c2bbd0d28d078aa640ac69e085fb8",
+        "type": "blob"
+      }
+    ]
+  }
+}

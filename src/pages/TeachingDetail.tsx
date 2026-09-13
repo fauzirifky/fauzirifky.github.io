@@ -5,6 +5,8 @@ import Section from "../components/ui/Section";
 import Card from "../components/ui/Card";
 import { getCourse } from "../data/courses";
 
+import RepositoryMaterials, { hasRepository } from "../components/RepositoryMaterials";
+
 type Props = { forcedSlug?: string };
 
 function InfoItem({ label, children }: { label: string; children: ReactNode }) {
@@ -95,7 +97,7 @@ export default function TeachingDetail({ forcedSlug }: Props) {
         </Section>
       ) : null}
 
-      {course.materials.length ? (
+      {hasRepository(course.slug) ? <RepositoryMaterials key={course.slug} slug={course.slug} /> : course.materials.length ? (
         <Section title="Bahan Ajar">
           <div className="grid">
             {course.materials.map((m) => (
