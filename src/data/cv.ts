@@ -228,6 +228,18 @@ export const cvData: CVData = {
       tags: ["Asesmen Digital", "Diagnostik Kompetensi", "Assessment-as-a-Service"],
     },
     {
+      name: "Spektrun",
+      category: "Research Software",
+      description: "Platform analisis deret waktu dan forecasting dari dua kolom data: tanggal dan nilai. Mendukung perbandingan model, evaluasi prediksi, identifikasi tren dan pola musiman, diagnostik residual, serta penyusunan skenario dan laporan otomatis.",
+      challenge: "Data operasional sudah tersedia, tetapi pengolahan masih manual dan belum dimanfaatkan secara konsisten untuk memperkirakan kebutuhan kapasitas, permintaan, serta anggaran.",
+      collaborators: ["Rifky Fauzi"],
+      readiness: "Prototipe fungsional · Siap untuk uji coba bersama mitra",
+      partners: "Operator transportasi, perusahaan logistik, industri manufaktur, usaha ritel, unit keuangan, instansi pemerintah, dan konsultan analitik.",
+      commercialization: "Langganan aplikasi, lisensi organisasi, kontrak implementasi, pengembangan integrasi API/ERP, serta konsultasi forecasting dan analisis data.",
+      links: [{ label: "Buka Spektrun", url: "https://spektrun-project.vercel.app" }],
+      tags: ["Time Series Analytics", "Forecasting", "Perencanaan Operasional"],
+    },
+    {
       name: "Early Warning System Serangan Hama (PT Gunung Madu Plantations)",
       category: "Early Warning System",
       description:

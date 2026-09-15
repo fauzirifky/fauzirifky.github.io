@@ -1,0 +1,47 @@
+[
+  {
+    "path": "src/components/RepositoryMaterials.tsx",
+    "before": null,
+    "after": "4f264f61a0dcd16f081b28b4e2490fb69808e493dc19f2592249cb953180164f"
+  },
+  {
+    "path": "src/components/layout/ProductsDropdown.tsx",
+    "before": "e370625d020d642afcf177d36c01ed33d424eac0a35aa49e0e339dc7d3a5288b",
+    "after": "0fc160d83efde8c7f10d3163b0f7e978f4a6a228ff965c3e89a1bd17e383ad99"
+  },
+  {
+    "path": "src/content/courses/24-matematika-3-teknik-kelautan.md",
+    "before": null,
+    "after": "ee41b7363457168d7ff93005fb3f25fa20bde26ccc08b9477b01c61e14cbf513"
+  },
+  {
+    "path": "src/data/courses.generated.json",
+    "before": "72e91a6cfc6160c55934120d2305548941ea5647cb9e4e1d0de7590a43d9249f",
+    "after": "16e492c522c167034fe231e9395acfd7b555740f94eac462f8fe9acaad301f51"
+  },
+  {
+    "path": "src/data/cv.ts",
+    "before": "5dbe69425d9179079b2bb73d36bef42974eb0c878fe46d9fb4abbb413484eba8",
+    "after": "f2112cf14b8b205c771dd51dbb5b875ed3ef2c2190a59421da311e74d3a2487e"
+  },
+  {
+    "path": "src/data/repository-materials.json",
+    "before": null,
+    "after": "eee2b4df49d20fd9d36db9f71e9b1e63a1f5269ae0c4afa7ed5a8e640944949f"
+  },
+  {
+    "path": "src/lib/materials.ts",
+    "before": null,
+    "after": "ba898e50925683f771fbe6c8b45977f29172767ceea48a2cf11c303e081a9dea"
+  },
+  {
+    "path": "src/pages/ResearchProducts.tsx",
+    "before": "aa5368fa3a37733709ea72409aebfded03f54a807032fc894d582bde6810d2e4",
+    "after": "987e6f7a809f79ec59328348a18a2ce7083b65a1b7394f8bf36b198d8c08d38f"
+  },
+  {
+    "path": "src/pages/TeachingDetail.tsx",
+    "before": "4cfcc93f2a6a6659999abf80739aba0397ad99e41f5c0e7c884a185c4a3f09f5",
+    "after": "95a13b59ad7468f04f4c2c9912c8b61733cd61d1ab5fb1d16de653127a51f721"
+  }
+]
