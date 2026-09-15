@@ -8,171 +8,205 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Home() {
   const navigate = useNavigate();
-  const { person, currentPosition, education, certifications, researchProducts, skills, grants } = cvData;
+  const {
+    person,
+    currentPosition,
+    education,
+    certifications,
+    researchProducts,
+    skills,
+    grants,
+    sidebarSkills,
+  } = cvData;
 
-  const pubsSorted = [...publicationData].sort((a, b) => (b.year ?? 0) - (a.year ?? 0));
-  const grantsSorted = [...grants].sort((a, b) => Number(b.year) - Number(a.year));
+  const pubsSorted = [...publicationData].sort(
+    (a, b) => (b.year ?? 0) - (a.year ?? 0),
+  );
+  const grantsSorted = [...grants].sort(
+    (a, b) => Number(b.year) - Number(a.year),
+  );
 
   return (
     <Container>
-      <div className="aboveFold">
-        <Card className="identityCard">
-          <div style={{ height: 3, width: 52, background: "var(--accent2)", borderRadius: 999, marginBottom: 10 }} />
-          <h1 className="name">{person.name}</h1>
-          <p className="subtitle">
-            {currentPosition.position} — {currentPosition.department}, {currentPosition.institution}
+      <section className="heroStripe">
+        <div className="heroStripe__copy">
+          <div className="eyebrow">Applied Mathematics · Computational Modeling</div>
+          <h1>{person.name}</h1>
+          <p className="heroStripe__lead">
+            {currentPosition.position} — {currentPosition.department},{" "}
+            {currentPosition.institution}
           </p>
-          <div className="metaGrid">
-            <div>{person.location}</div>
-            <div>
-              <a className="link" href={`mailto:${person.email}`}>
-                {person.email}
-              </a>
-            </div>
-            <div>
-              ORCID: <a className="link" href={`https://orcid.org/${person.orcid}`} target="_blank" rel="noreferrer">{person.orcid}</a>
-            </div>
-            <div>
-              GitHub: <a className="link" href={person.github.url} target="_blank" rel="noreferrer">{person.github.label}</a>
-            </div>
-            <div>
-              LinkedIn: <a className="link" href={person.linkedin.url} target="_blank" rel="noreferrer">{person.linkedin.label}</a>
-            </div>
-          </div>
-        </Card>
 
-        <div className="stack">
-          <div className="photoFrame">
+          <div className="heroStripe__meta">
+            <span>{person.location}</span>
+            <a href={`mailto:${person.email}`}>{person.email}</a>
+            <a
+              href={`https://orcid.org/${person.orcid}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              ORCID {person.orcid}
+            </a>
+          </div>
+
+          <div className="heroStripe__actions">
+            <Link className="stripeBtn stripeBtn--primary" to="/research-products">
+              Research products <span aria-hidden="true">→</span>
+            </Link>
+            <Link className="stripeBtn stripeBtn--secondary" to="/teaching">
+              Teaching
+            </Link>
+          </div>
+        </div>
+
+        <div className="heroStripe__visual">
+          <div className="heroStripe__photo">
             <img
-              src={`${import.meta.env.BASE_URL}${(person.photoPath ?? "").replace(/^\//, "")}`}
-              alt={`${person.name} photo`}
+              src={`${import.meta.env.BASE_URL}${(person.photoPath ?? "").replace(/^\/+/, "")}`}
+              alt={`${person.name} portrait`}
             />
           </div>
 
-          <Card className="compactCard">
-            <h3>Education</h3>
-            <ul className="compactList">
-              {education.map((e) => (
-                <li key={e.degree}>
-                  <strong>{e.degree.replace(" in Mathematics", "")}</strong> — {e.institution} ({e.year})
-                </li>
-              ))}
-            </ul>
-          </Card>
-        </div>
-      </div>
-
-      <div className="compactGrid">
-        <Card className="compactCard">
-          <h3>Certifications</h3>
-          <ul className="compactList">
-            {certifications.map((c) => (
-              <li key={c.name}>
-                <strong>{c.name}</strong> — {c.date}
-              </li>
+          <div className="heroStripe__education">
+            <div className="microLabel">Education</div>
+            {education.map((item) => (
+              <div className="educationLine" key={item.degree}>
+                <strong>{item.degree.replace(" in Mathematics", "")}</strong>
+                <span>{item.institution} · {item.year}</span>
+              </div>
             ))}
-          </ul>
+          </div>
+        </div>
+      </section>
+
+      <div className="homeBento">
+        <Card className="homePanel homePanel--cert">
+          <div className="microLabel">Credentials</div>
+          <h2>Certifications</h2>
+          <div className="compactRows">
+            {certifications.map((cert) => (
+              <div className="compactRow" key={cert.name}>
+                <strong>{cert.name}</strong>
+                <span>{cert.date}</span>
+              </div>
+            ))}
+          </div>
         </Card>
 
-        <Card className="compactCard">
-          <h3>Research Products</h3>
-          <ul className="compactList">
-            {researchProducts.map((p) => (
-              <li key={p.name}>
-                <strong>{p.name}</strong> <span className="small">({p.category})</span>
-              </li>
+        <Card className="homePanel homePanel--products">
+          <div className="microLabel">Applied research</div>
+          <div className="panelHeadingRow">
+            <h2>Research Products</h2>
+            <Link className="arrowLink" to="/research-products">
+              View all →
+            </Link>
+          </div>
+
+          <div className="productMiniGrid">
+            {researchProducts.slice(0, 4).map((product) => (
+              <Link
+                to={`/research-products#${product.name
+                  .toLowerCase()
+                  .replace(/[^a-z0-9]+/g, "-")
+                  .replace(/^-|-$/g, "")}`}
+                className="productMini"
+                key={product.name}
+              >
+                <span className="productMini__name">{product.name}</span>
+                <span className="productMini__meta">{product.category}</span>
+              </Link>
             ))}
-          </ul>
-          <div style={{ marginTop: 8 }}>
-            <Link className="link" to="/research-products">View all →</Link>
+          </div>
+        </Card>
+
+        <Card className="homePanel homePanel--expertise">
+          <div className="microLabel">Expertise</div>
+          <h2>Research & Computational Skills</h2>
+
+          <div className="expertiseList">
+            {sidebarSkills.map((group) => (
+              <div className="expertiseGroup" key={group.title}>
+                <strong>{group.title}</strong>
+                <p>{group.items.join(", ")}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="languageLine">
+            <span className="microLabel">Languages</span>
+            <span>{skills.languages.join(" · ")}</span>
+          </div>
+        </Card>
+
+        <Card className="homePanel homePanel--teaching">
+          <div className="microLabel">Current teaching</div>
+          <div className="panelHeadingRow">
+            <h2>Courses</h2>
+            <Link className="arrowLink" to="/teaching">
+              All courses →
+            </Link>
+          </div>
+
+          <div className="courseCompactList">
+            {featuredCourses.slice(0, 6).map((course) => (
+              <button
+                type="button"
+                className="courseCompact"
+                key={course.slug}
+                onClick={() => navigate(`/teaching/${course.slug}`)}
+              >
+                <span>
+                  <strong>{course.title}</strong>
+                  <small>{course.titleEn}</small>
+                </span>
+                <span className="courseCompact__meta">
+                  {course.code || ""}
+                  {course.credits ? ` · ${course.credits} SKS` : ""}
+                </span>
+              </button>
+            ))}
           </div>
         </Card>
       </div>
 
-      <Section title="Skills">
-        <div className="grid">
-          <Card>
-            <h3>Skills</h3>
-
-            {cvData.sidebarSkills.map((g) => (
-              <div key={g.title} style={{ marginTop: 10 }}>
-                <div style={{ fontWeight: 700 }}>{g.title}</div>
-                <div style={{ marginTop: 4 }}>
-                  {g.items.join(", ")}
-                </div>
-              </div>
-            ))}
-          </Card>
-          <Card>
-            <h3>Languages</h3>
-            <ul className="list">{skills.languages.map((s) => <li key={s}>{s}</li>)}</ul>
-          </Card>
-          <Card>
-            <h3>Soft Skills</h3>
-            <ul className="list">{skills.soft.map((s) => <li key={s}>{s}</li>)}</ul>
-          </Card>
-        </div>
-      </Section>
-
-      <Section title="Teaching (click a course for details)" right={<Link className="link" to="/teaching">All courses</Link>}>
-        <div className="grid">
-          {featuredCourses.slice(0, 6).map((course) => (
-            <Card
-              key={course.slug}
-              className="card--click"
-              role="link"
-              tabIndex={0}
-              onClick={() => navigate(`/teaching/${course.slug}`)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter") navigate(`/teaching/${course.slug}`);
-              }}
+      <Section
+        title="Selected Publications"
+        right={<Link className="arrowLink" to="/publications">All publications →</Link>}
+      >
+        <div className="publicationGrid">
+          {pubsSorted.slice(0, 6).map((publication) => (
+            <a
+              className="publicationCard"
+              href={publication.url}
+              target="_blank"
+              rel="noreferrer"
+              key={publication.url}
             >
-              <h3>
-                <Link className="link" to={`/teaching/${course.slug}`}>{course.title}</Link>
-              </h3>
-              <div className="small">{course.titleEn}</div>
-              <div className="small" style={{ marginTop: 4 }}>
-                {course.code ? `${course.code} • ` : ""}
-                {course.credits ? `${course.credits} SKS • ` : ""}
-                {course.institution}
-              </div>
-              {course.summary ? <p className="muted">{course.summary}</p> : null}
-            </Card>
+              <div className="publicationCard__year">{publication.year}</div>
+              <h3>{publication.title}</h3>
+              <p>{publication.venue}</p>
+              <span className="arrowLink">Open publication →</span>
+            </a>
           ))}
         </div>
       </Section>
 
-      <Section title="Publications (scroll inside)">
-        <div className="scroller">
-          <div className="stack">
-            {pubsSorted.map((p) => (
-              <div key={p.url}>
-                <div className="small">{p.year}</div>
-                <div><strong>{p.title}</strong></div>
-                <div className="muted">{p.authors}</div>
-                <div className="muted">{p.venue}</div>
-                <a className="link" href={p.url} target="_blank" rel="noreferrer">Link</a>
-                <hr style={{ border: "none", borderTop: "1px solid var(--border)", margin: "14px 0" }} />
+      <Section
+        title="Selected Grants & Funding"
+        right={<Link className="arrowLink" to="/grants">All grants →</Link>}
+      >
+        <div className="grantGrid">
+          {grantsSorted.slice(0, 4).map((grant) => (
+            <Card className="grantCard" key={`${grant.title}-${grant.year}`}>
+              <div className="grantCard__meta">
+                <span>{grant.year}</span>
+                <span>{grant.amount}</span>
               </div>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      <Section title="Grants & Funding (selected)">
-        <div className="stack">
-          {grantsSorted.slice(0, 5).map((g) => (
-            <Card key={`${g.title}-${g.year}`}>
-              <div className="small">{g.year} • {g.amount}</div>
-              <h3>{g.title}</h3>
-              <div className="muted">Role: {g.role}</div>
-              <div className="muted">Source: {g.source}</div>
-              {g.partner ? <div className="muted">Partner: {g.partner}</div> : null}
+              <h3>{grant.title}</h3>
+              <p>{grant.role} · {grant.source}</p>
+              {grant.partner ? <div className="small">Partner: {grant.partner}</div> : null}
             </Card>
           ))}
-          <div>
-            <Link className="link" to="/grants">View all grants →</Link>
-          </div>
         </div>
       </Section>
     </Container>
