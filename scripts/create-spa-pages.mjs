@@ -20,7 +20,12 @@ const routes = new Set([
   "/publications",
   "/grants",
   "/research-products",
-  "/research-products/sinta-matematika-itera"
+  "/research-products/sinta-matematika-itera",
+  "/research-products/sinta-matematika-itera/publikasi",
+  "/research-products/sinta-matematika-itera/penelitian",
+  "/research-products/sinta-matematika-itera/pengabdian",
+  "/research-products/sinta-matematika-itera/luaran",
+  "/research-products/sinta-matematika-itera/dosen"
 ]);
 
 for (const course of courses) {

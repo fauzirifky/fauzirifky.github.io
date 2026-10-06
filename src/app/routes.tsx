@@ -13,13 +13,14 @@ import { courses, courseAliases } from "../data/courses";
 
 export const Routes = (
   <RouterRoutes>
+    <Route path="/research-products/sinta-matematika-itera/*" element={<SintaResearchDashboard />} />
+
     <Route element={<PublicLayout />}>
       <Route path="/" element={<Home />} />
     </Route>
 
     <Route element={<Layout />}>
       <Route path="/research-products" element={<ResearchProducts />} />
-      <Route path="/research-products/sinta-matematika-itera" element={<SintaResearchDashboard />} />
       <Route path="/teaching" element={<Teaching />} />
 
       {courses.map((course) => (

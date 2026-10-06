@@ -36,6 +36,17 @@ export type SintaRecord = {
   scheme?: string | null;
   funding_idr?: number | string | null;
   funding_source_type?: string | null;
+  personnel?: Array<{ name?: string | null; url?: string | null }> | null;
+  status?: string | null;
+  inventors?: string | null;
+  holder?: string | null;
+  application_number?: string | null;
+  ipr_type?: string | null;
+  category?: string | null;
+  authors?: string | null;
+  publisher?: string | null;
+  isbn?: string | null;
+  citations?: number | string | null;
 };
 
 type SintaCollection = { records?: SintaRecord[] };
@@ -147,12 +158,12 @@ function recordsFor(lecturer: LoadedLecturer, kind: CollectionKey) {
   return lecturer.profile.collections[kind]?.records ?? [];
 }
 
-function yearOf(record: SintaRecord) {
+export function yearOf(record: SintaRecord) {
   const parsed = Number(record.year);
   return Number.isInteger(parsed) && parsed >= 1900 && parsed <= 2200 ? parsed : null;
 }
 
-function moneyOf(record: SintaRecord) {
+export function moneyOf(record: SintaRecord) {
   const parsed = Number(record.funding_idr);
   return Number.isFinite(parsed) && parsed > 0 ? parsed : 0;
 }
@@ -172,11 +183,11 @@ function uniqueKey(item: OwnedRecord) {
   return `${kind}:title:${yearOf(record) ?? "na"}:${normalize(record.title)}`;
 }
 
-function isFirstAuthor(record: SintaRecord) {
+export function isFirstAuthor(record: SintaRecord) {
   return /^\s*1\s+of\s+\d+/i.test(record.author_order ?? "");
 }
 
-function isSinta12(record: SintaRecord) {
+export function isSinta12(record: SintaRecord) {
   return /\bsinta\s*[12]\b/i.test(record.classification ?? "");
 }
 
@@ -188,6 +199,25 @@ function unique(items: OwnedRecord[]) {
     seen.add(key);
     return true;
   });
+}
+
+export function getDashboardRecords(
+  lecturers: LoadedLecturer[],
+  excludedIds: Set<string>,
+  kind: CollectionKey,
+) {
+  const nonUnique = lecturers
+    .filter((lecturer) => !excludedIds.has(lecturer.index.sinta_id))
+    .flatMap((lecturer) =>
+      recordsFor(lecturer, kind).map((record): OwnedRecord => ({
+        kind,
+        ownerId: lecturer.index.sinta_id,
+        ownerName: lecturer.profile.profile.name || lecturer.index.name,
+        record,
+      })),
+    );
+
+  return { nonUnique, unique: unique(nonUnique) };
 }
 
 function blankYear(year: number): YearSummary {

@@ -73,12 +73,8 @@ export default function PathRouter() {
     );
   }
 
-  if (path === "/research-products/sinta-matematika-itera") {
-    return (
-      <Layout>
-        <SintaResearchDashboard />
-      </Layout>
-    );
+  if (path === "/research-products/sinta-matematika-itera" || path.startsWith("/research-products/sinta-matematika-itera/")) {
+    return <SintaResearchDashboard />;
   }
 
   if (path === "/research-products") {
