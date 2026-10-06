@@ -10,6 +10,15 @@ export type CollectionKey =
   | "iprs"
   | "books";
 
+export type SintaLevel = "1" | "2" | "3" | "4" | "5" | "6" | "unaccredited";
+
+export type DashboardFilters = {
+  excludedLecturerIds: Set<string>;
+  sintaLevels: Set<SintaLevel>;
+  yearCount: number;
+  referenceYear?: number;
+};
+
 export type SintaIndexAuthor = {
   name: string;
   sinta_id: string;
@@ -80,8 +89,8 @@ export type YearSummary = {
   scopusNonUnique: number;
   scopusFirstUnique: number;
   scopusFirstNonUnique: number;
-  sinta12Unique: number;
-  sinta12NonUnique: number;
+  sintaAccreditedUnique: number;
+  sintaAccreditedNonUnique: number;
   researchUnique: number;
   researchNonUnique: number;
   researchFundingUnique: number;
@@ -101,7 +110,7 @@ export type LecturerSummary = {
   name: string;
   sintaScore: number;
   scopus: number;
-  sinta12: number;
+  sintaAccredited: number;
   researches: number;
   researchFunding: number;
   pkm: number;
@@ -187,8 +196,9 @@ export function isFirstAuthor(record: SintaRecord) {
   return /^\s*1\s+of\s+\d+/i.test(record.author_order ?? "");
 }
 
-export function isSinta12(record: SintaRecord) {
-  return /\bsinta\s*[12]\b/i.test(record.classification ?? "");
+export function sintaLevelOf(record: SintaRecord): SintaLevel {
+  const match = (record.classification ?? "").match(/\bsinta\s*([1-6])\b/i);
+  return match ? (match[1] as SintaLevel) : "unaccredited";
 }
 
 function unique(items: OwnedRecord[]) {
@@ -203,18 +213,28 @@ function unique(items: OwnedRecord[]) {
 
 export function getDashboardRecords(
   lecturers: LoadedLecturer[],
-  excludedIds: Set<string>,
+  filters: DashboardFilters,
   kind: CollectionKey,
 ) {
+  const referenceYear = filters.referenceYear ?? new Date().getFullYear();
+  const yearCount = Math.max(1, Math.min(20, Math.round(filters.yearCount) || 1));
+  const firstYear = referenceYear - yearCount + 1;
   const nonUnique = lecturers
-    .filter((lecturer) => !excludedIds.has(lecturer.index.sinta_id))
+    .filter((lecturer) => !filters.excludedLecturerIds.has(lecturer.index.sinta_id))
     .flatMap((lecturer) =>
-      recordsFor(lecturer, kind).map((record): OwnedRecord => ({
-        kind,
-        ownerId: lecturer.index.sinta_id,
-        ownerName: lecturer.profile.profile.name || lecturer.index.name,
-        record,
-      })),
+      recordsFor(lecturer, kind)
+        .filter((record) => {
+          const year = yearOf(record);
+          const insideWindow = year !== null && year >= firstYear && year <= referenceYear;
+          const selectedAccreditation = kind !== "garuda" || filters.sintaLevels.has(sintaLevelOf(record));
+          return insideWindow && selectedAccreditation;
+        })
+        .map((record): OwnedRecord => ({
+          kind,
+          ownerId: lecturer.index.sinta_id,
+          ownerName: lecturer.profile.profile.name || lecturer.index.name,
+          record,
+        })),
     );
 
   return { nonUnique, unique: unique(nonUnique) };
@@ -227,8 +247,8 @@ function blankYear(year: number): YearSummary {
     scopusNonUnique: 0,
     scopusFirstUnique: 0,
     scopusFirstNonUnique: 0,
-    sinta12Unique: 0,
-    sinta12NonUnique: 0,
+    sintaAccreditedUnique: 0,
+    sintaAccreditedNonUnique: 0,
     researchUnique: 0,
     researchNonUnique: 0,
     researchFundingUnique: 0,
@@ -250,7 +270,7 @@ function summarizeYear(year: number, all: OwnedRecord[]) {
 
   const scopus = byKind("scopus");
   const first = scopus.filter((item) => isFirstAuthor(item.record));
-  const sinta12 = byKind("garuda").filter((item) => isSinta12(item.record));
+  const sintaAccredited = byKind("garuda");
   const research = byKind("researches");
   const pkm = byKind("community_services");
   const iprs = byKind("iprs");
@@ -260,8 +280,8 @@ function summarizeYear(year: number, all: OwnedRecord[]) {
   row.scopusUnique = unique(scopus).length;
   row.scopusFirstNonUnique = first.length;
   row.scopusFirstUnique = unique(first).length;
-  row.sinta12NonUnique = sinta12.length;
-  row.sinta12Unique = unique(sinta12).length;
+  row.sintaAccreditedNonUnique = sintaAccredited.length;
+  row.sintaAccreditedUnique = unique(sintaAccredited).length;
   row.researchNonUnique = research.length;
   row.researchUnique = unique(research).length;
   row.researchFundingNonUnique = research.reduce((sum, item) => sum + moneyOf(item.record), 0);
@@ -277,21 +297,11 @@ function summarizeYear(year: number, all: OwnedRecord[]) {
   return row;
 }
 
-export function buildDashboardSummary(lecturers: LoadedLecturer[], excludedIds: Set<string>): DashboardSummary {
-  const included = lecturers.filter((lecturer) => !excludedIds.has(lecturer.index.sinta_id));
-  const all: OwnedRecord[] = included.flatMap((lecturer) =>
-    collectionKeys.flatMap((kind) =>
-      recordsFor(lecturer, kind).map((record) => ({
-        kind,
-        ownerId: lecturer.index.sinta_id,
-        ownerName: lecturer.profile.profile.name || lecturer.index.name,
-        record,
-      })),
-    ),
-  );
-
-  const years = [...new Set(all.map((item) => yearOf(item.record)).filter((year): year is number => year !== null))]
-    .sort((a, b) => b - a)
+export function buildDashboardSummary(lecturers: LoadedLecturer[], filters: DashboardFilters): DashboardSummary {
+  const all = collectionKeys.flatMap((kind) => getDashboardRecords(lecturers, filters, kind).nonUnique);
+  const referenceYear = filters.referenceYear ?? new Date().getFullYear();
+  const yearCount = Math.max(1, Math.min(20, Math.round(filters.yearCount) || 1));
+  const years = Array.from({ length: yearCount }, (_, offset) => referenceYear - offset)
     .map((year) => summarizeYear(year, all));
 
   const totals = years.reduce((total, row) => {
@@ -303,18 +313,20 @@ export function buildDashboardSummary(lecturers: LoadedLecturer[], excludedIds: 
 
   const lecturerRows = lecturers
     .map((lecturer): LecturerSummary => {
-      const scopus = recordsFor(lecturer, "scopus");
-      const garuda = recordsFor(lecturer, "garuda");
-      const researches = recordsFor(lecturer, "researches");
-      const pkm = recordsFor(lecturer, "community_services");
-      const iprs = recordsFor(lecturer, "iprs");
-      const books = recordsFor(lecturer, "books");
+      const lecturerFilters = { ...filters, excludedLecturerIds: new Set<string>() };
+      const singleLecturer = [lecturer];
+      const scopus = getDashboardRecords(singleLecturer, lecturerFilters, "scopus").nonUnique.map((item) => item.record);
+      const garuda = getDashboardRecords(singleLecturer, lecturerFilters, "garuda").nonUnique.map((item) => item.record);
+      const researches = getDashboardRecords(singleLecturer, lecturerFilters, "researches").nonUnique.map((item) => item.record);
+      const pkm = getDashboardRecords(singleLecturer, lecturerFilters, "community_services").nonUnique.map((item) => item.record);
+      const iprs = getDashboardRecords(singleLecturer, lecturerFilters, "iprs").nonUnique.map((item) => item.record);
+      const books = getDashboardRecords(singleLecturer, lecturerFilters, "books").nonUnique.map((item) => item.record);
       return {
         id: lecturer.index.sinta_id,
         name: lecturer.profile.profile.name || lecturer.index.name,
         sintaScore: Number(lecturer.profile.profile.sinta_score_overall) || 0,
         scopus: scopus.length,
-        sinta12: garuda.filter(isSinta12).length,
+        sintaAccredited: garuda.length,
         researches: researches.length,
         researchFunding: researches.reduce((sum, record) => sum + moneyOf(record), 0),
         pkm: pkm.length,

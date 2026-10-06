@@ -351,6 +351,18 @@ img{max-width:100%}
 .portalPanel__heading p{margin:5px 0 0;color:var(--muted);font-size:10px}
 .portalPanel__heading--actions{align-items:center}
 .panelCount{padding:5px 9px;border-radius:var(--pill);background:var(--canvas-soft);color:var(--muted);font-size:9px;white-space:nowrap}
+.settingsGrid{display:grid;grid-template-columns:minmax(230px,.65fr) minmax(0,1.35fr);gap:14px}
+.settingsField{min-width:0;margin:0;padding:16px;border:1px solid var(--hairline);border-radius:10px;background:var(--canvas-soft)}
+.settingsField > label,.settingsField legend{display:block;margin:0 0 10px;padding:0;color:var(--ink);font-size:11px;font-weight:500}
+.settingsField small{display:block;margin-top:10px;color:var(--muted);font-size:8px;line-height:1.45}
+.yearInputRow{display:flex;align-items:center;gap:9px}
+.yearInputRow input{width:78px;padding:9px 10px;border:1px solid var(--hairline);border-radius:8px;background:white;color:var(--ink);font-feature-settings:"tnum";outline:none}
+.yearInputRow input:focus{border-color:rgba(83,58,253,.5);box-shadow:0 0 0 3px rgba(83,58,253,.08)}
+.yearInputRow span{color:var(--muted);font-size:10px}
+.sintaOptions{display:flex;flex-wrap:wrap;gap:7px}
+.settingCheck{display:flex;align-items:center;gap:7px;padding:7px 9px;border:1px solid var(--hairline);border-radius:8px;background:white;color:var(--ink-secondary);font-size:9px;cursor:pointer}
+.settingCheck:has(input:checked){border-color:rgba(83,58,253,.28);background:rgba(83,58,253,.06);color:var(--primary-deep)}
+.settingCheck input{width:14px;height:14px;margin:0;accent-color:var(--primary)}
 .recordTable th:nth-child(2){min-width:360px;max-width:580px;white-space:normal;line-height:1.4}
 .recordTable tbody th a{color:var(--ink);text-decoration:none}
 .recordTable tbody th a:hover{color:var(--primary-deep)}
@@ -498,6 +510,7 @@ img{max-width:100%}
   .portalMetricGrid,.portalMetricGrid--three,.portalMetricGrid--two{grid-template-columns:repeat(2,minmax(0,1fr))}
   .portalPanel{padding:17px}
   .portalPanel__heading--actions{align-items:stretch;flex-direction:column}
+  .settingsGrid{grid-template-columns:1fr}
   .portalFooter{padding:18px 15px}
 }
 @media (prefers-reduced-motion:reduce){
