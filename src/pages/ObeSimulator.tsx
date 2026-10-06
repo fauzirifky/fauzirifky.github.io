@@ -1,16 +1,19 @@
 import { useEffect, useMemo, useRef, useState, type ChangeEvent, type ReactNode } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import defaultConfigJson from "../data/obe/magister-fisika-itera.json";
+import matematikaConfigJson from "../data/obe/matematika-itera-2025-2029.json";
 import {
   activeEnrollments,
   courseMap,
   cpmksForStudent,
+  cpmkWeightFor,
   downloadJson,
   generateCohort,
   generateStudent,
   getCourse,
   getTrack,
   parseObeConfig,
+  programMaxCreditsPerSemester,
   semesterCredits,
   studentTotalCredits,
   studentWeightCoverage,
@@ -23,10 +26,12 @@ import {
 import "../styles/obe-simulator.css";
 
 const BASE_PATH = "/research-products/obe-simulator";
+const MATEMATIKA_PATH = `${BASE_PATH}/matematika`;
 const STORAGE_KEY = "obe-simulator-program-v1";
 
 type PageKey = "simulator" | "program" | "settings";
 type ViewMode = "student" | "all" | `track:${string}`;
+type PresetKey = "matematika" | null;
 
 type GraphEdge = {
   mapping: CpmkMapping;
@@ -38,27 +43,38 @@ function cleanPath(pathname: string) {
   return pathname.replace(/\/index\.html$/i, "").replace(/\/+$/, "") || "/";
 }
 
-function pageFromPath(pathname: string): PageKey {
+function routeContext(pathname: string) {
   const path = cleanPath(pathname);
-  const suffix = path.slice(BASE_PATH.length).replace(/^\/+/, "");
-  if (suffix === "program") return "program";
-  if (suffix === "settings") return "settings";
-  return "simulator";
+  const preset: PresetKey = path === MATEMATIKA_PATH || path.startsWith(`${MATEMATIKA_PATH}/`)
+    ? "matematika"
+    : null;
+  const routeBase = preset === "matematika" ? MATEMATIKA_PATH : BASE_PATH;
+  const suffix = path.slice(routeBase.length).replace(/^\/+/, "");
+  const page: PageKey = suffix === "program" ? "program" : suffix === "settings" ? "settings" : "simulator";
+  return { page, preset, routeBase };
 }
 
-function pageHref(page: PageKey) {
-  if (page === "simulator") return BASE_PATH;
-  return `${BASE_PATH}/${page}`;
+function pageHref(page: PageKey, routeBase: string) {
+  if (page === "simulator") return routeBase;
+  return `${routeBase}/${page}`;
 }
 
-function readInitialConfig(): ObeProgramConfig {
+function storageKeyFor(preset: PresetKey) {
+  return preset ? `${STORAGE_KEY}:${preset}` : STORAGE_KEY;
+}
+
+function bundledConfig(preset: PresetKey): ObeProgramConfig {
+  return (preset === "matematika" ? matematikaConfigJson : defaultConfigJson) as ObeProgramConfig;
+}
+
+function readInitialConfig(preset: PresetKey): ObeProgramConfig {
   try {
-    const stored = window.localStorage.getItem(STORAGE_KEY);
+    const stored = window.localStorage.getItem(storageKeyFor(preset));
     if (stored) return parseObeConfig(stored);
   } catch {
     // Use bundled configuration.
   }
-  return defaultConfigJson as ObeProgramConfig;
+  return bundledConfig(preset);
 }
 
 function initialCounts(config: ObeProgramConfig) {
@@ -81,7 +97,7 @@ function formatNumber(value: number, digits = 0) {
   return new Intl.NumberFormat("id-ID", { maximumFractionDigits: digits }).format(value);
 }
 
-function SimulatorShell({ config, page, children }: { config: ObeProgramConfig; page: PageKey; children: ReactNode }) {
+function SimulatorShell({ config, page, routeBase, children }: { config: ObeProgramConfig; page: PageKey; routeBase: string; children: ReactNode }) {
   const navigation: Array<{ key: PageKey; label: string; short: string }> = [
     { key: "simulator", label: "Simulator", short: "SIM" },
     { key: "program", label: "Struktur Program", short: "STR" },
@@ -91,7 +107,7 @@ function SimulatorShell({ config, page, children }: { config: ObeProgramConfig; 
   return (
     <div className="obePortal">
       <aside className="obeSidebar">
-        <Link className="obeBrand" to={BASE_PATH}>
+        <Link className="obeBrand" to={routeBase}>
           <span className="obeBrand__mark">OBE</span>
           <span>
             <strong>OBE Simulator</strong>
@@ -101,7 +117,7 @@ function SimulatorShell({ config, page, children }: { config: ObeProgramConfig; 
 
         <nav className="obeNav" aria-label="OBE Simulator">
           {navigation.map((item) => (
-            <NavLink key={item.key} className={`obeNav__item ${page === item.key ? "isActive" : ""}`} to={pageHref(item.key)}>
+            <NavLink key={item.key} className={`obeNav__item ${page === item.key ? "isActive" : ""}`} to={pageHref(item.key, routeBase)}>
               <span className="obeNav__icon">{item.short}</span>
               <span>{item.label}</span>
             </NavLink>
@@ -131,7 +147,7 @@ function SimulatorShell({ config, page, children }: { config: ObeProgramConfig; 
 
         <nav className="obeMobileNav">
           {navigation.map((item) => (
-            <NavLink key={item.key} className={page === item.key ? "active" : ""} to={pageHref(item.key)}>{item.label}</NavLink>
+            <NavLink key={item.key} className={page === item.key ? "active" : ""} to={pageHref(item.key, routeBase)}>{item.label}</NavLink>
           ))}
         </nav>
 
@@ -184,6 +200,7 @@ function SemesterPackages({
 }) {
   const track = getTrack(config, student.trackId);
   const courses = courseMap(config);
+  const maxCredits = programMaxCreditsPerSemester(config);
   const semesters = Array.from({ length: config.program.semesterCount }, (_, index) => index + 1);
 
   return (
@@ -204,6 +221,8 @@ function SemesterPackages({
           const items = student.enrollments.filter((item) => item.semester === semester);
           const actual = semesterCredits(config, student, semester);
           const expected = Number(track?.expectedCreditsBySemester?.[String(semester)] ?? 0);
+          const overMax = maxCredits != null && actual > maxCredits;
+          const onTarget = !expected || actual === expected;
           return (
             <article className="obeSemesterCard" key={semester}>
               <header>
@@ -211,7 +230,11 @@ function SemesterPackages({
                   <span>Semester {semester}</span>
                   <strong>{actual} {config.program.creditUnit ?? "SKS"}</strong>
                 </div>
-                {expected ? <small className={actual === expected ? "isOkText" : "isWarnText"}>target {expected}</small> : null}
+                {(expected || maxCredits) ? (
+                  <small className={!overMax && onTarget ? "isOkText" : "isWarnText"}>
+                    {expected ? `target ${expected}` : ""}{maxCredits ? `${expected ? " · " : ""}maks ${maxCredits}` : ""}
+                  </small>
+                ) : null}
               </header>
               <div className="obeSemesterCourses">
                 {items.length ? items.map((item) => {
@@ -251,7 +274,7 @@ function GraphView({
   const svgRef = useRef<SVGSVGElement | null>(null);
   const courses = useMemo(() => courseMap(config), [config]);
 
-  const edges = useMemo(() => {
+  const relations = useMemo(() => {
     const grouped = new Map<string, { mapping: CpmkMapping; students: Set<string> }>();
     for (const student of students) {
       for (const mapping of cpmksForStudent(config, student)) {
@@ -269,11 +292,42 @@ function GraphView({
     }));
   }, [categoryFilters, config, courses, students]);
 
-  const outcomes = config.outcomes.filter((outcome) => edges.some((edge) => edge.mapping.outcomeId === outcome.id));
-  const courseIds = [...new Set(edges.map((edge) => edge.mapping.courseId))];
-  const mappingsByOutcome = new Map<string, GraphEdge[]>();
+  const graphTrackIds = [...new Set(students.map((student) => student.trackId))];
+  const cpmkNodes = useMemo(() => {
+    const grouped = new Map<string, {
+      key: string;
+      code: string;
+      outcomeId: string;
+      relations: GraphEdge[];
+      students: Set<string>;
+      weight?: number;
+    }>();
+
+    for (const relation of relations) {
+      const key = `${relation.mapping.outcomeId}::${relation.mapping.code}`;
+      if (!grouped.has(key)) {
+        grouped.set(key, {
+          key,
+          code: relation.mapping.code,
+          outcomeId: relation.mapping.outcomeId,
+          relations: [],
+          students: new Set(),
+          weight: cpmkWeightFor(config, relation.mapping.outcomeId, relation.mapping.code, graphTrackIds),
+        });
+      }
+      const node = grouped.get(key)!;
+      node.relations.push(relation);
+      for (const studentId of relation.studentIds) node.students.add(studentId);
+    }
+
+    return [...grouped.values()].map((node) => ({ ...node, count: node.students.size }));
+  }, [config, graphTrackIds.join("|"), relations]);
+
+  const outcomes = config.outcomes.filter((outcome) => cpmkNodes.some((node) => node.outcomeId === outcome.id));
+  const courseIds = [...new Set(relations.map((edge) => edge.mapping.courseId))];
+  const nodesByOutcome = new Map<string, typeof cpmkNodes>();
   for (const outcome of outcomes) {
-    mappingsByOutcome.set(outcome.id, edges.filter((edge) => edge.mapping.outcomeId === outcome.id));
+    nodesByOutcome.set(outcome.id, cpmkNodes.filter((node) => node.outcomeId === outcome.id));
   }
 
   const positions = useMemo(() => {
@@ -281,10 +335,10 @@ function GraphView({
     const cpmk = new Map<string, number>();
     let y = 62;
     for (const outcome of outcomes) {
-      const list = mappingsByOutcome.get(outcome.id) ?? [];
-      const h = Math.max(48, list.length * 31 + 22);
+      const list = nodesByOutcome.get(outcome.id) ?? [];
+      const h = Math.max(52, list.length * 34 + 24);
       cpl.set(outcome.id, y + h / 2);
-      list.forEach((edge, index) => cpmk.set(edge.mapping.id, y + 24 + index * 31));
+      list.forEach((node, index) => cpmk.set(node.key, y + 26 + index * 34));
       y += h + 20;
     }
     const height = Math.max(840, y + 80, 150 + courseIds.length * 38);
@@ -293,7 +347,7 @@ function GraphView({
       course.set(courseId, 68 + index * ((height - 130) / Math.max(courseIds.length - 1, 1)));
     });
     return { cpl, cpmk, course, height };
-  }, [courseIds, mappingsByOutcome, outcomes]);
+  }, [courseIds, cpmkNodes, outcomes]);
 
   const maxN = Math.max(1, students.length);
   const color = (index: number) => `hsl(${(index * 43 + 224) % 360} 72% 48%)`;
@@ -308,13 +362,21 @@ function GraphView({
     box.scrollTo({ top: Math.max(0, y - 120), behavior: "smooth" });
   }
 
+  const lineStyle = (count: number) => ({
+    width: students.length > 1 ? 1.2 + 6 * (count / maxN) : 1.5,
+    opacity: students.length > 1 ? 0.14 + 0.75 * (count / maxN) : 0.35,
+  });
+
   return (
     <section className="obePanel">
       <div className="obeGraphToolbar">
         <div>
           <span className="obeEyebrow">Pemetaan OBE</span>
           <h2>CPL → CPMK → Mata Kuliah</h2>
-          <p>{students.length > 1 ? "Ketebalan garis menunjukkan jumlah mahasiswa yang memakai relasi." : "Pemetaan untuk mahasiswa aktif."}</p>
+          <p>
+            Angka persen pada CPMK adalah bobot CPMK ke CPL dari JSON.
+            {students.length > 1 ? " Ketebalan garis menunjukkan jumlah mahasiswa yang memakai relasi." : " Pemetaan untuk mahasiswa aktif."}
+          </p>
         </div>
         <label className="obeSelectLabel">Lompat ke
           <select onChange={(event) => jumpToOutcome(event.target.value)} defaultValue="">
@@ -326,40 +388,62 @@ function GraphView({
 
       <div className="obeGraphLegend">
         {outcomes.map((outcome) => <span key={outcome.id}><i style={{ background: outcomeColors.get(outcome.id) }} />{outcome.code}</span>)}
+        {(config.cpmkWeights ?? []).length ? <span className="obeGraphLegend__note">bobot CPMK aktif</span> : null}
       </div>
 
       <div className="obeGraphScroll" ref={scrollRef}>
-        <svg ref={svgRef} className="obeGraph" viewBox={`0 0 1160 ${positions.height}`} style={{ height: positions.height }}>
+        <svg ref={svgRef} className="obeGraph" viewBox={`0 0 1180 ${positions.height}`} style={{ height: positions.height }}>
           <text className="obeSvgTitle" x="38" y="26">CPL</text>
-          <text className="obeSvgTitle" x="305" y="26">CPMK</text>
-          <text className="obeSvgTitle" x="790" y="26">Mata Kuliah</text>
+          <text className="obeSvgTitle" x="305" y="26">CPMK · Bobot</text>
+          <text className="obeSvgTitle" x="810" y="26">Mata Kuliah</text>
 
           {outcomes.map((outcome) => {
-            const list = mappingsByOutcome.get(outcome.id) ?? [];
+            const list = nodesByOutcome.get(outcome.id) ?? [];
             if (!list.length) return null;
-            const ys = list.map((edge) => positions.cpmk.get(edge.mapping.id) ?? 0);
-            const top = Math.min(...ys) - 22;
-            const bottom = Math.max(...ys) + 22;
-            return <rect key={`group-${outcome.id}`} className="obeGraphGroup" x="285" y={top} width="190" height={bottom - top} rx="10" />;
+            const ys = list.map((node) => positions.cpmk.get(node.key) ?? 0);
+            const top = Math.min(...ys) - 23;
+            const bottom = Math.max(...ys) + 23;
+            return <rect key={`group-${outcome.id}`} className="obeGraphGroup" x="285" y={top} width="215" height={bottom - top} rx="10" />;
           })}
 
-          {edges.map((edge) => {
-            const y1 = positions.cpl.get(edge.mapping.outcomeId);
-            const y2 = positions.cpmk.get(edge.mapping.id);
-            const y3 = positions.course.get(edge.mapping.courseId);
-            if (y1 == null || y2 == null || y3 == null) return null;
-            const stroke = outcomeColors.get(edge.mapping.outcomeId) ?? "#533afd";
-            const width = students.length > 1 ? 1.2 + 6 * (edge.count / maxN) : 1.5;
-            const opacity = students.length > 1 ? 0.14 + 0.75 * (edge.count / maxN) : 0.35;
+          {cpmkNodes.map((node) => {
+            const y1 = positions.cpl.get(node.outcomeId);
+            const y2 = positions.cpmk.get(node.key);
+            if (y1 == null || y2 == null) return null;
+            const stroke = outcomeColors.get(node.outcomeId) ?? "#533afd";
+            const style = lineStyle(node.count);
             return (
-              <g key={`edge-${edge.mapping.id}`}>
-                <path className="obeGraphEdge" d={`M 148 ${y1} C 220 ${y1}, 238 ${y2}, 305 ${y2}`} stroke={stroke} strokeWidth={width} opacity={opacity}>
-                  <title>{edge.count} dari {maxN} mahasiswa</title>
-                </path>
-                <path className="obeGraphEdge" d={`M 455 ${y2} C 570 ${y2}, 660 ${y3}, 790 ${y3}`} stroke={stroke} strokeWidth={width} opacity={opacity}>
-                  <title>{edge.count} dari {maxN} mahasiswa</title>
-                </path>
-              </g>
+              <path
+                key={`cpl-cpmk-${node.key}`}
+                className="obeGraphEdge"
+                d={`M 148 ${y1} C 220 ${y1}, 238 ${y2}, 305 ${y2}`}
+                stroke={stroke}
+                strokeWidth={style.width}
+                opacity={style.opacity}
+              >
+                <title>{node.code}: {node.weight == null ? "bobot belum diisi" : `${formatNumber(node.weight, 2)}%`} · {node.count} dari {maxN} mahasiswa</title>
+              </path>
+            );
+          })}
+
+          {relations.map((edge) => {
+            const key = `${edge.mapping.outcomeId}::${edge.mapping.code}`;
+            const y2 = positions.cpmk.get(key);
+            const y3 = positions.course.get(edge.mapping.courseId);
+            if (y2 == null || y3 == null) return null;
+            const stroke = outcomeColors.get(edge.mapping.outcomeId) ?? "#533afd";
+            const style = lineStyle(edge.count);
+            return (
+              <path
+                key={`cpmk-course-${edge.mapping.id}`}
+                className="obeGraphEdge"
+                d={`M 500 ${y2} C 610 ${y2}, 690 ${y3}, 810 ${y3}`}
+                stroke={stroke}
+                strokeWidth={style.width}
+                opacity={style.opacity}
+              >
+                <title>{edge.mapping.code} → {courses.get(edge.mapping.courseId)?.name ?? edge.mapping.courseId} · {edge.count} dari {maxN} mahasiswa</title>
+              </path>
             );
           })}
 
@@ -374,14 +458,19 @@ function GraphView({
             );
           })}
 
-          {edges.map((edge) => {
-            const y = positions.cpmk.get(edge.mapping.id);
+          {cpmkNodes.map((node) => {
+            const y = positions.cpmk.get(node.key);
             if (y == null) return null;
+            const meta = [
+              node.weight == null ? "–" : `${formatNumber(node.weight, 2)}%`,
+              students.length > 1 ? `${node.count}/${maxN}` : "",
+            ].filter(Boolean).join(" · ");
             return (
-              <g className="obeGraphNode" key={`cpmk-${edge.mapping.id}`}>
-                <rect x="305" y={y - 13} width="150" height="26" rx="8" />
-                <text x="316" y={y + 4}>{edge.mapping.code}</text>
-                {students.length > 1 ? <text className="obeSvgCount" x="446" y={y + 4} textAnchor="end">{edge.count}/{maxN}</text> : null}
+              <g className="obeGraphNode" key={`cpmk-${node.key}`}>
+                <rect x="305" y={y - 14} width="195" height="28" rx="8" />
+                <text x="316" y={y + 4}>{node.code}</text>
+                <text className="obeSvgCount obeSvgWeight" x="490" y={y + 4} textAnchor="end">{meta}</text>
+                <title>{node.code} · {node.weight == null ? "bobot belum diisi" : `bobot ${formatNumber(node.weight, 2)}% ke ${node.outcomeId}`}</title>
               </g>
             );
           })}
@@ -393,9 +482,9 @@ function GraphView({
             const count = students.filter((student) => activeEnrollments(student).some((item) => item.courseId === courseId)).length;
             return (
               <g className="obeGraphNode" key={`course-${courseId}`}>
-                <rect x="790" y={y - 13} width="320" height="26" rx="8" />
-                <text x="801" y={y + 4}>{course.name.length > 43 ? `${course.name.slice(0, 41)}…` : course.name}</text>
-                <text className="obeSvgCount" x="1100" y={y + 4} textAnchor="end">{students.length > 1 ? `${count}/${maxN}` : categoryLabel(course.category)}</text>
+                <rect x="810" y={y - 13} width="320" height="26" rx="8" />
+                <text x="821" y={y + 4}>{course.name.length > 43 ? `${course.name.slice(0, 41)}…` : course.name}</text>
+                <text className="obeSvgCount" x="1120" y={y + 4} textAnchor="end">{students.length > 1 ? `${count}/${maxN}` : categoryLabel(course.category)}</text>
                 <title>{course.name} · {course.code} · {course.credits} {config.program.creditUnit ?? "SKS"}</title>
               </g>
             );
@@ -509,13 +598,13 @@ function SimulatorPage({ config, students, setStudents, counts, setCounts }: {
         <article><span>Bobot CPL tidak 100%</span><strong className={weightWarnings.length ? "isWarnText" : "isOkText"}>{weightWarnings.length}</strong><small>Tabel bobot aktif</small></article>
       </div>
 
-      {activeStudent && config.weights?.length ? (
+      {activeStudent && ((config.cpmkWeights?.length ?? 0) > 0 || (config.weights?.length ?? 0) > 0) ? (
         <section className="obePanel">
           <div className="obePanel__heading">
             <div>
               <span className="obeEyebrow">Pemeriksaan bobot</span>
               <h2>Akumulasi bobot CPL mahasiswa aktif</h2>
-              <p>Menjumlahkan bobot MK yang benar-benar ditempuh. Angka ini untuk memeriksa konsistensi konfigurasi, bukan formula final nilai CPL.</p>
+              <p>{(config.cpmkWeights ?? []).length ? "Menjumlahkan bobot CPMK unik yang memiliki evidence dari MK aktif." : "Menjumlahkan bobot MK yang benar-benar ditempuh."} Angka ini untuk memeriksa konsistensi konfigurasi, bukan formula final nilai CPL.</p>
             </div>
           </div>
           <div className="obeWeightGrid">
@@ -547,6 +636,7 @@ function ProgramPage({ config }: { config: ObeProgramConfig }) {
         <article><span>Jenjang</span><strong>{config.program.degreeLevel}</strong><small>{config.program.institution}</small></article>
         <article><span>Total beban</span><strong>{config.program.totalCredits}</strong><small>{config.program.creditUnit ?? "SKS"}</small></article>
         <article><span>Semester</span><strong>{config.program.semesterCount}</strong><small>sesuai JSON</small></article>
+        <article><span>Maksimum per semester</span><strong>{programMaxCreditsPerSemester(config) ?? "–"}</strong><small>{config.program.creditUnit ?? "SKS"} · default Sarjana 20</small></article>
         <article><span>Jalur</span><strong>{config.tracks.length}</strong><small>{config.tracks.map((track) => track.shortLabel ?? track.label).join(" · ")}</small></article>
       </div>
 
@@ -658,12 +748,13 @@ function SettingsPage({ config, onApply, onReset }: { config: ObeProgramConfig; 
       <section className="obePanel">
         <div className="obePanel__heading"><div><span className="obeEyebrow">Struktur JSON</span><h2>Field utama</h2></div></div>
         <div className="obeSchemaGrid">
-          <div><code>program</code><span>Nama prodi, jenjang, jumlah semester, total SKS.</span></div>
+          <div><code>program</code><span>Nama prodi, jenjang, jumlah semester, total SKS, dan opsional maxCreditsPerSemester.</span></div>
           <div><code>tracks</code><span>Jalur studi, MK wajib per semester, kelompok wajib pilih, dan aturan pilihan.</span></div>
           <div><code>courses</code><span>Kode, nama, SKS, dan kategori MK.</span></div>
           <div><code>outcomes</code><span>Daftar CPL program studi.</span></div>
           <div><code>cpmks</code><span>Pemetaan CPMK ke MK, CPL, dan jalur.</span></div>
-          <div><code>weights</code><span>Bobot MK ke CPL. Field opsional dan dapat dipakai untuk pemeriksaan konsistensi.</span></div>
+          <div><code>cpmkWeights</code><span>Bobot CPMK unik ke CPL. Ditampilkan langsung pada node CPMK.</span></div>
+          <div><code>weights</code><span>Bobot MK ke CPL versi lama/opsional untuk kompatibilitas konfigurasi sebelumnya.</span></div>
         </div>
       </section>
 
@@ -674,13 +765,24 @@ function SettingsPage({ config, onApply, onReset }: { config: ObeProgramConfig; 
 
 export default function ObeSimulator() {
   const location = useLocation();
-  const page = pageFromPath(location.pathname);
-  const [config, setConfig] = useState<ObeProgramConfig>(() => readInitialConfig());
+  const route = routeContext(location.pathname);
+  const [activePreset, setActivePreset] = useState<PresetKey>(route.preset);
+  const [config, setConfig] = useState<ObeProgramConfig>(() => readInitialConfig(route.preset));
   const [counts, setCounts] = useState<Record<string, number>>(() => initialCounts(config));
   const [students, setStudents] = useState<SimStudent[]>(() => generateCohort(config, initialCounts(config)));
 
+  useEffect(() => {
+    if (route.preset === activePreset) return;
+    const next = readInitialConfig(route.preset);
+    const nextCounts = initialCounts(next);
+    setActivePreset(route.preset);
+    setConfig(next);
+    setCounts(nextCounts);
+    setStudents(generateCohort(next, nextCounts));
+  }, [activePreset, route.preset]);
+
   function applyConfig(next: ObeProgramConfig) {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next));
+    window.localStorage.setItem(storageKeyFor(route.preset), JSON.stringify(next));
     const nextCounts = initialCounts(next);
     setConfig(next);
     setCounts(nextCounts);
@@ -688,8 +790,8 @@ export default function ObeSimulator() {
   }
 
   function resetConfig() {
-    window.localStorage.removeItem(STORAGE_KEY);
-    const next = defaultConfigJson as ObeProgramConfig;
+    window.localStorage.removeItem(storageKeyFor(route.preset));
+    const next = bundledConfig(route.preset);
     const nextCounts = initialCounts(next);
     setConfig(next);
     setCounts(nextCounts);
@@ -697,10 +799,10 @@ export default function ObeSimulator() {
   }
 
   return (
-    <SimulatorShell config={config} page={page}>
-      {page === "program" ? <ProgramPage config={config} /> : null}
-      {page === "settings" ? <SettingsPage config={config} onApply={applyConfig} onReset={resetConfig} /> : null}
-      {page === "simulator" ? <SimulatorPage config={config} students={students} setStudents={setStudents} counts={counts} setCounts={setCounts} /> : null}
+    <SimulatorShell config={config} page={route.page} routeBase={route.routeBase}>
+      {route.page === "program" ? <ProgramPage config={config} /> : null}
+      {route.page === "settings" ? <SettingsPage config={config} onApply={applyConfig} onReset={resetConfig} /> : null}
+      {route.page === "simulator" ? <SimulatorPage config={config} students={students} setStudents={setStudents} counts={counts} setCounts={setCounts} /> : null}
     </SimulatorShell>
   );
 }

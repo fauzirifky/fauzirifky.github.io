@@ -1,0 +1,2399 @@
+{
+  "schemaVersion": "1.0.0",
+  "program": {
+    "id": "matematika-itera-2025-2029",
+    "name": "Matematika",
+    "institution": "Institut Teknologi Sumatera",
+    "faculty": "Fakultas Sains",
+    "degreeLevel": "sarjana",
+    "curriculum": "Kurikulum 2025-2029",
+    "creditUnit": "SKS",
+    "totalCredits": 144,
+    "semesterCount": 8,
+    "description": "Konfigurasi OBE Simulator Program Studi Matematika ITERA. Struktur wajib, CPL, dan CPMK mengikuti dokumen kurikulum 2025-2029. Distribusi MK pilihan dan bobot CPMK pada JSON ini adalah kebijakan simulasi yang dinyatakan pada sourceNotes; bobot CPMK bukan bobot resmi kurikulum.",
+    "maxCreditsPerSemester": 20
+  },
+  "outcomes": [
+    {
+      "id": "CPL-1",
+      "code": "CPL 1",
+      "label": "Beriman kepada Tuhan yang Maha Esa dan menerapkan nilai-nilai Pancasila."
+    },
+    {
+      "id": "CPL-2",
+      "code": "CPL 2",
+      "label": "Setia kepada Negara Kesatuan Republik Indonesia dan adaptif terhadap perkembangan zaman dan kemasyarakatan."
+    },
+    {
+      "id": "CPL-3",
+      "code": "CPL 3",
+      "label": "Memberdayakan potensi Sumatera untuk kemajuan ilmu pengetahuan dan teknologi yang berdaya saing."
+    },
+    {
+      "id": "CPL-4",
+      "code": "CPL 4",
+      "label": "Menguasai konsep, teori, dan keterampilan sains dasar (matematika, fisika, kimia dan biologi) serta rekayasa dasar dan/atau manajemen/humaniora dan/atau desain dan seni dasar."
+    },
+    {
+      "id": "CPL-5",
+      "code": "CPL 5",
+      "label": "Mampu menganalisis konsep dasar dan teori matematika, termasuk kalkulus, aljabar, geometri, peluang, dan analisis matematika, serta menerapkannya untuk membangun pemikiran logis dan sistematis dalam menyelesaikan masalah matematis."
+    },
+    {
+      "id": "CPL-6",
+      "code": "CPL 6",
+      "label": "Mampu menerapkan metode matematis yang tepat, baik analitis maupun numerik, dengan memanfaatkan teknologi terkini, untuk menganalisis permasalahan matematis dan menentukan, menginterpretasikan, serta mengevaluasi solusi."
+    },
+    {
+      "id": "CPL-7",
+      "code": "CPL 7",
+      "label": "Mampu menerapkan dan menganalisis model matematika untuk memecahkan masalah di berbagai bidang ilmu termasuk sains, teknik, ekonomi, dan industri, serta mengevaluasi hasil penerapan model sesuai konteks masalah."
+    },
+    {
+      "id": "CPL-8",
+      "code": "CPL 8",
+      "label": "Mampu menerapkan prinsip analisis data dan mengaplikasikan prinsip komputasi yang tepat dalam proses penentuan solusi masalah dan pengambilan keputusan yang didukung bukti valid secara matematis dan data."
+    },
+    {
+      "id": "CPL-9",
+      "code": "CPL 9",
+      "label": "Mampu menganalisis informasi matematis serta menyesuaikan strategi komunikasi yang tepat dan efektif untuk menyampaikan informasi matematis kepada pihak terkait di lingkungan akademik, nonakademik, profesional, dan masyarakat umum."
+    },
+    {
+      "id": "CPL-10",
+      "code": "CPL 10",
+      "label": "Mampu menganalisis permasalahan secara kritis, bekerja secara mandiri maupun dalam tim, serta secara konsisten menginternalisasi sikap pembelajar sepanjang hayat untuk beradaptasi dengan perkembangan ilmu pengetahuan dan teknologi dalam konteks profesional dan akademik."
+    }
+  ],
+  "courses": [
+    {
+      "id": "matematika-dasar",
+      "code": "WT25-00001",
+      "name": "Matematika Dasar",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "biologi-dasar",
+      "code": "WT25-00002",
+      "name": "Biologi Dasar",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "fisika-dasar",
+      "code": "WT25-00003",
+      "name": "Fisika Dasar",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "kimia-dasar",
+      "code": "WT25-00004",
+      "name": "Kimia Dasar",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-biologi",
+      "code": "WT25-00005",
+      "name": "Praktikum Biologi",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-kimia",
+      "code": "WT25-00006",
+      "name": "Praktikum Kimia",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "transformasi-sumatera",
+      "code": "WI25-00001",
+      "name": "Transformasi Berkelanjutan Sumatera",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "dasar-teknologi-digital",
+      "code": "WI25-00002",
+      "name": "Dasar Teknologi Digital",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "logika-matematika",
+      "code": "MA25-11001",
+      "name": "Logika Matematika",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kalkulus-1",
+      "code": "MA25-12002",
+      "name": "Kalkulus I",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "analisis-data-statistika",
+      "code": "MA25-12003",
+      "name": "Analisis Data Statistika",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "matematika-diskrit",
+      "code": "MA25-12004",
+      "name": "Matematika Diskrit",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "aljabar-linier-1",
+      "code": "MA25-12005",
+      "name": "Aljabar Linier Elementer I",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "bahasa-indonesia",
+      "code": "WU25-00001",
+      "name": "Bahasa Indonesia",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pengenalan-komputasi",
+      "code": "WI25-00004",
+      "name": "Pengenalan Komputasi",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pola-hidup-sehat",
+      "code": "WI25-00005",
+      "name": "Pola Hidup Sehat dan Kebugaran Fisik",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kalkulus-2",
+      "code": "MA25-21006",
+      "name": "Kalkulus II",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "pengantar-optimisasi",
+      "code": "MA25-21007",
+      "name": "Pengantar Optimisasi",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "pemrograman-data-komputasi",
+      "code": "MA25-21008",
+      "name": "Pemrograman untuk Ilmu Data dan Komputasi",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "teori-peluang",
+      "code": "MA25-21009",
+      "name": "Teori Peluang",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "aljabar-linier-2",
+      "code": "MA25-21010",
+      "name": "Aljabar Linier Elementer II",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pancasila",
+      "code": "WU25-00002",
+      "name": "Pancasila",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "agama",
+      "code": "WU25-00004",
+      "name": "Agama",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "bahasa-inggris",
+      "code": "WI25-00003",
+      "name": "Bahasa Inggris Interdisipliner",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "persamaan-diferensial-biasa",
+      "code": "MA25-22011",
+      "name": "Persamaan Diferensial Biasa",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "kalkulus-peubah-banyak",
+      "code": "MA25-22012",
+      "name": "Kalkulus Peubah Banyak",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "teori-suku-bunga",
+      "code": "MA25-22013",
+      "name": "Teori Suku Bunga",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "statistika-matematika",
+      "code": "MA25-22014",
+      "name": "Statistika Matematika",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pengantar-stokastik",
+      "code": "MA25-22015",
+      "name": "Pengantar Stokastik",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "geometri-analitik",
+      "code": "MA25-22016",
+      "name": "Geometri Analitik",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "kewarganegaraan",
+      "code": "WU25-00003",
+      "name": "Kewarganegaraan",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pemodelan-komputasi-analisis-numerik",
+      "code": "MA25-31017",
+      "name": "Pemodelan Komputasi dan Analisis Numerik",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "persamaan-diferensial-parsial",
+      "code": "MA25-31018",
+      "name": "Persamaan Diferensial Parsial",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "pengantar-analisis-riil",
+      "code": "MA25-31019",
+      "name": "Pengantar Analisis Riil",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "fungsi-kompleks",
+      "code": "MA25-31020",
+      "name": "Fungsi Kompleks",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "struktur-aljabar",
+      "code": "MA25-31021",
+      "name": "Struktur Aljabar",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "proyek-pemodelan",
+      "code": "MA25-32022",
+      "name": "Proyek Pemodelan Matematika",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "metode-penelitian",
+      "code": "MA25-32023",
+      "name": "Metode Penelitian",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kkn",
+      "code": "WI25-00006",
+      "name": "Kuliah Kerja Nyata",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "karier-etika-kewirausahaan",
+      "code": "WI25-00007",
+      "name": "Karier, Etika dan Kewirausahaan",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kerja-praktik",
+      "code": "MA25-40024",
+      "name": "Kerja Praktik",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "proposal-penelitian",
+      "code": "MA25-40025",
+      "name": "Proposal Penelitian",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "seminar-proposal",
+      "code": "MA25-40026",
+      "name": "Seminar Proposal Penelitian",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "tugas-akhir",
+      "code": "MA25-40027",
+      "name": "Tugas Akhir",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "seminar-tugas-akhir",
+      "code": "MA25-40028",
+      "name": "Seminar Tugas Akhir",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "sidang",
+      "code": "MA25-40029",
+      "name": "Sidang",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "matematika-keuangan-syariah",
+      "code": "MA25-21201",
+      "name": "Matematika Keuangan Syariah",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "matematika-ekonomi-bisnis",
+      "code": "MA25-21202",
+      "name": "Matematika Ekonomi dan Bisnis",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "teori-graf",
+      "code": "MA25-21303",
+      "name": "Teori Graf",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "teori-bilangan",
+      "code": "MA25-21304",
+      "name": "Teori Bilangan",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "riset-operasi",
+      "code": "MA25-22205",
+      "name": "Riset Operasi",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "matematika-keuangan",
+      "code": "MA25-22206",
+      "name": "Matematika Keuangan",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kombinatorik",
+      "code": "MA25-22307",
+      "name": "Kombinatorik",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "teori-matriks",
+      "code": "MA25-22308",
+      "name": "Teori Matriks",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "matematika-biologi",
+      "code": "MA25-31209",
+      "name": "Matematika Biologi",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "riset-operasi-lanjut",
+      "code": "MA25-31210",
+      "name": "Riset Operasi Lanjut",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "komputasi-matematika-keuangan",
+      "code": "MA25-31211",
+      "name": "Komputasi Matematika Keuangan",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "geometri-euclid-non-euclid",
+      "code": "MA25-31312",
+      "name": "Geometri Euclid dan Non-Euclid",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "statistika-nonparametrik",
+      "code": "MA25-31313",
+      "name": "Statistika Non-parametrik",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "sistem-dinamik",
+      "code": "MA25-32214",
+      "name": "Sistem Dinamik",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "optimisasi-lanjut",
+      "code": "MA25-32215",
+      "name": "Optimisasi Lanjut",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "jaringan-syaraf-tiruan",
+      "code": "MA25-32216",
+      "name": "Jaringan Syaraf Tiruan",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "optimisasi-matematika-keuangan",
+      "code": "MA25-32217",
+      "name": "Optimisasi Matematika Keuangan",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "graf-dan-matriks",
+      "code": "MA25-32318",
+      "name": "Graf dan Matriks",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "pembelajaran-mesin",
+      "code": "MA25-32319",
+      "name": "Pembelajaran Mesin",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "analisis-riil-pilihan",
+      "code": "MA25-32320",
+      "name": "Analisis Riil",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "analisis-deret-waktu",
+      "code": "MA25-32321",
+      "name": "Analisis Deret Waktu",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "pdp-numerik",
+      "code": "MA25-41222",
+      "name": "Persamaan Diferensial Parsial Numerik",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "analisis-bifurkasi",
+      "code": "MA25-41323",
+      "name": "Analisis Bifurkasi",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-terapan-1",
+      "code": "MA25-40124",
+      "name": "Kapita Selekta Matematika Terapan I",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-terapan-2",
+      "code": "MA25-40125",
+      "name": "Kapita Selekta Matematika Terapan II",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-terapan-3",
+      "code": "MA25-40126",
+      "name": "Kapita Selekta Matematika Terapan III",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-komputasi-1",
+      "code": "MA25-40127",
+      "name": "Kapita Selekta Matematika Komputasi I",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-komputasi-2",
+      "code": "MA25-40128",
+      "name": "Kapita Selekta Matematika Komputasi II",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-aljabar-1",
+      "code": "MA25-40129",
+      "name": "Kapita Selekta Aljabar I",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-aljabar-2",
+      "code": "MA25-40130",
+      "name": "Kapita Selekta Aljabar II",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-statistika",
+      "code": "MA25-40131",
+      "name": "Kapita Selekta Statistika",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-analisis",
+      "code": "MA25-40132",
+      "name": "Kapita Selekta Analisis",
+      "credits": 3,
+      "category": "elective"
+    }
+  ],
+  "coursePools": [
+    {
+      "id": "electives-sem-3",
+      "label": "MK Pilihan yang dikodekan untuk Semester 3",
+      "courseIds": [
+        "matematika-keuangan-syariah",
+        "matematika-ekonomi-bisnis",
+        "teori-graf",
+        "teori-bilangan"
+      ]
+    },
+    {
+      "id": "electives-sem-4",
+      "label": "MK Pilihan yang dikodekan untuk Semester 4",
+      "courseIds": [
+        "riset-operasi",
+        "matematika-keuangan",
+        "kombinatorik",
+        "teori-matriks"
+      ]
+    },
+    {
+      "id": "electives-sem-5",
+      "label": "MK Pilihan yang dikodekan untuk Semester 5",
+      "courseIds": [
+        "matematika-biologi",
+        "riset-operasi-lanjut",
+        "komputasi-matematika-keuangan",
+        "geometri-euclid-non-euclid",
+        "statistika-nonparametrik"
+      ]
+    },
+    {
+      "id": "electives-sem-6",
+      "label": "MK Pilihan yang dikodekan untuk Semester 6",
+      "courseIds": [
+        "sistem-dinamik",
+        "optimisasi-lanjut",
+        "jaringan-syaraf-tiruan",
+        "optimisasi-matematika-keuangan",
+        "graf-dan-matriks",
+        "pembelajaran-mesin",
+        "analisis-riil-pilihan",
+        "analisis-deret-waktu"
+      ]
+    },
+    {
+      "id": "electives-sem-7",
+      "label": "MK Pilihan yang dikodekan untuk Semester 7",
+      "courseIds": [
+        "pdp-numerik",
+        "analisis-bifurkasi",
+        "kapita-terapan-1",
+        "kapita-terapan-2",
+        "kapita-terapan-3",
+        "kapita-komputasi-1",
+        "kapita-komputasi-2",
+        "kapita-aljabar-1",
+        "kapita-aljabar-2",
+        "kapita-statistika",
+        "kapita-analisis"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "regular",
+      "label": "Reguler",
+      "shortLabel": "REG",
+      "defaultStudentCount": 8,
+      "expectedCreditsBySemester": {
+        "1": 18,
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20,
+        "6": 18,
+        "7": 20,
+        "8": 8
+      },
+      "requiredCourses": [
+        {
+          "courseId": "matematika-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "biologi-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "fisika-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "kimia-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "praktikum-biologi",
+          "semester": 1
+        },
+        {
+          "courseId": "praktikum-kimia",
+          "semester": 1
+        },
+        {
+          "courseId": "transformasi-sumatera",
+          "semester": 1
+        },
+        {
+          "courseId": "dasar-teknologi-digital",
+          "semester": 1
+        },
+        {
+          "courseId": "logika-matematika",
+          "semester": 1
+        },
+        {
+          "courseId": "kalkulus-1",
+          "semester": 2
+        },
+        {
+          "courseId": "analisis-data-statistika",
+          "semester": 2
+        },
+        {
+          "courseId": "matematika-diskrit",
+          "semester": 2
+        },
+        {
+          "courseId": "aljabar-linier-1",
+          "semester": 2
+        },
+        {
+          "courseId": "bahasa-indonesia",
+          "semester": 2
+        },
+        {
+          "courseId": "pengenalan-komputasi",
+          "semester": 2
+        },
+        {
+          "courseId": "pola-hidup-sehat",
+          "semester": 2
+        },
+        {
+          "courseId": "kalkulus-2",
+          "semester": 3
+        },
+        {
+          "courseId": "pengantar-optimisasi",
+          "semester": 3
+        },
+        {
+          "courseId": "pemrograman-data-komputasi",
+          "semester": 3
+        },
+        {
+          "courseId": "teori-peluang",
+          "semester": 3
+        },
+        {
+          "courseId": "aljabar-linier-2",
+          "semester": 3
+        },
+        {
+          "courseId": "pancasila",
+          "semester": 3
+        },
+        {
+          "courseId": "agama",
+          "semester": 3
+        },
+        {
+          "courseId": "bahasa-inggris",
+          "semester": 3
+        },
+        {
+          "courseId": "persamaan-diferensial-biasa",
+          "semester": 4
+        },
+        {
+          "courseId": "kalkulus-peubah-banyak",
+          "semester": 4
+        },
+        {
+          "courseId": "teori-suku-bunga",
+          "semester": 4
+        },
+        {
+          "courseId": "statistika-matematika",
+          "semester": 4
+        },
+        {
+          "courseId": "pengantar-stokastik",
+          "semester": 4
+        },
+        {
+          "courseId": "geometri-analitik",
+          "semester": 4
+        },
+        {
+          "courseId": "kewarganegaraan",
+          "semester": 4
+        },
+        {
+          "courseId": "pemodelan-komputasi-analisis-numerik",
+          "semester": 5
+        },
+        {
+          "courseId": "persamaan-diferensial-parsial",
+          "semester": 5
+        },
+        {
+          "courseId": "pengantar-analisis-riil",
+          "semester": 5
+        },
+        {
+          "courseId": "fungsi-kompleks",
+          "semester": 5
+        },
+        {
+          "courseId": "struktur-aljabar",
+          "semester": 5
+        },
+        {
+          "courseId": "proyek-pemodelan",
+          "semester": 6
+        },
+        {
+          "courseId": "metode-penelitian",
+          "semester": 6
+        },
+        {
+          "courseId": "kkn",
+          "semester": 6
+        },
+        {
+          "courseId": "karier-etika-kewirausahaan",
+          "semester": 6
+        },
+        {
+          "courseId": "kerja-praktik",
+          "semester": 7
+        },
+        {
+          "courseId": "proposal-penelitian",
+          "semester": 8
+        },
+        {
+          "courseId": "seminar-proposal",
+          "semester": 8
+        },
+        {
+          "courseId": "tugas-akhir",
+          "semester": 8
+        },
+        {
+          "courseId": "seminar-tugas-akhir",
+          "semester": 8
+        },
+        {
+          "courseId": "sidang",
+          "semester": 8
+        }
+      ],
+      "choiceGroups": [],
+      "electiveRules": [
+        {
+          "semester": 5,
+          "poolId": "electives-sem-5",
+          "targetCredits": 2,
+          "mode": "exact"
+        },
+        {
+          "semester": 6,
+          "poolId": "electives-sem-6",
+          "targetCredits": 9,
+          "mode": "exact"
+        },
+        {
+          "semester": 7,
+          "poolId": "electives-sem-7",
+          "targetCredits": 18,
+          "mode": "exact"
+        }
+      ]
+    }
+  ],
+  "cpmks": [
+    {
+      "id": "m001",
+      "code": "CPMK 1.1",
+      "courseId": "agama",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m002",
+      "code": "CPMK 1.2",
+      "courseId": "pancasila",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m003",
+      "code": "CPMK 1.3",
+      "courseId": "pancasila",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m004",
+      "code": "CPMK 1.4",
+      "courseId": "agama",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m005",
+      "code": "CPMK 2.1",
+      "courseId": "kewarganegaraan",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m006",
+      "code": "CPMK 2.1",
+      "courseId": "bahasa-indonesia",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m007",
+      "code": "CPMK 2.2",
+      "courseId": "kewarganegaraan",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m008",
+      "code": "CPMK 2.3",
+      "courseId": "bahasa-indonesia",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m009",
+      "code": "CPMK 2.3",
+      "courseId": "pola-hidup-sehat",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m010",
+      "code": "CPMK 2.4",
+      "courseId": "bahasa-inggris",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m011",
+      "code": "CPMK 2.5",
+      "courseId": "bahasa-inggris",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m012",
+      "code": "CPMK 2.6",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m013",
+      "code": "CPMK 2.7",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m014",
+      "code": "CPMK 2.8",
+      "courseId": "bahasa-inggris",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m015",
+      "code": "CPMK 2.9",
+      "courseId": "bahasa-inggris",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m016",
+      "code": "CPMK 2.10",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m017",
+      "code": "CPMK 2.11",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m018",
+      "code": "CPMK 2.12",
+      "courseId": "pola-hidup-sehat",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m019",
+      "code": "CPMK 3.1",
+      "courseId": "transformasi-sumatera",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m020",
+      "code": "CPMK 3.1",
+      "courseId": "pengenalan-komputasi",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m021",
+      "code": "CPMK 3.1",
+      "courseId": "dasar-teknologi-digital",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m022",
+      "code": "CPMK 3.2",
+      "courseId": "transformasi-sumatera",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m023",
+      "code": "CPMK 3.2",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m024",
+      "code": "CPMK 3.3",
+      "courseId": "dasar-teknologi-digital",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m025",
+      "code": "CPMK 3.3",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m026",
+      "code": "CPMK 3.4",
+      "courseId": "dasar-teknologi-digital",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m027",
+      "code": "CPMK 3.4",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m028",
+      "code": "CPMK 3.5",
+      "courseId": "transformasi-sumatera",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m029",
+      "code": "CPMK 4.1",
+      "courseId": "kimia-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m030",
+      "code": "CPMK 4.2",
+      "courseId": "fisika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m031",
+      "code": "CPMK 4.2",
+      "courseId": "biologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m032",
+      "code": "CPMK 4.3",
+      "courseId": "biologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m033",
+      "code": "CPMK 4.3",
+      "courseId": "praktikum-biologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m034",
+      "code": "CPMK 4.6",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m035",
+      "code": "CPMK 4.7",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m036",
+      "code": "CPMK 4.9",
+      "courseId": "matematika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m037",
+      "code": "CPMK 4.9",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m038",
+      "code": "CPMK 4.11",
+      "courseId": "praktikum-biologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m039",
+      "code": "CPMK 4.14",
+      "courseId": "biologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m040",
+      "code": "CPMK 4.16",
+      "courseId": "fisika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m041",
+      "code": "CPMK 5.1",
+      "courseId": "logika-matematika",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m042",
+      "code": "CPMK 5.1",
+      "courseId": "geometri-analitik",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m043",
+      "code": "CPMK 5.1",
+      "courseId": "pengantar-analisis-riil",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m044",
+      "code": "CPMK 5.1",
+      "courseId": "aljabar-linier-1",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m045",
+      "code": "CPMK 5.1",
+      "courseId": "aljabar-linier-2",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m046",
+      "code": "CPMK 5.1",
+      "courseId": "struktur-aljabar",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m047",
+      "code": "CPMK 5.2",
+      "courseId": "pengantar-analisis-riil",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m048",
+      "code": "CPMK 5.2",
+      "courseId": "kalkulus-1",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m049",
+      "code": "CPMK 5.2",
+      "courseId": "kalkulus-2",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m050",
+      "code": "CPMK 5.2",
+      "courseId": "kalkulus-peubah-banyak",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m051",
+      "code": "CPMK 5.2",
+      "courseId": "fungsi-kompleks",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m052",
+      "code": "CPMK 5.2",
+      "courseId": "teori-suku-bunga",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m053",
+      "code": "CPMK 5.2",
+      "courseId": "statistika-matematika",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m054",
+      "code": "CPMK 5.3",
+      "courseId": "teori-peluang",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m055",
+      "code": "CPMK 5.3",
+      "courseId": "matematika-diskrit",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m056",
+      "code": "CPMK 6.1",
+      "courseId": "pemodelan-komputasi-analisis-numerik",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m057",
+      "code": "CPMK 6.1",
+      "courseId": "pengantar-optimisasi",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m058",
+      "code": "CPMK 6.1",
+      "courseId": "teori-suku-bunga",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m059",
+      "code": "CPMK 6.1",
+      "courseId": "statistika-matematika",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m060",
+      "code": "CPMK 6.1",
+      "courseId": "pengantar-stokastik",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m061",
+      "code": "CPMK 6.2",
+      "courseId": "persamaan-diferensial-biasa",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m062",
+      "code": "CPMK 6.2",
+      "courseId": "persamaan-diferensial-parsial",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m063",
+      "code": "CPMK 7.1",
+      "courseId": "pemodelan-komputasi-analisis-numerik",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m064",
+      "code": "CPMK 7.1",
+      "courseId": "proyek-pemodelan",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m065",
+      "code": "CPMK 7.1",
+      "courseId": "teori-suku-bunga",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m066",
+      "code": "CPMK 7.1",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m067",
+      "code": "CPMK 7.1",
+      "courseId": "seminar-proposal",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m068",
+      "code": "CPMK 7.1",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m069",
+      "code": "CPMK 7.1",
+      "courseId": "seminar-tugas-akhir",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m070",
+      "code": "CPMK 7.1",
+      "courseId": "sidang",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m071",
+      "code": "CPMK 7.2",
+      "courseId": "persamaan-diferensial-biasa",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m072",
+      "code": "CPMK 7.2",
+      "courseId": "persamaan-diferensial-parsial",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m073",
+      "code": "CPMK 7.2",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m074",
+      "code": "CPMK 7.2",
+      "courseId": "seminar-proposal",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m075",
+      "code": "CPMK 7.2",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m076",
+      "code": "CPMK 7.2",
+      "courseId": "seminar-tugas-akhir",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m077",
+      "code": "CPMK 7.2",
+      "courseId": "sidang",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m078",
+      "code": "CPMK 7.3",
+      "courseId": "pengantar-optimisasi",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m079",
+      "code": "CPMK 7.3",
+      "courseId": "pengantar-stokastik",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m080",
+      "code": "CPMK 7.3",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m081",
+      "code": "CPMK 7.3",
+      "courseId": "seminar-proposal",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m082",
+      "code": "CPMK 7.3",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m083",
+      "code": "CPMK 7.3",
+      "courseId": "seminar-tugas-akhir",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m084",
+      "code": "CPMK 7.3",
+      "courseId": "sidang",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m085",
+      "code": "CPMK 7.4",
+      "courseId": "geometri-analitik",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m086",
+      "code": "CPMK 7.4",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m087",
+      "code": "CPMK 7.4",
+      "courseId": "seminar-proposal",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m088",
+      "code": "CPMK 7.4",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m089",
+      "code": "CPMK 7.4",
+      "courseId": "seminar-tugas-akhir",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m090",
+      "code": "CPMK 7.4",
+      "courseId": "sidang",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m091",
+      "code": "CPMK 8.1",
+      "courseId": "analisis-data-statistika",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m092",
+      "code": "CPMK 8.1",
+      "courseId": "pengantar-stokastik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m093",
+      "code": "CPMK 8.1",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m094",
+      "code": "CPMK 8.1",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m095",
+      "code": "CPMK 8.1",
+      "courseId": "seminar-proposal",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m096",
+      "code": "CPMK 8.1",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m097",
+      "code": "CPMK 8.1",
+      "courseId": "seminar-tugas-akhir",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m098",
+      "code": "CPMK 8.1",
+      "courseId": "sidang",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m099",
+      "code": "CPMK 8.2",
+      "courseId": "pemrograman-data-komputasi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m100",
+      "code": "CPMK 8.2",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m101",
+      "code": "CPMK 8.2",
+      "courseId": "seminar-proposal",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m102",
+      "code": "CPMK 8.2",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m103",
+      "code": "CPMK 8.2",
+      "courseId": "seminar-tugas-akhir",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m104",
+      "code": "CPMK 8.2",
+      "courseId": "sidang",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m105",
+      "code": "CPMK 9.1",
+      "courseId": "proyek-pemodelan",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m106",
+      "code": "CPMK 9.2",
+      "courseId": "logika-matematika",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m107",
+      "code": "CPMK 9.2",
+      "courseId": "statistika-matematika",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m108",
+      "code": "CPMK 9.2",
+      "courseId": "struktur-aljabar",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m109",
+      "code": "CPMK 9.2",
+      "courseId": "aljabar-linier-1",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m110",
+      "code": "CPMK 9.2",
+      "courseId": "aljabar-linier-2",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m111",
+      "code": "CPMK 9.2",
+      "courseId": "sidang",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m112",
+      "code": "CPMK 9.3",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m113",
+      "code": "CPMK 9.3",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m114",
+      "code": "CPMK 9.3",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m115",
+      "code": "CPMK 9.3",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m116",
+      "code": "CPMK 9.3",
+      "courseId": "seminar-proposal",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m117",
+      "code": "CPMK 9.3",
+      "courseId": "seminar-tugas-akhir",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m118",
+      "code": "CPMK 10.1",
+      "courseId": "proyek-pemodelan",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m119",
+      "code": "CPMK 10.1",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m120",
+      "code": "CPMK 10.1",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m121",
+      "code": "CPMK 10.1",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m122",
+      "code": "CPMK 10.1",
+      "courseId": "sidang",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m123",
+      "code": "CPMK 10.2",
+      "courseId": "seminar-proposal",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m124",
+      "code": "CPMK 10.2",
+      "courseId": "seminar-tugas-akhir",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    }
+  ],
+  "sourceNotes": [
+    {
+      "severity": "info",
+      "code": "SOURCE_REQUIRED_ELECTIVE_TOTAL",
+      "message": "Dokumen menetapkan minimal 144 SKS: 115 SKS mata kuliah wajib dan minimal 29 SKS mata kuliah pilihan (Prodi/Lintas Prodi)."
+    },
+    {
+      "severity": "warning",
+      "code": "SIMULATOR_ELECTIVE_DISTRIBUTION",
+      "message": "Dokumen menetapkan minimal 29 SKS pilihan secara keseluruhan tetapi tidak menetapkan pembagian pilihan per semester. Untuk skenario Sarjana dengan batas simulator 20 SKS/semester dan total tepat 144 SKS, preset ini menempatkan pilihan 2 SKS pada semester 5, 9 SKS pada semester 6, dan 18 SKS pada semester 7. Ini kebijakan simulasi, bukan ketentuan resmi kurikulum."
+    },
+    {
+      "severity": "warning",
+      "code": "CPMK_WEIGHT_SIMULATION",
+      "message": "Dokumen kurikulum tidak memberikan bobot numerik CPMK ke CPL. Preset ini membagi 100% secara merata pada CPMK unik yang memiliki mapping aktif untuk setiap CPL. Bobot digunakan untuk membantu visualisasi dan pengujian perhitungan, bukan sebagai bobot resmi kurikulum."
+    },
+    {
+      "severity": "info",
+      "code": "SARJANA_MAX_20_SIMULATION",
+      "message": "Preset menetapkan maxCreditsPerSemester=20 sebagai kebijakan simulator untuk program Sarjana. Nilai ini dapat diubah melalui JSON untuk program lain atau kebijakan akademik yang berbeda."
+    },
+    {
+      "severity": "warning",
+      "code": "ELECTIVE_CPMK_GAP",
+      "message": "Tabel 3.16 tidak memetakan mata kuliah pilihan pada Tabel 3.14 ke CPMK/CPL secara eksplisit. Karena itu MK pilihan tetap muncul dalam paket studi, tetapi belum menambah benang CPMK-CPL pada simulator."
+    },
+    {
+      "severity": "warning",
+      "code": "CPMK4_UNASSIGNED",
+      "message": "Pada Tabel 3.16, CPMK 4.8 dan CPMK 4.10 tidak memiliki mata kuliah pada kolom Mata Kuliah. Keduanya tidak dimasukkan sebagai mapping karena schema simulator membutuhkan courseId."
+    },
+    {
+      "severity": "warning",
+      "code": "CPMK4_EXTERNAL_NAMES",
+      "message": "Tabel 3.16 CPL-4 menyebut Pengantar Fisika, Pengantar Matematika, AAPP, serta Pengantar Infrastruktur dan Kewilayahan, tetapi nama tersebut tidak muncul pada struktur mata kuliah Prodi Matematika di Tabel 3.13. Referensi tersebut tidak dipaksakan ke mata kuliah lain."
+    },
+    {
+      "severity": "info",
+      "code": "NORMALIZED_COURSE_NAMES",
+      "message": "Untuk penyambungan data, variasi nama yang jelas dinormalisasi ke struktur resmi: Agama Islam -> Agama; KKN -> Kuliah Kerja Nyata; Proses Stokastik -> Pengantar Stokastik; Transformasi Keberlanjutan Sumatera -> Transformasi Berkelanjutan Sumatera."
+    },
+    {
+      "severity": "info",
+      "code": "MLPS_NOT_MODELED",
+      "message": "Program MLPS/MBKM semester 7 belum dimodelkan sebagai track terpisah karena dokumen menyatakan rekognisi 10-20 SKS bergantung pada jenis kegiatan, mata kuliah Prodi, dan ekuivalensi mitra. JSON ini memodelkan jalur perkuliahan dalam Prodi."
+    },
+    {
+      "severity": "warning",
+      "code": "TABLE315_SOURCE_DRIFT",
+      "message": "Tabel 3.15 memuat beberapa entri yang tidak lengkap/typo, misalnya MA25-320023 dan Teori Suku Bunga hanya ditulis '(CPL)' tanpa nomor. Mapping CPMK pada JSON ini mengambil Tabel 3.16 sebagai sumber utama, bukan menebak dari entri tersebut."
+    }
+  ],
+  "cpmkWeights": [
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "cpmkCode": "CPMK 1.1",
+      "weight": 25.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "cpmkCode": "CPMK 1.2",
+      "weight": 25.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "cpmkCode": "CPMK 1.3",
+      "weight": 25.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "cpmkCode": "CPMK 1.4",
+      "weight": 25.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.1",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.2",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.3",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.4",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.5",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.6",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.7",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.8",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.9",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.10",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.11",
+      "weight": 8.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "cpmkCode": "CPMK 2.12",
+      "weight": 8.333337,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "cpmkCode": "CPMK 3.1",
+      "weight": 20.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "cpmkCode": "CPMK 3.2",
+      "weight": 20.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "cpmkCode": "CPMK 3.3",
+      "weight": 20.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "cpmkCode": "CPMK 3.4",
+      "weight": 20.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "cpmkCode": "CPMK 3.5",
+      "weight": 20.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "cpmkCode": "CPMK 4.1",
+      "weight": 11.111111,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "cpmkCode": "CPMK 4.2",
+      "weight": 11.111111,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "cpmkCode": "CPMK 4.3",
+      "weight": 11.111111,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "cpmkCode": "CPMK 4.6",
+      "weight": 11.111111,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "cpmkCode": "CPMK 4.7",
+      "weight": 11.111111,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "cpmkCode": "CPMK 4.9",
+      "weight": 11.111111,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "cpmkCode": "CPMK 4.11",
+      "weight": 11.111111,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "cpmkCode": "CPMK 4.14",
+      "weight": 11.111111,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "cpmkCode": "CPMK 4.16",
+      "weight": 11.111112,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "cpmkCode": "CPMK 5.1",
+      "weight": 33.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "cpmkCode": "CPMK 5.2",
+      "weight": 33.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "cpmkCode": "CPMK 5.3",
+      "weight": 33.333334,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-6",
+      "cpmkCode": "CPMK 6.1",
+      "weight": 50.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-6",
+      "cpmkCode": "CPMK 6.2",
+      "weight": 50.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-7",
+      "cpmkCode": "CPMK 7.1",
+      "weight": 25.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-7",
+      "cpmkCode": "CPMK 7.2",
+      "weight": 25.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-7",
+      "cpmkCode": "CPMK 7.3",
+      "weight": 25.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-7",
+      "cpmkCode": "CPMK 7.4",
+      "weight": 25.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "cpmkCode": "CPMK 8.1",
+      "weight": 50.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "cpmkCode": "CPMK 8.2",
+      "weight": 50.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "cpmkCode": "CPMK 9.1",
+      "weight": 33.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "cpmkCode": "CPMK 9.2",
+      "weight": 33.333333,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "cpmkCode": "CPMK 9.3",
+      "weight": 33.333334,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-10",
+      "cpmkCode": "CPMK 10.1",
+      "weight": 50.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-10",
+      "cpmkCode": "CPMK 10.2",
+      "weight": 50.0,
+      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+    }
+  ]
+}

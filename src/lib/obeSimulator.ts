@@ -68,6 +68,14 @@ export type ObeWeight = {
   source?: string;
 };
 
+export type ObeCpmkWeight = {
+  trackId: string;
+  outcomeId: string;
+  cpmkCode: string;
+  weight: number;
+  source?: string;
+};
+
 export type SourceNote = {
   severity?: "info" | "warning" | "error";
   code?: string;
@@ -86,6 +94,7 @@ export type ObeProgramConfig = {
     creditUnit?: string;
     totalCredits: number;
     semesterCount: number;
+    maxCreditsPerSemester?: number;
     description?: string;
   };
   outcomes: ObeOutcome[];
@@ -93,6 +102,7 @@ export type ObeProgramConfig = {
   coursePools?: CoursePool[];
   tracks: ObeTrack[];
   cpmks: CpmkMapping[];
+  cpmkWeights?: ObeCpmkWeight[];
   weights?: ObeWeight[];
   sourceNotes?: SourceNote[];
 };
@@ -140,6 +150,31 @@ export function getTrack(config: ObeProgramConfig, id: string) {
   return config.tracks.find((track) => track.id === id);
 }
 
+export function programMaxCreditsPerSemester(config: ObeProgramConfig) {
+  const explicit = Number(config.program?.maxCreditsPerSemester ?? 0);
+  if (explicit > 0) return explicit;
+
+  const level = String(config.program?.degreeLevel ?? "").trim().toLowerCase();
+  if (level === "sarjana" || level === "s1" || level === "bachelor" || level === "undergraduate") return 20;
+
+  return undefined;
+}
+
+export function cpmkWeightFor(
+  config: ObeProgramConfig,
+  outcomeId: string,
+  cpmkCode: string,
+  trackIds?: string[],
+) {
+  const allowed = trackIds?.length ? new Set(trackIds) : null;
+  const values = (config.cpmkWeights ?? [])
+    .filter((item) => item.outcomeId === outcomeId && item.cpmkCode === cpmkCode && (!allowed || allowed.has(item.trackId)))
+    .map((item) => item.weight);
+  if (!values.length) return undefined;
+  const first = values[0];
+  return values.every((value) => Math.abs(value - first) <= 0.0001) ? first : undefined;
+}
+
 export function shuffle<T>(items: T[]) {
   const output = [...items];
   for (let i = output.length - 1; i > 0; i -= 1) {
@@ -155,13 +190,14 @@ function chooseCredits(
   targetCredits: number,
   used: Set<string>,
   mode: ElectiveRule["mode"] = "exactOrAtLeast",
+  maxCredits = Number.POSITIVE_INFINITY,
 ) {
   const courses = shuffle(courseIds)
     .filter((id) => !used.has(id))
     .map((id) => getCourse(config, id))
     .filter((course): course is ObeCourse => Boolean(course));
 
-  const limit = Math.max(targetCredits + 12, targetCredits * 2 + 2);
+  const limit = Math.min(maxCredits, Math.max(targetCredits + 12, targetCredits * 2 + 2));
   const states = new Map<number, string[]>();
   states.set(0, []);
 
@@ -222,10 +258,21 @@ export function generateStudent(config: ObeProgramConfig, trackId: string, seque
   }
 
   const pools = new Map((config.coursePools ?? []).map((pool) => [pool.id, pool]));
+  const maxPerSemester = programMaxCreditsPerSemester(config);
   for (const rule of track.electiveRules ?? []) {
     const pool = pools.get(rule.poolId);
     if (!pool) continue;
-    const ids = chooseCredits(config, pool.courseIds, rule.targetCredits, used, rule.mode);
+
+    const semesterUsed = enrollments
+      .filter((item) => item.semester === rule.semester)
+      .reduce((sum, item) => sum + (getCourse(config, item.courseId)?.credits ?? 0), 0);
+    const available = maxPerSemester == null
+      ? Number.POSITIVE_INFINITY
+      : Math.max(0, maxPerSemester - semesterUsed);
+    const target = Math.min(rule.targetCredits, available);
+    if (target <= 0) continue;
+
+    const ids = chooseCredits(config, pool.courseIds, target, used, rule.mode, available);
     for (const courseId of ids) {
       enrollments.push({
         courseId,
@@ -275,9 +322,21 @@ export function activeEnrollments(student: SimStudent) {
 }
 
 export function studentWeightCoverage(config: ObeProgramConfig, student: SimStudent) {
-  const active = new Set(activeEnrollments(student).map((item) => item.courseId));
   const output = new Map<string, number>();
   for (const outcome of config.outcomes) output.set(outcome.id, 0);
+
+  if ((config.cpmkWeights ?? []).length) {
+    const activeMappings = cpmksForStudent(config, student);
+    const activeKeys = new Set(activeMappings.map((mapping) => `${mapping.outcomeId}::${mapping.code}`));
+    for (const weight of config.cpmkWeights ?? []) {
+      if (weight.trackId !== student.trackId) continue;
+      if (!activeKeys.has(`${weight.outcomeId}::${weight.cpmkCode}`)) continue;
+      output.set(weight.outcomeId, (output.get(weight.outcomeId) ?? 0) + weight.weight);
+    }
+    return output;
+  }
+
+  const active = new Set(activeEnrollments(student).map((item) => item.courseId));
   for (const weight of config.weights ?? []) {
     if (weight.trackId !== student.trackId || !active.has(weight.courseId)) continue;
     output.set(weight.outcomeId, (output.get(weight.outcomeId) ?? 0) + weight.weight);
@@ -312,6 +371,7 @@ export function validateConfig(config: ObeProgramConfig): ValidationIssue[] {
   if (!config.program?.name) issues.push({ severity: "error", code: "PROGRAM_NAME", message: "Nama program studi belum diisi." });
   if (!(config.program?.semesterCount > 0)) issues.push({ severity: "error", code: "SEMESTER_COUNT", message: "semesterCount harus lebih dari 0." });
   if (!(config.program?.totalCredits > 0)) issues.push({ severity: "error", code: "TOTAL_CREDITS", message: "totalCredits harus lebih dari 0." });
+  const maxPerSemester = programMaxCreditsPerSemester(config);
 
   const duplicate = (values: string[]) => values.filter((value, index) => values.indexOf(value) !== index);
   for (const id of new Set(duplicate(config.courses.map((course) => course.id)))) {
@@ -329,6 +389,36 @@ export function validateConfig(config: ObeProgramConfig): ValidationIssue[] {
         code: "TRACK_EXPECTED_TOTAL",
         message: `${track.label}: total SKS per semester ${expected}, berbeda dari total program ${config.program.totalCredits}.`,
       });
+    }
+
+    if (maxPerSemester != null) {
+      for (const [semester, creditsValue] of Object.entries(track.expectedCreditsBySemester ?? {})) {
+        const credits = Number(creditsValue || 0);
+        if (credits > maxPerSemester + 0.001) {
+          issues.push({
+            severity: "warning",
+            code: "SEMESTER_CREDIT_LIMIT",
+            message: `${track.label} semester ${semester}: target ${credits} ${config.program.creditUnit ?? "SKS"} melebihi batas simulator ${maxPerSemester} ${config.program.creditUnit ?? "SKS"}.`,
+          });
+        }
+      }
+
+      const requiredBySemester = new Map<number, number>();
+      for (const ref of track.requiredCourses ?? []) {
+        requiredBySemester.set(
+          ref.semester,
+          (requiredBySemester.get(ref.semester) ?? 0) + (courses.get(ref.courseId)?.credits ?? 0),
+        );
+      }
+      for (const [semester, credits] of requiredBySemester) {
+        if (credits > maxPerSemester + 0.001) {
+          issues.push({
+            severity: "error",
+            code: "REQUIRED_CREDIT_LIMIT",
+            message: `${track.label} semester ${semester}: MK wajib sendiri berjumlah ${credits} ${config.program.creditUnit ?? "SKS"}, melebihi batas ${maxPerSemester}.`,
+          });
+        }
+      }
     }
 
     for (const ref of track.requiredCourses ?? []) {
@@ -364,6 +454,41 @@ export function validateConfig(config: ObeProgramConfig): ValidationIssue[] {
     if (!courses.has(mapping.courseId)) issues.push({ severity: "error", code: "CPMK_COURSE", message: `${mapping.code}: MK ${mapping.courseId} tidak ditemukan.` });
     if (!outcomes.has(mapping.outcomeId)) issues.push({ severity: "error", code: "CPMK_OUTCOME", message: `${mapping.code}: ${mapping.outcomeId} tidak ditemukan.` });
     for (const trackId of mapping.trackIds) if (!tracks.has(trackId)) issues.push({ severity: "error", code: "CPMK_TRACK", message: `${mapping.code}: jalur ${trackId} tidak ditemukan.` });
+  }
+
+  const cpmkWeightTotals = new Map<string, number>();
+  for (const weight of config.cpmkWeights ?? []) {
+    if (!tracks.has(weight.trackId) || !outcomes.has(weight.outcomeId) || !weight.cpmkCode) {
+      issues.push({
+        severity: "error",
+        code: "CPMK_WEIGHT_REFERENCE",
+        message: `Bobot CPMK ${weight.trackId}/${weight.outcomeId}/${weight.cpmkCode || "(tanpa kode)"} memiliki referensi yang tidak valid.`,
+      });
+      continue;
+    }
+    const hasCpmk = config.cpmks.some(
+      (mapping) => mapping.code === weight.cpmkCode
+        && mapping.outcomeId === weight.outcomeId
+        && mapping.trackIds.includes(weight.trackId),
+    );
+    if (!hasCpmk && weight.weight > 0) {
+      issues.push({
+        severity: "warning",
+        code: "CPMK_WEIGHT_WITHOUT_MAPPING",
+        message: `${tracks.get(weight.trackId)?.label}: ${weight.cpmkCode} berbobot ${weight.weight}% ke ${weight.outcomeId}, tetapi tidak memiliki mapping CPMK–MK aktif.`,
+      });
+    }
+    const key = `${weight.trackId}::${weight.outcomeId}`;
+    cpmkWeightTotals.set(key, (cpmkWeightTotals.get(key) ?? 0) + weight.weight);
+  }
+  for (const [key, total] of cpmkWeightTotals) {
+    if (Math.abs(total - 100) <= 0.05) continue;
+    const [trackId, outcomeId] = key.split("::");
+    issues.push({
+      severity: "warning",
+      code: "CPMK_WEIGHT_TOTAL",
+      message: `${tracks.get(trackId)?.label ?? trackId}: total bobot CPMK untuk ${outcomeId} adalah ${total.toFixed(2)}%, bukan 100%.`,
+    });
   }
 
   for (const weight of config.weights ?? []) {

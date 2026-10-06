@@ -29,6 +29,9 @@ const routes = new Set([
   "/research-products/obe-simulator",
   "/research-products/obe-simulator/program",
   "/research-products/obe-simulator/settings",
+  "/research-products/obe-simulator/matematika",
+  "/research-products/obe-simulator/matematika/program",
+  "/research-products/obe-simulator/matematika/settings",
 ]);
 
 for (const course of courses) {
