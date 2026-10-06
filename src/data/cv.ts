@@ -43,6 +43,7 @@ export type ResearchProduct = {
   name: string;
   category: "Decision Support System" | "Research Software" | "Early Warning System";
   description: string;
+  internalPath?: string;
   collaborators?: string[];
   links?: Link[];
   tags?: string[];
@@ -203,6 +204,16 @@ export const cvData: CVData = {
   ],
 
   researchProducts: [
+    {
+      name: "SINTA Matematika ITERA",
+      category: "Decision Support System",
+      description: "Dashboard internal untuk memantau publikasi, hibah penelitian, pengabdian, anggaran, serta luaran dosen Matematika ITERA dari basis data JSON yang diperbarui otomatis.",
+      challenge: "Data kinerja akademik tersebar pada banyak profil dosen dan perlu dibaca secara unik maupun nonunik tanpa pengolahan spreadsheet manual.",
+      collaborators: ["Program Studi Matematika ITERA"],
+      readiness: "Dashboard operasional · Data tersinkron dari GitHub",
+      internalPath: "/research-products/sinta-matematika-itera",
+      tags: ["SINTA", "Research Analytics", "Open Data", "Decision Support"],
+    },
     {
       name: "DBDKlim-LAMPUNG",
       category: "Early Warning System",

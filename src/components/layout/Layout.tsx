@@ -9,8 +9,9 @@ export default function Layout({ children }: { children?: ReactNode }) {
   const location = useLocation();
 
   const inTeachingDetail = location.pathname.startsWith("/teaching/");
-  const backTarget = inTeachingDetail ? "/teaching" : "/";
-  const backLabel = inTeachingDetail ? "Kembali ke Teaching" : "Kembali ke Home";
+  const inResearchProductDetail = location.pathname.startsWith("/research-products/");
+  const backTarget = inTeachingDetail ? "/teaching" : inResearchProductDetail ? "/research-products" : "/";
+  const backLabel = inTeachingDetail ? "Kembali ke Teaching" : inResearchProductDetail ? "Kembali ke Research Products" : "Kembali ke Home";
 
   return (
     <div className="appShell">

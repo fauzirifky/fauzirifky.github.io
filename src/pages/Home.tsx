@@ -105,7 +105,7 @@ export default function Home() {
           <div className="productMiniGrid">
             {researchProducts.slice(0, 4).map((product) => (
               <Link
-                to={`/research-products#${product.name
+                to={product.internalPath ?? `/research-products#${product.name
                   .toLowerCase()
                   .replace(/[^a-z0-9]+/g, "-")
                   .replace(/^-|-$/g, "")}`}

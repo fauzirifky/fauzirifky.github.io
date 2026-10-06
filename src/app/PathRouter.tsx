@@ -7,6 +7,7 @@ import TeachingDetail from "../pages/TeachingDetail";
 import Publications from "../pages/Publications";
 import Grants from "../pages/Grants";
 import ResearchProducts from "../pages/ResearchProducts";
+import SintaResearchDashboard from "../pages/SintaResearchDashboard";
 import NotFound from "../pages/NotFound";
 import { getCourse } from "../data/courses";
 
@@ -68,6 +69,14 @@ export default function PathRouter() {
     return (
       <Layout>
         <Grants />
+      </Layout>
+    );
+  }
+
+  if (path === "/research-products/sinta-matematika-itera") {
+    return (
+      <Layout>
+        <SintaResearchDashboard />
       </Layout>
     );
   }

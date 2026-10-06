@@ -19,7 +19,8 @@ const routes = new Set([
   "/teaching",
   "/publications",
   "/grants",
-  "/research-products"
+  "/research-products",
+  "/research-products/sinta-matematika-itera"
 ]);
 
 for (const course of courses) {

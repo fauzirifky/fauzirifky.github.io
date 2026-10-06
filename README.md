@@ -15,3 +15,16 @@ All CV content lives in:
 - `src/data/cv.ts`
 
 Website pages **and** the "Download CV" PDF are generated from the same data.
+
+## SINTA research dashboard
+
+The internal dashboard is available at:
+
+```text
+/research-products/sinta-matematika-itera
+```
+
+By default it reads the public JSON database from
+`fauzirifky/Sinta-Matematika-ITERA-Sync`. To use another compatible source,
+set `VITE_SINTA_DATA_BASE_URL` to the directory containing `index.json` and
+the per-lecturer JSON files before building.

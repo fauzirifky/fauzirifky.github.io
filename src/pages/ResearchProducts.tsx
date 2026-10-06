@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import Container from "../components/layout/Container";
 import Section from "../components/ui/Section";
@@ -50,7 +50,12 @@ export default function ResearchProducts() {
                   ))}
                 </div>
               ) : null}
-              {!p.links?.length && <p className="small">Demo publik belum tersedia.</p>}
+              {p.internalPath ? (
+                <div className="row" style={{ marginTop: 12 }}>
+                  <Link className="stripeBtn stripeBtn--primary" to={p.internalPath}>Buka dashboard →</Link>
+                </div>
+              ) : null}
+              {!p.links?.length && !p.internalPath && <p className="small">Demo publik belum tersedia.</p>}
               <TagList tags={p.tags} />
             </Card>
           ))}

@@ -34,7 +34,7 @@ export default function ProductsDropdown() {
       {open ? (
         <div className="dropdownPanel" role="menu" aria-label="Research Products menu">
           {products.map((p) => (
-            <Link key={p.id} className="dropdownItem" onClick={() => setOpen(false)} to={`/research-products#${p.id}`} role="menuitem">
+            <Link key={p.id} className="dropdownItem" onClick={() => setOpen(false)} to={p.internalPath ?? `/research-products#${p.id}`} role="menuitem">
               <div>
                 <strong>{p.name}</strong>
               </div>

@@ -3,6 +3,7 @@ import Layout from "../components/layout/Layout";
 import PublicLayout from "../components/layout/PublicLayout";
 import Home from "../pages/Home";
 import ResearchProducts from "../pages/ResearchProducts";
+import SintaResearchDashboard from "../pages/SintaResearchDashboard";
 import Teaching from "../pages/Teaching";
 import TeachingDetail from "../pages/TeachingDetail";
 import Publications from "../pages/Publications";
@@ -18,6 +19,7 @@ export const Routes = (
 
     <Route element={<Layout />}>
       <Route path="/research-products" element={<ResearchProducts />} />
+      <Route path="/research-products/sinta-matematika-itera" element={<SintaResearchDashboard />} />
       <Route path="/teaching" element={<Teaching />} />
 
       {courses.map((course) => (
