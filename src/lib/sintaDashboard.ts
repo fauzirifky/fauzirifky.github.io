@@ -16,6 +16,8 @@ export type DashboardFilters = {
   excludedLecturerIds: Set<string>;
   sintaLevels: Set<SintaLevel>;
   yearCount: number;
+  includeMemberContributions: boolean;
+  includeExternalLeaders: boolean;
   referenceYear?: number;
 };
 
@@ -95,10 +97,14 @@ export type YearSummary = {
   researchNonUnique: number;
   researchFundingUnique: number;
   researchFundingNonUnique: number;
+  researchLedCount: number;
+  researchLedFunding: number;
   pkmUnique: number;
   pkmNonUnique: number;
   pkmFundingUnique: number;
   pkmFundingNonUnique: number;
+  pkmLedCount: number;
+  pkmLedFunding: number;
   iprUnique: number;
   iprNonUnique: number;
   booksUnique: number;
@@ -113,8 +119,12 @@ export type LecturerSummary = {
   sintaAccredited: number;
   researches: number;
   researchFunding: number;
+  researchLed: number;
+  researchLedFunding: number;
   pkm: number;
   pkmFunding: number;
+  pkmLed: number;
+  pkmLedFunding: number;
   outputs: number;
 };
 
@@ -211,6 +221,30 @@ function unique(items: OwnedRecord[]) {
   });
 }
 
+function isFundingKind(kind: CollectionKey) {
+  return kind === "researches" || kind === "community_services";
+}
+
+function personNamesMatch(first: string | null | undefined, second: string | null | undefined) {
+  const left = normalize(first);
+  const right = normalize(second);
+  if (!left || !right) return false;
+  return left === right || (Math.min(left.length, right.length) >= 8 && (left.includes(right) || right.includes(left)));
+}
+
+function leaderMatchesOwner(item: OwnedRecord) {
+  return personNamesMatch(item.record.leader, item.ownerName);
+}
+
+function collapseFundingMembers(items: OwnedRecord[]) {
+  const groups = new Map<string, OwnedRecord[]>();
+  items.forEach((item) => {
+    const key = uniqueKey(item);
+    groups.set(key, [...(groups.get(key) ?? []), item]);
+  });
+  return [...groups.values()].map((group) => group.find(leaderMatchesOwner) ?? group[0]);
+}
+
 export function getDashboardRecords(
   lecturers: LoadedLecturer[],
   filters: DashboardFilters,
@@ -219,9 +253,10 @@ export function getDashboardRecords(
   const referenceYear = filters.referenceYear ?? new Date().getFullYear();
   const yearCount = Math.max(1, Math.min(20, Math.round(filters.yearCount) || 1));
   const firstYear = referenceYear - yearCount + 1;
-  const nonUnique = lecturers
-    .filter((lecturer) => !filters.excludedLecturerIds.has(lecturer.index.sinta_id))
-    .flatMap((lecturer) =>
+  const includedLecturers = lecturers
+    .filter((lecturer) => !filters.excludedLecturerIds.has(lecturer.index.sinta_id));
+  const includedNames = includedLecturers.map((lecturer) => lecturer.profile.profile.name || lecturer.index.name);
+  const candidates = includedLecturers.flatMap((lecturer) =>
       recordsFor(lecturer, kind)
         .filter((record) => {
           const year = yearOf(record);
@@ -236,6 +271,13 @@ export function getDashboardRecords(
           record,
         })),
     );
+
+  const externalLeaderFiltered = isFundingKind(kind) && !filters.includeExternalLeaders
+    ? candidates.filter((item) => includedNames.some((name) => personNamesMatch(item.record.leader, name)))
+    : candidates;
+  const nonUnique = isFundingKind(kind) && !filters.includeMemberContributions
+    ? collapseFundingMembers(externalLeaderFiltered)
+    : externalLeaderFiltered;
 
   return { nonUnique, unique: unique(nonUnique) };
 }
@@ -253,10 +295,14 @@ function blankYear(year: number): YearSummary {
     researchNonUnique: 0,
     researchFundingUnique: 0,
     researchFundingNonUnique: 0,
+    researchLedCount: 0,
+    researchLedFunding: 0,
     pkmUnique: 0,
     pkmNonUnique: 0,
     pkmFundingUnique: 0,
     pkmFundingNonUnique: 0,
+    pkmLedCount: 0,
+    pkmLedFunding: 0,
     iprUnique: 0,
     iprNonUnique: 0,
     booksUnique: 0,
@@ -286,10 +332,16 @@ function summarizeYear(year: number, all: OwnedRecord[]) {
   row.researchUnique = unique(research).length;
   row.researchFundingNonUnique = research.reduce((sum, item) => sum + moneyOf(item.record), 0);
   row.researchFundingUnique = unique(research).reduce((sum, item) => sum + moneyOf(item.record), 0);
+  const researchLed = unique(research.filter(leaderMatchesOwner));
+  row.researchLedCount = researchLed.length;
+  row.researchLedFunding = researchLed.reduce((sum, item) => sum + moneyOf(item.record), 0);
   row.pkmNonUnique = pkm.length;
   row.pkmUnique = unique(pkm).length;
   row.pkmFundingNonUnique = pkm.reduce((sum, item) => sum + moneyOf(item.record), 0);
   row.pkmFundingUnique = unique(pkm).reduce((sum, item) => sum + moneyOf(item.record), 0);
+  const pkmLed = unique(pkm.filter(leaderMatchesOwner));
+  row.pkmLedCount = pkmLed.length;
+  row.pkmLedFunding = pkmLed.reduce((sum, item) => sum + moneyOf(item.record), 0);
   row.iprNonUnique = iprs.length;
   row.iprUnique = unique(iprs).length;
   row.booksNonUnique = books.length;
@@ -299,6 +351,11 @@ function summarizeYear(year: number, all: OwnedRecord[]) {
 
 export function buildDashboardSummary(lecturers: LoadedLecturer[], filters: DashboardFilters): DashboardSummary {
   const all = collectionKeys.flatMap((kind) => getDashboardRecords(lecturers, filters, kind).nonUnique);
+  const allForLecturerRows = collectionKeys.flatMap((kind) => getDashboardRecords(
+    lecturers,
+    { ...filters, excludedLecturerIds: new Set<string>() },
+    kind,
+  ).nonUnique);
   const referenceYear = filters.referenceYear ?? new Date().getFullYear();
   const yearCount = Math.max(1, Math.min(20, Math.round(filters.yearCount) || 1));
   const years = Array.from({ length: yearCount }, (_, offset) => referenceYear - offset)
@@ -313,14 +370,16 @@ export function buildDashboardSummary(lecturers: LoadedLecturer[], filters: Dash
 
   const lecturerRows = lecturers
     .map((lecturer): LecturerSummary => {
-      const lecturerFilters = { ...filters, excludedLecturerIds: new Set<string>() };
-      const singleLecturer = [lecturer];
-      const scopus = getDashboardRecords(singleLecturer, lecturerFilters, "scopus").nonUnique.map((item) => item.record);
-      const garuda = getDashboardRecords(singleLecturer, lecturerFilters, "garuda").nonUnique.map((item) => item.record);
-      const researches = getDashboardRecords(singleLecturer, lecturerFilters, "researches").nonUnique.map((item) => item.record);
-      const pkm = getDashboardRecords(singleLecturer, lecturerFilters, "community_services").nonUnique.map((item) => item.record);
-      const iprs = getDashboardRecords(singleLecturer, lecturerFilters, "iprs").nonUnique.map((item) => item.record);
-      const books = getDashboardRecords(singleLecturer, lecturerFilters, "books").nonUnique.map((item) => item.record);
+      const owned = allForLecturerRows.filter((item) => item.ownerId === lecturer.index.sinta_id);
+      const byKind = (kind: CollectionKey) => owned.filter((item) => item.kind === kind);
+      const scopus = byKind("scopus");
+      const garuda = byKind("garuda");
+      const researches = byKind("researches");
+      const pkm = byKind("community_services");
+      const iprs = byKind("iprs");
+      const books = byKind("books");
+      const researchLed = researches.filter(leaderMatchesOwner);
+      const pkmLed = pkm.filter(leaderMatchesOwner);
       return {
         id: lecturer.index.sinta_id,
         name: lecturer.profile.profile.name || lecturer.index.name,
@@ -328,9 +387,13 @@ export function buildDashboardSummary(lecturers: LoadedLecturer[], filters: Dash
         scopus: scopus.length,
         sintaAccredited: garuda.length,
         researches: researches.length,
-        researchFunding: researches.reduce((sum, record) => sum + moneyOf(record), 0),
+        researchFunding: researches.reduce((sum, item) => sum + moneyOf(item.record), 0),
+        researchLed: researchLed.length,
+        researchLedFunding: researchLed.reduce((sum, item) => sum + moneyOf(item.record), 0),
         pkm: pkm.length,
-        pkmFunding: pkm.reduce((sum, record) => sum + moneyOf(record), 0),
+        pkmFunding: pkm.reduce((sum, item) => sum + moneyOf(item.record), 0),
+        pkmLed: pkmLed.length,
+        pkmLedFunding: pkmLed.reduce((sum, item) => sum + moneyOf(item.record), 0),
         outputs: scopus.length + garuda.length + iprs.length + books.length,
       };
     })

@@ -44,6 +44,8 @@ type PortalSettings = {
   excludedLecturerIds: Set<string>;
   sintaLevels: Set<SintaLevel>;
   yearCount: number;
+  includeMemberContributions: boolean;
+  includeExternalLeaders: boolean;
 };
 
 function clampYearCount(value: unknown) {
@@ -57,6 +59,8 @@ function readSettings(): PortalSettings {
       excludedLecturerIds?: unknown;
       sintaLevels?: unknown;
       yearCount?: unknown;
+      includeMemberContributions?: unknown;
+      includeExternalLeaders?: unknown;
     } | null;
     if (stored) {
       const validLevels = new Set(SINTA_OPTIONS.map((option) => option.value));
@@ -67,6 +71,8 @@ function readSettings(): PortalSettings {
         excludedLecturerIds: new Set(Array.isArray(stored.excludedLecturerIds) ? stored.excludedLecturerIds.filter((id): id is string => typeof id === "string") : []),
         sintaLevels: new Set(levels),
         yearCount: clampYearCount(stored.yearCount),
+        includeMemberContributions: stored.includeMemberContributions === true,
+        includeExternalLeaders: stored.includeExternalLeaders !== false,
       };
     }
   } catch {
@@ -84,6 +90,8 @@ function readSettings(): PortalSettings {
     excludedLecturerIds: new Set(legacyExcluded),
     sintaLevels: new Set(DEFAULT_SINTA_LEVELS),
     yearCount: 3,
+    includeMemberContributions: false,
+    includeExternalLeaders: true,
   };
 }
 
@@ -185,6 +193,8 @@ export default function SintaResearchDashboard() {
       excludedLecturerIds: [...settings.excludedLecturerIds],
       sintaLevels: [...settings.sintaLevels],
       yearCount: settings.yearCount,
+      includeMemberContributions: settings.includeMemberContributions,
+      includeExternalLeaders: settings.includeExternalLeaders,
     }));
   }, [settings]);
 
@@ -205,6 +215,8 @@ export default function SintaResearchDashboard() {
     excludedLecturerIds: settings.excludedLecturerIds,
     sintaLevels: settings.sintaLevels,
     yearCount: settings.yearCount,
+    includeMemberContributions: settings.includeMemberContributions,
+    includeExternalLeaders: settings.includeExternalLeaders,
   }), [settings]);
 
   const summary = useMemo(
@@ -251,7 +263,13 @@ export default function SintaResearchDashboard() {
   }
 
   const pageContent: Record<PageKey, ReactNode> = {
-    dashboard: <DashboardPage summary={summary} sintaLabel={selectedSintaLabel} periodLabel={periodLabel} />,
+    dashboard: (
+      <DashboardPage
+        summary={summary}
+        leaderRows={summary.lecturerRows.filter((lecturer) => !settings.excludedLecturerIds.has(lecturer.id))}
+        periodLabel={periodLabel}
+      />
+    ),
     publikasi: <PublicationPage summary={summary} scopus={records.scopus} garuda={records.garuda} sintaLabel={selectedSintaLabel} periodLabel={periodLabel} />,
     penelitian: <FundingPage kind="penelitian" summary={summary} records={records.researches} periodLabel={periodLabel} />,
     pengabdian: <FundingPage kind="pengabdian" summary={summary} records={records.pkm} periodLabel={periodLabel} />,
@@ -263,12 +281,16 @@ export default function SintaResearchDashboard() {
         excludedIds={settings.excludedLecturerIds}
         sintaLevels={settings.sintaLevels}
         yearCount={settings.yearCount}
+        includeMemberContributions={settings.includeMemberContributions}
+        includeExternalLeaders={settings.includeExternalLeaders}
         periodLabel={periodLabel}
         search={lecturerSearch}
         onSearch={setLecturerSearch}
         onToggle={toggleLecturer}
         onToggleSinta={toggleSintaLevel}
         onYearCount={(yearCount) => setSettings((current) => ({ ...current, yearCount: clampYearCount(yearCount) }))}
+        onIncludeMemberContributions={(checked) => setSettings((current) => ({ ...current, includeMemberContributions: checked }))}
+        onIncludeExternalLeaders={(checked) => setSettings((current) => ({ ...current, includeExternalLeaders: checked }))}
         onResetLecturers={() => setSettings((current) => ({ ...current, excludedLecturerIds: new Set() }))}
       />
     ),
@@ -345,43 +367,42 @@ export default function SintaResearchDashboard() {
   );
 }
 
-function DashboardPage({ summary, sintaLabel, periodLabel }: {
+function DashboardPage({ summary, leaderRows, periodLabel }: {
   summary: ReturnType<typeof buildDashboardSummary>;
-  sintaLabel: string;
+  leaderRows: ReturnType<typeof buildDashboardSummary>["lecturerRows"];
   periodLabel: string;
 }) {
+  const activeLeaders = leaderRows.filter((lecturer) => lecturer.researchLed || lecturer.pkmLed);
   return (
     <>
-      <PageHeading eyebrow="Ringkasan institusi" title="Dashboard Kinerja Akademik">
-        Gambaran terpadu publikasi, penelitian, pengabdian, anggaran, dan luaran Program Studi Matematika ITERA periode {periodLabel}.
+      <PageHeading eyebrow="Ringkasan institusi" title="Dashboard Penelitian dan PkM">
+        Rekap kegiatan, anggaran, dan peran ketua DTPS Program Studi Matematika ITERA periode {periodLabel}.
       </PageHeading>
 
-      <div className="metricGrid portalMetricGrid">
-        <article className="metricCard"><span>Scopus unik</span><strong>{summary.totals.scopusUnique}</strong><small>{summary.totals.scopusNonUnique} nonunik</small></article>
-        <article className="metricCard"><span>Scopus first author</span><strong>{summary.totals.scopusFirstUnique}</strong><small>{summary.totals.scopusFirstNonUnique} nonunik</small></article>
-        <article className="metricCard"><span>{sintaLabel}</span><strong>{summary.totals.sintaAccreditedUnique}</strong><small>{summary.totals.sintaAccreditedNonUnique} nonunik</small></article>
-        <article className="metricCard"><span>Penelitian</span><strong>{summary.totals.researchUnique}</strong><small>{formatRupiah(summary.totals.researchFundingUnique, true)} anggaran unik</small></article>
-        <article className="metricCard"><span>Pengabdian</span><strong>{summary.totals.pkmUnique}</strong><small>{formatRupiah(summary.totals.pkmFundingUnique, true)} anggaran unik</small></article>
-        <article className="metricCard"><span>HKI + Buku</span><strong>{summary.totals.iprUnique + summary.totals.booksUnique}</strong><small>{summary.totals.iprUnique} HKI · {summary.totals.booksUnique} buku</small></article>
+      <div className="metricGrid portalMetricGrid portalMetricGrid--four">
+        <article className="metricCard"><span>Penelitian unik</span><strong>{summary.totals.researchUnique}</strong><small>{formatRupiah(summary.totals.researchFundingUnique, true)} total anggaran</small></article>
+        <article className="metricCard"><span>Dipimpin DTPS · Penelitian</span><strong>{summary.totals.researchLedCount}</strong><small>{formatRupiah(summary.totals.researchLedFunding, true)} anggaran kegiatan</small></article>
+        <article className="metricCard"><span>PkM unik</span><strong>{summary.totals.pkmUnique}</strong><small>{formatRupiah(summary.totals.pkmFundingUnique, true)} total anggaran</small></article>
+        <article className="metricCard"><span>Dipimpin DTPS · PkM</span><strong>{summary.totals.pkmLedCount}</strong><small>{formatRupiah(summary.totals.pkmLedFunding, true)} anggaran kegiatan</small></article>
       </div>
 
       <section className="portalPanel">
         <div className="portalPanel__heading"><div><span className="microLabel">Tren tahunan</span><h2>Ringkasan per tahun</h2></div></div>
         <div className="dataTableWrap">
           <table className="dataTable yearTable">
-            <thead><tr><th>Tahun</th><th>Scopus</th><th>{sintaLabel}</th><th>Penelitian</th><th>Anggaran penelitian</th><th>PkM</th><th>Anggaran PkM</th><th>HKI</th><th>Buku</th></tr></thead>
+            <thead><tr><th>Tahun</th><th>Penelitian</th><th>Anggaran penelitian</th><th>Ketua DTPS</th><th>Anggaran dipimpin</th><th>PkM</th><th>Anggaran PkM</th><th>Ketua DTPS</th><th>Anggaran dipimpin</th></tr></thead>
             <tbody>
               {summary.years.map((row) => (
                 <tr key={row.year}>
                   <th>{row.year}</th>
-                  <td><CountPair unique={row.scopusUnique} nonUnique={row.scopusNonUnique} /></td>
-                  <td><CountPair unique={row.sintaAccreditedUnique} nonUnique={row.sintaAccreditedNonUnique} /></td>
                   <td><CountPair unique={row.researchUnique} nonUnique={row.researchNonUnique} /></td>
                   <td><span className="moneyPair"><strong>{formatRupiah(row.researchFundingUnique, true)}</strong><small>{formatRupiah(row.researchFundingNonUnique, true)}</small></span></td>
+                  <td>{row.researchLedCount}</td>
+                  <td>{formatRupiah(row.researchLedFunding)}</td>
                   <td><CountPair unique={row.pkmUnique} nonUnique={row.pkmNonUnique} /></td>
                   <td><span className="moneyPair"><strong>{formatRupiah(row.pkmFundingUnique, true)}</strong><small>{formatRupiah(row.pkmFundingNonUnique, true)}</small></span></td>
-                  <td><CountPair unique={row.iprUnique} nonUnique={row.iprNonUnique} /></td>
-                  <td><CountPair unique={row.booksUnique} nonUnique={row.booksNonUnique} /></td>
+                  <td>{row.pkmLedCount}</td>
+                  <td>{formatRupiah(row.pkmLedFunding)}</td>
                 </tr>
               ))}
               {!summary.years.length ? <EmptyRow columns={9} /> : null}
@@ -391,8 +412,31 @@ function DashboardPage({ summary, sintaLabel, periodLabel }: {
         <p className="tableLegend"><strong>Angka besar:</strong> unik · <strong>angka kecil:</strong> nonunik. Anggaran mengikuti pola yang sama.</p>
       </section>
 
+      <section className="portalPanel">
+        <div className="portalPanel__heading"><div><span className="microLabel">Peran ketua DTPS</span><h2>Jumlah dan anggaran kegiatan yang dipimpin</h2><p>Anggaran menunjukkan nilai kegiatan yang diketuai, bukan pendapatan pribadi dosen.</p></div><span className="panelCount">{activeLeaders.length} ketua</span></div>
+        <div className="dataTableWrap">
+          <table className="dataTable leaderTable">
+            <thead><tr><th>Dosen</th><th>Ketua penelitian</th><th>Anggaran penelitian</th><th>Ketua PkM</th><th>Anggaran PkM</th><th>Total kegiatan</th><th>Total anggaran</th></tr></thead>
+            <tbody>
+              {activeLeaders.map((lecturer) => (
+                <tr key={lecturer.id}>
+                  <th>{lecturer.name}<small>SINTA ID {lecturer.id}</small></th>
+                  <td>{lecturer.researchLed}</td>
+                  <td>{formatRupiah(lecturer.researchLedFunding)}</td>
+                  <td>{lecturer.pkmLed}</td>
+                  <td>{formatRupiah(lecturer.pkmLedFunding)}</td>
+                  <td>{lecturer.researchLed + lecturer.pkmLed}</td>
+                  <td>{formatRupiah(lecturer.researchLedFunding + lecturer.pkmLedFunding)}</td>
+                </tr>
+              ))}
+              {!activeLeaders.length ? <EmptyRow columns={7} /> : null}
+            </tbody>
+          </table>
+        </div>
+      </section>
+
       <aside className="methodNote">
-        <strong>Metode ringkas.</strong> Data unik dideduplikasi memakai ID sumber, URL, kemudian judul dan tahun. Nonunik menjumlahkan kemunculan pada setiap profil dosen. Pengaturan dosen dapat diubah melalui menu Dosen & Pengaturan.
+        <strong>Metode ringkas.</strong> Data unik dideduplikasi memakai ID sumber, URL, kemudian judul dan tahun. Aturan keterlibatan anggota dan ketua dari luar DTPS dapat diubah melalui menu Dosen & Pengaturan.
       </aside>
     </>
   );
@@ -506,18 +550,22 @@ function OutputPage({ iprs, books, periodLabel }: { iprs: ReturnType<typeof getD
   );
 }
 
-function LecturerPage({ rows, allRows, excludedIds, sintaLevels, yearCount, periodLabel, search, onSearch, onToggle, onToggleSinta, onYearCount, onResetLecturers }: {
+function LecturerPage({ rows, allRows, excludedIds, sintaLevels, yearCount, includeMemberContributions, includeExternalLeaders, periodLabel, search, onSearch, onToggle, onToggleSinta, onYearCount, onIncludeMemberContributions, onIncludeExternalLeaders, onResetLecturers }: {
   rows: ReturnType<typeof buildDashboardSummary>["lecturerRows"];
   allRows: ReturnType<typeof buildDashboardSummary>["lecturerRows"];
   excludedIds: Set<string>;
   sintaLevels: Set<SintaLevel>;
   yearCount: number;
+  includeMemberContributions: boolean;
+  includeExternalLeaders: boolean;
   periodLabel: string;
   search: string;
   onSearch: (value: string) => void;
   onToggle: (id: string) => void;
   onToggleSinta: (level: SintaLevel) => void;
   onYearCount: (value: number) => void;
+  onIncludeMemberContributions: (checked: boolean) => void;
+  onIncludeExternalLeaders: (checked: boolean) => void;
   onResetLecturers: () => void;
 }) {
   return (
@@ -547,6 +595,19 @@ function LecturerPage({ rows, allRows, excludedIds, sintaLevels, yearCount, peri
               ))}
             </div>
             <small>Default SINTA 1 dan SINTA 2.</small>
+          </fieldset>
+          <fieldset className="settingsField settingsField--wide">
+            <legend>Peran dalam Penelitian dan PkM</legend>
+            <div className="roleOptions">
+              <label className="settingCheck settingCheck--detail">
+                <input type="checkbox" checked={includeMemberContributions} onChange={(event) => onIncludeMemberContributions(event.target.checked)} />
+                <span><strong>Hitung keterlibatan anggota DTPS</strong><small>Jika tidak dicentang, kegiatan bersama cukup dihitung sekali dan profil ketua DTPS diprioritaskan.</small></span>
+              </label>
+              <label className="settingCheck settingCheck--detail">
+                <input type="checkbox" checked={includeExternalLeaders} onChange={(event) => onIncludeExternalLeaders(event.target.checked)} />
+                <span><strong>Hitung kegiatan dengan ketua dari luar DTPS</strong><small>Hilangkan centang untuk mengeluarkan kegiatan yang ketuanya tidak ada dalam daftar DTPS aktif.</small></span>
+              </label>
+            </div>
           </fieldset>
         </div>
       </section>
