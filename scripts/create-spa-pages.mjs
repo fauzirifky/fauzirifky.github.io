@@ -25,7 +25,10 @@ const routes = new Set([
   "/research-products/sinta-matematika-itera/penelitian",
   "/research-products/sinta-matematika-itera/pengabdian",
   "/research-products/sinta-matematika-itera/luaran",
-  "/research-products/sinta-matematika-itera/dosen"
+  "/research-products/sinta-matematika-itera/dosen",
+  "/research-products/obe-simulator",
+  "/research-products/obe-simulator/program",
+  "/research-products/obe-simulator/settings",
 ]);
 
 for (const course of courses) {

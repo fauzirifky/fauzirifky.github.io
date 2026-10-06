@@ -44,6 +44,7 @@ export type ResearchProduct = {
   category: "Decision Support System" | "Research Software" | "Early Warning System";
   description: string;
   internalPath?: string;
+  internalLabel?: string;
   collaborators?: string[];
   links?: Link[];
   tags?: string[];
@@ -213,6 +214,17 @@ export const cvData: CVData = {
       readiness: "Dashboard operasional · Data tersinkron dari GitHub",
       internalPath: "/research-products/sinta-matematika-itera",
       tags: ["SINTA", "Research Analytics", "Open Data", "Decision Support"],
+    },
+    {
+      name: "OBE Simulator",
+      category: "Research Software",
+      description: "Simulator jalur studi dan pemetaan CPL–CPMK–mata kuliah berbasis JSON. Mendukung randomisasi paket mahasiswa, komposisi SKS per semester, agregasi jalur, serta pemeriksaan konsistensi bobot dan pemetaan OBE.",
+      challenge: "Kurikulum fleksibel dapat menghasilkan kombinasi mata kuliah dan sumber evidence CPL yang berbeda antar mahasiswa, sehingga perlu diuji sebelum formula OBE diterapkan.",
+      collaborators: ["Rifky Fauzi"],
+      readiness: "Prototipe publik · Konfigurasi program studi berbasis JSON",
+      internalPath: "/research-products/obe-simulator",
+      internalLabel: "Buka simulator →",
+      tags: ["OBE", "Curriculum", "CPL", "CPMK", "Simulation"],
     },
     {
       name: "DBDKlim-LAMPUNG",

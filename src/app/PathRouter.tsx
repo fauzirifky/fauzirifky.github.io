@@ -8,6 +8,7 @@ import Publications from "../pages/Publications";
 import Grants from "../pages/Grants";
 import ResearchProducts from "../pages/ResearchProducts";
 import SintaResearchDashboard from "../pages/SintaResearchDashboard";
+import ObeSimulator from "../pages/ObeSimulator";
 import NotFound from "../pages/NotFound";
 import { getCourse } from "../data/courses";
 
@@ -75,6 +76,10 @@ export default function PathRouter() {
 
   if (path === "/research-products/sinta-matematika-itera" || path.startsWith("/research-products/sinta-matematika-itera/")) {
     return <SintaResearchDashboard />;
+  }
+
+  if (path === "/research-products/obe-simulator" || path.startsWith("/research-products/obe-simulator/")) {
+    return <ObeSimulator />;
   }
 
   if (path === "/research-products") {

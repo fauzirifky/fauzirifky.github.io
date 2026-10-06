@@ -28,3 +28,14 @@ By default it reads the public JSON database from
 `fauzirifky/Sinta-Matematika-ITERA-Sync`. To use another compatible source,
 set `VITE_SINTA_DATA_BASE_URL` to the directory containing `index.json` and
 the per-lecturer JSON files before building.
+
+
+## OBE Simulator
+
+Public simulator:
+
+```text
+/research-products/obe-simulator
+```
+
+Default configuration: `src/data/obe/magister-fisika-itera.json`. A compatible JSON can be loaded from the simulator Settings page.

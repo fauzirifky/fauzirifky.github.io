@@ -4,6 +4,7 @@ import PublicLayout from "../components/layout/PublicLayout";
 import Home from "../pages/Home";
 import ResearchProducts from "../pages/ResearchProducts";
 import SintaResearchDashboard from "../pages/SintaResearchDashboard";
+import ObeSimulator from "../pages/ObeSimulator";
 import Teaching from "../pages/Teaching";
 import TeachingDetail from "../pages/TeachingDetail";
 import Publications from "../pages/Publications";
@@ -14,6 +15,7 @@ import { courses, courseAliases } from "../data/courses";
 export const Routes = (
   <RouterRoutes>
     <Route path="/research-products/sinta-matematika-itera/*" element={<SintaResearchDashboard />} />
+    <Route path="/research-products/obe-simulator/*" element={<ObeSimulator />} />
 
     <Route element={<PublicLayout />}>
       <Route path="/" element={<Home />} />

@@ -1,0 +1,2371 @@
+{
+  "schemaVersion": "1.0.0",
+  "program": {
+    "id": "mfi-itera-2025-2029-rev",
+    "name": "Magister Fisika",
+    "institution": "Institut Teknologi Sumatera",
+    "faculty": "Fakultas Sains",
+    "degreeLevel": "magister",
+    "curriculum": "Revisi Kurikulum 2025-2029",
+    "creditUnit": "SKS",
+    "totalCredits": 42,
+    "semesterCount": 4,
+    "description": "Konfigurasi contoh OBE Simulator berdasarkan draft revisi Kurikulum Program Studi Magister Fisika ITERA."
+  },
+  "outcomes": [
+    {
+      "id": "CPL-1",
+      "code": "CPL 1",
+      "label": "Mampu menganalisis konsep-konsep dasar, lanjutan, dan terapan dalam fisika."
+    },
+    {
+      "id": "CPL-2",
+      "code": "CPL 2",
+      "label": "Mampu melaksanakan dan menganalisis penelitian dalam bidang fisika dengan menggunakan metode ilmiah yang tepat."
+    },
+    {
+      "id": "CPL-3",
+      "code": "CPL 3",
+      "label": "Mampu mengoptimalkan penggunaan teknologi dan peralatan laboratorium untuk mendukung eksperimen dan penelitian di bidang fisika."
+    },
+    {
+      "id": "CPL-4",
+      "code": "CPL 4",
+      "label": "Mampu menyampaikan dan menyimpulkan hasil penelitian dan kajian ilmiah secara efektif dalam bentuk tulisan maupun presentasi lisan."
+    },
+    {
+      "id": "CPL-5",
+      "code": "CPL 5",
+      "label": "Mampu mengembangkan inovasi dan solusi kreatif dalam menghadapi tantangan dan permasalahan kompleks di bidang fisika dan aplikasinya."
+    },
+    {
+      "id": "CPL-6",
+      "code": "CPL 6",
+      "label": "Mampu merencanakan penelitian dan aplikasinya di masyarakat dengan menunjukkan profesionalisme, etika akademik, dan tanggung jawab."
+    },
+    {
+      "id": "CPL-7",
+      "code": "CPL 7",
+      "label": "Mampu mengorganisasikan tim dan menunjukkan kemampuan kepemimpinan melalui pendekatan inter maupun multidisiplin."
+    },
+    {
+      "id": "CPL-8",
+      "code": "CPL 8",
+      "label": "Mampu mengembangkan diri dan mengikuti perkembangan ilmu pengetahuan dan teknologi terbaru dalam bidang fisika secara mandiri dan berkelanjutan."
+    },
+    {
+      "id": "CPL-9",
+      "code": "CPL 9",
+      "label": "Mampu mengembangkan pengetahuan dan keterampilan di bidang fisika untuk berkontribusi pada sains, teknologi, industri, dan kesejahteraan masyarakat."
+    }
+  ],
+  "courses": [
+    {
+      "id": "ma",
+      "code": "FI25-50001",
+      "name": "Mekanika Analitik",
+      "credits": 3,
+      "category": "required_choice"
+    },
+    {
+      "id": "ms",
+      "code": "FI25-50101",
+      "name": "Mekanika Statistik",
+      "credits": 3,
+      "category": "required_choice"
+    },
+    {
+      "id": "ksf",
+      "code": "FI25-50102",
+      "name": "Komputasi Sistem Fisis",
+      "credits": 3,
+      "category": "required_choice"
+    },
+    {
+      "id": "ed",
+      "code": "FI25-50005",
+      "name": "Elektrodinamika",
+      "credits": 3,
+      "category": "required_choice"
+    },
+    {
+      "id": "mq",
+      "code": "FI25-50006",
+      "name": "Mekanika Kuantum",
+      "credits": 3,
+      "category": "required_choice"
+    },
+    {
+      "id": "sif",
+      "code": "FI25-50504",
+      "name": "Sistem Instrumentasi Fisika",
+      "credits": 3,
+      "category": "required_choice"
+    },
+    {
+      "id": "potensi",
+      "code": "FI25-50002",
+      "name": "Potensi dan Pemanfaatan Material Alam Sumatera",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "metpen",
+      "code": "FI25-50007",
+      "name": "Metodologi Penelitian",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "pmi",
+      "code": "FI25-60001",
+      "name": "Penulisan Makalah Ilmiah",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "tesis1",
+      "code": "FI25-60002",
+      "name": "Tesis I",
+      "credits": 6,
+      "category": "required"
+    },
+    {
+      "id": "tesis2",
+      "code": "FI25-60003",
+      "name": "Tesis II",
+      "credits": 8,
+      "category": "required"
+    },
+    {
+      "id": "sidang",
+      "code": "FI25-60004",
+      "name": "Sidang Tesis",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "seminar",
+      "code": "FI25-60011",
+      "name": "Seminar Internasional",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "publikasi",
+      "code": "FI25-60013",
+      "name": "Publikasi",
+      "credits": 5,
+      "category": "required"
+    },
+    {
+      "id": "sains-energi",
+      "code": "FI25-50008",
+      "name": "Sains Energi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-kebencanaan",
+      "code": "FI25-50003",
+      "name": "Fisika Kebencanaan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "relativitas",
+      "code": "FI25-50201",
+      "name": "Teori Relativitas Umum",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "inversi-bumi",
+      "code": "FI25-50305",
+      "name": "Pemodelan dan Inversi Fungsi Respon Bumi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "medan-kuantum",
+      "code": "FI25-60401",
+      "name": "Teori Medan Kuantum",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "material-nano",
+      "code": "FI25-50401",
+      "name": "Fisika Material dan Divais Nano",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "orbital-kuantum",
+      "code": "FI25-60402",
+      "name": "Teori Orbital Kuantum",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-teoritik",
+      "code": "FI25-60201",
+      "name": "Kapita Selekta Fisika Teoritik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kosmologi",
+      "code": "FI25-60202",
+      "name": "Kosmologi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "biomaterial",
+      "code": "FI25-60403",
+      "name": "Biomaterial",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "karakterisasi",
+      "code": "FI25-60404",
+      "name": "Metode Karakterisasi Material",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "struktur-elektronik",
+      "code": "FI25-60405",
+      "name": "Komputasi Struktur Elektronik Zat Padat",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "akuisisi",
+      "code": "FI25-50403",
+      "name": "Akuisisi Data dan Pengolahan Sinyal",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "elektronika-industri",
+      "code": "FI25-50502",
+      "name": "Elektronika Industri",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "instrumentasi-analitis",
+      "code": "FI25-50503",
+      "name": "Instrumentasi Analitis",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-material-elektronik",
+      "code": "FI25-50402",
+      "name": "Kapita Selekta Material Elektronik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-instrumentasi",
+      "code": "FI25-60501",
+      "name": "Kapita Selekta Fisika Instrumentasi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "survei-em",
+      "code": "FI25-50302",
+      "name": "Survei dan Pengolahan Data Elektromagnetik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "topik-kompleks",
+      "code": "FI25-60301",
+      "name": "Topik Khusus Fisika Sistem Kompleks",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kapita-fotonik",
+      "code": "FI25-50404",
+      "name": "Kapita Selekta Bahan Fotonik dan Magnetik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-batuan",
+      "code": "FI25-50303",
+      "name": "Analisis Data dan Pemodelan Fisika Batuan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "studi-mandiri",
+      "code": "FI25-50103",
+      "name": "Studi Mandiri",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "gunung-api",
+      "code": "FI25-50304",
+      "name": "Fisika Gunung Api Lanjut",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "seismologi",
+      "code": "FI25-60303",
+      "name": "Seismologi Lanjut",
+      "credits": 2,
+      "category": "elective"
+    }
+  ],
+  "coursePools": [
+    {
+      "id": "regular-electives",
+      "label": "MK Pilihan Jalur Reguler",
+      "courseIds": [
+        "sains-energi",
+        "fisika-kebencanaan",
+        "relativitas",
+        "inversi-bumi",
+        "medan-kuantum",
+        "material-nano",
+        "orbital-kuantum",
+        "kapita-teoritik",
+        "kosmologi",
+        "biomaterial",
+        "karakterisasi",
+        "struktur-elektronik",
+        "akuisisi",
+        "elektronika-industri",
+        "instrumentasi-analitis",
+        "kapita-material-elektronik",
+        "kapita-instrumentasi",
+        "survei-em",
+        "topik-kompleks",
+        "kapita-fotonik",
+        "fisika-batuan",
+        "studi-mandiri",
+        "gunung-api",
+        "seismologi"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "regular",
+      "label": "Jalur Reguler",
+      "shortLabel": "Reguler",
+      "defaultStudentCount": 4,
+      "expectedCreditsBySemester": {
+        "1": 12,
+        "2": 12,
+        "3": 9,
+        "4": 9
+      },
+      "requiredCourses": [
+        {
+          "courseId": "potensi",
+          "semester": 1
+        },
+        {
+          "courseId": "metpen",
+          "semester": 2
+        },
+        {
+          "courseId": "pmi",
+          "semester": 3
+        },
+        {
+          "courseId": "tesis1",
+          "semester": 3
+        },
+        {
+          "courseId": "tesis2",
+          "semester": 4
+        },
+        {
+          "courseId": "sidang",
+          "semester": 4
+        }
+      ],
+      "choiceGroups": [
+        {
+          "id": "fundamental-regular",
+          "label": "Wajib pilih fundamental",
+          "choose": 3,
+          "courseOptions": [
+            {
+              "courseId": "ma",
+              "semester": 1
+            },
+            {
+              "courseId": "ms",
+              "semester": 1
+            },
+            {
+              "courseId": "ksf",
+              "semester": 1
+            },
+            {
+              "courseId": "ed",
+              "semester": 2
+            },
+            {
+              "courseId": "mq",
+              "semester": 2
+            },
+            {
+              "courseId": "sif",
+              "semester": 2
+            }
+          ],
+          "note": "Draft menyatakan pilih 3 dari 6 MK yang disediakan."
+        }
+      ],
+      "electiveRules": [
+        {
+          "semester": 1,
+          "poolId": "regular-electives",
+          "targetCredits": 3,
+          "mode": "atLeast"
+        },
+        {
+          "semester": 2,
+          "poolId": "regular-electives",
+          "targetCredits": 6,
+          "mode": "exactOrAtLeast"
+        }
+      ]
+    },
+    {
+      "id": "research",
+      "label": "Jalur Riset",
+      "shortLabel": "Riset",
+      "defaultStudentCount": 4,
+      "expectedCreditsBySemester": {
+        "1": 15,
+        "2": 6,
+        "3": 7,
+        "4": 14
+      },
+      "requiredCourses": [
+        {
+          "courseId": "metpen",
+          "semester": 1
+        },
+        {
+          "courseId": "potensi",
+          "semester": 1
+        },
+        {
+          "courseId": "tesis1",
+          "semester": 2
+        },
+        {
+          "courseId": "pmi",
+          "semester": 3
+        },
+        {
+          "courseId": "seminar",
+          "semester": 3
+        },
+        {
+          "courseId": "publikasi",
+          "semester": 4
+        },
+        {
+          "courseId": "tesis2",
+          "semester": 4
+        },
+        {
+          "courseId": "sidang",
+          "semester": 4
+        }
+      ],
+      "choiceGroups": [
+        {
+          "id": "fundamental-research",
+          "label": "Wajib pilih fundamental",
+          "choose": 3,
+          "courseOptions": [
+            {
+              "courseId": "ma",
+              "semester": 1
+            },
+            {
+              "courseId": "ms",
+              "semester": 1
+            },
+            {
+              "courseId": "ksf",
+              "semester": 1
+            },
+            {
+              "courseId": "ed",
+              "semester": 1
+            },
+            {
+              "courseId": "mq",
+              "semester": 1
+            },
+            {
+              "courseId": "sif",
+              "semester": 1
+            }
+          ],
+          "note": "Draft menyatakan pilih 3 dari 6 MK yang disediakan."
+        }
+      ],
+      "electiveRules": []
+    }
+  ],
+  "cpmks": [
+    {
+      "id": "m001",
+      "code": "CPMK 1.1",
+      "courseId": "ma",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m002",
+      "code": "CPMK 8.1",
+      "courseId": "ma",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m003",
+      "code": "CPMK 1.2",
+      "courseId": "ms",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m004",
+      "code": "CPMK 8.2",
+      "courseId": "ms",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m005",
+      "code": "CPMK 1.5",
+      "courseId": "ksf",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m006",
+      "code": "CPMK 1.6",
+      "courseId": "ksf",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m007",
+      "code": "CPMK 8.6",
+      "courseId": "ksf",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m008",
+      "code": "CPMK 1.4",
+      "courseId": "ed",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m009",
+      "code": "CPMK 8.5",
+      "courseId": "ed",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m010",
+      "code": "CPMK 1.3",
+      "courseId": "mq",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m011",
+      "code": "CPMK 8.3",
+      "courseId": "mq",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m012",
+      "code": "CPMK 8.4",
+      "courseId": "mq",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m013",
+      "code": "CPMK 1.7",
+      "courseId": "sif",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m014",
+      "code": "CPMK 1.8",
+      "courseId": "sif",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m015",
+      "code": "CPMK 8.7",
+      "courseId": "sif",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m016",
+      "code": "CPMK 3.2",
+      "courseId": "potensi",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m017",
+      "code": "CPMK 5.1",
+      "courseId": "potensi",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m018",
+      "code": "CPMK 7.2",
+      "courseId": "potensi",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m019",
+      "code": "CPMK 2.1",
+      "courseId": "metpen",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m020",
+      "code": "CPMK 3.1",
+      "courseId": "metpen",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m021",
+      "code": "CPMK 6.1",
+      "courseId": "metpen",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m022",
+      "code": "CPMK 8.8",
+      "courseId": "metpen",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m023",
+      "code": "CPMK 2.2",
+      "courseId": "tesis1",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m024",
+      "code": "CPMK 6.2",
+      "courseId": "tesis1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m025",
+      "code": "CPMK 4.1",
+      "courseId": "pmi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m026",
+      "code": "CPMK 7.1",
+      "courseId": "pmi",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m027",
+      "code": "CPMK 2.3",
+      "courseId": "tesis2",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m028",
+      "code": "CPMK 3.3",
+      "courseId": "tesis2",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m029",
+      "code": "CPMK 5.2",
+      "courseId": "tesis2",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m030",
+      "code": "CPMK 6.3",
+      "courseId": "tesis2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m031",
+      "code": "CPMK 9.1",
+      "courseId": "tesis2",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular",
+        "research"
+      ]
+    },
+    {
+      "id": "m032",
+      "code": "CPMK 4.2",
+      "courseId": "sidang",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m033",
+      "code": "CPMK 9.2",
+      "courseId": "sidang",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m034",
+      "code": "CPMK 1.9",
+      "courseId": "relativitas",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m035",
+      "code": "CPMK 1.10",
+      "courseId": "relativitas",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m036",
+      "code": "CPMK 1.11",
+      "courseId": "inversi-bumi",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m037",
+      "code": "CPMK 1.12",
+      "courseId": "inversi-bumi",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m038",
+      "code": "CPMK 5.3",
+      "courseId": "inversi-bumi",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m039",
+      "code": "CPMK 5.4",
+      "courseId": "inversi-bumi",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m040",
+      "code": "CPMK 1.13",
+      "courseId": "medan-kuantum",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m041",
+      "code": "CPMK 1.14",
+      "courseId": "medan-kuantum",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m042",
+      "code": "CPMK 1.15",
+      "courseId": "material-nano",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m043",
+      "code": "CPMK 3.4",
+      "courseId": "material-nano",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m044",
+      "code": "CPMK 8.11",
+      "courseId": "material-nano",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m045",
+      "code": "CPMK 8.12",
+      "courseId": "material-nano",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m046",
+      "code": "CPMK 1.16",
+      "courseId": "orbital-kuantum",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m047",
+      "code": "CPMK 1.17",
+      "courseId": "orbital-kuantum",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m048",
+      "code": "CPMK 1.18",
+      "courseId": "orbital-kuantum",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m049",
+      "code": "CPMK 1.19",
+      "courseId": "kapita-teoritik",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m050",
+      "code": "CPMK 8.13",
+      "courseId": "kapita-teoritik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m051",
+      "code": "CPMK 1.20",
+      "courseId": "kosmologi",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m052",
+      "code": "CPMK 8.14",
+      "courseId": "kosmologi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m053",
+      "code": "CPMK 1.21",
+      "courseId": "biomaterial",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m054",
+      "code": "CPMK 3.5",
+      "courseId": "biomaterial",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m055",
+      "code": "CPMK 9.9",
+      "courseId": "biomaterial",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m056",
+      "code": "CPMK 1.22",
+      "courseId": "struktur-elektronik",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m057",
+      "code": "CPMK 3.7",
+      "courseId": "struktur-elektronik",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m058",
+      "code": "CPMK 5.5",
+      "courseId": "struktur-elektronik",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m059",
+      "code": "CPMK 9.10",
+      "courseId": "struktur-elektronik",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m060",
+      "code": "CPMK 1.23",
+      "courseId": "akuisisi",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m061",
+      "code": "CPMK 3.8",
+      "courseId": "akuisisi",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m062",
+      "code": "CPMK 3.6",
+      "courseId": "karakterisasi",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m063",
+      "code": "CPMK 8.15",
+      "courseId": "karakterisasi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m064",
+      "code": "CPMK 3.9",
+      "courseId": "elektronika-industri",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m065",
+      "code": "CPMK 3.10",
+      "courseId": "elektronika-industri",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m066",
+      "code": "CPMK 8.16",
+      "courseId": "elektronika-industri",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m067",
+      "code": "CPMK 8.17",
+      "courseId": "elektronika-industri",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m068",
+      "code": "CPMK 3.11",
+      "courseId": "instrumentasi-analitis",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m069",
+      "code": "CPMK 3.12",
+      "courseId": "instrumentasi-analitis",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m070",
+      "code": "CPMK 3.13",
+      "courseId": "instrumentasi-analitis",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m071",
+      "code": "CPMK 3.14",
+      "courseId": "instrumentasi-analitis",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m072",
+      "code": "CPMK 3.15",
+      "courseId": "kapita-instrumentasi",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m073",
+      "code": "CPMK 7.3",
+      "courseId": "kapita-instrumentasi",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m074",
+      "code": "CPMK 8.19",
+      "courseId": "kapita-instrumentasi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m075",
+      "code": "CPMK 8.20",
+      "courseId": "kapita-instrumentasi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m076",
+      "code": "CPMK 3.16",
+      "courseId": "survei-em",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m077",
+      "code": "CPMK 3.17",
+      "courseId": "survei-em",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m078",
+      "code": "CPMK 5.6",
+      "courseId": "topik-kompleks",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m079",
+      "code": "CPMK 8.21",
+      "courseId": "topik-kompleks",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m080",
+      "code": "CPMK 8.22",
+      "courseId": "topik-kompleks",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m081",
+      "code": "CPMK 5.7",
+      "courseId": "kapita-fotonik",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m082",
+      "code": "CPMK 8.23",
+      "courseId": "kapita-fotonik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m083",
+      "code": "CPMK 5.8",
+      "courseId": "fisika-batuan",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m084",
+      "code": "CPMK 5.9",
+      "courseId": "fisika-batuan",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m085",
+      "code": "CPMK 5.10",
+      "courseId": "fisika-batuan",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m086",
+      "code": "CPMK 6.4",
+      "courseId": "studi-mandiri",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m087",
+      "code": "CPMK 8.24",
+      "courseId": "studi-mandiri",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m088",
+      "code": "CPMK 8.18",
+      "courseId": "kapita-material-elektronik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m089",
+      "code": "CPMK 8.9",
+      "courseId": "sains-energi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m090",
+      "code": "CPMK 8.10",
+      "courseId": "sains-energi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m091",
+      "code": "CPMK 9.3",
+      "courseId": "sains-energi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m092",
+      "code": "CPMK 9.4",
+      "courseId": "sains-energi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m093",
+      "code": "CPMK 9.5",
+      "courseId": "fisika-kebencanaan",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m094",
+      "code": "CPMK 9.6",
+      "courseId": "fisika-kebencanaan",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m095",
+      "code": "CPMK 9.7",
+      "courseId": "fisika-kebencanaan",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m096",
+      "code": "CPMK 9.8",
+      "courseId": "fisika-kebencanaan",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m097",
+      "code": "CPMK 9.11",
+      "courseId": "gunung-api",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m098",
+      "code": "CPMK 9.12",
+      "courseId": "gunung-api",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m099",
+      "code": "CPMK 9.13",
+      "courseId": "gunung-api",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m100",
+      "code": "CPMK 9.14",
+      "courseId": "seismologi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m101",
+      "code": "CPMK 9.15",
+      "courseId": "seismologi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m102",
+      "code": "CPMK 9.16",
+      "courseId": "seismologi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "m103",
+      "code": "CPMK 4.2",
+      "courseId": "seminar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "research"
+      ]
+    },
+    {
+      "id": "m104",
+      "code": "CPMK 4.3",
+      "courseId": "seminar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "research"
+      ]
+    },
+    {
+      "id": "m105",
+      "code": "CPMK 5.3",
+      "courseId": "seminar",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "research"
+      ]
+    },
+    {
+      "id": "m106",
+      "code": "CPMK 4.4",
+      "courseId": "publikasi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "research"
+      ]
+    },
+    {
+      "id": "m107",
+      "code": "CPMK 6.4",
+      "courseId": "publikasi",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "research"
+      ]
+    },
+    {
+      "id": "m108",
+      "code": "CPMK 7.3",
+      "courseId": "publikasi",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "research"
+      ]
+    },
+    {
+      "id": "m109",
+      "code": "CPMK 9.2",
+      "courseId": "publikasi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "research"
+      ]
+    },
+    {
+      "id": "m110",
+      "code": "CPMK 4.5",
+      "courseId": "sidang",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "research"
+      ]
+    },
+    {
+      "id": "m111",
+      "code": "CPMK 9.3",
+      "courseId": "sidang",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "research"
+      ]
+    }
+  ],
+  "weights": [
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "ma",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "ms",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "ksf",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "ed",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "mq",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "sif",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "relativitas",
+      "weight": 6.25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "inversi-bumi",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "medan-kuantum",
+      "weight": 6.25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "material-nano",
+      "weight": 5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "orbital-kuantum",
+      "weight": 5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "kapita-teoritik",
+      "weight": 6.25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "kosmologi",
+      "weight": 6.25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "biomaterial",
+      "weight": 5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "karakterisasi",
+      "weight": 5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "struktur-elektronik",
+      "weight": 5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-1",
+      "courseId": "akuisisi",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-1",
+      "courseId": "ma",
+      "weight": 33.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-1",
+      "courseId": "ms",
+      "weight": 33.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-1",
+      "courseId": "ksf",
+      "weight": 33.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-1",
+      "courseId": "ed",
+      "weight": 33.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-1",
+      "courseId": "mq",
+      "weight": 33.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-1",
+      "courseId": "sif",
+      "weight": 33.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "courseId": "metpen",
+      "weight": 20,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "courseId": "tesis1",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "courseId": "tesis2",
+      "weight": 30,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-2",
+      "courseId": "karakterisasi",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-2",
+      "courseId": "metpen",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-2",
+      "courseId": "tesis1",
+      "weight": 30,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-2",
+      "courseId": "tesis2",
+      "weight": 45,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "potensi",
+      "weight": 20,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "metpen",
+      "weight": 20,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "tesis2",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "material-nano",
+      "weight": 6.25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "karakterisasi",
+      "weight": 6.25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "struktur-elektronik",
+      "weight": 6.25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "akuisisi",
+      "weight": 8.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "elektronika-industri",
+      "weight": 8.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "instrumentasi-analitis",
+      "weight": 6.25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "kapita-instrumentasi",
+      "weight": 8.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-3",
+      "courseId": "survei-em",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-3",
+      "courseId": "potensi",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-3",
+      "courseId": "metpen",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-3",
+      "courseId": "tesis2",
+      "weight": 50,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "courseId": "pmi",
+      "weight": 70,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-4",
+      "courseId": "sidang",
+      "weight": 30,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-4",
+      "courseId": "pmi",
+      "weight": 20,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-4",
+      "courseId": "seminar",
+      "weight": 20,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-4",
+      "courseId": "publikasi",
+      "weight": 50,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-4",
+      "courseId": "sidang",
+      "weight": 10,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "courseId": "potensi",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "courseId": "tesis2",
+      "weight": 50,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "courseId": "inversi-bumi",
+      "weight": 8.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "courseId": "biomaterial",
+      "weight": 8.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "courseId": "struktur-elektronik",
+      "weight": 8.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "courseId": "topik-kompleks",
+      "weight": 8.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "courseId": "kapita-fotonik",
+      "weight": 8.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-5",
+      "courseId": "fisika-batuan",
+      "weight": 8.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-5",
+      "courseId": "potensi",
+      "weight": 20,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-5",
+      "courseId": "seminar",
+      "weight": 30,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-5",
+      "courseId": "tesis2",
+      "weight": 50,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-6",
+      "courseId": "metpen",
+      "weight": 40,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-6",
+      "courseId": "tesis1",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-6",
+      "courseId": "tesis2",
+      "weight": 30,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-6",
+      "courseId": "studi-mandiri",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-6",
+      "courseId": "metpen",
+      "weight": 20,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-6",
+      "courseId": "tesis1",
+      "weight": 15,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-6",
+      "courseId": "publikasi",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-7",
+      "courseId": "potensi",
+      "weight": 20,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-7",
+      "courseId": "pmi",
+      "weight": 37.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-7",
+      "courseId": "kapita-instrumentasi",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-7",
+      "courseId": "potensi",
+      "weight": 30,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-7",
+      "courseId": "pmi",
+      "weight": 20,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-7",
+      "courseId": "publikasi",
+      "weight": 50,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "ma",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "ms",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "ksf",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "ed",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "mq",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "sif",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "metpen",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "sains-energi",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "material-nano",
+      "weight": 4.2,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "kapita-teoritik",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "kosmologi",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "biomaterial",
+      "weight": 4.2,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "karakterisasi",
+      "weight": 4.2,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "struktur-elektronik",
+      "weight": 4.2,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "elektronika-industri",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "kapita-material-elektronik",
+      "weight": 4.2,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "kapita-instrumentasi",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "topik-kompleks",
+      "weight": 25,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "kapita-fotonik",
+      "weight": 4.2,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-8",
+      "courseId": "studi-mandiri",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-8",
+      "courseId": "ma",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-8",
+      "courseId": "ms",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-8",
+      "courseId": "ksf",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-8",
+      "courseId": "ed",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-8",
+      "courseId": "mq",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-8",
+      "courseId": "sif",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-8",
+      "courseId": "metpen",
+      "weight": 18.75,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "courseId": "tesis2",
+      "weight": 60,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "courseId": "sidang",
+      "weight": 15,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "courseId": "sains-energi",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "courseId": "fisika-kebencanaan",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "courseId": "biomaterial",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "courseId": "struktur-elektronik",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "courseId": "gunung-api",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "regular",
+      "outcomeId": "CPL-9",
+      "courseId": "seismologi",
+      "weight": 12.5,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-9",
+      "courseId": "publikasi",
+      "weight": 33.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-9",
+      "courseId": "tesis2",
+      "weight": 33.33,
+      "source": "Tabel 3.18"
+    },
+    {
+      "trackId": "research",
+      "outcomeId": "CPL-9",
+      "courseId": "sidang",
+      "weight": 33.33,
+      "source": "Tabel 3.18"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "severity": "warning",
+      "code": "REG-ELECTIVE-CREDITS",
+      "message": "Struktur jalur Reguler menetapkan 3 SKS pilihan pada semester 1 dan 6 SKS pada semester 2, sedangkan daftar MK pilihan pada Tabel 3.14 bernilai 2 SKS per MK."
+    },
+    {
+      "severity": "warning",
+      "code": "COURSE-CODE-DRIFT",
+      "message": "Beberapa kode MK berbeda antar tabel dan lampiran. JSON ini memakai kode dari silabus/lampiran ketika tersedia."
+    },
+    {
+      "severity": "warning",
+      "code": "COURSE-CREDIT-DRIFT",
+      "message": "Sains Energi dan Fisika Kebencanaan tercantum 2 SKS pada Tabel 3.14 tetapi 3 SKS pada silabus. JSON ini memakai 2 SKS mengikuti daftar MK pilihan."
+    },
+    {
+      "severity": "warning",
+      "code": "WEIGHT-VERSION-DRIFT",
+      "message": "Bobot Tabel 3.18 dan Tabel 5.1 belum sepenuhnya konsisten. Field weights pada JSON ini menyimpan angka Tabel 3.18 sebagai data sumber, bukan sebagai formula final."
+    }
+  ]
+}

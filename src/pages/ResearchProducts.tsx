@@ -52,7 +52,7 @@ export default function ResearchProducts() {
               ) : null}
               {p.internalPath ? (
                 <div className="row" style={{ marginTop: 12 }}>
-                  <Link className="stripeBtn stripeBtn--primary" to={p.internalPath}>Buka dashboard →</Link>
+                  <Link className="stripeBtn stripeBtn--primary" to={p.internalPath}>{p.internalLabel ?? "Buka dashboard →"}</Link>
                 </div>
               ) : null}
               {!p.links?.length && !p.internalPath && <p className="small">Demo publik belum tersedia.</p>}
