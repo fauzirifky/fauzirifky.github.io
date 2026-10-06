@@ -6,7 +6,7 @@ import {
   activeEnrollments,
   courseMap,
   cpmksForStudent,
-  cpmkWeightFor,
+  resolveCpmkWeight,
   downloadJson,
   generateCohort,
   generateStudent,
@@ -301,18 +301,23 @@ function GraphView({
       relations: GraphEdge[];
       students: Set<string>;
       weight?: number;
+      weightValues: number[];
+      weightDerived: boolean;
     }>();
 
     for (const relation of relations) {
       const key = `${relation.mapping.outcomeId}::${relation.mapping.code}`;
       if (!grouped.has(key)) {
+        const resolved = resolveCpmkWeight(config, relation.mapping.outcomeId, relation.mapping.code, graphTrackIds);
         grouped.set(key, {
           key,
           code: relation.mapping.code,
           outcomeId: relation.mapping.outcomeId,
           relations: [],
           students: new Set(),
-          weight: cpmkWeightFor(config, relation.mapping.outcomeId, relation.mapping.code, graphTrackIds),
+          weight: resolved.weight,
+          weightValues: resolved.values,
+          weightDerived: resolved.derived,
         });
       }
       const node = grouped.get(key)!;
@@ -350,6 +355,15 @@ function GraphView({
   }, [courseIds, cpmkNodes, outcomes]);
 
   const maxN = Math.max(1, students.length);
+  const coverageRows = students.map((student) => ({ student, coverage: studentWeightCoverage(config, student) }));
+  const coverageByOutcome = new Map(config.outcomes.map((outcome) => {
+    const values = coverageRows.map((row) => row.coverage.get(outcome.id) ?? 0);
+    const min = values.length ? Math.min(...values) : 0;
+    const max = values.length ? Math.max(...values) : 0;
+    const avg = values.length ? values.reduce((sum, value) => sum + value, 0) / values.length : 0;
+    return [outcome.id, { values, min, max, avg }];
+  }));
+
   const color = (index: number) => `hsl(${(index * 43 + 224) % 360} 72% 48%)`;
   const outcomeColors = new Map(outcomes.map((outcome, index) => [outcome.id, color(index)]));
 
@@ -374,7 +388,8 @@ function GraphView({
           <span className="obeEyebrow">Pemetaan OBE</span>
           <h2>CPL → CPMK → Mata Kuliah</h2>
           <p>
-            Angka persen pada CPMK adalah bobot CPMK ke CPL dari JSON.
+            Persen pada CPL adalah total bobot CPMK yang benar-benar terpetakan pada paket mahasiswa, tanpa dinormalisasi ke 100%.
+            {(config.cpmkWeights ?? []).length ? " Persen pada CPMK berasal dari cpmkWeights JSON." : (config.weights ?? []).length ? " Persen CPMK bertanda ≈ diturunkan dari bobot MK→CPL pada JSON." : ""}
             {students.length > 1 ? " Ketebalan garis menunjukkan jumlah mahasiswa yang memakai relasi." : " Pemetaan untuk mahasiswa aktif."}
           </p>
         </div>
@@ -388,7 +403,9 @@ function GraphView({
 
       <div className="obeGraphLegend">
         {outcomes.map((outcome) => <span key={outcome.id}><i style={{ background: outcomeColors.get(outcome.id) }} />{outcome.code}</span>)}
-        {(config.cpmkWeights ?? []).length ? <span className="obeGraphLegend__note">bobot CPMK aktif</span> : null}
+        {(config.cpmkWeights ?? []).length ? <span className="obeGraphLegend__note">bobot CPMK dari JSON</span> : null}
+        {!(config.cpmkWeights ?? []).length && (config.weights ?? []).length ? <span className="obeGraphLegend__note">≈ bobot CPMK turunan dari bobot MK</span> : null}
+        {((config.cpmkWeights ?? []).length || (config.weights ?? []).length) ? <span className="obeGraphLegend__note">total CPL = bobot terpetakan mentah</span> : null}
       </div>
 
       <div className="obeGraphScroll" ref={scrollRef}>
@@ -416,12 +433,12 @@ function GraphView({
               <path
                 key={`cpl-cpmk-${node.key}`}
                 className="obeGraphEdge"
-                d={`M 148 ${y1} C 220 ${y1}, 238 ${y2}, 305 ${y2}`}
+                d={`M 188 ${y1} C 230 ${y1}, 248 ${y2}, 305 ${y2}`}
                 stroke={stroke}
                 strokeWidth={style.width}
                 opacity={style.opacity}
               >
-                <title>{node.code}: {node.weight == null ? "bobot belum diisi" : `${formatNumber(node.weight, 2)}%`} · {node.count} dari {maxN} mahasiswa</title>
+                <title>{node.code}: {node.weightValues.length ? `${node.weightDerived ? "≈" : ""}${node.weight != null ? formatNumber(node.weight, 2) : `${formatNumber(Math.min(...node.weightValues), 2)}–${formatNumber(Math.max(...node.weightValues), 2)}`}%` : "bobot belum diisi"} · {node.count} dari {maxN} mahasiswa</title>
               </path>
             );
           })}
@@ -450,10 +467,25 @@ function GraphView({
           {outcomes.map((outcome) => {
             const y = positions.cpl.get(outcome.id);
             if (y == null) return null;
+            const coverage = coverageByOutcome.get(outcome.id);
+            const hasWeights = (config.cpmkWeights?.length ?? 0) > 0 || (config.weights?.length ?? 0) > 0;
+            const same = coverage ? Math.abs(coverage.max - coverage.min) <= 0.005 : true;
+            const coverageLabel = !hasWeights || !coverage
+              ? ""
+              : students.length <= 1 || same
+                ? `${formatNumber(coverage.avg, 2)}%`
+                : `${formatNumber(coverage.min, 2)}–${formatNumber(coverage.max, 2)}%`;
+            const coverageTitle = !hasWeights || !coverage
+              ? outcome.label
+              : students.length <= 1
+                ? `${outcome.code}: total bobot CPMK terpetakan ${formatNumber(coverage.avg, 2)}%. Nilai mentah, tidak dinormalisasi.`
+                : `${outcome.code}: bobot CPMK terpetakan min ${formatNumber(coverage.min, 2)}%, rata-rata ${formatNumber(coverage.avg, 2)}%, max ${formatNumber(coverage.max, 2)}%. Nilai mentah, tidak dinormalisasi.`;
             return (
               <g className="obeGraphNode" key={outcome.id}>
-                <rect x="38" y={y - 13} width="110" height="26" rx="8" style={{ stroke: outcomeColors.get(outcome.id), strokeWidth: 2 }} />
-                <text x="49" y={y + 4}>{outcome.code}</text>
+                <rect x="38" y={y - 18} width="150" height="36" rx="8" style={{ stroke: outcomeColors.get(outcome.id), strokeWidth: 2 }} />
+                <text x="49" y={y - 2}>{outcome.code}</text>
+                {coverageLabel ? <text className="obeSvgCoverage" x="178" y={y + 11} textAnchor="end">{coverageLabel}</text> : null}
+                <title>{coverageTitle}</title>
               </g>
             );
           })}
@@ -461,16 +493,27 @@ function GraphView({
           {cpmkNodes.map((node) => {
             const y = positions.cpmk.get(node.key);
             if (y == null) return null;
+            const weightMin = node.weightValues.length ? Math.min(...node.weightValues) : undefined;
+            const weightMax = node.weightValues.length ? Math.max(...node.weightValues) : undefined;
+            const sameWeight = weightMin != null && weightMax != null && Math.abs(weightMax - weightMin) <= 0.005;
+            const weightText = node.weight != null
+              ? `${node.weightDerived ? "≈" : ""}${formatNumber(node.weight, 2)}%`
+              : weightMin != null && weightMax != null
+                ? `${node.weightDerived ? "≈" : ""}${sameWeight ? formatNumber(weightMin, 2) : `${formatNumber(weightMin, 2)}–${formatNumber(weightMax, 2)}`}%`
+                : "–";
             const meta = [
-              node.weight == null ? "–" : `${formatNumber(node.weight, 2)}%`,
+              weightText,
               students.length > 1 ? `${node.count}/${maxN}` : "",
             ].filter(Boolean).join(" · ");
+            const weightTitle = node.weightValues.length
+              ? `${node.weightDerived ? "Bobot CPMK turunan dari bobot MK→CPL" : "Bobot CPMK dari JSON"}: ${weightText}`
+              : "bobot belum diisi";
             return (
               <g className="obeGraphNode" key={`cpmk-${node.key}`}>
                 <rect x="305" y={y - 14} width="195" height="28" rx="8" />
                 <text x="316" y={y + 4}>{node.code}</text>
                 <text className="obeSvgCount obeSvgWeight" x="490" y={y + 4} textAnchor="end">{meta}</text>
-                <title>{node.code} · {node.weight == null ? "bobot belum diisi" : `bobot ${formatNumber(node.weight, 2)}% ke ${node.outcomeId}`}</title>
+                <title>{node.code} · {weightTitle} · {node.outcomeId}</title>
               </g>
             );
           })}
@@ -547,7 +590,7 @@ function SimulatorPage({ config, students, setStudents, counts, setCounts }: {
 
   const weightCoverage = activeStudent ? studentWeightCoverage(config, activeStudent) : new Map<string, number>();
   const activeTotal = activeStudent ? studentTotalCredits(config, activeStudent) : 0;
-  const weightWarnings = [...weightCoverage.entries()].filter(([, value]) => Math.abs(value - 100) > 0.5);
+  const mappedOutcomeCount = [...weightCoverage.values()].filter((value) => value > 0.0001).length;
 
   return (
     <>
@@ -595,23 +638,23 @@ function SimulatorPage({ config, students, setStudents, counts, setCounts }: {
         <article><span>Total SKS mahasiswa aktif</span><strong className={activeTotal === config.program.totalCredits ? "isOkText" : "isWarnText"}>{activeTotal}</strong><small>target {config.program.totalCredits}</small></article>
         <article><span>MK mahasiswa aktif</span><strong>{activeStudent?.enrollments.length ?? 0}</strong><small>{activeEnrollments(activeStudent ?? { id: "", trackId: "", sequence: 0, enrollments: [] }).length} dilibatkan OBE</small></article>
         <article><span>Mahasiswa pada grafik</span><strong>{graphStudents.length}</strong><small>{viewMode === "student" ? activeStudent?.id : "agregasi"}</small></article>
-        <article><span>Bobot CPL tidak 100%</span><strong className={weightWarnings.length ? "isWarnText" : "isOkText"}>{weightWarnings.length}</strong><small>Tabel bobot aktif</small></article>
+        <article><span>CPL berbobot terpetakan</span><strong>{mappedOutcomeCount}</strong><small>dari {config.outcomes.length} CPL · tidak dinormalisasi</small></article>
       </div>
 
       {activeStudent && ((config.cpmkWeights?.length ?? 0) > 0 || (config.weights?.length ?? 0) > 0) ? (
         <section className="obePanel">
           <div className="obePanel__heading">
             <div>
-              <span className="obeEyebrow">Pemeriksaan bobot</span>
-              <h2>Akumulasi bobot CPL mahasiswa aktif</h2>
-              <p>{(config.cpmkWeights ?? []).length ? "Menjumlahkan bobot CPMK unik yang memiliki evidence dari MK aktif." : "Menjumlahkan bobot MK yang benar-benar ditempuh."} Angka ini untuk memeriksa konsistensi konfigurasi, bukan formula final nilai CPL.</p>
+              <span className="obeEyebrow">Bobot terpetakan</span>
+              <h2>Total bobot CPMK terpetakan per CPL</h2>
+              <p>Menjumlahkan bobot yang benar-benar mempunyai CPMK terpetakan dan evidence dari MK aktif. Nilai ditampilkan apa adanya; tidak dinormalisasi ke 100% dan bukan formula final nilai CPL.</p>
             </div>
           </div>
           <div className="obeWeightGrid">
             {config.outcomes.map((outcome) => {
               const value = weightCoverage.get(outcome.id) ?? 0;
-              const ok = Math.abs(value - 100) <= 0.5;
-              return <div key={outcome.id} className={ok ? "isOk" : "isWarn"}><span>{outcome.code}</span><strong>{formatNumber(value, 2)}%</strong></div>;
+              const full = Math.abs(value - 100) <= 0.5;
+              return <div key={outcome.id} className={full ? "isOk" : "isPartial"}><span>{outcome.code}</span><strong>{formatNumber(value, 2)}%</strong></div>;
             })}
           </div>
         </section>

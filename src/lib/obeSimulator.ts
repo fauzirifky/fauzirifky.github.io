@@ -160,19 +160,82 @@ export function programMaxCreditsPerSemester(config: ObeProgramConfig) {
   return undefined;
 }
 
+export type ResolvedCpmkWeight = {
+  weight?: number;
+  derived: boolean;
+  values: number[];
+};
+
+function cpmkWeightForTrack(
+  config: ObeProgramConfig,
+  trackId: string,
+  outcomeId: string,
+  cpmkCode: string,
+) {
+  const explicit = (config.cpmkWeights ?? []).find(
+    (item) => item.trackId === trackId && item.outcomeId === outcomeId && item.cpmkCode === cpmkCode,
+  );
+  if (explicit) return { weight: explicit.weight, derived: false };
+
+  // Fallback untuk konfigurasi lama seperti Magister Fisika. Dokumen sumber memberi
+  // bobot MK -> CPL, bukan bobot CPMK -> CPL. Untuk visualisasi CPMK, bobot MK
+  // dibagi rata ke CPMK unik pada pasangan MK-CPL yang sama. Totalnya tetap kembali
+  // ke bobot MK asli sehingga coverage CPL tidak dinormalisasi atau diubah.
+  const mappings = config.cpmks.filter(
+    (mapping) => mapping.outcomeId === outcomeId && mapping.code === cpmkCode && mapping.trackIds.includes(trackId),
+  );
+  if (!mappings.length) return { weight: undefined, derived: true };
+
+  let total = 0;
+  let found = false;
+  for (const courseId of new Set(mappings.map((mapping) => mapping.courseId))) {
+    const courseWeight = (config.weights ?? []).find(
+      (item) => item.trackId === trackId && item.outcomeId === outcomeId && item.courseId === courseId,
+    );
+    if (!courseWeight) continue;
+    const codes = new Set(
+      config.cpmks
+        .filter(
+          (mapping) => mapping.courseId === courseId && mapping.outcomeId === outcomeId && mapping.trackIds.includes(trackId),
+        )
+        .map((mapping) => mapping.code),
+    );
+    if (!codes.size) continue;
+    total += courseWeight.weight / codes.size;
+    found = true;
+  }
+
+  return { weight: found ? total : undefined, derived: true };
+}
+
+export function resolveCpmkWeight(
+  config: ObeProgramConfig,
+  outcomeId: string,
+  cpmkCode: string,
+  trackIds?: string[],
+): ResolvedCpmkWeight {
+  const ids = trackIds?.length ? [...new Set(trackIds)] : config.tracks.map((track) => track.id);
+  const resolved = ids
+    .map((trackId) => cpmkWeightForTrack(config, trackId, outcomeId, cpmkCode))
+    .filter((item) => item.weight != null) as Array<{ weight: number; derived: boolean }>;
+
+  if (!resolved.length) return { weight: undefined, derived: Boolean((config.weights ?? []).length), values: [] };
+  const values = resolved.map((item) => item.weight);
+  const first = values[0];
+  return {
+    weight: values.every((value) => Math.abs(value - first) <= 0.0001) ? first : undefined,
+    derived: resolved.some((item) => item.derived),
+    values,
+  };
+}
+
 export function cpmkWeightFor(
   config: ObeProgramConfig,
   outcomeId: string,
   cpmkCode: string,
   trackIds?: string[],
 ) {
-  const allowed = trackIds?.length ? new Set(trackIds) : null;
-  const values = (config.cpmkWeights ?? [])
-    .filter((item) => item.outcomeId === outcomeId && item.cpmkCode === cpmkCode && (!allowed || allowed.has(item.trackId)))
-    .map((item) => item.weight);
-  if (!values.length) return undefined;
-  const first = values[0];
-  return values.every((value) => Math.abs(value - first) <= 0.0001) ? first : undefined;
+  return resolveCpmkWeight(config, outcomeId, cpmkCode, trackIds).weight;
 }
 
 export function shuffle<T>(items: T[]) {
@@ -325,8 +388,9 @@ export function studentWeightCoverage(config: ObeProgramConfig, student: SimStud
   const output = new Map<string, number>();
   for (const outcome of config.outcomes) output.set(outcome.id, 0);
 
+  const activeMappings = cpmksForStudent(config, student);
+
   if ((config.cpmkWeights ?? []).length) {
-    const activeMappings = cpmksForStudent(config, student);
     const activeKeys = new Set(activeMappings.map((mapping) => `${mapping.outcomeId}::${mapping.code}`));
     for (const weight of config.cpmkWeights ?? []) {
       if (weight.trackId !== student.trackId) continue;
@@ -336,9 +400,15 @@ export function studentWeightCoverage(config: ObeProgramConfig, student: SimStud
     return output;
   }
 
-  const active = new Set(activeEnrollments(student).map((item) => item.courseId));
+  // Untuk konfigurasi yang masih memakai bobot MK -> CPL, hanya bobot yang benar-benar
+  // mempunyai CPMK terpetakan dan evidence aktif yang dijumlahkan. Bobot sumber tidak
+  // dinormalisasi ke 100%, sehingga variasi paket mahasiswa tetap terlihat apa adanya.
+  const activeCourseOutcome = new Set(
+    activeMappings.map((mapping) => `${mapping.courseId}::${mapping.outcomeId}`),
+  );
   for (const weight of config.weights ?? []) {
-    if (weight.trackId !== student.trackId || !active.has(weight.courseId)) continue;
+    if (weight.trackId !== student.trackId) continue;
+    if (!activeCourseOutcome.has(`${weight.courseId}::${weight.outcomeId}`)) continue;
     output.set(weight.outcomeId, (output.get(weight.outcomeId) ?? 0) + weight.weight);
   }
   return output;
@@ -485,9 +555,9 @@ export function validateConfig(config: ObeProgramConfig): ValidationIssue[] {
     if (Math.abs(total - 100) <= 0.05) continue;
     const [trackId, outcomeId] = key.split("::");
     issues.push({
-      severity: "warning",
+      severity: "info",
       code: "CPMK_WEIGHT_TOTAL",
-      message: `${tracks.get(trackId)?.label ?? trackId}: total bobot CPMK untuk ${outcomeId} adalah ${total.toFixed(2)}%, bukan 100%.`,
+      message: `${tracks.get(trackId)?.label ?? trackId}: total bobot CPMK untuk ${outcomeId} adalah ${total.toFixed(2)}%. Simulator menampilkan total mentah dan tidak menormalisasikannya ke 100%.`,
     });
   }
 
