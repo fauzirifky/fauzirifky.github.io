@@ -62,6 +62,9 @@ export default function TeachingDetail({ forcedSlug }: Props) {
               {course.credits ? `${course.credits} SKS` : "—"}
               {course.prerequisite ? ` / ${course.prerequisite}` : ""}
             </InfoItem>
+            {course.coordinator ? (
+              <InfoItem label="Koordinator">{course.coordinator}</InfoItem>
+            ) : null}
             <InfoItem label="Team Teaching">
               {course.teamTeaching.length ? course.teamTeaching.join(", ") : "—"}
             </InfoItem>
@@ -88,6 +91,48 @@ export default function TeachingDetail({ forcedSlug }: Props) {
       {course.topics.length ? (
         <Section title="Pokok Bahasan">
           <Card><ul className="list">{course.topics.map((x) => <li key={x}>{x}</li>)}</ul></Card>
+        </Section>
+      ) : null}
+
+      {course.meetings.length ? (
+        <Section title="Rencana Pertemuan">
+          <Card>
+            <div style={{ overflowX: "auto" }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", minWidth: 760 }}>
+                <thead>
+                  <tr>
+                    {['Minggu', 'Pengajar', 'Topik', 'Materi'].map((label) => (
+                      <th
+                        key={label}
+                        style={{ textAlign: "left", padding: "10px 12px", borderBottom: "1px solid var(--line)", fontSize: 13 }}
+                      >
+                        {label}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {course.meetings.map((meeting) => (
+                    <tr key={`${meeting.week}-${meeting.topic}`}>
+                      <td style={{ padding: "10px 12px", borderBottom: "1px solid var(--line)", verticalAlign: "top", whiteSpace: "nowrap" }}>{meeting.week}</td>
+                      <td style={{ padding: "10px 12px", borderBottom: "1px solid var(--line)", verticalAlign: "top" }}>{meeting.instructor}</td>
+                      <td style={{ padding: "10px 12px", borderBottom: "1px solid var(--line)", verticalAlign: "top" }}>{meeting.topic}</td>
+                      <td style={{ padding: "10px 12px", borderBottom: "1px solid var(--line)", verticalAlign: "top", whiteSpace: "nowrap" }}>
+                        {meeting.resources.length
+                          ? meeting.resources.map((resource, index) => (
+                              <span key={`${resource.label}-${resource.url}`}>
+                                {index ? " · " : ""}
+                                <a className="link" href={resource.url} target="_blank" rel="noreferrer">{resource.label}</a>
+                              </span>
+                            ))
+                          : "—"}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </Card>
         </Section>
       ) : null}
 

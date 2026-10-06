@@ -58,6 +58,34 @@ function linkFromCell(cell = "") {
   return match ? { label: match[1].trim(), url: match[2].trim() } : undefined;
 }
 
+function linksFromCell(cell = "") {
+  return [...cell.matchAll(/\[([^\]]+)\]\(([^)]+)\)/g)].map((match) => ({
+    label: match[1].trim(),
+    url: match[2].trim(),
+  }));
+}
+
+function parseMeetings(value) {
+  const rows = value
+    .split("\n")
+    .map((line) => line.trim())
+    .filter((line) => line.startsWith("|") && line.endsWith("|"))
+    .map((line) => line.slice(1, -1).split("|").map((cell) => cell.trim()));
+
+  if (rows.length < 2) return [];
+
+  return rows
+    .slice(1)
+    .filter((row) => !row.every((cell) => /^:?-{3,}:?$/.test(cell)))
+    .map((row) => ({
+      week: row[0] || "—",
+      instructor: row[1] || "—",
+      topic: row[2] || "—",
+      resources: linksFromCell(row[3] || ""),
+    }))
+    .filter((item) => item.week && item.topic);
+}
+
 function parseMaterials(value) {
   const rows = value
     .split("\n")
@@ -93,6 +121,7 @@ for (const filename of fs.readdirSync(courseDir).sort()) {
     ...(meta.code ? { code: meta.code.trim() } : {}),
     ...(meta.credits ? { credits: meta.credits.trim() } : {}),
     ...(meta.prerequisite ? { prerequisite: meta.prerequisite.trim() } : {}),
+    ...(meta.coordinator ? { coordinator: meta.coordinator.trim() } : {}),
     teamTeaching: parsePipeList(meta.team_teaching),
     media: parsePipeList(meta.media),
     assessment: parsePipeList(meta.assessment),
@@ -106,6 +135,7 @@ for (const filename of fs.readdirSync(courseDir).sort()) {
     focus: cleanText(section(body, "Fokus Utama")),
     topics: parseList(section(body, "Pokok Bahasan")),
     projects: parseList(section(body, "Daftar Project")),
+    meetings: parseMeetings(section(body, "Rencana Pertemuan")),
     materials: parseMaterials(section(body, "Bahan Ajar")),
   });
 }

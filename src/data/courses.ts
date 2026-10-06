@@ -2,6 +2,13 @@ import generatedCourses from "./courses.generated.json";
 import aliases from "./course-aliases.json";
 
 export type CourseMaterial = { name: string; pdf: string };
+export type CourseMeetingResource = { label: string; url: string };
+export type CourseMeeting = {
+  week: string;
+  instructor: string;
+  topic: string;
+  resources: CourseMeetingResource[];
+};
 
 export type Course = {
   slug: string;
@@ -10,6 +17,7 @@ export type Course = {
   code?: string;
   credits?: string;
   prerequisite?: string;
+  coordinator?: string;
   teamTeaching: string[];
   media: string[];
   assessment: string[];
@@ -23,6 +31,7 @@ export type Course = {
   focus: string;
   topics: string[];
   projects: string[];
+  meetings: CourseMeeting[];
   materials: CourseMaterial[];
 };
 
