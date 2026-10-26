@@ -1,7 +1,9 @@
 import { useEffect, useMemo, useRef, useState, type ChangeEvent, type ReactNode } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import defaultConfigJson from "../data/obe/magister-fisika-itera.json";
+import emptyConfigJson from "../data/obe/obe-simulator-empty.json";
+import magisterFisikaConfigJson from "../data/obe/magister-fisika-itera.json";
 import matematikaConfigJson from "../data/obe/matematika-itera-2025-2029.json";
+import teknikLingkunganConfigJson from "../data/obe/teknik-lingkungan-itera-2025-2029.json";
 import {
   activeEnrollments,
   courseMap,
@@ -26,12 +28,14 @@ import {
 import "../styles/obe-simulator.css";
 
 const BASE_PATH = "/research-products/obe-simulator";
+const MAGISTER_FISIKA_PATH = `${BASE_PATH}/magister-fisika`;
 const MATEMATIKA_PATH = `${BASE_PATH}/matematika`;
-const STORAGE_KEY = "obe-simulator-program-v1";
+const TEKNIK_LINGKUNGAN_PATH = `${BASE_PATH}/teknik-lingkungan`;
+const STORAGE_KEY = "obe-simulator-program-v2";
 
 type PageKey = "simulator" | "program" | "settings";
 type ViewMode = "student" | "all" | `track:${string}`;
-type PresetKey = "matematika" | null;
+type PresetKey = "magister-fisika" | "matematika" | "teknik-lingkungan" | null;
 
 type GraphEdge = {
   mapping: CpmkMapping;
@@ -45,10 +49,20 @@ function cleanPath(pathname: string) {
 
 function routeContext(pathname: string) {
   const path = cleanPath(pathname);
-  const preset: PresetKey = path === MATEMATIKA_PATH || path.startsWith(`${MATEMATIKA_PATH}/`)
-    ? "matematika"
-    : null;
-  const routeBase = preset === "matematika" ? MATEMATIKA_PATH : BASE_PATH;
+  let preset: PresetKey = null;
+  let routeBase = BASE_PATH;
+
+  if (path === MAGISTER_FISIKA_PATH || path.startsWith(`${MAGISTER_FISIKA_PATH}/`)) {
+    preset = "magister-fisika";
+    routeBase = MAGISTER_FISIKA_PATH;
+  } else if (path === MATEMATIKA_PATH || path.startsWith(`${MATEMATIKA_PATH}/`)) {
+    preset = "matematika";
+    routeBase = MATEMATIKA_PATH;
+  } else if (path === TEKNIK_LINGKUNGAN_PATH || path.startsWith(`${TEKNIK_LINGKUNGAN_PATH}/`)) {
+    preset = "teknik-lingkungan";
+    routeBase = TEKNIK_LINGKUNGAN_PATH;
+  }
+
   const suffix = path.slice(routeBase.length).replace(/^\/+/, "");
   const page: PageKey = suffix === "program" ? "program" : suffix === "settings" ? "settings" : "simulator";
   return { page, preset, routeBase };
@@ -64,7 +78,10 @@ function storageKeyFor(preset: PresetKey) {
 }
 
 function bundledConfig(preset: PresetKey): ObeProgramConfig {
-  return (preset === "matematika" ? matematikaConfigJson : defaultConfigJson) as ObeProgramConfig;
+  if (preset === "magister-fisika") return magisterFisikaConfigJson as ObeProgramConfig;
+  if (preset === "matematika") return matematikaConfigJson as ObeProgramConfig;
+  if (preset === "teknik-lingkungan") return teknikLingkunganConfigJson as ObeProgramConfig;
+  return emptyConfigJson as ObeProgramConfig;
 }
 
 function readInitialConfig(preset: PresetKey): ObeProgramConfig {
@@ -168,6 +185,46 @@ function PageHeading({ eyebrow, title, children }: { eyebrow: string; title: str
       <h1>{title}</h1>
       {children ? <p>{children}</p> : null}
     </div>
+  );
+}
+
+function LandingPage() {
+  const presets = [
+    { href: MAGISTER_FISIKA_PATH, code: "S2", title: "Magister Fisika", detail: "Jalur reguler dan jalur riset." },
+    { href: MATEMATIKA_PATH, code: "S1", title: "Matematika", detail: "Preset tersembunyi Matematika ITERA." },
+    { href: TEKNIK_LINGKUNGAN_PATH, code: "S1", title: "Teknik Lingkungan", detail: "CPL–CPMK–MK dari Tabel 3.15." },
+  ];
+
+  return (
+    <>
+      <PageHeading eyebrow="OBE Simulator" title="Pilih program studi atau muat JSON">
+        Laman utama sengaja netral dan tidak lagi otomatis memuat Magister Fisika. Gunakan preset di bawah atau buka JSON & Pengaturan untuk memuat konfigurasi program studi lain.
+      </PageHeading>
+
+      <section className="obePanel">
+        <div className="obePanel__heading">
+          <div>
+            <span className="obeEyebrow">Preset tersedia</span>
+            <h2>Konfigurasi bawaan</h2>
+            <p>Setiap slug mempunyai penyimpanan konfigurasi browser yang terpisah.</p>
+          </div>
+        </div>
+        <div className="obeStructureGrid">
+          {presets.map((preset) => (
+            <article key={preset.href}>
+              <header><span>{preset.code}</span><strong>{preset.title}</strong></header>
+              <div className="obeStructureList">
+                <div><span>{preset.detail}</span><b>JSON</b></div>
+              </div>
+              <Link className="obeBtn obeBtn--primary" to={preset.href}>Buka simulator</Link>
+            </article>
+          ))}
+        </div>
+        <div className="obeSettingsActions">
+          <Link className="obeBtn" to={`${BASE_PATH}/settings`}>Load JSON program lain</Link>
+        </div>
+      </section>
+    </>
   );
 }
 
@@ -845,7 +902,8 @@ export default function ObeSimulator() {
     <SimulatorShell config={config} page={route.page} routeBase={route.routeBase}>
       {route.page === "program" ? <ProgramPage config={config} /> : null}
       {route.page === "settings" ? <SettingsPage config={config} onApply={applyConfig} onReset={resetConfig} /> : null}
-      {route.page === "simulator" ? <SimulatorPage config={config} students={students} setStudents={setStudents} counts={counts} setCounts={setCounts} /> : null}
+      {route.page === "simulator" && route.preset === null && config.program.id === "obe-simulator-empty" ? <LandingPage /> : null}
+      {route.page === "simulator" && !(route.preset === null && config.program.id === "obe-simulator-empty") ? <SimulatorPage config={config} students={students} setStudents={setStudents} counts={counts} setCounts={setCounts} /> : null}
     </SimulatorShell>
   );
 }

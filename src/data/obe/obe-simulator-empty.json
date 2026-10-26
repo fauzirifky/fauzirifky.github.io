@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0.0",
+  "program": {
+    "id": "obe-simulator-empty",
+    "name": "OBE Simulator",
+    "institution": "Konfigurasi berbasis JSON",
+    "degreeLevel": "multi-prodi",
+    "curriculum": "Belum ada program aktif",
+    "creditUnit": "SKS",
+    "totalCredits": 0,
+    "semesterCount": 0,
+    "description": "Konfigurasi netral untuk laman utama OBE Simulator. Pilih preset program studi atau unggah JSON sendiri."
+  },
+  "outcomes": [],
+  "courses": [],
+  "tracks": [],
+  "cpmks": [],
+  "sourceNotes": [
+    {
+      "severity": "info",
+      "code": "LANDING",
+      "message": "Laman utama tidak otomatis memuat data program studi. Pilih preset atau unggah JSON pada menu JSON & Pengaturan."
+    }
+  ]
+}

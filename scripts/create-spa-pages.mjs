@@ -29,9 +29,15 @@ const routes = new Set([
   "/research-products/obe-simulator",
   "/research-products/obe-simulator/program",
   "/research-products/obe-simulator/settings",
+  "/research-products/obe-simulator/magister-fisika",
+  "/research-products/obe-simulator/magister-fisika/program",
+  "/research-products/obe-simulator/magister-fisika/settings",
   "/research-products/obe-simulator/matematika",
   "/research-products/obe-simulator/matematika/program",
   "/research-products/obe-simulator/matematika/settings",
+  "/research-products/obe-simulator/teknik-lingkungan",
+  "/research-products/obe-simulator/teknik-lingkungan/program",
+  "/research-products/obe-simulator/teknik-lingkungan/settings",
 ]);
 
 for (const course of courses) {

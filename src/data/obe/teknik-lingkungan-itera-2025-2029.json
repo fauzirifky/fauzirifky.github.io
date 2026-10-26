@@ -1,0 +1,3543 @@
+{
+  "schemaVersion": "1.0.0",
+  "program": {
+    "id": "teknik-lingkungan-itera-2025-2029",
+    "name": "Teknik Lingkungan",
+    "institution": "Institut Teknologi Sumatera",
+    "faculty": "Fakultas Teknologi Infrastruktur dan Kewilayahan",
+    "degreeLevel": "sarjana",
+    "curriculum": "Kurikulum 2025-2029",
+    "creditUnit": "SKS",
+    "totalCredits": 144,
+    "semesterCount": 8,
+    "maxCreditsPerSemester": 20,
+    "description": "Konfigurasi OBE Simulator Program Studi Teknik Lingkungan ITERA. Relasi CPL–CPMK–MK diambil dari Tabel 3.15 dokumen kurikulum; bobot CPMK tidak diisi karena Tabel 3.15 tidak memuat bobot."
+  },
+  "outcomes": [
+    {
+      "id": "CPL-1",
+      "code": "CPL 1",
+      "label": "Beriman kepada Tuhan Yang Maha Esa dan menerapkan nilai-nilai Pancasila"
+    },
+    {
+      "id": "CPL-2",
+      "code": "CPL 2",
+      "label": "Setia kepada Negara Kesatuan Republik Indonesia dan adaptif terhadap perkembangan zaman dan kemasyarakatan"
+    },
+    {
+      "id": "CPL-3",
+      "code": "CPL 3",
+      "label": "Memberdayakan potensi Sumatera untuk kemajuan ilmu pengetahuan dan teknologi yang berdaya saing"
+    },
+    {
+      "id": "CPL-4",
+      "code": "CPL 4",
+      "label": "Menguasai konsep, teori dan keterampilan sains dasar serta rekayasa dasar, dan/atau manajemen/humaniora dan/atau desain dan seni dasar"
+    },
+    {
+      "id": "CPL-5",
+      "code": "CPL 5",
+      "label": "Lulusan mampu mendesain dan memecahkan permasalahan kompleks teknik lingkungan dalam kaidah-kaidah komponen design, proses, atau sistem yang memenuhi kriteria hukum, ekonomi, lingkungan, sosial, kesehatan dan keselamatan, dan keberlanjutan"
+    },
+    {
+      "id": "CPL-6",
+      "code": "CPL 6",
+      "label": "Lulusan mampu mendesain dan melakukan eksperimen laboratorium dan atau lapangan beserta pengolahan dan interpretasi data untuk menarik sebuah kesimpulan."
+    },
+    {
+      "id": "CPL-7",
+      "code": "CPL 7",
+      "label": "Lulusan mampu menganalisis permasalahan teknik lingkungan yang kompleks untuk mengetahui akar permasalahannya hingga menghasilkan solusi berkelanjutan"
+    },
+    {
+      "id": "CPL-8",
+      "code": "CPL 8",
+      "label": "Lulusan mampu mengaplikasikan keterampilan piranti lunak dan modern untuk menelaah fenomena lingkungan di Sumatera, Indonesia, dan global."
+    },
+    {
+      "id": "CPL-9",
+      "code": "CPL 9",
+      "label": "Lulusan mampu berkomunikasi dengan efektif secara verbal dan non verbal dalam menyampaikan isu dan solusi permasalahan lingkungan"
+    },
+    {
+      "id": "CPL-10",
+      "code": "CPL 10",
+      "label": "Lulusan mampu mengevaluasi rencana dan penerapan prinsip pengelolaan proyek dalam menyelesaikan pekerjaan yang diberikan"
+    },
+    {
+      "id": "CPL-11",
+      "code": "CPL 11",
+      "label": "Lulusan mampu bekerjasama untuk menghasilkan sikap kepemimpinan dalam mencapai tujuan kelompok"
+    },
+    {
+      "id": "CPL-12",
+      "code": "CPL 12",
+      "label": "Lulusan mampu menginternalisasi nilai, norma, etika akademik, pembelajaran sepanjang hayat, dan akses pengetahuan baru yang relevan dengan bidangnya"
+    }
+  ],
+  "courses": [
+    {
+      "id": "matematika-dasar",
+      "code": "WT25-0001",
+      "name": "Matematika Dasar",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "fisika-dasar",
+      "code": "WT25-0003",
+      "name": "Fisika Dasar",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "transformasi-keberlanjutan-sumatera",
+      "code": "WI25-0001",
+      "name": "Transformasi Keberlanjutan Sumatera",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "dasar-teknologi-digital",
+      "code": "WI25-0002",
+      "name": "Dasar Teknologi Digital",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kimia-dasar",
+      "code": "WT25-0004",
+      "name": "Kimia Dasar",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "biologi-dasar",
+      "code": "WT25-0002",
+      "name": "Biologi Dasar",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-kimia",
+      "code": "WT25-0006",
+      "name": "Praktikum Kimia",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-biologi",
+      "code": "WT25-0005",
+      "name": "Praktikum Biologi",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "pengantar-infrastruktur-kewilayahan",
+      "code": "WF25-0002",
+      "name": "Pengantar Infrastruktur dan Kewilayahan",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pengenalan-komputasi",
+      "code": "WI25-0004",
+      "name": "Pengenalan Komputasi",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pola-hidup-sehat",
+      "code": "WI25-0005",
+      "name": "Pola Hidup Sehat dan Kebugaran Fisik",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "bahasa-indonesia",
+      "code": "WU25-0001",
+      "name": "Bahasa Indonesia",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "studium-general",
+      "code": "TL25-12001",
+      "name": "Studium General",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "mikrobiologi-dasar",
+      "code": "TL25-12002",
+      "name": "Mikrobiologi Dasar",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "ilmu-bumi-tanah",
+      "code": "TL25-12003",
+      "name": "Ilmu Bumi dan Tanah",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "gambar-teknik",
+      "code": "TL25-12004",
+      "name": "Gambar Teknik",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "kimia-dasar-ii",
+      "code": "TL25-12005",
+      "name": "Kimia Dasar II",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "matematika-dasar-ii",
+      "code": "TL25-12006",
+      "name": "Matematika Dasar II",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pancasila",
+      "code": "WU25-0002",
+      "name": "Pancasila",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "bahasa-inggris-interdisipliner",
+      "code": "WI25-0003",
+      "name": "Bahasa Inggris Interdisipliner",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "statistik-probabilistik",
+      "code": "TL25-21001",
+      "name": "Statistik dan Probabilistik",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "kimia-lingkungan",
+      "code": "TL25-21002",
+      "name": "Kimia Lingkungan",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "mekanika-fluida",
+      "code": "TL25-21003",
+      "name": "Mekanika Fluida",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "ekologi",
+      "code": "TL25-21004",
+      "name": "Ekologi",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "matematika-rekayasa",
+      "code": "TL25-21005",
+      "name": "Matematika Rekayasa",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "perpetaan",
+      "code": "TL25-21006",
+      "name": "Perpetaan",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "kewarganegaraan",
+      "code": "WU25-0003",
+      "name": "Kewarganegaraan",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "lab-lingkungan-1",
+      "code": "TL25-22001",
+      "name": "Laboratorium Lingkungan 1",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "lab-lingkungan-2",
+      "code": "TL25-22002",
+      "name": "Laboratorium Lingkungan 2",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "hidrologi-hidrogeologi",
+      "code": "TL25-22003",
+      "name": "Hidrologi dan Hidrogeologi",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kesehatan-lingkungan",
+      "code": "TL25-22004",
+      "name": "Kesehatan Lingkungan",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "pengelolaan-sampah",
+      "code": "TL25-22005",
+      "name": "Pengelolaan Sampah",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kebijakan-hukum-lingkungan",
+      "code": "TL25-22006",
+      "name": "Kebijakan Hukum Lingkungan",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "unit-operasi",
+      "code": "TL25-22007",
+      "name": "Unit Operasi",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "unit-proses",
+      "code": "TL25-22008",
+      "name": "Unit Proses",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "sistem-informasi-geografis",
+      "code": "TL25-22009",
+      "name": "Sistem Informasi Geografis",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "agama",
+      "code": "WU25-0004",
+      "name": "Agama",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kkn",
+      "code": "WI25-0006",
+      "name": "Kuliah Kerja Nyata",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "limbah-b3",
+      "code": "TL25-31001",
+      "name": "Pengelolaan Bahan dan Limbah B3",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "spal-drainase",
+      "code": "TL25-31002",
+      "name": "Sistem Penyaluran Air Limbah dan Drainase",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "spam",
+      "code": "TL25-31003",
+      "name": "Sistem Penyediaan Air Minum",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "mekanika-tanah-struktur",
+      "code": "TL25-31004",
+      "name": "Mekanika Tanah dan Struktur",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "pencemaran-udara-perubahan-iklim",
+      "code": "TL25-31005",
+      "name": "Pencemaran Udara dan Perubahan Iklim",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "ekonomi-teknik",
+      "code": "TL25-31006",
+      "name": "Ekonomi Teknik",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "plambing-instrumentasi",
+      "code": "TL25-31007",
+      "name": "Plambing dan Instrumentasi",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "karier-etika-kewirausahaan",
+      "code": "WI25-0007",
+      "name": "Karier, Etika, dan Kewirausahaan",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "produksi-bersih",
+      "code": "TL25-32001",
+      "name": "Produksi Bersih",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "manajemen-proyek",
+      "code": "TL25-32002",
+      "name": "Manajemen Proyek",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pbpam",
+      "code": "TL25-32003",
+      "name": "Perencanaan Bangunan Pengolahan Air Minum",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pbpal",
+      "code": "TL25-32004",
+      "name": "Perencanaan Bangunan Pengolahan Air Limbah",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pemodelan-lingkungan",
+      "code": "TL25-32005",
+      "name": "Pemodelan Lingkungan",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "pengendalian-pencemaran-udara",
+      "code": "TL25-32006",
+      "name": "Pengendalian Pencemaran Udara",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "k3",
+      "code": "TL25-32007",
+      "name": "Kesehatan dan Keselamatan Kerja",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "teknik-remediasi",
+      "code": "TL25-32008",
+      "name": "Teknik Remediasi",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "metode-penelitian",
+      "code": "TL25-40001",
+      "name": "Metode Penelitian",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "capstone",
+      "code": "TL25-40002",
+      "name": "Capstone Design",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "amdal",
+      "code": "TL25-41001",
+      "name": "Analisis Mengenai Dampak Lingkungan",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "sml",
+      "code": "TL25-41002",
+      "name": "Sistem Manajemen Lingkungan",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kerja-praktik",
+      "code": "TL25-40003",
+      "name": "Kerja Praktik",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "tugas-akhir",
+      "code": "TL25-40004",
+      "name": "Tugas Akhir",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "klhs",
+      "code": "TL25-41201",
+      "name": "Kajian Lingkungan Hidup Strategis (KLHS)",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "teknik-pengolahan-sampah",
+      "code": "TL25-41202",
+      "name": "Teknik Pengolahan Sampah",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "analisis-risiko",
+      "code": "TL25-41203",
+      "name": "Analisis Risiko",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kebisingan-bau",
+      "code": "TL25-41204",
+      "name": "Pengendalian Kebisingan dan Bau",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "penginderaan-jauh",
+      "code": "TL25-41205",
+      "name": "Penginderaan Jauh",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "toksikologi-epidemiologi",
+      "code": "TL25-41206",
+      "name": "Toksikologi Lingkungan dan Epidemiologi Lingkungan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "mikroplastik",
+      "code": "TL25-41207",
+      "name": "Mikroplastik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengolahan-air-lanjut",
+      "code": "TL25-41301",
+      "name": "Pengolahan Air dan Air Limbah Lanjut",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "nanoteknologi-lingkungan",
+      "code": "TL25-41302",
+      "name": "Nanoteknologi Lingkungan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "rekayasa-air-berkelanjutan",
+      "code": "TL25-41303",
+      "name": "Rekayasa Air Berkelanjutan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengelolaan-sda-air",
+      "code": "TL25-41304",
+      "name": "Pengelolaan Sumber Daya Air",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengantar-amdal",
+      "code": "TL25-41101",
+      "name": "Pengantar Analisis Mengenai Dampak Lingkungan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pemodelan-udara",
+      "code": "TL25-42201",
+      "name": "Pemodelan Udara",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "ekonomi-valuasi-lingkungan",
+      "code": "TL25-42202",
+      "name": "Ekonomi dan Valuasi Lingkungan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "konversi-energi-limbah",
+      "code": "TL25-42203",
+      "name": "Konversi Energi Limbah",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "daur-hidup-esg",
+      "code": "TL25-42204",
+      "name": "Analisis Daur Hidup dan Lingkungan, Sosial, dan Tata Kelola",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "sanitasi-berbasis-masyarakat",
+      "code": "TL25-42205",
+      "name": "Sanitasi Berbasis Masyarakat",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "limbah-elektronik",
+      "code": "TL25-42206",
+      "name": "Pengelolaan Limbah Elektronik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengelolaan-kualitas-air",
+      "code": "TL25-42301",
+      "name": "Pengelolaan Kualitas Air",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "bioteknologi-lingkungan",
+      "code": "TL25-42302",
+      "name": "Bioteknologi Lingkungan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fitoremediasi-lahan-basah",
+      "code": "TL25-42303",
+      "name": "Rekayasa Fitoremediasi dan Lahan Basah",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengolahan-lumpur",
+      "code": "TL25-42304",
+      "name": "Sistem Pengolahan Lumpur",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "source-kimia-lanjut",
+      "code": "SOURCE-TABEL-3.15",
+      "name": "Kimia Lanjut (hanya tercantum pada Tabel 3.15)",
+      "credits": 0,
+      "category": "elective"
+    },
+    {
+      "id": "source-etika-profesi",
+      "code": "SOURCE-TABEL-3.15",
+      "name": "Etika Profesi (hanya tercantum pada Tabel 3.15)",
+      "credits": 0,
+      "category": "elective"
+    }
+  ],
+  "coursePools": [
+    {
+      "id": "electives-sem-7",
+      "label": "MK Pilihan Ganjil (2 SKS)",
+      "courseIds": [
+        "klhs",
+        "teknik-pengolahan-sampah",
+        "analisis-risiko",
+        "kebisingan-bau",
+        "penginderaan-jauh",
+        "toksikologi-epidemiologi",
+        "mikroplastik",
+        "pengolahan-air-lanjut",
+        "nanoteknologi-lingkungan",
+        "rekayasa-air-berkelanjutan",
+        "pengelolaan-sda-air",
+        "pengantar-amdal"
+      ]
+    },
+    {
+      "id": "electives-sem-8",
+      "label": "MK Pilihan Genap (2 SKS)",
+      "courseIds": [
+        "pemodelan-udara",
+        "ekonomi-valuasi-lingkungan",
+        "konversi-energi-limbah",
+        "daur-hidup-esg",
+        "sanitasi-berbasis-masyarakat",
+        "limbah-elektronik",
+        "pengelolaan-kualitas-air",
+        "bioteknologi-lingkungan",
+        "fitoremediasi-lahan-basah",
+        "pengolahan-lumpur"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "regular",
+      "label": "Reguler",
+      "shortLabel": "REG",
+      "defaultStudentCount": 8,
+      "expectedCreditsBySemester": {
+        "1": 18,
+        "2": 20,
+        "3": 20,
+        "4": 20,
+        "5": 20,
+        "6": 20,
+        "7": 19,
+        "8": 7
+      },
+      "requiredCourses": [
+        {
+          "courseId": "matematika-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "fisika-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "transformasi-keberlanjutan-sumatera",
+          "semester": 1
+        },
+        {
+          "courseId": "dasar-teknologi-digital",
+          "semester": 1
+        },
+        {
+          "courseId": "kimia-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "biologi-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "praktikum-kimia",
+          "semester": 1
+        },
+        {
+          "courseId": "praktikum-biologi",
+          "semester": 1
+        },
+        {
+          "courseId": "pengantar-infrastruktur-kewilayahan",
+          "semester": 1
+        },
+        {
+          "courseId": "pengenalan-komputasi",
+          "semester": 2
+        },
+        {
+          "courseId": "pola-hidup-sehat",
+          "semester": 2
+        },
+        {
+          "courseId": "bahasa-indonesia",
+          "semester": 2
+        },
+        {
+          "courseId": "studium-general",
+          "semester": 2
+        },
+        {
+          "courseId": "mikrobiologi-dasar",
+          "semester": 2
+        },
+        {
+          "courseId": "ilmu-bumi-tanah",
+          "semester": 2
+        },
+        {
+          "courseId": "gambar-teknik",
+          "semester": 2
+        },
+        {
+          "courseId": "kimia-dasar-ii",
+          "semester": 2
+        },
+        {
+          "courseId": "matematika-dasar-ii",
+          "semester": 2
+        },
+        {
+          "courseId": "pancasila",
+          "semester": 3
+        },
+        {
+          "courseId": "bahasa-inggris-interdisipliner",
+          "semester": 3
+        },
+        {
+          "courseId": "statistik-probabilistik",
+          "semester": 3
+        },
+        {
+          "courseId": "kimia-lingkungan",
+          "semester": 3
+        },
+        {
+          "courseId": "mekanika-fluida",
+          "semester": 3
+        },
+        {
+          "courseId": "ekologi",
+          "semester": 3
+        },
+        {
+          "courseId": "matematika-rekayasa",
+          "semester": 3
+        },
+        {
+          "courseId": "perpetaan",
+          "semester": 3
+        },
+        {
+          "courseId": "kewarganegaraan",
+          "semester": 4
+        },
+        {
+          "courseId": "lab-lingkungan-1",
+          "semester": 4
+        },
+        {
+          "courseId": "lab-lingkungan-2",
+          "semester": 4
+        },
+        {
+          "courseId": "hidrologi-hidrogeologi",
+          "semester": 4
+        },
+        {
+          "courseId": "kesehatan-lingkungan",
+          "semester": 4
+        },
+        {
+          "courseId": "pengelolaan-sampah",
+          "semester": 4
+        },
+        {
+          "courseId": "kebijakan-hukum-lingkungan",
+          "semester": 4
+        },
+        {
+          "courseId": "unit-operasi",
+          "semester": 4
+        },
+        {
+          "courseId": "unit-proses",
+          "semester": 4
+        },
+        {
+          "courseId": "sistem-informasi-geografis",
+          "semester": 4
+        },
+        {
+          "courseId": "agama",
+          "semester": 5
+        },
+        {
+          "courseId": "kkn",
+          "semester": 5
+        },
+        {
+          "courseId": "limbah-b3",
+          "semester": 5
+        },
+        {
+          "courseId": "spal-drainase",
+          "semester": 5
+        },
+        {
+          "courseId": "spam",
+          "semester": 5
+        },
+        {
+          "courseId": "mekanika-tanah-struktur",
+          "semester": 5
+        },
+        {
+          "courseId": "pencemaran-udara-perubahan-iklim",
+          "semester": 5
+        },
+        {
+          "courseId": "ekonomi-teknik",
+          "semester": 5
+        },
+        {
+          "courseId": "plambing-instrumentasi",
+          "semester": 5
+        },
+        {
+          "courseId": "karier-etika-kewirausahaan",
+          "semester": 6
+        },
+        {
+          "courseId": "produksi-bersih",
+          "semester": 6
+        },
+        {
+          "courseId": "manajemen-proyek",
+          "semester": 6
+        },
+        {
+          "courseId": "pbpam",
+          "semester": 6
+        },
+        {
+          "courseId": "pbpal",
+          "semester": 6
+        },
+        {
+          "courseId": "pemodelan-lingkungan",
+          "semester": 6
+        },
+        {
+          "courseId": "pengendalian-pencemaran-udara",
+          "semester": 6
+        },
+        {
+          "courseId": "k3",
+          "semester": 6
+        },
+        {
+          "courseId": "teknik-remediasi",
+          "semester": 6
+        },
+        {
+          "courseId": "metode-penelitian",
+          "semester": 7
+        },
+        {
+          "courseId": "capstone",
+          "semester": 7
+        },
+        {
+          "courseId": "amdal",
+          "semester": 7
+        },
+        {
+          "courseId": "sml",
+          "semester": 7
+        },
+        {
+          "courseId": "kerja-praktik",
+          "semester": 7
+        },
+        {
+          "courseId": "tugas-akhir",
+          "semester": 8
+        }
+      ],
+      "choiceGroups": [],
+      "electiveRules": [
+        {
+          "semester": 7,
+          "poolId": "electives-sem-7",
+          "targetCredits": 6,
+          "mode": "exact"
+        },
+        {
+          "semester": 8,
+          "poolId": "electives-sem-8",
+          "targetCredits": 4,
+          "mode": "exact"
+        }
+      ]
+    }
+  ],
+  "cpmks": [
+    {
+      "id": "cpmk-1-1--agama",
+      "code": "CPMK 1.1",
+      "description": "Mahasiswa mampu menerangkan esensi relasi manusia dengan Tuhan Yang Maha Esa, sesama manusia, dan lingkungan",
+      "courseId": "agama",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-1-2--pancasila",
+      "code": "CPMK 1.2",
+      "description": "Mahasiswa mampu memahami nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan,dan keberagaman dalam kehidupan berbangsa dan bernegara",
+      "courseId": "pancasila",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-1-3--pancasila",
+      "code": "CPMK 1.3",
+      "description": "Mahasiswa mampu menerapkan nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan,dan keberagaman dalam kehidupan berbangsa dan bernegara",
+      "courseId": "pancasila",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-1-4--agama",
+      "code": "CPMK 1.4",
+      "description": "Mahasiswa terampil menganalisis permasalahan spiritualitas dan religiusitas melalui pengembangan budaya dan kesejahteraan masyarakat.",
+      "courseId": "agama",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-1--kewarganegaraan",
+      "code": "CPMK 2.1",
+      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesa serta kedudukan dan tata bahasa indonesia (C2) (P2) (A2)",
+      "courseId": "kewarganegaraan",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-1--bahasa-indonesia",
+      "code": "CPMK 2.1",
+      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesa serta kedudukan dan tata bahasa indonesia (C2) (P2) (A2)",
+      "courseId": "bahasa-indonesia",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-2--kewarganegaraan",
+      "code": "CPMK 2.2",
+      "description": "Mahasiswa mampu menjalankan peran sebagai warga negara melalui partisipasi aktif dalam masyarakat (C3)",
+      "courseId": "kewarganegaraan",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-3--bahasa-indonesia",
+      "code": "CPMK 2.3",
+      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan",
+      "courseId": "bahasa-indonesia",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-3--pola-hidup-sehat",
+      "code": "CPMK 2.3",
+      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan",
+      "courseId": "pola-hidup-sehat",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-4--bahasa-inggris-interdisipliner",
+      "code": "CPMK 2.4",
+      "description": "Mahasiswa mampu menganalisis makna kata. (C4, P1)",
+      "courseId": "bahasa-inggris-interdisipliner",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-5--bahasa-inggris-interdisipliner",
+      "code": "CPMK 2.5",
+      "description": "Mahasiswa mampu menelaah unsur-unsur dan jenis-jenis paragraf (C4, P2)",
+      "courseId": "bahasa-inggris-interdisipliner",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-6--kkn",
+      "code": "CPMK 2.6",
+      "description": "Mahasiswa mampu mengidentifikasi, menjelaskan, dan menganalisis potensi & permasalahan yang ditemui di lapangan/Masyarakat (C4) (A3) (P2)",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-7--kkn",
+      "code": "CPMK 2.7",
+      "description": "Mahasiswa mampu mengimplementasikan program kerja yang dirancang secara kolaboratif baik dengan Masyarakat ataupun tim KKN yang menerapkan konsep ilmiah dan berbasis ilmu pengetahuan teknologi (C4) (P4) (A3)",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-8--bahasa-inggris-interdisipliner",
+      "code": "CPMK 2.8",
+      "description": "Mahasiswa mampu menyusun paraphrase dan summary (C6, P2)",
+      "courseId": "bahasa-inggris-interdisipliner",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-9--bahasa-inggris-interdisipliner",
+      "code": "CPMK 2.9",
+      "description": "Mahasiswa mampu menulis esai dengan outline dan argumentasi (C6, P2)",
+      "courseId": "bahasa-inggris-interdisipliner",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-10--kkn",
+      "code": "CPMK 2.10",
+      "description": "Mahasiswa mampu merancang program pemberdayaan berbasis kebutuhan Masyarakat di Lokasi KKN (C6) (P4) (A3)",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-11--kkn",
+      "code": "CPMK 2.11",
+      "description": "Mahasiswa mampu mengevaluasi dan menyusun laporan hasil program kerja secara sistematis (C6) (P5) (A4)",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-2-12--pola-hidup-sehat",
+      "code": "CPMK 2.12",
+      "description": "Mahasiswa mampu mengintegrasikan teknologi dan keterampilan olahraga untuk beradaptasi dengan perkembangan zaman secara kreatif dan inovatif.",
+      "courseId": "pola-hidup-sehat",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-1--transformasi-keberlanjutan-sumatera",
+      "code": "CPMK 3.1",
+      "description": "Mahasiswa mampu memahami prinsip transformasi dan pembangunan berkelanjutan, konsep dasar infrastruktur komputer, internet, keamanan data dan informasi, sistem operasi, serta basis data; menganalisis peran teknologi tersebut dalam perubahan sosial, ekonomi, dan lingkungan di wilayah Sumatera; serta memahami struktur dasar pemrograman menggunakan bahasa C++.",
+      "courseId": "transformasi-keberlanjutan-sumatera",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-1--pengenalan-komputasi",
+      "code": "CPMK 3.1",
+      "description": "Mahasiswa mampu memahami prinsip transformasi dan pembangunan berkelanjutan, konsep dasar infrastruktur komputer, internet, keamanan data dan informasi, sistem operasi, serta basis data; menganalisis peran teknologi tersebut dalam perubahan sosial, ekonomi, dan lingkungan di wilayah Sumatera; serta memahami struktur dasar pemrograman menggunakan bahasa C++.",
+      "courseId": "pengenalan-komputasi",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-1--dasar-teknologi-digital",
+      "code": "CPMK 3.1",
+      "description": "Mahasiswa mampu memahami prinsip transformasi dan pembangunan berkelanjutan, konsep dasar infrastruktur komputer, internet, keamanan data dan informasi, sistem operasi, serta basis data; menganalisis peran teknologi tersebut dalam perubahan sosial, ekonomi, dan lingkungan di wilayah Sumatera; serta memahami struktur dasar pemrograman menggunakan bahasa C++.",
+      "courseId": "dasar-teknologi-digital",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-2--transformasi-keberlanjutan-sumatera",
+      "code": "CPMK 3.2",
+      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis",
+      "courseId": "transformasi-keberlanjutan-sumatera",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-2--karier-etika-kewirausahaan",
+      "code": "CPMK 3.2",
+      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-3--dasar-teknologi-digital",
+      "code": "CPMK 3.3",
+      "description": "Mahasiswa mampu menerapkan etika dan sikap dalam penggunaan teknologi informasi dan internet yang berkelanjutan terhadap lingkungan; menggunakan perangkat lunak perkantoran untuk mengolah dokumen teks, data, dan presentasi; memanfaatkan komputasi di berbagai bidang keilmuan dengan pendekatan prosedural; menggunakan representasi visual, percabangan, perulangan, dan array dalam pembuatan program sederhana untuk menyelesaikan berbagai permasalahan; serta menerapkan prinsip-prinsip etika profesional di lingkungan kerja dan menyelesaikan dilema etika melalui analisis kasus.",
+      "courseId": "dasar-teknologi-digital",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-3--karier-etika-kewirausahaan",
+      "code": "CPMK 3.3",
+      "description": "Mahasiswa mampu menerapkan etika dan sikap dalam penggunaan teknologi informasi dan internet yang berkelanjutan terhadap lingkungan; menggunakan perangkat lunak perkantoran untuk mengolah dokumen teks, data, dan presentasi; memanfaatkan komputasi di berbagai bidang keilmuan dengan pendekatan prosedural; menggunakan representasi visual, percabangan, perulangan, dan array dalam pembuatan program sederhana untuk menyelesaikan berbagai permasalahan; serta menerapkan prinsip-prinsip etika profesional di lingkungan kerja dan menyelesaikan dilema etika melalui analisis kasus.",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-4--dasar-teknologi-digital",
+      "code": "CPMK 3.4",
+      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif",
+      "courseId": "dasar-teknologi-digital",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-4--karier-etika-kewirausahaan",
+      "code": "CPMK 3.4",
+      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-3-5--transformasi-keberlanjutan-sumatera",
+      "code": "CPMK 3.5",
+      "description": "Mengusulkan ide inovatif berbasis teknologi dengan mempertimbangkan prinsip keseimbangan antara pertumbuhan ekonomi, pelestarian lingkungan, dan kesejahteraan sosial.",
+      "courseId": "transformasi-keberlanjutan-sumatera",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-1--kimia-dasar",
+      "code": "CPMK 4.1",
+      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar",
+      "courseId": "kimia-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-1--kimia-dasar-ii",
+      "code": "CPMK 4.1",
+      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar",
+      "courseId": "kimia-dasar-ii",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-1--kimia-lingkungan",
+      "code": "CPMK 4.1",
+      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar",
+      "courseId": "kimia-lingkungan",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--fisika-dasar",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "fisika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--biologi-dasar",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "biologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--ekonomi-teknik",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "ekonomi-teknik",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--source-kimia-lanjut",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "source-kimia-lanjut",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--mekanika-fluida",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "mekanika-fluida",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--unit-operasi",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "unit-operasi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--ekologi",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "ekologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--mekanika-tanah-struktur",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "mekanika-tanah-struktur",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--ilmu-bumi-tanah",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "ilmu-bumi-tanah",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-2--mikrobiologi-dasar",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "courseId": "mikrobiologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-3--biologi-dasar",
+      "code": "CPMK 4.3",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "courseId": "biologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-3--praktikum-biologi",
+      "code": "CPMK 4.3",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "courseId": "praktikum-biologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-3--gambar-teknik",
+      "code": "CPMK 4.3",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "courseId": "gambar-teknik",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-3--ekologi",
+      "code": "CPMK 4.3",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "courseId": "ekologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-3--ilmu-bumi-tanah",
+      "code": "CPMK 4.3",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "courseId": "ilmu-bumi-tanah",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-3--hidrologi-hidrogeologi",
+      "code": "CPMK 4.3",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "courseId": "hidrologi-hidrogeologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-3--mikrobiologi-dasar",
+      "code": "CPMK 4.3",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "courseId": "mikrobiologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-4--pengantar-infrastruktur-kewilayahan",
+      "code": "CPMK 4.4",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "courseId": "pengantar-infrastruktur-kewilayahan",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-4--kimia-lingkungan",
+      "code": "CPMK 4.4",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "courseId": "kimia-lingkungan",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-4--unit-operasi",
+      "code": "CPMK 4.4",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "courseId": "unit-operasi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-4--unit-proses",
+      "code": "CPMK 4.4",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "courseId": "unit-proses",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-4--hidrologi-hidrogeologi",
+      "code": "CPMK 4.4",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "courseId": "hidrologi-hidrogeologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-5--pengantar-infrastruktur-kewilayahan",
+      "code": "CPMK 4.5",
+      "description": "Mahasiswa mampu membuat sketsa awal konsep penyelesaian infrastruktur dan ruang publik yang mendukung Pembangunan berkelanjutan dan mitigasi bencana",
+      "courseId": "pengantar-infrastruktur-kewilayahan",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-6--praktikum-kimia",
+      "code": "CPMK 4.6",
+      "description": "Mahasiswa mampu mengoperasikan alat-alat laboratorium kimia dasar dengan prosedur yang benar serta menerapkan teknik-teknik dasar laboratorium, termasuk teknik pengukuran, pencampuran, dan pemisahan, sesuai dengan kaidah keselamatan kerja di laboratorium.",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-7--praktikum-kimia",
+      "code": "CPMK 4.7",
+      "description": "Mahasiswa mampu melakukan percobaan kimia dasar untuk memahami konsep stoikiometri, termodinamika kimia, dan kinetika gas, serta menganalisis hasil percobaan secara kuantitatif dan kualitatif menggunakan prinsip-prinsip ilmiah.",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-8--statistik-probabilistik",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "courseId": "statistik-probabilistik",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-8--ekonomi-teknik",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "courseId": "ekonomi-teknik",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-8--mekanika-fluida",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "courseId": "mekanika-fluida",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-8--mekanika-tanah-struktur",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "courseId": "mekanika-tanah-struktur",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-8--unit-operasi",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "courseId": "unit-operasi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-8--unit-proses",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "courseId": "unit-proses",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-8--hidrologi-hidrogeologi",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "courseId": "hidrologi-hidrogeologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-8--matematika-dasar-ii",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "courseId": "matematika-dasar-ii",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-9--matematika-dasar",
+      "code": "CPMK 4.9",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "courseId": "matematika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-9--praktikum-kimia",
+      "code": "CPMK 4.9",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-9--kebijakan-hukum-lingkungan",
+      "code": "CPMK 4.9",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "courseId": "kebijakan-hukum-lingkungan",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-9--gambar-teknik",
+      "code": "CPMK 4.9",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "courseId": "gambar-teknik",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-9--mekanika-tanah-struktur",
+      "code": "CPMK 4.9",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "courseId": "mekanika-tanah-struktur",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-9--ilmu-bumi-tanah",
+      "code": "CPMK 4.9",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "courseId": "ilmu-bumi-tanah",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-9--matematika-dasar-ii",
+      "code": "CPMK 4.9",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "courseId": "matematika-dasar-ii",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-10--matematika-dasar-ii",
+      "code": "CPMK 4.10",
+      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral untuk menyusun langkah penyelesaian masalah matematis yang berkaitan dengan bidang sains dan teknik (C3)",
+      "courseId": "matematika-dasar-ii",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-12--kebijakan-hukum-lingkungan",
+      "code": "CPMK 4.12",
+      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari",
+      "courseId": "kebijakan-hukum-lingkungan",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-12--ekonomi-teknik",
+      "code": "CPMK 4.12",
+      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari",
+      "courseId": "ekonomi-teknik",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-12--matematika-rekayasa",
+      "code": "CPMK 4.12",
+      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari",
+      "courseId": "matematika-rekayasa",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-12--hidrologi-hidrogeologi",
+      "code": "CPMK 4.12",
+      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari",
+      "courseId": "hidrologi-hidrogeologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-13--matematika-rekayasa",
+      "code": "CPMK 4.13",
+      "description": "Mahasiswa mampu menggunakan konsep trigonometri sederhana untuk menyelesaikan persoalan terkait",
+      "courseId": "matematika-rekayasa",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-13--statistik-probabilistik",
+      "code": "CPMK 4.13",
+      "description": "Mahasiswa mampu menggunakan konsep trigonometri sederhana untuk menyelesaikan persoalan terkait",
+      "courseId": "statistik-probabilistik",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-13--hidrologi-hidrogeologi",
+      "code": "CPMK 4.13",
+      "description": "Mahasiswa mampu menggunakan konsep trigonometri sederhana untuk menyelesaikan persoalan terkait",
+      "courseId": "hidrologi-hidrogeologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-14--biologi-dasar",
+      "code": "CPMK 4.14",
+      "description": "Mahasiswa mampu mengaplikasikan pengetahuan biologi dalam proses desain sistem dengan konsep biomimikri dan permasalahan Fisis sederhana(C3)",
+      "courseId": "biologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-16--fisika-dasar",
+      "code": "CPMK 4.16",
+      "description": "Mampu berpikir kritis, logis, sistematis, dan terstruktur dalam menyelesaikan masalah-masalah sistem fisis (A4, P2).",
+      "courseId": "fisika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-4-16--hidrologi-hidrogeologi",
+      "code": "CPMK 4.16",
+      "description": "Mampu berpikir kritis, logis, sistematis, dan terstruktur dalam menyelesaikan masalah-masalah sistem fisis (A4, P2).",
+      "courseId": "hidrologi-hidrogeologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--plambing-instrumentasi",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "plambing-instrumentasi",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--spam",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "spam",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--spal-drainase",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "spal-drainase",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--pbpam",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "pbpam",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--pbpal",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "pbpal",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--pengendalian-pencemaran-udara",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "pengendalian-pencemaran-udara",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--capstone",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "capstone",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--pengelolaan-sampah",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "pengelolaan-sampah",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--limbah-b3",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "limbah-b3",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-1--k3",
+      "code": "CPMK 5.1",
+      "description": "Mampu mendesain komponen, proses, atau sistem dengan pertimbangan teknis prinsip keteknikan untuk memecahkan permasalah kompleks",
+      "courseId": "k3",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--plambing-instrumentasi",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "plambing-instrumentasi",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--spam",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "spam",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--spal-drainase",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "spal-drainase",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--pbpam",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "pbpam",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--pbpal",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "pbpal",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--pengendalian-pencemaran-udara",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "pengendalian-pencemaran-udara",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--capstone",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "capstone",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--pengelolaan-sampah",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "pengelolaan-sampah",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--limbah-b3",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "limbah-b3",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-5-2--k3",
+      "code": "CPMK 5.2",
+      "description": "Mampu mendesain komponen, proses atau komponen dengan pertimbangan non teknis (hukum, sosial, ekonomi, sosial dan budaya, dan keberlanjutan)",
+      "courseId": "k3",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-1--perpetaan",
+      "code": "CPMK 6.1",
+      "description": "Mampu mahami prosedur pengujian lapangan dan/ atau laboratorium",
+      "courseId": "perpetaan",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-1--lab-lingkungan-1",
+      "code": "CPMK 6.1",
+      "description": "Mampu mahami prosedur pengujian lapangan dan/ atau laboratorium",
+      "courseId": "lab-lingkungan-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-1--lab-lingkungan-2",
+      "code": "CPMK 6.1",
+      "description": "Mampu mahami prosedur pengujian lapangan dan/ atau laboratorium",
+      "courseId": "lab-lingkungan-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-1--mikrobiologi-dasar",
+      "code": "CPMK 6.1",
+      "description": "Mampu mahami prosedur pengujian lapangan dan/ atau laboratorium",
+      "courseId": "mikrobiologi-dasar",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-1--kimia-lingkungan",
+      "code": "CPMK 6.1",
+      "description": "Mampu mahami prosedur pengujian lapangan dan/ atau laboratorium",
+      "courseId": "kimia-lingkungan",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-1--mekanika-fluida",
+      "code": "CPMK 6.1",
+      "description": "Mampu mahami prosedur pengujian lapangan dan/ atau laboratorium",
+      "courseId": "mekanika-fluida",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-2--perpetaan",
+      "code": "CPMK 6.2",
+      "description": "Mampu mengeksesusi pengujian lapangan dan/ atau laboratorium",
+      "courseId": "perpetaan",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-2--lab-lingkungan-1",
+      "code": "CPMK 6.2",
+      "description": "Mampu mengeksesusi pengujian lapangan dan/ atau laboratorium",
+      "courseId": "lab-lingkungan-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-2--lab-lingkungan-2",
+      "code": "CPMK 6.2",
+      "description": "Mampu mengeksesusi pengujian lapangan dan/ atau laboratorium",
+      "courseId": "lab-lingkungan-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-2--mikrobiologi-dasar",
+      "code": "CPMK 6.2",
+      "description": "Mampu mengeksesusi pengujian lapangan dan/ atau laboratorium",
+      "courseId": "mikrobiologi-dasar",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-2--kimia-lingkungan",
+      "code": "CPMK 6.2",
+      "description": "Mampu mengeksesusi pengujian lapangan dan/ atau laboratorium",
+      "courseId": "kimia-lingkungan",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-2--mekanika-fluida",
+      "code": "CPMK 6.2",
+      "description": "Mampu mengeksesusi pengujian lapangan dan/ atau laboratorium",
+      "courseId": "mekanika-fluida",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-3--statistik-probabilistik",
+      "code": "CPMK 6.3",
+      "description": "Mampu mengolah data",
+      "courseId": "statistik-probabilistik",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-3--sistem-informasi-geografis",
+      "code": "CPMK 6.3",
+      "description": "Mampu mengolah data",
+      "courseId": "sistem-informasi-geografis",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-3--tugas-akhir",
+      "code": "CPMK 6.3",
+      "description": "Mampu mengolah data",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-3--kerja-praktik",
+      "code": "CPMK 6.3",
+      "description": "Mampu mengolah data",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-3--capstone",
+      "code": "CPMK 6.3",
+      "description": "Mampu mengolah data",
+      "courseId": "capstone",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-3--lab-lingkungan-1",
+      "code": "CPMK 6.3",
+      "description": "Mampu mengolah data",
+      "courseId": "lab-lingkungan-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-3--lab-lingkungan-2",
+      "code": "CPMK 6.3",
+      "description": "Mampu mengolah data",
+      "courseId": "lab-lingkungan-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-4--statistik-probabilistik",
+      "code": "CPMK 6.4",
+      "description": "Mampu menginterpretasi data",
+      "courseId": "statistik-probabilistik",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-4--sistem-informasi-geografis",
+      "code": "CPMK 6.4",
+      "description": "Mampu menginterpretasi data",
+      "courseId": "sistem-informasi-geografis",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-4--tugas-akhir",
+      "code": "CPMK 6.4",
+      "description": "Mampu menginterpretasi data",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-4--kerja-praktik",
+      "code": "CPMK 6.4",
+      "description": "Mampu menginterpretasi data",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-6-4--capstone",
+      "code": "CPMK 6.4",
+      "description": "Mampu menginterpretasi data",
+      "courseId": "capstone",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--spal-drainase",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "spal-drainase",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--k3",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "k3",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--pencemaran-udara-perubahan-iklim",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "pencemaran-udara-perubahan-iklim",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--produksi-bersih",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "produksi-bersih",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--kesehatan-lingkungan",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "kesehatan-lingkungan",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--spam",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "spam",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--pengendalian-pencemaran-udara",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "pengendalian-pencemaran-udara",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--limbah-b3",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "limbah-b3",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--pengelolaan-sampah",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "pengelolaan-sampah",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--pbpam",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "pbpam",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--pbpal",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "pbpal",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-1--capstone",
+      "code": "CPMK 7.1",
+      "description": "Mampu menelaah literatur /data yang digunakan",
+      "courseId": "capstone",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--pencemaran-udara-perubahan-iklim",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "pencemaran-udara-perubahan-iklim",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--spam",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "spam",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--spal-drainase",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "spal-drainase",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--pbpam",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "pbpam",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--pbpal",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "pbpal",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--k3",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "k3",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--amdal",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "amdal",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--limbah-b3",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "limbah-b3",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--pengendalian-pencemaran-udara",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "pengendalian-pencemaran-udara",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--sml",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "sml",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--pengelolaan-sampah",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "pengelolaan-sampah",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--capstone",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "capstone",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-2--produksi-bersih",
+      "code": "CPMK 7.2",
+      "description": "Mampu menggunakan metode atau teknik untuk memecahkan permasalah kompleks",
+      "courseId": "produksi-bersih",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-3--kesehatan-lingkungan",
+      "code": "CPMK 7.3",
+      "description": "Mampu menggunakan pemikiran logis untuk merancang dan/atau pemecahan masalah",
+      "courseId": "kesehatan-lingkungan",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-3--karier-etika-kewirausahaan",
+      "code": "CPMK 7.3",
+      "description": "Mampu menggunakan pemikiran logis untuk merancang dan/atau pemecahan masalah",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-3--produksi-bersih",
+      "code": "CPMK 7.3",
+      "description": "Mampu menggunakan pemikiran logis untuk merancang dan/atau pemecahan masalah",
+      "courseId": "produksi-bersih",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-3--tugas-akhir",
+      "code": "CPMK 7.3",
+      "description": "Mampu menggunakan pemikiran logis untuk merancang dan/atau pemecahan masalah",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-3--metode-penelitian",
+      "code": "CPMK 7.3",
+      "description": "Mampu menggunakan pemikiran logis untuk merancang dan/atau pemecahan masalah",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-4--metode-penelitian",
+      "code": "CPMK 7.4",
+      "description": "Mampu menggunakan pemikiran kreatif dan/atau inovatif",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-4--gambar-teknik",
+      "code": "CPMK 7.4",
+      "description": "Mampu menggunakan pemikiran kreatif dan/atau inovatif",
+      "courseId": "gambar-teknik",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-4--sistem-informasi-geografis",
+      "code": "CPMK 7.4",
+      "description": "Mampu menggunakan pemikiran kreatif dan/atau inovatif",
+      "courseId": "sistem-informasi-geografis",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-4--kimia-lingkungan",
+      "code": "CPMK 7.4",
+      "description": "Mampu menggunakan pemikiran kreatif dan/atau inovatif",
+      "courseId": "kimia-lingkungan",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-4--lab-lingkungan-1",
+      "code": "CPMK 7.4",
+      "description": "Mampu menggunakan pemikiran kreatif dan/atau inovatif",
+      "courseId": "lab-lingkungan-1",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-4--lab-lingkungan-2",
+      "code": "CPMK 7.4",
+      "description": "Mampu menggunakan pemikiran kreatif dan/atau inovatif",
+      "courseId": "lab-lingkungan-2",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-4--mekanika-fluida",
+      "code": "CPMK 7.4",
+      "description": "Mampu menggunakan pemikiran kreatif dan/atau inovatif",
+      "courseId": "mekanika-fluida",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-4--pencemaran-udara-perubahan-iklim",
+      "code": "CPMK 7.4",
+      "description": "Mampu menggunakan pemikiran kreatif dan/atau inovatif",
+      "courseId": "pencemaran-udara-perubahan-iklim",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-7-4--perpetaan",
+      "code": "CPMK 7.4",
+      "description": "Mampu menggunakan pemikiran kreatif dan/atau inovatif",
+      "courseId": "perpetaan",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-1--metode-penelitian",
+      "code": "CPMK 8.1",
+      "description": "Mampu memilih piranti teknik modern dengan memahami karakteristik kekuatan serta keterbatasannya",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-1--sistem-informasi-geografis",
+      "code": "CPMK 8.1",
+      "description": "Mampu memilih piranti teknik modern dengan memahami karakteristik kekuatan serta keterbatasannya",
+      "courseId": "sistem-informasi-geografis",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-1--kimia-lingkungan",
+      "code": "CPMK 8.1",
+      "description": "Mampu memilih piranti teknik modern dengan memahami karakteristik kekuatan serta keterbatasannya",
+      "courseId": "kimia-lingkungan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-1--lab-lingkungan-1",
+      "code": "CPMK 8.1",
+      "description": "Mampu memilih piranti teknik modern dengan memahami karakteristik kekuatan serta keterbatasannya",
+      "courseId": "lab-lingkungan-1",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-1--lab-lingkungan-2",
+      "code": "CPMK 8.1",
+      "description": "Mampu memilih piranti teknik modern dengan memahami karakteristik kekuatan serta keterbatasannya",
+      "courseId": "lab-lingkungan-2",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-1--mekanika-fluida",
+      "code": "CPMK 8.1",
+      "description": "Mampu memilih piranti teknik modern dengan memahami karakteristik kekuatan serta keterbatasannya",
+      "courseId": "mekanika-fluida",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-1--pencemaran-udara-perubahan-iklim",
+      "code": "CPMK 8.1",
+      "description": "Mampu memilih piranti teknik modern dengan memahami karakteristik kekuatan serta keterbatasannya",
+      "courseId": "pencemaran-udara-perubahan-iklim",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-1--perpetaan",
+      "code": "CPMK 8.1",
+      "description": "Mampu memilih piranti teknik modern dengan memahami karakteristik kekuatan serta keterbatasannya",
+      "courseId": "perpetaan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--gambar-teknik",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "gambar-teknik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--sistem-informasi-geografis",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "sistem-informasi-geografis",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--kimia-lingkungan",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "kimia-lingkungan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--lab-lingkungan-1",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "lab-lingkungan-1",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--lab-lingkungan-2",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "lab-lingkungan-2",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--pencemaran-udara-perubahan-iklim",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "pencemaran-udara-perubahan-iklim",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--tugas-akhir",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--statistik-probabilistik",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "statistik-probabilistik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--spam",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "spam",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--spal-drainase",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "spal-drainase",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--pbpam",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "pbpam",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--pbpal",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "pbpal",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-2--mekanika-fluida",
+      "code": "CPMK 8.2",
+      "description": "Mampu menggunakan piranti lunak dan/atau modern yang sesuai dengan permasalahan",
+      "courseId": "mekanika-fluida",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-3--pemodelan-lingkungan",
+      "code": "CPMK 8.3",
+      "description": "Mampu menggunakan piranti teknik modern dan spesifik untuk pemodelan",
+      "courseId": "pemodelan-lingkungan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-3--sistem-informasi-geografis",
+      "code": "CPMK 8.3",
+      "description": "Mampu menggunakan piranti teknik modern dan spesifik untuk pemodelan",
+      "courseId": "sistem-informasi-geografis",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-3--matematika-rekayasa",
+      "code": "CPMK 8.3",
+      "description": "Mampu menggunakan piranti teknik modern dan spesifik untuk pemodelan",
+      "courseId": "matematika-rekayasa",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-8-3--perpetaan",
+      "code": "CPMK 8.3",
+      "description": "Mampu menggunakan piranti teknik modern dan spesifik untuk pemodelan",
+      "courseId": "perpetaan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-1--tugas-akhir",
+      "code": "CPMK 9.1",
+      "description": "Mampu berkomunikasi secara verbal yang aktif dan efektif",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-1--kerja-praktik",
+      "code": "CPMK 9.1",
+      "description": "Mampu berkomunikasi secara verbal yang aktif dan efektif",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-1--kesehatan-lingkungan",
+      "code": "CPMK 9.1",
+      "description": "Mampu berkomunikasi secara verbal yang aktif dan efektif",
+      "courseId": "kesehatan-lingkungan",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-1--capstone",
+      "code": "CPMK 9.1",
+      "description": "Mampu berkomunikasi secara verbal yang aktif dan efektif",
+      "courseId": "capstone",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-1--karier-etika-kewirausahaan",
+      "code": "CPMK 9.1",
+      "description": "Mampu berkomunikasi secara verbal yang aktif dan efektif",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-2--metode-penelitian",
+      "code": "CPMK 9.2",
+      "description": "Mampu berkomunikasi secara non verbal yang sesuai kaidah akademik dan atau kaidah keteknikan",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-2--kerja-praktik",
+      "code": "CPMK 9.2",
+      "description": "Mampu berkomunikasi secara non verbal yang sesuai kaidah akademik dan atau kaidah keteknikan",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-2--gambar-teknik",
+      "code": "CPMK 9.2",
+      "description": "Mampu berkomunikasi secara non verbal yang sesuai kaidah akademik dan atau kaidah keteknikan",
+      "courseId": "gambar-teknik",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-2--sistem-informasi-geografis",
+      "code": "CPMK 9.2",
+      "description": "Mampu berkomunikasi secara non verbal yang sesuai kaidah akademik dan atau kaidah keteknikan",
+      "courseId": "sistem-informasi-geografis",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-2--perpetaan",
+      "code": "CPMK 9.2",
+      "description": "Mampu berkomunikasi secara non verbal yang sesuai kaidah akademik dan atau kaidah keteknikan",
+      "courseId": "perpetaan",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-2--plambing-instrumentasi",
+      "code": "CPMK 9.2",
+      "description": "Mampu berkomunikasi secara non verbal yang sesuai kaidah akademik dan atau kaidah keteknikan",
+      "courseId": "plambing-instrumentasi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-2--capstone",
+      "code": "CPMK 9.2",
+      "description": "Mampu berkomunikasi secara non verbal yang sesuai kaidah akademik dan atau kaidah keteknikan",
+      "courseId": "capstone",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-2--amdal",
+      "code": "CPMK 9.2",
+      "description": "Mampu berkomunikasi secara non verbal yang sesuai kaidah akademik dan atau kaidah keteknikan",
+      "courseId": "amdal",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-9-2--tugas-akhir",
+      "code": "CPMK 9.2",
+      "description": "Mampu berkomunikasi secara non verbal yang sesuai kaidah akademik dan atau kaidah keteknikan",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-1--manajemen-proyek",
+      "code": "CPMK 10.1",
+      "description": "Mampu menggunakan prinsip dasar pengelolaan proyek dalam perencanaan, implementasi sampai dengan evaluasi",
+      "courseId": "manajemen-proyek",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-1--amdal",
+      "code": "CPMK 10.1",
+      "description": "Mampu menggunakan prinsip dasar pengelolaan proyek dalam perencanaan, implementasi sampai dengan evaluasi",
+      "courseId": "amdal",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-1--pbpam",
+      "code": "CPMK 10.1",
+      "description": "Mampu menggunakan prinsip dasar pengelolaan proyek dalam perencanaan, implementasi sampai dengan evaluasi",
+      "courseId": "pbpam",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-1--pbpal",
+      "code": "CPMK 10.1",
+      "description": "Mampu menggunakan prinsip dasar pengelolaan proyek dalam perencanaan, implementasi sampai dengan evaluasi",
+      "courseId": "pbpal",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-1--spal-drainase",
+      "code": "CPMK 10.1",
+      "description": "Mampu menggunakan prinsip dasar pengelolaan proyek dalam perencanaan, implementasi sampai dengan evaluasi",
+      "courseId": "spal-drainase",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-1--spam",
+      "code": "CPMK 10.1",
+      "description": "Mampu menggunakan prinsip dasar pengelolaan proyek dalam perencanaan, implementasi sampai dengan evaluasi",
+      "courseId": "spam",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-1--pengendalian-pencemaran-udara",
+      "code": "CPMK 10.1",
+      "description": "Mampu menggunakan prinsip dasar pengelolaan proyek dalam perencanaan, implementasi sampai dengan evaluasi",
+      "courseId": "pengendalian-pencemaran-udara",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-1--capstone",
+      "code": "CPMK 10.1",
+      "description": "Mampu menggunakan prinsip dasar pengelolaan proyek dalam perencanaan, implementasi sampai dengan evaluasi",
+      "courseId": "capstone",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-1--metode-penelitian",
+      "code": "CPMK 10.1",
+      "description": "Mampu menggunakan prinsip dasar pengelolaan proyek dalam perencanaan, implementasi sampai dengan evaluasi",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-2--karier-etika-kewirausahaan",
+      "code": "CPMK 10.2",
+      "description": "Mampu menerapkan metode dan strategi terbaik dalam penyelesaian pekerjaan",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-2--sml",
+      "code": "CPMK 10.2",
+      "description": "Mampu menerapkan metode dan strategi terbaik dalam penyelesaian pekerjaan",
+      "courseId": "sml",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-2--capstone",
+      "code": "CPMK 10.2",
+      "description": "Mampu menerapkan metode dan strategi terbaik dalam penyelesaian pekerjaan",
+      "courseId": "capstone",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-2--tugas-akhir",
+      "code": "CPMK 10.2",
+      "description": "Mampu menerapkan metode dan strategi terbaik dalam penyelesaian pekerjaan",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-2--amdal",
+      "code": "CPMK 10.2",
+      "description": "Mampu menerapkan metode dan strategi terbaik dalam penyelesaian pekerjaan",
+      "courseId": "amdal",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-2--ekonomi-teknik",
+      "code": "CPMK 10.2",
+      "description": "Mampu menerapkan metode dan strategi terbaik dalam penyelesaian pekerjaan",
+      "courseId": "ekonomi-teknik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-3--tugas-akhir",
+      "code": "CPMK 10.3",
+      "description": "Mampu menganalisis kebutuhan sumber daya dan/atau risiko lingkungan, dan/atau faktor teknis dalam perencanaan proyek",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-10-3--manajemen-proyek",
+      "code": "CPMK 10.3",
+      "description": "Mampu menganalisis kebutuhan sumber daya dan/atau risiko lingkungan, dan/atau faktor teknis dalam perencanaan proyek",
+      "courseId": "manajemen-proyek",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-11-1--amdal",
+      "code": "CPMK 11.1",
+      "description": "Mampu bekerjasama dengan tim yang multidisiplin ilmu",
+      "courseId": "amdal",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-11-1--capstone",
+      "code": "CPMK 11.1",
+      "description": "Mampu bekerjasama dengan tim yang multidisiplin ilmu",
+      "courseId": "capstone",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-11-1--studium-general",
+      "code": "CPMK 11.1",
+      "description": "Mampu bekerjasama dengan tim yang multidisiplin ilmu",
+      "courseId": "studium-general",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-11-1--pengantar-infrastruktur-kewilayahan",
+      "code": "CPMK 11.1",
+      "description": "Mampu bekerjasama dengan tim yang multidisiplin ilmu",
+      "courseId": "pengantar-infrastruktur-kewilayahan",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-11-2--kerja-praktik",
+      "code": "CPMK 11.2",
+      "description": "Mampu bekerjasama baik secara individu maupun berkelompok dengan pihak yang berasal dari latar belakang sosial ekonomi yang berbeda",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-11-2--karier-etika-kewirausahaan",
+      "code": "CPMK 11.2",
+      "description": "Mampu bekerjasama baik secara individu maupun berkelompok dengan pihak yang berasal dari latar belakang sosial ekonomi yang berbeda",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-11-2--produksi-bersih",
+      "code": "CPMK 11.2",
+      "description": "Mampu bekerjasama baik secara individu maupun berkelompok dengan pihak yang berasal dari latar belakang sosial ekonomi yang berbeda",
+      "courseId": "produksi-bersih",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-11-2--pengantar-infrastruktur-kewilayahan",
+      "code": "CPMK 11.2",
+      "description": "Mampu bekerjasama baik secara individu maupun berkelompok dengan pihak yang berasal dari latar belakang sosial ekonomi yang berbeda",
+      "courseId": "pengantar-infrastruktur-kewilayahan",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-11-2--studium-general",
+      "code": "CPMK 11.2",
+      "description": "Mampu bekerjasama baik secara individu maupun berkelompok dengan pihak yang berasal dari latar belakang sosial ekonomi yang berbeda",
+      "courseId": "studium-general",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-1--kerja-praktik",
+      "code": "CPMK 12.1",
+      "description": "Mampu beradaptasi dan bekerja secara mandiri melalui riset/ pembelajaran/ eksperimen, dan/atau proyek",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-1--tugas-akhir",
+      "code": "CPMK 12.1",
+      "description": "Mampu beradaptasi dan bekerja secara mandiri melalui riset/ pembelajaran/ eksperimen, dan/atau proyek",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-1--metode-penelitian",
+      "code": "CPMK 12.1",
+      "description": "Mampu beradaptasi dan bekerja secara mandiri melalui riset/ pembelajaran/ eksperimen, dan/atau proyek",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-1--capstone",
+      "code": "CPMK 12.1",
+      "description": "Mampu beradaptasi dan bekerja secara mandiri melalui riset/ pembelajaran/ eksperimen, dan/atau proyek",
+      "courseId": "capstone",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-1--studium-general",
+      "code": "CPMK 12.1",
+      "description": "Mampu beradaptasi dan bekerja secara mandiri melalui riset/ pembelajaran/ eksperimen, dan/atau proyek",
+      "courseId": "studium-general",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-2--kerja-praktik",
+      "code": "CPMK 12.2",
+      "description": "Mampu mendapatkan informasi termutakhir yang diseminasi",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-2--tugas-akhir",
+      "code": "CPMK 12.2",
+      "description": "Mampu mendapatkan informasi termutakhir yang diseminasi",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-2--metode-penelitian",
+      "code": "CPMK 12.2",
+      "description": "Mampu mendapatkan informasi termutakhir yang diseminasi",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-2--karier-etika-kewirausahaan",
+      "code": "CPMK 12.2",
+      "description": "Mampu mendapatkan informasi termutakhir yang diseminasi",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-2--kesehatan-lingkungan",
+      "code": "CPMK 12.2",
+      "description": "Mampu mendapatkan informasi termutakhir yang diseminasi",
+      "courseId": "kesehatan-lingkungan",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-2--produksi-bersih",
+      "code": "CPMK 12.2",
+      "description": "Mampu mendapatkan informasi termutakhir yang diseminasi",
+      "courseId": "produksi-bersih",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-2--pengantar-infrastruktur-kewilayahan",
+      "code": "CPMK 12.2",
+      "description": "Mampu mendapatkan informasi termutakhir yang diseminasi",
+      "courseId": "pengantar-infrastruktur-kewilayahan",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-3--k3",
+      "code": "CPMK 12.3",
+      "description": "Mampu mengelaborasi dan atau merespon dampak teknologi pada bidang teknik untuk kesehatan, kesejahteraan publik, keselamatan kerja dan lingkungan serta pembangunan berkelanjutan",
+      "courseId": "k3",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-3--source-etika-profesi",
+      "code": "CPMK 12.3",
+      "description": "Mampu mengelaborasi dan atau merespon dampak teknologi pada bidang teknik untuk kesehatan, kesejahteraan publik, keselamatan kerja dan lingkungan serta pembangunan berkelanjutan",
+      "courseId": "source-etika-profesi",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-3--kerja-praktik",
+      "code": "CPMK 12.3",
+      "description": "Mampu mengelaborasi dan atau merespon dampak teknologi pada bidang teknik untuk kesehatan, kesejahteraan publik, keselamatan kerja dan lingkungan serta pembangunan berkelanjutan",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-3--kesehatan-lingkungan",
+      "code": "CPMK 12.3",
+      "description": "Mampu mengelaborasi dan atau merespon dampak teknologi pada bidang teknik untuk kesehatan, kesejahteraan publik, keselamatan kerja dan lingkungan serta pembangunan berkelanjutan",
+      "courseId": "kesehatan-lingkungan",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-4--k3",
+      "code": "CPMK 12.4",
+      "description": "Mampu menguraikan aspek legal dan etika teknik dan akademik sesuai dengan standar yang berlaku",
+      "courseId": "k3",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-4--tugas-akhir",
+      "code": "CPMK 12.4",
+      "description": "Mampu menguraikan aspek legal dan etika teknik dan akademik sesuai dengan standar yang berlaku",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-4--metode-penelitian",
+      "code": "CPMK 12.4",
+      "description": "Mampu menguraikan aspek legal dan etika teknik dan akademik sesuai dengan standar yang berlaku",
+      "courseId": "metode-penelitian",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-4--capstone",
+      "code": "CPMK 12.4",
+      "description": "Mampu menguraikan aspek legal dan etika teknik dan akademik sesuai dengan standar yang berlaku",
+      "courseId": "capstone",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-4--kebijakan-hukum-lingkungan",
+      "code": "CPMK 12.4",
+      "description": "Mampu menguraikan aspek legal dan etika teknik dan akademik sesuai dengan standar yang berlaku",
+      "courseId": "kebijakan-hukum-lingkungan",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "cpmk-12-4--karier-etika-kewirausahaan",
+      "code": "CPMK 12.4",
+      "description": "Mampu menguraikan aspek legal dan etika teknik dan akademik sesuai dengan standar yang berlaku",
+      "courseId": "karier-etika-kewirausahaan",
+      "outcomeId": "CPL-12",
+      "trackIds": [
+        "regular"
+      ]
+    }
+  ],
+  "sourceNotes": [
+    {
+      "severity": "info",
+      "code": "CPMK_SOURCE",
+      "message": "CPL, CPMK, deskripsi CPMK, dan keterkaitan CPMK–MK ditranskripsikan dari Tabel 3.15 dokumen Kurikulum Teknik Lingkungan ITERA."
+    },
+    {
+      "severity": "warning",
+      "code": "NO_CPMK_WEIGHTS",
+      "message": "Tabel 3.15 tidak memuat bobot/persentase CPMK. cpmkWeights sengaja tidak dibuat agar simulator tidak mengarang bobot."
+    },
+    {
+      "severity": "info",
+      "code": "STRUCTURE_SOURCE",
+      "message": "Kode MK, SKS, semester, dan total 144 SKS mengikuti Lampiran 5 Struktur Kurikulum Program Studi."
+    },
+    {
+      "severity": "info",
+      "code": "ELECTIVE_SIMULATION",
+      "message": "Untuk simulasi paket 144 SKS, Semester 7 memilih acak 3 MK pilihan ganjil @2 SKS dan Semester 8 memilih acak 2 MK pilihan genap @2 SKS. Opsi khusus MLPS Asistensi, Pengembangan Profesi, dan Seminar MLPS tidak dimasukkan ke pool acak agar slot pilihan pada struktur tetap 2 SKS per mata kuliah."
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_NAME_ALIASES",
+      "message": "Beberapa nama pada Tabel 3.15 dipetakan ke nama pada struktur: Agama Islam→Agama; Praktikum Kimia Dasar→Praktikum Kimia; Praktikum Biologi Dasar→Praktikum Biologi; Metodologi Penelitian→Metode Penelitian; Plumbing→Plambing dan Instrumentasi; Kewirausahaan→Karier, Etika, dan Kewirausahaan."
+    },
+    {
+      "severity": "warning",
+      "code": "SOURCE_ONLY_COURSES",
+      "message": "Tabel 3.15 menyebut Kimia Lanjut dan Etika Profesi, tetapi keduanya tidak ditemukan sebagai MK tersendiri pada Lampiran 5. Keduanya dipertahankan sebagai entri sumber 0 SKS dan tidak dimasukkan ke paket mahasiswa."
+    },
+    {
+      "severity": "info",
+      "code": "CPMK_NUMBER_GAPS",
+      "message": "Nomor CPMK 4.11 dan CPMK 4.15 tidak muncul pada Tabel 3.15; JSON tidak membuat CPMK pengganti."
+    },
+    {
+      "severity": "info",
+      "code": "SARJANA_SIM_LIMIT",
+      "message": "maxCreditsPerSemester=20 mengikuti kebijakan simulator Sarjana. Dokumen implementasi menyebut Semester 1–2 maksimal 20 SKS dan Semester 3 seterusnya maksimal 24 SKS; paket kurikulum baku pada JSON ini sendiri tidak melebihi 20 SKS per semester."
+    }
+  ]
+}
