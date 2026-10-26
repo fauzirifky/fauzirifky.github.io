@@ -1,0 +1,92 @@
+{
+  "schemaVersion": "1.0.0",
+  "program": {
+    "id": "obe-simulator-dummy",
+    "name": "Template OBE",
+    "institution": "Konfigurasi JSON dummy",
+    "degreeLevel": "Demo",
+    "curriculum": "Template",
+    "creditUnit": "SKS",
+    "totalCredits": 6,
+    "semesterCount": 2,
+    "maxCreditsPerSemester": 24,
+    "description": "Template dummy netral untuk OBE Simulator. Muat atau tempel JSON pada menu JSON & Pengaturan untuk mengganti konfigurasi ini."
+  },
+  "outcomes": [
+    {
+      "id": "CPL-1",
+      "code": "CPL 1",
+      "label": "Contoh capaian pembelajaran lulusan pertama."
+    },
+    {
+      "id": "CPL-2",
+      "code": "CPL 2",
+      "label": "Contoh capaian pembelajaran lulusan kedua."
+    }
+  ],
+  "courses": [
+    {
+      "id": "dummy-101",
+      "code": "DUM-101",
+      "name": "Mata Kuliah Dummy A",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "dummy-102",
+      "code": "DUM-102",
+      "name": "Mata Kuliah Dummy B",
+      "credits": 3,
+      "category": "required"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "default",
+      "label": "Dummy",
+      "shortLabel": "DMY",
+      "defaultStudentCount": 3,
+      "expectedCreditsBySemester": {
+        "1": 3,
+        "2": 3
+      },
+      "requiredCourses": [
+        {
+          "courseId": "dummy-101",
+          "semester": 1
+        },
+        {
+          "courseId": "dummy-102",
+          "semester": 2
+        }
+      ],
+      "choiceGroups": [],
+      "electiveRules": []
+    }
+  ],
+  "cpmks": [
+    {
+      "id": "dummy-cpmk-1-1-dummy-101",
+      "code": "CPMK 1.1",
+      "description": "Contoh CPMK yang diturunkan dari CPL 1.",
+      "courseId": "dummy-101",
+      "outcomeId": "CPL-1",
+      "trackIds": ["default"]
+    },
+    {
+      "id": "dummy-cpmk-2-1-dummy-102",
+      "code": "CPMK 2.1",
+      "description": "Contoh CPMK yang diturunkan dari CPL 2.",
+      "courseId": "dummy-102",
+      "outcomeId": "CPL-2",
+      "trackIds": ["default"]
+    }
+  ],
+  "sourceNotes": [
+    {
+      "severity": "info",
+      "code": "DUMMY_TEMPLATE",
+      "message": "Data ini hanya template dummy. Ganti melalui menu JSON & Pengaturan; tidak merepresentasikan program studi tertentu."
+    }
+  ]
+}
