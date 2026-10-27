@@ -537,7 +537,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menerapkan konsep-konsep dasar mekanika analitik pada berbagai kasus sederhana.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m002",
@@ -547,7 +549,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menyelesaikan sistem mekanik kompleks menggunakan metode Hamilton- Jacobi, transformasi kanonik, dan teori perturbasi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m003",
@@ -557,7 +561,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menganalisis Dasar-Dasar Termodinamika",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m004",
@@ -567,7 +573,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menganalisis tinjauan mikroskopik untuk memahami sifat-sifat makroskopik dari material",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m005",
@@ -577,7 +585,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menganalisis fenomena fisis untuk membangun model matematis yang sesuai berdasarkan hukum-hukum fisika.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m006",
@@ -587,7 +597,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menganalisis dan mengimplementasikan model matematis ke dalam algoritma numerik untuk menyelesaikan masalah sistem fisis secara komputasional.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m007",
@@ -597,7 +609,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mengembangkan teknik Kecerdasan Buatan untuk memodelkan dan memprediksi perilaku sistem fisis kompleks.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m008",
@@ -607,7 +621,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menganalisis fenomena elektrostatik dan magnetostatik berdasarkan Persamaan Maxwell",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m009",
@@ -617,7 +633,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Merancang dan mengembangkan model penyelesaian persoalan elektrodinamika.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m010",
@@ -627,7 +645,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menelaah konsep dasar fisis dan matematis mekanika kuantum.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m011",
@@ -637,7 +657,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menganalisis teori gangguan dan teori sistem banyak partikel dalam sistem kuantum.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m012",
@@ -647,7 +669,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menganalisis konsep lanjutan dari sistem kuantum melalui teori hamburan dan simetri.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m013",
@@ -657,7 +681,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menganalisis Sistem Instrumentasi dan Pengolahan Sinyal.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m014",
@@ -667,7 +693,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menguasai Teknologi Sensor dan Perangkat Masukan.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m015",
@@ -677,7 +705,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mengembangkan Sistem Komunikasi Data dalam Instrumentasi Fisika.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m016",
@@ -687,7 +717,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mengidentifikasi Potensi dan Karakteristik fisika Material Alam Sumatera.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m017",
@@ -697,7 +729,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mengevaluasi Dampak Pemanfaatan Material Alam Sumatera.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m018",
@@ -707,7 +741,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mengembangkan Aplikasi Material Alam dalam Fisika.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m019",
@@ -717,7 +753,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menelaah konsep dasar metodologi penelitian serta aspek-aspek pendukungnya.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m020",
@@ -727,7 +765,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mengidentifikasi teknik pengumpulan dan analisis data penelitian.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m021",
@@ -737,7 +777,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menganalisis konsep dan metode penelitian dalam proyek penelitian.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m022",
@@ -747,7 +789,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Merencanakan penelitian sesuai dengan aturan dan tahapan metodologi ilmiah yang tepat.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m023",
@@ -757,7 +801,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mampu menyampaikan rancangan penelitian secara efektif dalam bentuk tulisan akademik dan presentasi lisan sesuai kaidah ilmiah.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m024",
@@ -767,7 +813,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mampu merumuskan dan menyusun rancangan penelitian dalam bidang fisika secara sistematis dengan menggunakan metode ilmiah yang tepat dan relevan dengan topik kajian.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m025",
@@ -777,7 +825,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menelaah prinsip dasar penulisan ilmiah.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m026",
@@ -787,7 +837,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Menyusun Makalah Ilmiah Berdasarkan Hasil Penelitian.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m027",
@@ -797,7 +849,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Melaksanakan, memvalidasi, dan menganalisis penelitian di bidang fisika secara mandiri dan sistematis menggunakan metode ilmiah yang tepat untuk menghasilkan temuan yang dapat dipertanggungjawabkan secara akademik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m028",
@@ -807,7 +861,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mengevaluasi dan mengoptimalkan penggunaan teknologi, instrumentasi, serta peralatan laboratorium dalam mendukung eksperimen dan penelitian fisika secara efektif dan akurat.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m029",
@@ -817,7 +873,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "mengembangkan inovasi dan solusi kreatif terhadap permasalahan kompleks di bidang fisika dan aplikasinya melalui pendekatan ilmiah berbasis penelitian.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m030",
@@ -827,7 +885,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "merancang, mengelola, dan mempertanggungjawabkan pelaksanaan penelitian serta aplikasinya di masyarakat dengan menjunjung tinggi profesionalisme, etika akademik, dan tanggung jawab ilmiah (C6 dan A5).",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m031",
@@ -837,7 +897,9 @@
       "trackIds": [
         "regular",
         "research"
-      ]
+      ],
+      "description": "Mengkomunikasikan, mempresentasikan, mempertahankan, dan mengembangkan hasil penelitian fisika secara tertulis maupun lisan sesuai standar ilmiah sehingga berkontribusi terhadap perkembangan sains, teknologi, industri, dan kesejahteraan masyarakat.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m032",
@@ -846,7 +908,9 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mempresentasikan dan mempertahankan hasil penelitian tesis secara ilmiah dan profesional.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m033",
@@ -855,7 +919,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menunjukkan penguasaan mendalam terhadap bidang penelitian serta kepatuhan terhadap etika akademik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m034",
@@ -864,7 +930,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan prinsip dasar dan struktur geometris teori relativitas umum, serta menurunkan dan menganalisis persamaan medan Einstein secara matematis dan fisis.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m035",
@@ -873,7 +941,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan relativitas umum dalam konteks kosmologi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m036",
@@ -882,7 +952,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Memahami Prinsip Dasar Pemodelan Fungsi Respon Bumi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m037",
@@ -891,7 +963,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menguasai Teknik Pengukuran dan Pengolahan Data Geofisika.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m038",
@@ -900,7 +974,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Hasil Pemodelan dan Inversi Fungsi Respon Bumi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m039",
@@ -909,7 +985,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengembangkan Aplikasi Pemodelan Fungsi Respon Bumi dalam Penelitian dan Industri.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m040",
@@ -918,7 +996,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menjelaskan, menganalisis, dan menerapkan prinsip-prinsip dasar teori medan kuantum, termasuk kuantisasi medan bebas, struktur spinor, serta simetri dan hukum kekekalan.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m041",
@@ -927,7 +1007,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan teknik kuantitatif teori medan kuantum untuk menganalisis proses interaksi partikel, menyusun Feynman diagram, serta melakukan perhitungan amplitudo dan renormalisasi pada tingkat awal.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m042",
@@ -936,7 +1018,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Memahami Prinsip Dasar",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m043",
@@ -945,7 +1029,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menguasai Teknik Karakterisasi Material Nano.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m044",
@@ -954,7 +1040,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Struktur dan Sifat Material Nano.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m045",
@@ -963,7 +1051,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengembangkan Aplikasi Material dan Divais Nano.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m046",
@@ -972,7 +1062,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis prinsip-prinsip mekanika kuantum yang mendasari pembentukan dan struktur orbital atom.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m047",
@@ -981,7 +1073,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengevaluasi keterbatasan model atom sederhana dan mengembangkan pendekatan teoretis untuk sistem multi-elektron.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m048",
@@ -990,7 +1084,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan dan menganalisis metode Density Functional Theory (DFT) untuk menghitung orbital dan sifat elektronik sistem atom dan molekul, serta menginterpretasikan hasil komputasi dalam konteks aplikasi nyata seperti desain material, katalis, sistem nano, dan orbitronik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m049",
@@ -999,7 +1095,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengevaluasi dan mengintegrasikan perkembangan terbaru fisika teoritis secara kritis melalui kajian literatur ilmiah dan diskusi terstruktur.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m050",
@@ -1008,7 +1106,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menyusun karya tulis ilmiah berbasis analisis kritis terhadap isu-isu fisika teoritis yang relevan.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m051",
@@ -1017,7 +1117,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menjelaskan dasar-dasar kosmologi dan model-model alam semesta.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m052",
@@ -1026,7 +1128,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengkaji asal-usul, struktur, dan evolusi alam semesta menggunakan pendekatan fisika modern.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m053",
@@ -1035,7 +1139,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan prinsip-prinsip fisika material dalam menjelaskan sifat mekanik, termal, dan optik berbagai jenis biomaterial.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m054",
@@ -1044,7 +1150,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan teknik karakterisasi material untuk mengkaji struktur dan sifat permukaan biomaterial.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m055",
@@ -1053,7 +1161,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis sifat fisis dan struktur mikroskopik biomaterial berdasarkan prinsip fisika material.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m056",
@@ -1062,7 +1172,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Struktur Elektronik Material Padat Menggunakan Metode Komputasi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m057",
@@ -1071,7 +1183,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menerapkan Metode Lanjutan dalam Komputasi Struktur Elektronik untuk Material dengan Interaksi Kuat.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m058",
@@ -1080,7 +1194,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Pengaruh Parameter Eksternal pada Sifat Elektronik Material Padat.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m059",
@@ -1089,7 +1205,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menginterpretasikan Hasil Simulasi dan Menyusun Laporan Analisis Komputasi Struktur Elektronik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m060",
@@ -1098,7 +1216,9 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengevaluasi prinsip konversi sinyal fisik menjadi sinyal listrik melalui sensor dan transduser.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m061",
@@ -1107,7 +1227,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang dan mengembangkan sistem pengolahan sinyal analog dan digital dengan menggunakan filter analog.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m062",
@@ -1116,7 +1238,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan prinsip kerja berbagai teknik karakterisasi material untuk menentukan sifat struktur, fisis, dan kimia suatu material.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m063",
@@ -1125,7 +1249,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis data hasil karakterisasi material untuk mengidentifikasi hubungan antara struktur mikro dan sifat fisis material.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m064",
@@ -1134,7 +1260,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Memahami Prinsip Dasar",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m065",
@@ -1143,7 +1271,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menguasai Teknik Analisis dan Desain Rangkaian",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m066",
@@ -1152,7 +1282,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Sistem Pengendalian",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m067",
@@ -1161,7 +1293,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengembangkan Aplikasi Elektronika dalam Industri.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m068",
@@ -1170,7 +1304,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Memahami Prinsip Dasar",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m069",
@@ -1179,7 +1315,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menguasai Teknik Pengukuran dan Analisis Data Menggunakan Instrumen Analitis.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m070",
@@ -1188,7 +1326,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Kinerja dan Validasi Instrumen Analitis.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m071",
@@ -1197,7 +1337,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengembangkan Aplikasi",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m072",
@@ -1206,7 +1348,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengidentifikasi dan menganalisis topik-topik terkini dalam fisika instrumentasi berdasarkan literatur dari jurnal bereputasi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m073",
@@ -1215,7 +1359,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengembangkan kemampuan kritis dalam mengevaluasi metode dan hasil penelitian yang dipublikasikan dalam fisika instrumentasi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m074",
@@ -1224,7 +1370,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menyajikan dan mendiskusikan hasil analisis terhadap literatur ilmiah terkait fisika instrumentasi dalam forum akademik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m075",
@@ -1233,7 +1381,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengintegrasikan pengetahuan dari berbagai topik terkini untuk merancang usulan penelitian inovatif dalam bidang fisika instrumentasi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m076",
@@ -1242,7 +1392,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Merencanakan desain survey dan pengambilan data elektromagnetik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m077",
@@ -1251,7 +1403,9 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis dan menginterpretasi hasil pengolahan data elektromagnetik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m078",
@@ -1260,7 +1414,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Peristiwa Longsor dan Stabilitas Lereng dalam Sistem Kompleks.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m079",
@@ -1269,7 +1425,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Sistem Geothermal dan Aplikasinya dalam Energi Terbarukan.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m080",
@@ -1278,7 +1436,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Proses Vulkanik dalam Sistem Kompleks Gunungapi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m081",
@@ -1287,7 +1447,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Memahami Prinsip Dasar dan Menguasai Teknik Karakterisasi Bahan Fotonik dan Magnetik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m082",
@@ -1296,7 +1458,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Sifat dan Mengembangkan Aplikasi Bahan Fotonik dan Magnetik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m083",
@@ -1305,7 +1469,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menjelaskan konsep-konsep dasar fisika batuan serta parameter-parameter fisik (seperti densitas, porositas, kecepatan gelombang, modulus elastisitas) dan hubungan antar parameter tersebut dalam konteks geosains.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m084",
@@ -1314,7 +1480,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis data fisika batuan menggunakan metode statistik dan komputasi untuk memperoleh hubungan fisis antar parameter batuan.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m085",
@@ -1323,7 +1491,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menginterpretasi hasil pemodelan fisika batuan untuk menjawab permasalahan geosains, termasuk dalam konteks eksplorasi, reservoir, atau bahaya geologi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m086",
@@ -1332,7 +1502,9 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Memahami Prinsip Dasar dan Merancang Proyek Studi Mandiri.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m087",
@@ -1341,7 +1513,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Hasil, Menyusun Laporan, dan Mempresentasikan Hasil.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m088",
@@ -1350,7 +1524,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Memahami Prinsip Dasar Material Elektronik hingga Mengembangkan Aplikasi Material Elektronik dalam Teknologi Modern.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m089",
@@ -1359,7 +1535,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menelaah Konsep Dasar",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m090",
@@ -1368,7 +1546,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Teknik Pembangkitan dan Penyimpanan Energi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m091",
@@ -1377,7 +1557,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis kelebihan dan kekurangan sumber energi berdasarkan Aspek Lingkungan dan Sosial-Ekonomi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m092",
@@ -1386,7 +1568,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Merancang model pembangkit energi dengan memanfaatkan potensi alam sumatera.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m093",
@@ -1395,7 +1579,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Memahami Prinsip Dasar",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m094",
@@ -1404,7 +1590,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menguasai Teknik Pengukuran dan Analisis Data Kebencanaan.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m095",
@@ -1413,7 +1601,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis Dampak Fisika dari Bencana Alam.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m096",
@@ -1422,7 +1612,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengembangkan Strategi Mitigasi dan Penanggulangan Bencana.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m097",
@@ -1431,7 +1623,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menelaah proses volkanotektonik dalam tubuh gunungapi sebagai proses yang berkontribusi dalam erupsi gunung api.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m098",
@@ -1440,7 +1634,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menelaah dinamika dan pembentukan kantung magma dan reservoir magma, serta pergerakan magma di dalam kerak bumi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m099",
@@ -1449,7 +1645,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menelaah dinamika erupsi gunungapi dari aspek frekuensi, ukuran, durasi, dan jenis erupsi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m100",
@@ -1458,7 +1656,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis propagasi gelombang seismik dalam medium elastis dan anisotropik untuk memahami karakteristik seismik berbagai lapisan dalam Bumi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m101",
@@ -1467,7 +1667,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Menganalisis dan menginterpretasi data seismik untuk menentukan lokasi gempa, kedalaman, dan mekanisme sumbernya.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m102",
@@ -1476,7 +1678,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengembangkan model struktur bawah permukaan menggunakan metode tomografi seismik dan inversi data untuk aplikasi eksplorasi geologi.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m103",
@@ -1485,7 +1689,9 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "research"
-      ]
+      ],
+      "description": "Mampu menyimpulkan ide, data, dan hasil penelitian secara efektif dalam forum seminar internasional dengan menggunakan bahasa ilmiah yang tepat.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m104",
@@ -1494,7 +1700,9 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "research"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyusun presentasi karya ilmiah secara mandiri dan profesional dalam forum seminar internasional sebagai bentuk kontribusi akademik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m105",
@@ -1503,7 +1711,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "research"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis isu atau permasalahan ilmiah dalam bidang keahliannya secara kritis sebagai dasar penyusunan karya ilmiah yang layak dipresentasikan pada forum seminar internasional.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m106",
@@ -1512,7 +1722,9 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "research"
-      ]
+      ],
+      "description": "Mengevaluasi dan menyimpulkan hasil penelitian serta kajian ilmiah di bidang fisika untuk disusun dalam bentuk artikel ilmiah sesuai standar publikasi nasional dan internasional.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m107",
@@ -1521,7 +1733,9 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "research"
-      ]
+      ],
+      "description": "Merancang dan menyusun naskah publikasi ilmiah secara sistematis dengan menjunjung tinggi profesionalisme, etika akademik, integritas ilmiah, dan tanggung jawab akademik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m108",
@@ -1530,7 +1744,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "research"
-      ]
+      ],
+      "description": "Mengorganisasikan kolaborasi ilmiah serta menunjukkan kemampuan kepemimpinan dalam proses penyusunan dan publikasi karya ilmiah melalui pendekatan inter maupun multidisiplin.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m109",
@@ -1539,7 +1755,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "research"
-      ]
+      ],
+      "description": "Mengembangkan publikasi ilmiah yang inovatif dan berkualitas untuk mendukung kontribusi bidang fisika terhadap perkembangan sains, teknologi, industri, dan masyarakat pada forum ilmiah.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m110",
@@ -1548,7 +1766,9 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "research"
-      ]
+      ],
+      "description": "Mempresentasikan dan mempertahankan hasil penelitian tesis secara ilmiah dan profesional.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     },
     {
       "id": "m111",
@@ -1557,7 +1777,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "research"
-      ]
+      ],
+      "description": "Menunjukkan penguasaan mendalam terhadap bidang penelitian serta kepatuhan terhadap etika akademik.",
+      "source": "Tabel 3.15 Kurikulum Magister Fisika 2025-2029"
     }
   ],
   "weights": [
@@ -2366,6 +2588,16 @@
       "severity": "warning",
       "code": "WEIGHT-VERSION-DRIFT",
       "message": "Bobot Tabel 3.18 dan Tabel 5.1 belum sepenuhnya konsisten. Field weights pada JSON ini menyimpan angka Tabel 3.18 sebagai data sumber, bukan sebagai formula final."
+    },
+    {
+      "severity": "warning",
+      "code": "INSTITUTIONAL_CPL_NUMBERING_CONFLICT",
+      "message": "Keputusan Rektor ITERA Nomor 1421/IT9/KR.00.00/2025 mendefinisikan CPL 1-4 institusional untuk MK wajib/TPB Sarjana. Tabel 3.15 Magister Fisika menggunakan CPL 1-4 dengan makna program-level yang berbeda. Simulator tidak menggabungkan kedua penomoran agar tidak mencampur konstruk CPL yang berbeda."
+    },
+    {
+      "severity": "info",
+      "code": "MFI_CPMK_TABLE315",
+      "message": "Redaksi dan pemetaan CPL-CPMK-MK Magister Fisika mengikuti Tabel 3.15, dibedakan antara Jalur Reguler dan Jalur Riset."
     }
   ]
 }

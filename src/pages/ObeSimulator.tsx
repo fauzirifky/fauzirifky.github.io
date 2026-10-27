@@ -283,13 +283,16 @@ function GraphView({
   config,
   students,
   categoryFilters,
+  exportLabel,
 }: {
   config: ObeProgramConfig;
   students: SimStudent[];
   categoryFilters: Record<CourseCategory, boolean>;
+  exportLabel: string;
 }) {
   const scrollRef = useRef<HTMLDivElement | null>(null);
   const svgRef = useRef<SVGSVGElement | null>(null);
+  const [tooltip, setTooltip] = useState<{ x: number; y: number; title: string; body: string } | null>(null);
   const courses = useMemo(() => courseMap(config), [config]);
 
   const relations = useMemo(() => {
@@ -318,6 +321,10 @@ function GraphView({
       outcomeId: string;
       relations: GraphEdge[];
       students: Set<string>;
+      descriptions: Set<string>;
+      sources: Set<string>;
+      mappingWeights: number[];
+      mappingWeightSources: Set<string>;
       weight?: number;
       weightValues: number[];
       weightDerived: boolean;
@@ -333,6 +340,10 @@ function GraphView({
           outcomeId: relation.mapping.outcomeId,
           relations: [],
           students: new Set(),
+          descriptions: new Set(),
+          sources: new Set(),
+          mappingWeights: [],
+          mappingWeightSources: new Set(),
           weight: resolved.weight,
           weightValues: resolved.values,
           weightDerived: resolved.derived,
@@ -341,17 +352,25 @@ function GraphView({
       const node = grouped.get(key)!;
       node.relations.push(relation);
       for (const studentId of relation.studentIds) node.students.add(studentId);
+      if (relation.mapping.description?.trim()) node.descriptions.add(relation.mapping.description.trim());
+      if (relation.mapping.source?.trim()) node.sources.add(relation.mapping.source.trim());
+      if (relation.mapping.weight != null) node.mappingWeights.push(relation.mapping.weight);
+      if (relation.mapping.weightSource?.trim()) node.mappingWeightSources.add(relation.mapping.weightSource.trim());
     }
 
-    return [...grouped.values()].map((node) => ({ ...node, count: node.students.size }));
+    return [...grouped.values()].map((node) => ({
+      ...node,
+      descriptions: [...node.descriptions],
+      sources: [...node.sources],
+      mappingWeightSources: [...node.mappingWeightSources],
+      count: node.students.size,
+    }));
   }, [config, graphTrackIds.join("|"), relations]);
 
   const outcomes = config.outcomes.filter((outcome) => cpmkNodes.some((node) => node.outcomeId === outcome.id));
   const courseIds = [...new Set(relations.map((edge) => edge.mapping.courseId))];
   const nodesByOutcome = new Map<string, typeof cpmkNodes>();
-  for (const outcome of outcomes) {
-    nodesByOutcome.set(outcome.id, cpmkNodes.filter((node) => node.outcomeId === outcome.id));
-  }
+  for (const outcome of outcomes) nodesByOutcome.set(outcome.id, cpmkNodes.filter((node) => node.outcomeId === outcome.id));
 
   const positions = useMemo(() => {
     const cpl = new Map<string, number>();
@@ -366,9 +385,7 @@ function GraphView({
     }
     const height = Math.max(840, y + 80, 150 + courseIds.length * 38);
     const course = new Map<string, number>();
-    courseIds.forEach((courseId, index) => {
-      course.set(courseId, 68 + index * ((height - 130) / Math.max(courseIds.length - 1, 1)));
-    });
+    courseIds.forEach((courseId, index) => course.set(courseId, 68 + index * ((height - 130) / Math.max(courseIds.length - 1, 1))));
     return { cpl, cpmk, course, height };
   }, [courseIds, cpmkNodes, outcomes]);
 
@@ -386,11 +403,9 @@ function GraphView({
   const outcomeColors = new Map(outcomes.map((outcome, index) => [outcome.id, color(index)]));
 
   function jumpToOutcome(outcomeId: string) {
-    const svg = svgRef.current;
     const box = scrollRef.current;
-    if (!svg || !box) return;
     const y = positions.cpl.get(outcomeId);
-    if (y == null) return;
+    if (!box || y == null) return;
     box.scrollTo({ top: Math.max(0, y - 120), behavior: "smooth" });
   }
 
@@ -399,6 +414,95 @@ function GraphView({
     opacity: students.length > 1 ? 0.14 + 0.75 * (count / maxN) : 0.35,
   });
 
+  function nodeWeightInfo(node: (typeof cpmkNodes)[number]) {
+    if (node.mappingWeights.length) {
+      const min = Math.min(...node.mappingWeights);
+      const max = Math.max(...node.mappingWeights);
+      const text = Math.abs(max - min) <= 0.005 ? `${formatNumber(min, 2)}%/MK` : `${formatNumber(min, 2)}–${formatNumber(max, 2)}%/MK`;
+      return { text, detail: `Bobot resmi CPMK di dalam MK: ${text}`, source: node.mappingWeightSources.join("; ") };
+    }
+    if (node.weightValues.length) {
+      const min = Math.min(...node.weightValues);
+      const max = Math.max(...node.weightValues);
+      const text = node.weight != null
+        ? `${node.weightDerived ? "≈" : ""}${formatNumber(node.weight, 2)}%`
+        : `${node.weightDerived ? "≈" : ""}${formatNumber(min, 2)}–${formatNumber(max, 2)}%`;
+      return { text, detail: node.weightDerived ? `Bobot visual turunan: ${text}` : `Bobot CPMK dari JSON: ${text}`, source: "" };
+    }
+    return { text: "–", detail: "Bobot CPMK belum ditetapkan pada sumber yang digunakan.", source: "" };
+  }
+
+  function showTooltip(event: { clientX: number; clientY: number }, title: string, body: string) {
+    setTooltip({ x: event.clientX + 14, y: event.clientY + 14, title, body });
+  }
+  function moveTooltip(event: { clientX: number; clientY: number }) {
+    setTooltip((current) => current ? { ...current, x: event.clientX + 14, y: event.clientY + 14 } : current);
+  }
+
+  async function downloadGraphPng() {
+    const svg = svgRef.current;
+    if (!svg) return;
+    const clone = svg.cloneNode(true) as SVGSVGElement;
+    const viewBox = svg.viewBox.baseVal;
+    clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+    clone.setAttribute("width", String(viewBox.width));
+    clone.setAttribute("height", String(viewBox.height));
+    const style = document.createElementNS("http://www.w3.org/2000/svg", "style");
+    style.textContent = `
+      text{font-family:Inter,Arial,sans-serif;fill:#0d253d}
+      .obeGraphGroup{fill:#fafbfe;stroke:#e7ebf1}
+      .obeSvgTitle{font-size:11px;font-weight:600;fill:#334155}
+      .obeGraphNode rect{fill:#fff;stroke:#d3dae4}
+      .obeGraphNode text{font-size:9px;fill:#0d253d}
+      .obeGraphNode .obeSvgCount{font-size:7px;fill:#64748d}
+      .obeGraphNode .obeSvgCoverage{font-size:7px;fill:#475569;font-weight:600}
+      .obeGraphNode .obeSvgWeight{font-weight:600;fill:#475569}
+      .obeGraphEdge{fill:none;stroke-linecap:round}
+    `;
+    clone.insertBefore(style, clone.firstChild);
+    const xml = new XMLSerializer().serializeToString(clone);
+    const svgBlob = new Blob([xml], { type: "image/svg+xml;charset=utf-8" });
+    const url = URL.createObjectURL(svgBlob);
+    const image = new Image();
+    await new Promise<void>((resolve, reject) => {
+      image.onload = () => resolve();
+      image.onerror = () => reject(new Error("Gagal merender SVG untuk PNG."));
+      image.src = url;
+    });
+    const header = 118;
+    const scale = 2;
+    const canvas = document.createElement("canvas");
+    canvas.width = Math.ceil(viewBox.width * scale);
+    canvas.height = Math.ceil((viewBox.height + header) * scale);
+    const ctx = canvas.getContext("2d");
+    if (!ctx) { URL.revokeObjectURL(url); return; }
+    ctx.scale(scale, scale);
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(0, 0, viewBox.width, viewBox.height + header);
+    ctx.fillStyle = "#533afd";
+    ctx.font = "600 12px Arial, sans-serif";
+    ctx.fillText("PEMETAAN OBE", 38, 28);
+    ctx.fillStyle = "#0d253d";
+    ctx.font = "500 26px Arial, sans-serif";
+    ctx.fillText("CPL → CPMK → Mata Kuliah", 38, 58);
+    ctx.font = "600 14px Arial, sans-serif";
+    ctx.fillText(exportLabel, 38, 82);
+    ctx.fillStyle = "#64748d";
+    ctx.font = "11px Arial, sans-serif";
+    ctx.fillText(`${config.program.name} · ${config.program.curriculum ?? ""}`, 38, 101);
+    ctx.drawImage(image, 0, header, viewBox.width, viewBox.height);
+    URL.revokeObjectURL(url);
+    const blob = await new Promise<Blob | null>((resolve) => canvas.toBlob(resolve, "image/png"));
+    if (!blob) return;
+    const downloadUrl = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    const safe = `${config.program.id}-${exportLabel}`.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 120);
+    a.href = downloadUrl;
+    a.download = `obe-mapping-${safe || "student"}.png`;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(downloadUrl), 1000);
+  }
+
   return (
     <section className="obePanel">
       <div className="obeGraphToolbar">
@@ -406,24 +510,25 @@ function GraphView({
           <span className="obeEyebrow">Pemetaan OBE</span>
           <h2>CPL → CPMK → Mata Kuliah</h2>
           <p>
-            Persen pada CPL adalah total bobot CPMK yang benar-benar terpetakan pada paket mahasiswa, tanpa dinormalisasi ke 100%.
-            {(config.cpmkWeights ?? []).length ? " Persen pada CPMK berasal dari cpmkWeights JSON." : (config.weights ?? []).length ? " Persen CPMK bertanda ≈ diturunkan dari bobot MK→CPL pada JSON." : ""}
+            Hover CPL atau CPMK untuk membaca redaksi lengkap. Bobot pada relasi CPMK–MK ditampilkan bila tersedia dari sumber resmi.
             {students.length > 1 ? " Ketebalan garis menunjukkan jumlah mahasiswa yang memakai relasi." : " Pemetaan untuk mahasiswa aktif."}
           </p>
         </div>
-        <label className="obeSelectLabel">Lompat ke
-          <select onChange={(event) => jumpToOutcome(event.target.value)} defaultValue="">
-            <option value="" disabled>Pilih CPL</option>
-            {outcomes.map((outcome) => <option key={outcome.id} value={outcome.id}>{outcome.code}</option>)}
-          </select>
-        </label>
+        <div className="obeGraphActions">
+          <label className="obeSelectLabel">Lompat ke
+            <select onChange={(event) => jumpToOutcome(event.target.value)} defaultValue="">
+              <option value="" disabled>Pilih CPL</option>
+              {outcomes.map((outcome) => <option key={outcome.id} value={outcome.id}>{outcome.code}</option>)}
+            </select>
+          </label>
+          <button type="button" className="obeBtn" onClick={downloadGraphPng}>Download PNG</button>
+        </div>
       </div>
 
       <div className="obeGraphLegend">
         {outcomes.map((outcome) => <span key={outcome.id}><i style={{ background: outcomeColors.get(outcome.id) }} />{outcome.code}</span>)}
-        {(config.cpmkWeights ?? []).length ? <span className="obeGraphLegend__note">bobot CPMK dari JSON</span> : null}
-        {!(config.cpmkWeights ?? []).length && (config.weights ?? []).length ? <span className="obeGraphLegend__note">≈ bobot CPMK turunan dari bobot MK</span> : null}
-        {((config.cpmkWeights ?? []).length || (config.weights ?? []).length) ? <span className="obeGraphLegend__note">total CPL = bobot terpetakan mentah</span> : null}
+        {relations.some((edge) => edge.mapping.weight != null) ? <span className="obeGraphLegend__note">bobot pada relasi = bobot CPMK di dalam MK dari sumber</span> : null}
+        {(config.weights ?? []).length ? <span className="obeGraphLegend__note">total CPL MFI mengikuti bobot MK→CPL yang terpetakan</span> : null}
       </div>
 
       <div className="obeGraphScroll" ref={scrollRef}>
@@ -436,126 +541,68 @@ function GraphView({
             const list = nodesByOutcome.get(outcome.id) ?? [];
             if (!list.length) return null;
             const ys = list.map((node) => positions.cpmk.get(node.key) ?? 0);
-            const top = Math.min(...ys) - 23;
-            const bottom = Math.max(...ys) + 23;
-            return <rect key={`group-${outcome.id}`} className="obeGraphGroup" x="285" y={top} width="215" height={bottom - top} rx="10" />;
+            return <rect key={`group-${outcome.id}`} className="obeGraphGroup" x="285" y={Math.min(...ys) - 23} width="215" height={Math.max(...ys) - Math.min(...ys) + 46} rx="10" />;
           })}
 
           {cpmkNodes.map((node) => {
-            const y1 = positions.cpl.get(node.outcomeId);
-            const y2 = positions.cpmk.get(node.key);
+            const y1 = positions.cpl.get(node.outcomeId); const y2 = positions.cpmk.get(node.key);
             if (y1 == null || y2 == null) return null;
-            const stroke = outcomeColors.get(node.outcomeId) ?? "#533afd";
             const style = lineStyle(node.count);
-            return (
-              <path
-                key={`cpl-cpmk-${node.key}`}
-                className="obeGraphEdge"
-                d={`M 188 ${y1} C 230 ${y1}, 248 ${y2}, 305 ${y2}`}
-                stroke={stroke}
-                strokeWidth={style.width}
-                opacity={style.opacity}
-              >
-                <title>{node.code}: {node.weightValues.length ? `${node.weightDerived ? "≈" : ""}${node.weight != null ? formatNumber(node.weight, 2) : `${formatNumber(Math.min(...node.weightValues), 2)}–${formatNumber(Math.max(...node.weightValues), 2)}`}%` : "bobot belum diisi"} · {node.count} dari {maxN} mahasiswa</title>
-              </path>
-            );
+            return <path key={`cpl-cpmk-${node.key}`} className="obeGraphEdge" d={`M 188 ${y1} C 230 ${y1}, 248 ${y2}, 305 ${y2}`} stroke={outcomeColors.get(node.outcomeId) ?? "#533afd"} strokeWidth={style.width} opacity={style.opacity} />;
           })}
 
           {relations.map((edge) => {
             const key = `${edge.mapping.outcomeId}::${edge.mapping.code}`;
-            const y2 = positions.cpmk.get(key);
-            const y3 = positions.course.get(edge.mapping.courseId);
+            const y2 = positions.cpmk.get(key); const y3 = positions.course.get(edge.mapping.courseId);
             if (y2 == null || y3 == null) return null;
-            const stroke = outcomeColors.get(edge.mapping.outcomeId) ?? "#533afd";
             const style = lineStyle(edge.count);
-            return (
-              <path
-                key={`cpmk-course-${edge.mapping.id}`}
-                className="obeGraphEdge"
-                d={`M 500 ${y2} C 610 ${y2}, 690 ${y3}, 810 ${y3}`}
-                stroke={stroke}
-                strokeWidth={style.width}
-                opacity={style.opacity}
-              >
-                <title>{edge.mapping.code} → {courses.get(edge.mapping.courseId)?.name ?? edge.mapping.courseId} · {edge.count} dari {maxN} mahasiswa</title>
-              </path>
-            );
+            return <path key={`cpmk-course-${edge.mapping.id}`} className="obeGraphEdge" d={`M 500 ${y2} C 610 ${y2}, 690 ${y3}, 810 ${y3}`} stroke={outcomeColors.get(edge.mapping.outcomeId) ?? "#533afd"} strokeWidth={style.width} opacity={style.opacity}><title>{`${edge.mapping.code} → ${courses.get(edge.mapping.courseId)?.name ?? edge.mapping.courseId}${edge.mapping.weight != null ? ` · ${formatNumber(edge.mapping.weight, 2)}% dalam MK` : ""}${edge.mapping.weightSource ? ` · ${edge.mapping.weightSource}` : ""}`}</title></path>;
           })}
 
           {outcomes.map((outcome) => {
-            const y = positions.cpl.get(outcome.id);
-            if (y == null) return null;
+            const y = positions.cpl.get(outcome.id); if (y == null) return null;
             const coverage = coverageByOutcome.get(outcome.id);
-            const hasWeights = (config.cpmkWeights?.length ?? 0) > 0 || (config.weights?.length ?? 0) > 0;
+            const hasGlobalWeights = (config.cpmkWeights?.length ?? 0) > 0 || (config.weights?.length ?? 0) > 0;
             const same = coverage ? Math.abs(coverage.max - coverage.min) <= 0.005 : true;
-            const coverageLabel = !hasWeights || !coverage
-              ? ""
-              : students.length <= 1 || same
-                ? `${formatNumber(coverage.avg, 2)}%`
-                : `${formatNumber(coverage.min, 2)}–${formatNumber(coverage.max, 2)}%`;
-            const coverageTitle = !hasWeights || !coverage
-              ? outcome.label
-              : students.length <= 1
-                ? `${outcome.code}: total bobot CPMK terpetakan ${formatNumber(coverage.avg, 2)}%. Nilai mentah, tidak dinormalisasi.`
-                : `${outcome.code}: bobot CPMK terpetakan min ${formatNumber(coverage.min, 2)}%, rata-rata ${formatNumber(coverage.avg, 2)}%, max ${formatNumber(coverage.max, 2)}%. Nilai mentah, tidak dinormalisasi.`;
-            return (
-              <g className="obeGraphNode" key={outcome.id}>
-                <rect x="38" y={y - 18} width="150" height="36" rx="8" style={{ stroke: outcomeColors.get(outcome.id), strokeWidth: 2 }} />
-                <text x="49" y={y - 2}>{outcome.code}</text>
-                {coverageLabel ? <text className="obeSvgCoverage" x="178" y={y + 11} textAnchor="end">{coverageLabel}</text> : null}
-                <title>{coverageTitle}</title>
-              </g>
-            );
+            const coverageLabel = !hasGlobalWeights || !coverage ? "" : students.length <= 1 || same ? `${formatNumber(coverage.avg, 2)}%` : `${formatNumber(coverage.min, 2)}–${formatNumber(coverage.max, 2)}%`;
+            const list = nodesByOutcome.get(outcome.id) ?? [];
+            const body = `${outcome.label}\n\nCPMK terpetakan:\n${list.map((node) => `${node.code} — ${node.descriptions.length ? node.descriptions.join(" / ") : "redaksi belum tersedia"}`).join("\n")}`;
+            return <g className="obeGraphNode" key={outcome.id} onMouseEnter={(event) => showTooltip(event, outcome.code, body)} onMouseMove={moveTooltip} onMouseLeave={() => setTooltip(null)}>
+              <rect x="38" y={y - 18} width="150" height="36" rx="8" style={{ stroke: outcomeColors.get(outcome.id), strokeWidth: 2 }} />
+              <text x="49" y={y - 2}>{outcome.code}</text>
+              {coverageLabel ? <text className="obeSvgCoverage" x="178" y={y + 11} textAnchor="end">{coverageLabel}</text> : null}
+            </g>;
           })}
 
           {cpmkNodes.map((node) => {
-            const y = positions.cpmk.get(node.key);
-            if (y == null) return null;
-            const weightMin = node.weightValues.length ? Math.min(...node.weightValues) : undefined;
-            const weightMax = node.weightValues.length ? Math.max(...node.weightValues) : undefined;
-            const sameWeight = weightMin != null && weightMax != null && Math.abs(weightMax - weightMin) <= 0.005;
-            const weightText = node.weight != null
-              ? `${node.weightDerived ? "≈" : ""}${formatNumber(node.weight, 2)}%`
-              : weightMin != null && weightMax != null
-                ? `${node.weightDerived ? "≈" : ""}${sameWeight ? formatNumber(weightMin, 2) : `${formatNumber(weightMin, 2)}–${formatNumber(weightMax, 2)}`}%`
-                : "–";
-            const meta = [
-              weightText,
-              students.length > 1 ? `${node.count}/${maxN}` : "",
-            ].filter(Boolean).join(" · ");
-            const weightTitle = node.weightValues.length
-              ? `${node.weightDerived ? "Bobot CPMK turunan dari bobot MK→CPL" : "Bobot CPMK dari JSON"}: ${weightText}`
-              : "bobot belum diisi";
-            return (
-              <g className="obeGraphNode" key={`cpmk-${node.key}`}>
-                <rect x="305" y={y - 14} width="195" height="28" rx="8" />
-                <text x="316" y={y + 4}>{node.code}</text>
-                <text className="obeSvgCount obeSvgWeight" x="490" y={y + 4} textAnchor="end">{meta}</text>
-                <title>{node.code} · {weightTitle} · {node.outcomeId}</title>
-              </g>
-            );
+            const y = positions.cpmk.get(node.key); if (y == null) return null;
+            const info = nodeWeightInfo(node);
+            const meta = [info.text, students.length > 1 ? `${node.count}/${maxN}` : ""].filter(Boolean).join(" · ");
+            const body = `${node.descriptions.length ? node.descriptions.join("\n\n") : "Redaksi CPMK belum tersedia."}\n\nCPL: ${node.outcomeId}\n${info.detail}${info.source ? `\nSumber bobot: ${info.source}` : ""}${node.sources.length ? `\nSumber redaksi/pemetaan: ${node.sources.join("; ")}` : ""}`;
+            return <g className="obeGraphNode" key={`cpmk-${node.key}`} onMouseEnter={(event) => showTooltip(event, node.code, body)} onMouseMove={moveTooltip} onMouseLeave={() => setTooltip(null)}>
+              <rect x="305" y={y - 14} width="195" height="28" rx="8" />
+              <text x="316" y={y + 4}>{node.code}</text>
+              <text className="obeSvgCount obeSvgWeight" x="490" y={y + 4} textAnchor="end">{meta}</text>
+            </g>;
           })}
 
           {courseIds.map((courseId) => {
-            const course = courses.get(courseId);
-            const y = positions.course.get(courseId);
+            const course = courses.get(courseId); const y = positions.course.get(courseId);
             if (!course || y == null) return null;
             const count = students.filter((student) => activeEnrollments(student).some((item) => item.courseId === courseId)).length;
-            return (
-              <g className="obeGraphNode" key={`course-${courseId}`}>
-                <rect x="810" y={y - 13} width="320" height="26" rx="8" />
-                <text x="821" y={y + 4}>{course.name.length > 43 ? `${course.name.slice(0, 41)}…` : course.name}</text>
-                <text className="obeSvgCount" x="1120" y={y + 4} textAnchor="end">{students.length > 1 ? `${count}/${maxN}` : categoryLabel(course.category)}</text>
-                <title>{course.name} · {course.code} · {course.credits} {config.program.creditUnit ?? "SKS"}</title>
-              </g>
-            );
+            return <g className="obeGraphNode" key={`course-${courseId}`}>
+              <rect x="810" y={y - 13} width="320" height="26" rx="8" />
+              <text x="821" y={y + 4}>{course.name.length > 43 ? `${course.name.slice(0, 41)}…` : course.name}</text>
+              <text className="obeSvgCount" x="1120" y={y + 4} textAnchor="end">{students.length > 1 ? `${count}/${maxN}` : categoryLabel(course.category)}</text>
+              <title>{course.name} · {course.code} · {course.credits} {config.program.creditUnit ?? "SKS"}</title>
+            </g>;
           })}
         </svg>
       </div>
+      {tooltip ? <div className="obeHoverTooltip" style={{ left: tooltip.x, top: tooltip.y }}><strong>{tooltip.title}</strong><span>{tooltip.body}</span></div> : null}
     </section>
   );
 }
-
 function SimulatorPage({ config, students, setStudents, counts, setCounts }: {
   config: ObeProgramConfig;
   students: SimStudent[];
@@ -678,7 +725,18 @@ function SimulatorPage({ config, students, setStudents, counts, setCounts }: {
         </section>
       ) : null}
 
-      <GraphView config={config} students={graphStudents} categoryFilters={categoryFilters} />
+      <GraphView
+        config={config}
+        students={graphStudents}
+        categoryFilters={categoryFilters}
+        exportLabel={graphStudents.length === 1
+          ? `${graphStudents[0].id} · ${getTrack(config, graphStudents[0].trackId)?.label ?? graphStudents[0].trackId} · ${studentTotalCredits(config, graphStudents[0])} ${config.program.creditUnit ?? "SKS"}`
+          : viewMode === "all"
+            ? `Semua mahasiswa · ${graphStudents.length} mahasiswa`
+            : viewMode.startsWith("track:")
+              ? `${getTrack(config, viewMode.slice("track:".length))?.label ?? viewMode.slice("track:".length)} · ${graphStudents.length} mahasiswa`
+              : `${graphStudents.length} mahasiswa`}
+      />
     </>
   );
 }
@@ -813,7 +871,7 @@ function SettingsPage({ config, onApply, onReset }: { config: ObeProgramConfig; 
           <div><code>tracks</code><span>Jalur studi, MK wajib per semester, kelompok wajib pilih, dan aturan pilihan.</span></div>
           <div><code>courses</code><span>Kode, nama, SKS, dan kategori MK.</span></div>
           <div><code>outcomes</code><span>Daftar CPL program studi.</span></div>
-          <div><code>cpmks</code><span>Pemetaan CPMK ke MK, CPL, dan jalur.</span></div>
+          <div><code>cpmks</code><span>Pemetaan CPMK ke MK, CPL, jalur, redaksi, sumber, dan bobot per-MK bila tersedia.</span></div>
           <div><code>cpmkWeights</code><span>Bobot CPMK unik ke CPL. Ditampilkan langsung pada node CPMK.</span></div>
           <div><code>weights</code><span>Bobot MK ke CPL versi lama/opsional untuk kompatibilitas konfigurasi sebelumnya.</span></div>
         </div>

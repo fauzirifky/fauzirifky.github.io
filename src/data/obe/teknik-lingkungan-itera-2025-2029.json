@@ -980,32 +980,41 @@
     {
       "id": "cpmk-1-1--agama",
       "code": "CPMK 1.1",
-      "description": "Mahasiswa mampu menerangkan esensi relasi manusia dengan Tuhan Yang Maha Esa, sesama manusia, dan lingkungan",
+      "description": "Mahasiswa mampu menerangkan esensi relasi manusia dengan Tuhan Yang Maha Esa, sesama manusia, dan lingkungan.",
       "courseId": "agama",
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-1-2--pancasila",
       "code": "CPMK 1.2",
-      "description": "Mahasiswa mampu memahami nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan,dan keberagaman dalam kehidupan berbangsa dan bernegara",
+      "description": "Mahasiswa mampu memahami nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan, dan keberagaman dalam kehidupan berbangsa dan bernegara.",
       "courseId": "pancasila",
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-1-3--pancasila",
       "code": "CPMK 1.3",
-      "description": "Mahasiswa mampu menerapkan nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan,dan keberagaman dalam kehidupan berbangsa dan bernegara",
+      "description": "Mahasiswa mampu menerapkan nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan, dan keberagaman dalam kehidupan berbangsa dan bernegara.",
       "courseId": "pancasila",
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-1-4--agama",
@@ -1015,137 +1024,179 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-1--kewarganegaraan",
       "code": "CPMK 2.1",
-      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesa serta kedudukan dan tata bahasa indonesia (C2) (P2) (A2)",
+      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesia serta kedudukan dan tata bahasa Indonesia.",
       "courseId": "kewarganegaraan",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-1--bahasa-indonesia",
       "code": "CPMK 2.1",
-      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesa serta kedudukan dan tata bahasa indonesia (C2) (P2) (A2)",
+      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesia serta kedudukan dan tata bahasa Indonesia.",
       "courseId": "bahasa-indonesia",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-2--kewarganegaraan",
       "code": "CPMK 2.2",
-      "description": "Mahasiswa mampu menjalankan peran sebagai warga negara melalui partisipasi aktif dalam masyarakat (C3)",
+      "description": "Mahasiswa mampu menjalankan peran sebagai warga negara melalui partisipasi aktif dalam masyarakat.",
       "courseId": "kewarganegaraan",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-3--bahasa-indonesia",
       "code": "CPMK 2.3",
-      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan",
+      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan.",
       "courseId": "bahasa-indonesia",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 60,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-3--pola-hidup-sehat",
       "code": "CPMK 2.3",
-      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan",
+      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan.",
       "courseId": "pola-hidup-sehat",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 60,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-4--bahasa-inggris-interdisipliner",
       "code": "CPMK 2.4",
-      "description": "Mahasiswa mampu menganalisis makna kata. (C4, P1)",
+      "description": "Mahasiswa mampu menganalisis makna kata.",
       "courseId": "bahasa-inggris-interdisipliner",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-5--bahasa-inggris-interdisipliner",
       "code": "CPMK 2.5",
-      "description": "Mahasiswa mampu menelaah unsur-unsur dan jenis-jenis paragraf (C4, P2)",
+      "description": "Mahasiswa mampu menelaah unsur-unsur dan jenis-jenis paragraf.",
       "courseId": "bahasa-inggris-interdisipliner",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 30,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-6--kkn",
       "code": "CPMK 2.6",
-      "description": "Mahasiswa mampu mengidentifikasi, menjelaskan, dan menganalisis potensi & permasalahan yang ditemui di lapangan/Masyarakat (C4) (A3) (P2)",
+      "description": "Mahasiswa mampu mengidentifikasi, menjelaskan, dan menganalisis potensi dan permasalahan yang ditemui di lapangan/masyarakat.",
       "courseId": "kkn",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-7--kkn",
       "code": "CPMK 2.7",
-      "description": "Mahasiswa mampu mengimplementasikan program kerja yang dirancang secara kolaboratif baik dengan Masyarakat ataupun tim KKN yang menerapkan konsep ilmiah dan berbasis ilmu pengetahuan teknologi (C4) (P4) (A3)",
+      "description": "Mahasiswa mampu mengimplementasikan program kerja yang dirancang secara kolaboratif baik dengan masyarakat ataupun tim KKN yang menerapkan konsep ilmiah dan berbasis ilmu pengetahuan teknologi.",
       "courseId": "kkn",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-8--bahasa-inggris-interdisipliner",
       "code": "CPMK 2.8",
-      "description": "Mahasiswa mampu menyusun paraphrase dan summary (C6, P2)",
+      "description": "Mahasiswa mampu menyusun paraphrase dan summary.",
       "courseId": "bahasa-inggris-interdisipliner",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-9--bahasa-inggris-interdisipliner",
       "code": "CPMK 2.9",
-      "description": "Mahasiswa mampu menulis esai dengan outline dan argumentasi (C6, P2)",
+      "description": "Mahasiswa mampu menulis esai dengan outline dan argumentasi.",
       "courseId": "bahasa-inggris-interdisipliner",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 30,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-10--kkn",
       "code": "CPMK 2.10",
-      "description": "Mahasiswa mampu merancang program pemberdayaan berbasis kebutuhan Masyarakat di Lokasi KKN (C6) (P4) (A3)",
+      "description": "Mahasiswa mampu merancang program pemberdayaan berbasis kebutuhan masyarakat di lokasi KKN.",
       "courseId": "kkn",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-11--kkn",
       "code": "CPMK 2.11",
-      "description": "Mahasiswa mampu mengevaluasi dan menyusun laporan hasil program kerja secara sistematis (C6) (P5) (A4)",
+      "description": "Mahasiswa mampu mengevaluasi dan menyusun laporan hasil program kerja secara sistematis.",
       "courseId": "kkn",
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-2-12--pola-hidup-sehat",
@@ -1155,7 +1206,10 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-1--transformasi-keberlanjutan-sumatera",
@@ -1165,7 +1219,10 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-1--pengenalan-komputasi",
@@ -1175,7 +1232,10 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 100,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-1--dasar-teknologi-digital",
@@ -1185,27 +1245,36 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-2--transformasi-keberlanjutan-sumatera",
       "code": "CPMK 3.2",
-      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis",
+      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis.",
       "courseId": "transformasi-keberlanjutan-sumatera",
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-2--karier-etika-kewirausahaan",
       "code": "CPMK 3.2",
-      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis",
+      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis.",
       "courseId": "karier-etika-kewirausahaan",
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-3--dasar-teknologi-digital",
@@ -1215,7 +1284,10 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 30,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-3--karier-etika-kewirausahaan",
@@ -1225,27 +1297,36 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-4--dasar-teknologi-digital",
       "code": "CPMK 3.4",
-      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif",
+      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif.",
       "courseId": "dasar-teknologi-digital",
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-4--karier-etika-kewirausahaan",
       "code": "CPMK 3.4",
-      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif",
+      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif.",
       "courseId": "karier-etika-kewirausahaan",
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-3-5--transformasi-keberlanjutan-sumatera",
@@ -1255,267 +1336,310 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 60,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-1--kimia-dasar",
       "code": "CPMK 4.1",
-      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar",
+      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar.",
       "courseId": "kimia-dasar",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 100,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-1--kimia-dasar-ii",
       "code": "CPMK 4.1",
-      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar",
+      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar.",
       "courseId": "kimia-dasar-ii",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-1--kimia-lingkungan",
       "code": "CPMK 4.1",
-      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar",
+      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar.",
       "courseId": "kimia-lingkungan",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-2--fisika-dasar",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "fisika-dasar",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 75,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-2--biologi-dasar",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "biologi-dasar",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-2--ekonomi-teknik",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "ekonomi-teknik",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-2--source-kimia-lanjut",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "source-kimia-lanjut",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-2--mekanika-fluida",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "mekanika-fluida",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-2--unit-operasi",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "unit-operasi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-2--ekologi",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "ekologi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-2--mekanika-tanah-struktur",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "mekanika-tanah-struktur",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-2--ilmu-bumi-tanah",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "ilmu-bumi-tanah",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-2--mikrobiologi-dasar",
       "code": "CPMK 4.2",
-      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
       "courseId": "mikrobiologi-dasar",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-3--biologi-dasar",
       "code": "CPMK 4.3",
-      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan.",
       "courseId": "biologi-dasar",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 35,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-3--praktikum-biologi",
       "code": "CPMK 4.3",
-      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan.",
       "courseId": "praktikum-biologi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 75,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-3--gambar-teknik",
       "code": "CPMK 4.3",
-      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan.",
       "courseId": "gambar-teknik",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-3--ekologi",
       "code": "CPMK 4.3",
-      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan.",
       "courseId": "ekologi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-3--ilmu-bumi-tanah",
       "code": "CPMK 4.3",
-      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan.",
       "courseId": "ilmu-bumi-tanah",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-3--hidrologi-hidrogeologi",
       "code": "CPMK 4.3",
-      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan.",
       "courseId": "hidrologi-hidrogeologi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-3--mikrobiologi-dasar",
       "code": "CPMK 4.3",
-      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan.",
       "courseId": "mikrobiologi-dasar",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-4--pengantar-infrastruktur-kewilayahan",
       "code": "CPMK 4.4",
-      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner.",
       "courseId": "pengantar-infrastruktur-kewilayahan",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 30,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-4--kimia-lingkungan",
       "code": "CPMK 4.4",
-      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner.",
       "courseId": "kimia-lingkungan",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-4--unit-operasi",
       "code": "CPMK 4.4",
-      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner.",
       "courseId": "unit-operasi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-4--unit-proses",
       "code": "CPMK 4.4",
-      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner.",
       "courseId": "unit-proses",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-4--hidrologi-hidrogeologi",
       "code": "CPMK 4.4",
-      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner",
+      "description": "Mahasiswa mampu mengidentifikasi komponen-komponen dalam infrastruktur berkelanjutan yang tahan terhadap bencana alam, serta menganalisis isu dan potensi dalam suatu wilayah terkait kebutuhan, fungsi, dan konteks lingkungan melalui pemilihan metode pengumpulan data seperti observasi, wawancara, dan kuesioner.",
       "courseId": "hidrologi-hidrogeologi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-5--pengantar-infrastruktur-kewilayahan",
       "code": "CPMK 4.5",
-      "description": "Mahasiswa mampu membuat sketsa awal konsep penyelesaian infrastruktur dan ruang publik yang mendukung Pembangunan berkelanjutan dan mitigasi bencana",
+      "description": "Mahasiswa mampu membuat sketsa awal konsep penyelesaian infrastruktur dan ruang publik yang mendukung pembangunan berkelanjutan dan mitigasi bencana.",
       "courseId": "pengantar-infrastruktur-kewilayahan",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 70,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-6--praktikum-kimia",
@@ -1525,7 +1649,10 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-7--praktikum-kimia",
@@ -1535,267 +1662,304 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-8--statistik-probabilistik",
       "code": "CPMK 4.8",
-      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
       "courseId": "statistik-probabilistik",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-8--ekonomi-teknik",
       "code": "CPMK 4.8",
-      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
       "courseId": "ekonomi-teknik",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-8--mekanika-fluida",
       "code": "CPMK 4.8",
-      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
       "courseId": "mekanika-fluida",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-8--mekanika-tanah-struktur",
       "code": "CPMK 4.8",
-      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
       "courseId": "mekanika-tanah-struktur",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-8--unit-operasi",
       "code": "CPMK 4.8",
-      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
       "courseId": "unit-operasi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-8--unit-proses",
       "code": "CPMK 4.8",
-      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
       "courseId": "unit-proses",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-8--hidrologi-hidrogeologi",
       "code": "CPMK 4.8",
-      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
       "courseId": "hidrologi-hidrogeologi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-8--matematika-dasar-ii",
       "code": "CPMK 4.8",
-      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
       "courseId": "matematika-dasar-ii",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-9--matematika-dasar",
       "code": "CPMK 4.9",
-      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah.",
       "courseId": "matematika-dasar",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 36,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-9--praktikum-kimia",
       "code": "CPMK 4.9",
-      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah.",
       "courseId": "praktikum-kimia",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-9--kebijakan-hukum-lingkungan",
       "code": "CPMK 4.9",
-      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah.",
       "courseId": "kebijakan-hukum-lingkungan",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-9--gambar-teknik",
       "code": "CPMK 4.9",
-      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah.",
       "courseId": "gambar-teknik",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-9--mekanika-tanah-struktur",
       "code": "CPMK 4.9",
-      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah.",
       "courseId": "mekanika-tanah-struktur",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-9--ilmu-bumi-tanah",
       "code": "CPMK 4.9",
-      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah.",
       "courseId": "ilmu-bumi-tanah",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-9--matematika-dasar-ii",
       "code": "CPMK 4.9",
-      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah.",
       "courseId": "matematika-dasar-ii",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-10--matematika-dasar-ii",
       "code": "CPMK 4.10",
-      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral untuk menyusun langkah penyelesaian masalah matematis yang berkaitan dengan bidang sains dan teknik (C3)",
+      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral untuk menyusun langkah penyelesaian masalah matematis yang berkaitan dengan bidang sains dan teknik.",
       "courseId": "matematika-dasar-ii",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-12--kebijakan-hukum-lingkungan",
       "code": "CPMK 4.12",
-      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari",
+      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom, Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari.",
       "courseId": "kebijakan-hukum-lingkungan",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-12--ekonomi-teknik",
       "code": "CPMK 4.12",
-      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari",
+      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom, Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari.",
       "courseId": "ekonomi-teknik",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-12--matematika-rekayasa",
       "code": "CPMK 4.12",
-      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari",
+      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom, Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari.",
       "courseId": "matematika-rekayasa",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-12--hidrologi-hidrogeologi",
       "code": "CPMK 4.12",
-      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari",
+      "description": "Mahasiswa mampu menyelesaikan persoalan berkaitan dengan polinom, Sistem Persamaan Linier dan Matriks di kehidupan sehari-hari.",
       "courseId": "hidrologi-hidrogeologi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-13--matematika-rekayasa",
       "code": "CPMK 4.13",
-      "description": "Mahasiswa mampu menggunakan konsep trigonometri sederhana untuk menyelesaikan persoalan terkait",
+      "description": "Mahasiswa mampu menggunakan konsep trigonometri sederhana untuk menyelesaikan persoalan terkait.",
       "courseId": "matematika-rekayasa",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-13--statistik-probabilistik",
       "code": "CPMK 4.13",
-      "description": "Mahasiswa mampu menggunakan konsep trigonometri sederhana untuk menyelesaikan persoalan terkait",
+      "description": "Mahasiswa mampu menggunakan konsep trigonometri sederhana untuk menyelesaikan persoalan terkait.",
       "courseId": "statistik-probabilistik",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-13--hidrologi-hidrogeologi",
       "code": "CPMK 4.13",
-      "description": "Mahasiswa mampu menggunakan konsep trigonometri sederhana untuk menyelesaikan persoalan terkait",
+      "description": "Mahasiswa mampu menggunakan konsep trigonometri sederhana untuk menyelesaikan persoalan terkait.",
       "courseId": "hidrologi-hidrogeologi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-4-14--biologi-dasar",
       "code": "CPMK 4.14",
-      "description": "Mahasiswa mampu mengaplikasikan pengetahuan biologi dalam proses desain sistem dengan konsep biomimikri dan permasalahan Fisis sederhana(C3)",
+      "description": "Mahasiswa mampu mengaplikasikan pengetahuan biologi dalam proses desain sistem dengan konsep biomimikri dan permasalahan fisis sederhana.",
       "courseId": "biologi-dasar",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-16--fisika-dasar",
       "code": "CPMK 4.16",
-      "description": "Mampu berpikir kritis, logis, sistematis, dan terstruktur dalam menyelesaikan masalah-masalah sistem fisis (A4, P2).",
+      "description": "Mampu berpikir kritis, logis, sistematis, dan terstruktur dalam menyelesaikan masalah-masalah sistem fisis.",
       "courseId": "fisika-dasar",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "cpmk-4-16--hidrologi-hidrogeologi",
       "code": "CPMK 4.16",
-      "description": "Mampu berpikir kritis, logis, sistematis, dan terstruktur dalam menyelesaikan masalah-masalah sistem fisis (A4, P2).",
+      "description": "Mampu berpikir kritis, logis, sistematis, dan terstruktur dalam menyelesaikan masalah-masalah sistem fisis.",
       "courseId": "hidrologi-hidrogeologi",
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Redaksi CPMK: Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025; pemetaan MK: Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--plambing-instrumentasi",
@@ -1805,7 +1969,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--spam",
@@ -1815,7 +1980,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--spal-drainase",
@@ -1825,7 +1991,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--pbpam",
@@ -1835,7 +2002,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--pbpal",
@@ -1845,7 +2013,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--pengendalian-pencemaran-udara",
@@ -1855,7 +2024,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--capstone",
@@ -1865,7 +2035,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--pengelolaan-sampah",
@@ -1875,7 +2046,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--limbah-b3",
@@ -1885,7 +2057,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-1--k3",
@@ -1895,7 +2068,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--plambing-instrumentasi",
@@ -1905,7 +2079,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--spam",
@@ -1915,7 +2090,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--spal-drainase",
@@ -1925,7 +2101,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--pbpam",
@@ -1935,7 +2112,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--pbpal",
@@ -1945,7 +2123,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--pengendalian-pencemaran-udara",
@@ -1955,7 +2134,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--capstone",
@@ -1965,7 +2145,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--pengelolaan-sampah",
@@ -1975,7 +2156,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--limbah-b3",
@@ -1985,7 +2167,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-5-2--k3",
@@ -1995,7 +2178,8 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-1--perpetaan",
@@ -2005,7 +2189,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-1--lab-lingkungan-1",
@@ -2015,7 +2200,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-1--lab-lingkungan-2",
@@ -2025,7 +2211,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-1--mikrobiologi-dasar",
@@ -2035,7 +2222,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-1--kimia-lingkungan",
@@ -2045,7 +2233,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-1--mekanika-fluida",
@@ -2055,7 +2244,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-2--perpetaan",
@@ -2065,7 +2255,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-2--lab-lingkungan-1",
@@ -2075,7 +2266,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-2--lab-lingkungan-2",
@@ -2085,7 +2277,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-2--mikrobiologi-dasar",
@@ -2095,7 +2288,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-2--kimia-lingkungan",
@@ -2105,7 +2299,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-2--mekanika-fluida",
@@ -2115,7 +2310,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-3--statistik-probabilistik",
@@ -2125,7 +2321,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-3--sistem-informasi-geografis",
@@ -2135,7 +2332,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-3--tugas-akhir",
@@ -2145,7 +2343,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-3--kerja-praktik",
@@ -2155,7 +2354,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-3--capstone",
@@ -2165,7 +2365,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-3--lab-lingkungan-1",
@@ -2175,7 +2376,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-3--lab-lingkungan-2",
@@ -2185,7 +2387,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-4--statistik-probabilistik",
@@ -2195,7 +2398,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-4--sistem-informasi-geografis",
@@ -2205,7 +2409,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-4--tugas-akhir",
@@ -2215,7 +2420,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-4--kerja-praktik",
@@ -2225,7 +2431,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-6-4--capstone",
@@ -2235,7 +2442,8 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--spal-drainase",
@@ -2245,7 +2453,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--k3",
@@ -2255,7 +2464,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--pencemaran-udara-perubahan-iklim",
@@ -2265,7 +2475,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--produksi-bersih",
@@ -2275,7 +2486,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--kesehatan-lingkungan",
@@ -2285,7 +2497,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--spam",
@@ -2295,7 +2508,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--pengendalian-pencemaran-udara",
@@ -2305,7 +2519,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--limbah-b3",
@@ -2315,7 +2530,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--pengelolaan-sampah",
@@ -2325,7 +2541,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--pbpam",
@@ -2335,7 +2552,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--pbpal",
@@ -2345,7 +2563,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-1--capstone",
@@ -2355,7 +2574,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--pencemaran-udara-perubahan-iklim",
@@ -2365,7 +2585,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--spam",
@@ -2375,7 +2596,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--spal-drainase",
@@ -2385,7 +2607,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--pbpam",
@@ -2395,7 +2618,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--pbpal",
@@ -2405,7 +2629,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--k3",
@@ -2415,7 +2640,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--amdal",
@@ -2425,7 +2651,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--limbah-b3",
@@ -2435,7 +2662,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--pengendalian-pencemaran-udara",
@@ -2445,7 +2673,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--sml",
@@ -2455,7 +2684,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--pengelolaan-sampah",
@@ -2465,7 +2695,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--capstone",
@@ -2475,7 +2706,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-2--produksi-bersih",
@@ -2485,7 +2717,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-3--kesehatan-lingkungan",
@@ -2495,7 +2728,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-3--karier-etika-kewirausahaan",
@@ -2505,7 +2739,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-3--produksi-bersih",
@@ -2515,7 +2750,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-3--tugas-akhir",
@@ -2525,7 +2761,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-3--metode-penelitian",
@@ -2535,7 +2772,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-4--metode-penelitian",
@@ -2545,7 +2783,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-4--gambar-teknik",
@@ -2555,7 +2794,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-4--sistem-informasi-geografis",
@@ -2565,7 +2805,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-4--kimia-lingkungan",
@@ -2575,7 +2816,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-4--lab-lingkungan-1",
@@ -2585,7 +2827,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-4--lab-lingkungan-2",
@@ -2595,7 +2838,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-4--mekanika-fluida",
@@ -2605,7 +2849,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-4--pencemaran-udara-perubahan-iklim",
@@ -2615,7 +2860,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-7-4--perpetaan",
@@ -2625,7 +2871,8 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-1--metode-penelitian",
@@ -2635,7 +2882,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-1--sistem-informasi-geografis",
@@ -2645,7 +2893,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-1--kimia-lingkungan",
@@ -2655,7 +2904,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-1--lab-lingkungan-1",
@@ -2665,7 +2915,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-1--lab-lingkungan-2",
@@ -2675,7 +2926,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-1--mekanika-fluida",
@@ -2685,7 +2937,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-1--pencemaran-udara-perubahan-iklim",
@@ -2695,7 +2948,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-1--perpetaan",
@@ -2705,7 +2959,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--gambar-teknik",
@@ -2715,7 +2970,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--sistem-informasi-geografis",
@@ -2725,7 +2981,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--kimia-lingkungan",
@@ -2735,7 +2992,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--lab-lingkungan-1",
@@ -2745,7 +3003,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--lab-lingkungan-2",
@@ -2755,7 +3014,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--pencemaran-udara-perubahan-iklim",
@@ -2765,7 +3025,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--tugas-akhir",
@@ -2775,7 +3036,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--statistik-probabilistik",
@@ -2785,7 +3047,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--spam",
@@ -2795,7 +3058,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--spal-drainase",
@@ -2805,7 +3069,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--pbpam",
@@ -2815,7 +3080,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--pbpal",
@@ -2825,7 +3091,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-2--mekanika-fluida",
@@ -2835,7 +3102,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-3--pemodelan-lingkungan",
@@ -2845,7 +3113,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-3--sistem-informasi-geografis",
@@ -2855,7 +3124,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-3--matematika-rekayasa",
@@ -2865,7 +3135,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-8-3--perpetaan",
@@ -2875,7 +3146,8 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-1--tugas-akhir",
@@ -2885,7 +3157,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-1--kerja-praktik",
@@ -2895,7 +3168,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-1--kesehatan-lingkungan",
@@ -2905,7 +3179,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-1--capstone",
@@ -2915,7 +3190,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-1--karier-etika-kewirausahaan",
@@ -2925,7 +3201,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-2--metode-penelitian",
@@ -2935,7 +3212,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-2--kerja-praktik",
@@ -2945,7 +3223,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-2--gambar-teknik",
@@ -2955,7 +3234,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-2--sistem-informasi-geografis",
@@ -2965,7 +3245,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-2--perpetaan",
@@ -2975,7 +3256,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-2--plambing-instrumentasi",
@@ -2985,7 +3267,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-2--capstone",
@@ -2995,7 +3278,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-2--amdal",
@@ -3005,7 +3289,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-9-2--tugas-akhir",
@@ -3015,7 +3300,8 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-1--manajemen-proyek",
@@ -3025,7 +3311,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-1--amdal",
@@ -3035,7 +3322,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-1--pbpam",
@@ -3045,7 +3333,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-1--pbpal",
@@ -3055,7 +3344,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-1--spal-drainase",
@@ -3065,7 +3355,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-1--spam",
@@ -3075,7 +3366,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-1--pengendalian-pencemaran-udara",
@@ -3085,7 +3377,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-1--capstone",
@@ -3095,7 +3388,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-1--metode-penelitian",
@@ -3105,7 +3399,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-2--karier-etika-kewirausahaan",
@@ -3115,7 +3410,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-2--sml",
@@ -3125,7 +3421,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-2--capstone",
@@ -3135,7 +3432,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-2--tugas-akhir",
@@ -3145,7 +3443,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-2--amdal",
@@ -3155,7 +3454,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-2--ekonomi-teknik",
@@ -3165,7 +3465,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-3--tugas-akhir",
@@ -3175,7 +3476,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-10-3--manajemen-proyek",
@@ -3185,7 +3487,8 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-11-1--amdal",
@@ -3195,7 +3498,8 @@
       "outcomeId": "CPL-11",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-11-1--capstone",
@@ -3205,7 +3509,8 @@
       "outcomeId": "CPL-11",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-11-1--studium-general",
@@ -3215,7 +3520,8 @@
       "outcomeId": "CPL-11",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-11-1--pengantar-infrastruktur-kewilayahan",
@@ -3225,7 +3531,8 @@
       "outcomeId": "CPL-11",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-11-2--kerja-praktik",
@@ -3235,7 +3542,8 @@
       "outcomeId": "CPL-11",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-11-2--karier-etika-kewirausahaan",
@@ -3245,7 +3553,8 @@
       "outcomeId": "CPL-11",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-11-2--produksi-bersih",
@@ -3255,7 +3564,8 @@
       "outcomeId": "CPL-11",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-11-2--pengantar-infrastruktur-kewilayahan",
@@ -3265,7 +3575,8 @@
       "outcomeId": "CPL-11",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-11-2--studium-general",
@@ -3275,7 +3586,8 @@
       "outcomeId": "CPL-11",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-1--kerja-praktik",
@@ -3285,7 +3597,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-1--tugas-akhir",
@@ -3295,7 +3608,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-1--metode-penelitian",
@@ -3305,7 +3619,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-1--capstone",
@@ -3315,7 +3630,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-1--studium-general",
@@ -3325,7 +3641,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-2--kerja-praktik",
@@ -3335,7 +3652,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-2--tugas-akhir",
@@ -3345,7 +3663,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-2--metode-penelitian",
@@ -3355,7 +3674,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-2--karier-etika-kewirausahaan",
@@ -3365,7 +3685,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-2--kesehatan-lingkungan",
@@ -3375,7 +3696,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-2--produksi-bersih",
@@ -3385,7 +3707,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-2--pengantar-infrastruktur-kewilayahan",
@@ -3395,7 +3718,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-3--k3",
@@ -3405,7 +3729,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-3--source-etika-profesi",
@@ -3415,7 +3740,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-3--kerja-praktik",
@@ -3425,7 +3751,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-3--kesehatan-lingkungan",
@@ -3435,7 +3762,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-4--k3",
@@ -3445,7 +3773,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-4--tugas-akhir",
@@ -3455,7 +3784,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-4--metode-penelitian",
@@ -3465,7 +3795,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-4--capstone",
@@ -3475,7 +3806,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-4--kebijakan-hukum-lingkungan",
@@ -3485,7 +3817,8 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
     },
     {
       "id": "cpmk-12-4--karier-etika-kewirausahaan",
@@ -3495,7 +3828,73 @@
       "outcomeId": "CPL-12",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "source": "Tabel 3.15 Kurikulum Teknik Lingkungan 2025-2029"
+    },
+    {
+      "id": "inst-cpl-4-cpmk-4-8-matematika-dasar",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
+      "courseId": "matematika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 28,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
+    },
+    {
+      "id": "inst-cpl-4-cpmk-4-10-matematika-dasar",
+      "code": "CPMK 4.10",
+      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral untuk menyusun langkah penyelesaian masalah matematis yang berkaitan dengan bidang sains dan teknik.",
+      "courseId": "matematika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 36,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
+    },
+    {
+      "id": "inst-cpl-4-cpmk-4-8-praktikum-kimia",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
+    },
+    {
+      "id": "inst-cpl-4-cpmk-4-10-praktikum-kimia",
+      "code": "CPMK 4.10",
+      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral untuk menyusun langkah penyelesaian masalah matematis yang berkaitan dengan bidang sains dan teknik.",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
+    },
+    {
+      "id": "inst-cpl-4-cpmk-4-11-praktikum-biologi",
+      "code": "CPMK 4.11",
+      "description": "Mahasiswa mampu mengenali konsep geometri dan logika matematika sederhana sebagai alat bantu pemecahan masalah sehari-hari, serta memahami irisan kerucut untuk digunakan dalam menyelesaikan persoalan di bidangnya; keanekaragaman organisme.",
+      "courseId": "praktikum-biologi",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     }
   ],
   "sourceNotes": [
@@ -3538,6 +3937,16 @@
       "severity": "info",
       "code": "SARJANA_SIM_LIMIT",
       "message": "maxCreditsPerSemester=20 mengikuti kebijakan simulator Sarjana. Dokumen implementasi menyebut Semester 1–2 maksimal 20 SKS dan Semester 3 seterusnya maksimal 24 SKS; paket kurikulum baku pada JSON ini sendiri tidak melebihi 20 SKS per semester."
+    },
+    {
+      "severity": "info",
+      "code": "KEPTOR_1421_CPL1_4",
+      "message": "CPL 1-4 serta redaksi CPMK institusional menggunakan Keputusan Rektor ITERA Nomor 1421/IT9/KR.00.00/2025. Pemetaan tambahan MK prodi tetap dipertahankan dari Tabel 3.15 Kurikulum Teknik Lingkungan."
+    },
+    {
+      "severity": "info",
+      "code": "PRODI_CPMK_TABLE315",
+      "message": "Untuk CPL 5-12, redaksi dan pemetaan CPMK-MK mengikuti Tabel 3.15 Dokumen Kurikulum Program Studi Teknik Lingkungan."
     }
   ]
 }

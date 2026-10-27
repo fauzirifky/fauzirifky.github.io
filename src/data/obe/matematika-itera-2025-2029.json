@@ -10,7 +10,7 @@
     "creditUnit": "SKS",
     "totalCredits": 144,
     "semesterCount": 8,
-    "description": "Konfigurasi OBE Simulator Program Studi Matematika ITERA. Struktur wajib, CPL, dan CPMK mengikuti dokumen kurikulum 2025-2029. Distribusi MK pilihan dan bobot CPMK pada JSON ini adalah kebijakan simulasi yang dinyatakan pada sourceNotes; bobot CPMK bukan bobot resmi kurikulum.",
+    "description": "Konfigurasi OBE Simulator Program Studi Matematika ITERA. CPL 1-4 dan redaksi CPMK institusional mengikuti Keputusan Rektor ITERA Nomor 1421/IT9/KR.00.00/2025; CPL 5-10 dan pemetaan prodi mengikuti Tabel 3.16 Kurikulum Matematika 2025-2029. Bobot yang tampil dari Keputusan Rektor adalah bobot CPMK di dalam MK, bukan bobot global CPL.",
     "maxCreditsPerSemester": 20
   },
   "outcomes": [
@@ -910,7 +910,11 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerangkan esensi relasi manusia dengan Tuhan Yang Maha Esa, sesama manusia, dan lingkungan.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m002",
@@ -919,7 +923,11 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan, dan keberagaman dalam kehidupan berbangsa dan bernegara.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m003",
@@ -928,7 +936,11 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan, dan keberagaman dalam kehidupan berbangsa dan bernegara.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m004",
@@ -937,7 +949,11 @@
       "outcomeId": "CPL-1",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa terampil menganalisis permasalahan spiritualitas dan religiusitas melalui pengembangan budaya dan kesejahteraan masyarakat.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m005",
@@ -946,7 +962,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesia serta kedudukan dan tata bahasa Indonesia.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m006",
@@ -955,7 +975,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesia serta kedudukan dan tata bahasa Indonesia.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m007",
@@ -964,7 +988,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjalankan peran sebagai warga negara melalui partisipasi aktif dalam masyarakat.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m008",
@@ -973,7 +1001,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 60,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m009",
@@ -982,7 +1014,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 60,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m010",
@@ -991,7 +1027,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis makna kata.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m011",
@@ -1000,7 +1040,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menelaah unsur-unsur dan jenis-jenis paragraf.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 30,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m012",
@@ -1009,7 +1053,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengidentifikasi, menjelaskan, dan menganalisis potensi dan permasalahan yang ditemui di lapangan/masyarakat.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m013",
@@ -1018,7 +1066,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengimplementasikan program kerja yang dirancang secara kolaboratif baik dengan masyarakat ataupun tim KKN yang menerapkan konsep ilmiah dan berbasis ilmu pengetahuan teknologi.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m014",
@@ -1027,7 +1079,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyusun paraphrase dan summary.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m015",
@@ -1036,7 +1092,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menulis esai dengan outline dan argumentasi.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 30,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m016",
@@ -1045,7 +1105,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang program pemberdayaan berbasis kebutuhan masyarakat di lokasi KKN.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m017",
@@ -1054,7 +1118,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengevaluasi dan menyusun laporan hasil program kerja secara sistematis.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m018",
@@ -1063,7 +1131,11 @@
       "outcomeId": "CPL-2",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengintegrasikan teknologi dan keterampilan olahraga untuk beradaptasi dengan perkembangan zaman secara kreatif dan inovatif.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m019",
@@ -1072,7 +1144,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami prinsip transformasi dan pembangunan berkelanjutan, konsep dasar infrastruktur komputer, internet, keamanan data dan informasi, sistem operasi, serta basis data; menganalisis peran teknologi tersebut dalam perubahan sosial, ekonomi, dan lingkungan di wilayah Sumatera; serta memahami struktur dasar pemrograman menggunakan bahasa C++.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m020",
@@ -1081,7 +1157,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami prinsip transformasi dan pembangunan berkelanjutan, konsep dasar infrastruktur komputer, internet, keamanan data dan informasi, sistem operasi, serta basis data; menganalisis peran teknologi tersebut dalam perubahan sosial, ekonomi, dan lingkungan di wilayah Sumatera; serta memahami struktur dasar pemrograman menggunakan bahasa C++.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 100,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m021",
@@ -1090,7 +1170,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami prinsip transformasi dan pembangunan berkelanjutan, konsep dasar infrastruktur komputer, internet, keamanan data dan informasi, sistem operasi, serta basis data; menganalisis peran teknologi tersebut dalam perubahan sosial, ekonomi, dan lingkungan di wilayah Sumatera; serta memahami struktur dasar pemrograman menggunakan bahasa C++.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m022",
@@ -1099,7 +1183,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m023",
@@ -1108,7 +1196,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m024",
@@ -1117,7 +1209,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan etika dan sikap dalam penggunaan teknologi informasi dan internet yang berkelanjutan terhadap lingkungan; menggunakan perangkat lunak perkantoran untuk mengolah dokumen teks, data, dan presentasi; memanfaatkan komputasi di berbagai bidang keilmuan dengan pendekatan prosedural; menggunakan representasi visual, percabangan, perulangan, dan array dalam pembuatan program sederhana untuk menyelesaikan berbagai permasalahan; serta menerapkan prinsip-prinsip etika profesional di lingkungan kerja dan menyelesaikan dilema etika melalui analisis kasus.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 30,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m025",
@@ -1126,7 +1222,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan etika dan sikap dalam penggunaan teknologi informasi dan internet yang berkelanjutan terhadap lingkungan; menggunakan perangkat lunak perkantoran untuk mengolah dokumen teks, data, dan presentasi; memanfaatkan komputasi di berbagai bidang keilmuan dengan pendekatan prosedural; menggunakan representasi visual, percabangan, perulangan, dan array dalam pembuatan program sederhana untuk menyelesaikan berbagai permasalahan; serta menerapkan prinsip-prinsip etika profesional di lingkungan kerja dan menyelesaikan dilema etika melalui analisis kasus.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m026",
@@ -1135,7 +1235,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 50,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m027",
@@ -1144,7 +1248,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m028",
@@ -1153,7 +1261,11 @@
       "outcomeId": "CPL-3",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mengusulkan ide inovatif berbasis teknologi dengan mempertimbangkan prinsip keseimbangan antara pertumbuhan ekonomi, pelestarian lingkungan, dan kesejahteraan sosial.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 60,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m029",
@@ -1162,7 +1274,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 100,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m030",
@@ -1171,7 +1287,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 75,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m031",
@@ -1180,7 +1300,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 40,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m032",
@@ -1189,7 +1313,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 35,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m033",
@@ -1198,7 +1326,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat; serta prinsip dasar perencanaan, perancangan, seni, teknologi, sosial, dan infrastruktur kewilayahan.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 75,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m034",
@@ -1207,7 +1339,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengoperasikan alat-alat laboratorium kimia dasar dengan prosedur yang benar serta menerapkan teknik-teknik dasar laboratorium, termasuk teknik pengukuran, pencampuran, dan pemisahan, sesuai dengan kaidah keselamatan kerja di laboratorium.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m035",
@@ -1216,7 +1352,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu melakukan percobaan kimia dasar untuk memahami konsep stoikiometri, termodinamika kimia, dan kinetika gas, serta menganalisis hasil percobaan secara kuantitatif dan kualitatif menggunakan prinsip-prinsip ilmiah.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m036",
@@ -1225,7 +1365,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 36,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m037",
@@ -1234,7 +1378,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m038",
@@ -1243,7 +1391,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengenali konsep geometri dan logika matematika sederhana sebagai alat bantu pemecahan masalah sehari-hari, serta memahami irisan kerucut untuk digunakan dalam menyelesaikan persoalan di bidangnya; keanekaragaman organisme.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m039",
@@ -1252,7 +1404,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan pengetahuan biologi dalam proses desain sistem dengan konsep biomimikri dan permasalahan fisis sederhana.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m040",
@@ -1261,7 +1417,11 @@
       "outcomeId": "CPL-4",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mampu berpikir kritis, logis, sistematis, dan terstruktur dalam menyelesaikan masalah-masalah sistem fisis.",
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 25,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     },
     {
       "id": "m041",
@@ -1270,7 +1430,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar matematika meliputi logika, geometri, analisis bilangan riil, aljabar linier dan struktur aljabar dalam menganalisis (C4) masalah matematis dan membangun bukti yang valid dan logis.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m042",
@@ -1279,7 +1441,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar matematika meliputi logika, geometri, analisis bilangan riil, aljabar linier dan struktur aljabar dalam menganalisis (C4) masalah matematis dan membangun bukti yang valid dan logis.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m043",
@@ -1288,7 +1452,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar matematika meliputi logika, geometri, analisis bilangan riil, aljabar linier dan struktur aljabar dalam menganalisis (C4) masalah matematis dan membangun bukti yang valid dan logis.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m044",
@@ -1297,7 +1463,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar matematika meliputi logika, geometri, analisis bilangan riil, aljabar linier dan struktur aljabar dalam menganalisis (C4) masalah matematis dan membangun bukti yang valid dan logis.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m045",
@@ -1306,7 +1474,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar matematika meliputi logika, geometri, analisis bilangan riil, aljabar linier dan struktur aljabar dalam menganalisis (C4) masalah matematis dan membangun bukti yang valid dan logis.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m046",
@@ -1315,7 +1485,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar matematika meliputi logika, geometri, analisis bilangan riil, aljabar linier dan struktur aljabar dalam menganalisis (C4) masalah matematis dan membangun bukti yang valid dan logis.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m047",
@@ -1324,7 +1496,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar kalkulus satu variabel dan multivariabel pada bilangan riil dan bilangan kompleks yang meliputi barisan, deret, fungsi, berbagai bentuk limit, turunan dan integral untuk memecahkan (C4) masalah matematis dan menginterpretasikannya (C4).",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m048",
@@ -1333,7 +1507,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar kalkulus satu variabel dan multivariabel pada bilangan riil dan bilangan kompleks yang meliputi barisan, deret, fungsi, berbagai bentuk limit, turunan dan integral untuk memecahkan (C4) masalah matematis dan menginterpretasikannya (C4).",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m049",
@@ -1342,7 +1518,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar kalkulus satu variabel dan multivariabel pada bilangan riil dan bilangan kompleks yang meliputi barisan, deret, fungsi, berbagai bentuk limit, turunan dan integral untuk memecahkan (C4) masalah matematis dan menginterpretasikannya (C4).",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m050",
@@ -1351,7 +1529,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar kalkulus satu variabel dan multivariabel pada bilangan riil dan bilangan kompleks yang meliputi barisan, deret, fungsi, berbagai bentuk limit, turunan dan integral untuk memecahkan (C4) masalah matematis dan menginterpretasikannya (C4).",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m051",
@@ -1360,7 +1540,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar kalkulus satu variabel dan multivariabel pada bilangan riil dan bilangan kompleks yang meliputi barisan, deret, fungsi, berbagai bentuk limit, turunan dan integral untuk memecahkan (C4) masalah matematis dan menginterpretasikannya (C4).",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m052",
@@ -1369,7 +1551,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar kalkulus satu variabel dan multivariabel pada bilangan riil dan bilangan kompleks yang meliputi barisan, deret, fungsi, berbagai bentuk limit, turunan dan integral untuk memecahkan (C4) masalah matematis dan menginterpretasikannya (C4).",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m053",
@@ -1378,7 +1562,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menjelaskan (C2) dan mendemonstrasikan (C3) penggunaan teori dan konsep dasar kalkulus satu variabel dan multivariabel pada bilangan riil dan bilangan kompleks yang meliputi barisan, deret, fungsi, berbagai bentuk limit, turunan dan integral untuk memecahkan (C4) masalah matematis dan menginterpretasikannya (C4).",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m054",
@@ -1387,7 +1573,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) konsep dasar matematika diskrit dan pendekatan kontinunya untuk menganalisis (C4) teori dasar aturan pencacahan dan teori peluang yang meliputi (dan tidak terbatas pada) permutasi, kombinasi, prinsip inklusi-eksklusi, prinsip sarang merpati, rekurensi, peluang, berbagai bentuk distribusi peluang diskrit dan kontinu beserta transformasinya.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m055",
@@ -1396,7 +1584,9 @@
       "outcomeId": "CPL-5",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) konsep dasar matematika diskrit dan pendekatan kontinunya untuk menganalisis (C4) teori dasar aturan pencacahan dan teori peluang yang meliputi (dan tidak terbatas pada) permutasi, kombinasi, prinsip inklusi-eksklusi, prinsip sarang merpati, rekurensi, peluang, berbagai bentuk distribusi peluang diskrit dan kontinu beserta transformasinya.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m056",
@@ -1405,7 +1595,9 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memecahkan (C4) masalah optimasi termasuk (dan tidak terbatas pada) masalah program linier, masalah pengujian hipotesis dan masalah pada proses stokastik dengan memilih (C3) model matematika yang sesuai, menerapkan (C3) langkah-langkah metode numerik yang terukur dan valid secara analitik untuk mendapatkan solusi, serta menginterpretasikan solusi yang diperoleh sesuai konteks masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m057",
@@ -1414,7 +1606,9 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memecahkan (C4) masalah optimasi termasuk (dan tidak terbatas pada) masalah program linier, masalah pengujian hipotesis dan masalah pada proses stokastik dengan memilih (C3) model matematika yang sesuai, menerapkan (C3) langkah-langkah metode numerik yang terukur dan valid secara analitik untuk mendapatkan solusi, serta menginterpretasikan solusi yang diperoleh sesuai konteks masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m058",
@@ -1423,7 +1617,9 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memecahkan (C4) masalah optimasi termasuk (dan tidak terbatas pada) masalah program linier, masalah pengujian hipotesis dan masalah pada proses stokastik dengan memilih (C3) model matematika yang sesuai, menerapkan (C3) langkah-langkah metode numerik yang terukur dan valid secara analitik untuk mendapatkan solusi, serta menginterpretasikan solusi yang diperoleh sesuai konteks masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m059",
@@ -1432,7 +1628,9 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memecahkan (C4) masalah optimasi termasuk (dan tidak terbatas pada) masalah program linier, masalah pengujian hipotesis dan masalah pada proses stokastik dengan memilih (C3) model matematika yang sesuai, menerapkan (C3) langkah-langkah metode numerik yang terukur dan valid secara analitik untuk mendapatkan solusi, serta menginterpretasikan solusi yang diperoleh sesuai konteks masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m060",
@@ -1441,7 +1639,9 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memecahkan (C4) masalah optimasi termasuk (dan tidak terbatas pada) masalah program linier, masalah pengujian hipotesis dan masalah pada proses stokastik dengan memilih (C3) model matematika yang sesuai, menerapkan (C3) langkah-langkah metode numerik yang terukur dan valid secara analitik untuk mendapatkan solusi, serta menginterpretasikan solusi yang diperoleh sesuai konteks masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m061",
@@ -1450,7 +1650,9 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memecahkan (C4) masalah persamaan diferensial biasa, persamaan diferensial parsial, atau perumumannya melalui pendekatan analitik dan/atau numerik dengan menunjukkan kemampuan (C3) menentukan keberadaan solusi, keunikan solusi, dan klasifikasi solusi berdasarkan hasil dari metode matematis yang sesuai seperti (dan tidak terbatas pada) metode pemisahan variabel, deret Fourier, dan transformasi serta menerapkan (C3) kemampuan tersebut secara khusus untuk menyelesaikan masalah mekanika fluida, perpindahan panas, perambatan gelombang dan elektromagnetik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m062",
@@ -1459,7 +1661,9 @@
       "outcomeId": "CPL-6",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memecahkan (C4) masalah persamaan diferensial biasa, persamaan diferensial parsial, atau perumumannya melalui pendekatan analitik dan/atau numerik dengan menunjukkan kemampuan (C3) menentukan keberadaan solusi, keunikan solusi, dan klasifikasi solusi berdasarkan hasil dari metode matematis yang sesuai seperti (dan tidak terbatas pada) metode pemisahan variabel, deret Fourier, dan transformasi serta menerapkan (C3) kemampuan tersebut secara khusus untuk menyelesaikan masalah mekanika fluida, perpindahan panas, perambatan gelombang dan elektromagnetik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m063",
@@ -1468,7 +1672,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang, menerapkan (C3), dan menganalisis (C4) model matematika berbasis metode numerik atau komputasi untuk memecahkan masalah di bidang sains, teknik, ekonomi, atau industri, serta mengevaluasi (C5) keakuratan, keterbatasan, dan relevansi model dalam konteks masalah nyata, dengan mendokumentasikan hasilnya secara ilmiah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m064",
@@ -1477,7 +1683,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang, menerapkan (C3), dan menganalisis (C4) model matematika berbasis metode numerik atau komputasi untuk memecahkan masalah di bidang sains, teknik, ekonomi, atau industri, serta mengevaluasi (C5) keakuratan, keterbatasan, dan relevansi model dalam konteks masalah nyata, dengan mendokumentasikan hasilnya secara ilmiah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m065",
@@ -1486,7 +1694,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang, menerapkan (C3), dan menganalisis (C4) model matematika berbasis metode numerik atau komputasi untuk memecahkan masalah di bidang sains, teknik, ekonomi, atau industri, serta mengevaluasi (C5) keakuratan, keterbatasan, dan relevansi model dalam konteks masalah nyata, dengan mendokumentasikan hasilnya secara ilmiah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m066",
@@ -1495,7 +1705,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang, menerapkan (C3), dan menganalisis (C4) model matematika berbasis metode numerik atau komputasi untuk memecahkan masalah di bidang sains, teknik, ekonomi, atau industri, serta mengevaluasi (C5) keakuratan, keterbatasan, dan relevansi model dalam konteks masalah nyata, dengan mendokumentasikan hasilnya secara ilmiah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m067",
@@ -1504,7 +1716,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang, menerapkan (C3), dan menganalisis (C4) model matematika berbasis metode numerik atau komputasi untuk memecahkan masalah di bidang sains, teknik, ekonomi, atau industri, serta mengevaluasi (C5) keakuratan, keterbatasan, dan relevansi model dalam konteks masalah nyata, dengan mendokumentasikan hasilnya secara ilmiah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m068",
@@ -1513,7 +1727,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang, menerapkan (C3), dan menganalisis (C4) model matematika berbasis metode numerik atau komputasi untuk memecahkan masalah di bidang sains, teknik, ekonomi, atau industri, serta mengevaluasi (C5) keakuratan, keterbatasan, dan relevansi model dalam konteks masalah nyata, dengan mendokumentasikan hasilnya secara ilmiah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m069",
@@ -1522,7 +1738,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang, menerapkan (C3), dan menganalisis (C4) model matematika berbasis metode numerik atau komputasi untuk memecahkan masalah di bidang sains, teknik, ekonomi, atau industri, serta mengevaluasi (C5) keakuratan, keterbatasan, dan relevansi model dalam konteks masalah nyata, dengan mendokumentasikan hasilnya secara ilmiah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m070",
@@ -1531,7 +1749,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu merancang, menerapkan (C3), dan menganalisis (C4) model matematika berbasis metode numerik atau komputasi untuk memecahkan masalah di bidang sains, teknik, ekonomi, atau industri, serta mengevaluasi (C5) keakuratan, keterbatasan, dan relevansi model dalam konteks masalah nyata, dengan mendokumentasikan hasilnya secara ilmiah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m071",
@@ -1540,7 +1760,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami, menerapkan (C3), dan menganalisis (C4) model matematika berbasis persamaan diferensial (biasa dan parsial) untuk merancang solusi masalah di bidang sains, teknik, lingkungan, ilmu hayati, kesehatan, atau sosial humaniora, serta mengevaluasi (C5) kesesuaian dan efektivitas model dalam konteks fenomena nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m072",
@@ -1549,7 +1771,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami, menerapkan (C3), dan menganalisis (C4) model matematika berbasis persamaan diferensial (biasa dan parsial) untuk merancang solusi masalah di bidang sains, teknik, lingkungan, ilmu hayati, kesehatan, atau sosial humaniora, serta mengevaluasi (C5) kesesuaian dan efektivitas model dalam konteks fenomena nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m073",
@@ -1558,7 +1782,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami, menerapkan (C3), dan menganalisis (C4) model matematika berbasis persamaan diferensial (biasa dan parsial) untuk merancang solusi masalah di bidang sains, teknik, lingkungan, ilmu hayati, kesehatan, atau sosial humaniora, serta mengevaluasi (C5) kesesuaian dan efektivitas model dalam konteks fenomena nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m074",
@@ -1567,7 +1793,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami, menerapkan (C3), dan menganalisis (C4) model matematika berbasis persamaan diferensial (biasa dan parsial) untuk merancang solusi masalah di bidang sains, teknik, lingkungan, ilmu hayati, kesehatan, atau sosial humaniora, serta mengevaluasi (C5) kesesuaian dan efektivitas model dalam konteks fenomena nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m075",
@@ -1576,7 +1804,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami, menerapkan (C3), dan menganalisis (C4) model matematika berbasis persamaan diferensial (biasa dan parsial) untuk merancang solusi masalah di bidang sains, teknik, lingkungan, ilmu hayati, kesehatan, atau sosial humaniora, serta mengevaluasi (C5) kesesuaian dan efektivitas model dalam konteks fenomena nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m076",
@@ -1585,7 +1815,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami, menerapkan (C3), dan menganalisis (C4) model matematika berbasis persamaan diferensial (biasa dan parsial) untuk merancang solusi masalah di bidang sains, teknik, lingkungan, ilmu hayati, kesehatan, atau sosial humaniora, serta mengevaluasi (C5) kesesuaian dan efektivitas model dalam konteks fenomena nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m077",
@@ -1594,7 +1826,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memahami, menerapkan (C3), dan menganalisis (C4) model matematika berbasis persamaan diferensial (biasa dan parsial) untuk merancang solusi masalah di bidang sains, teknik, lingkungan, ilmu hayati, kesehatan, atau sosial humaniora, serta mengevaluasi (C5) kesesuaian dan efektivitas model dalam konteks fenomena nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m078",
@@ -1603,7 +1837,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan (C3) dan menganalisis (C4) metode optimasi dan model stokastik untuk menyelesaikan masalah di bidang ekonomi, industri, atau teknik, serta mengevaluasi (C5) hasil solusi dalam konteks kehidupan nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m079",
@@ -1612,7 +1848,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan (C3) dan menganalisis (C4) metode optimasi dan model stokastik untuk menyelesaikan masalah di bidang ekonomi, industri, atau teknik, serta mengevaluasi (C5) hasil solusi dalam konteks kehidupan nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m080",
@@ -1621,7 +1859,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan (C3) dan menganalisis (C4) metode optimasi dan model stokastik untuk menyelesaikan masalah di bidang ekonomi, industri, atau teknik, serta mengevaluasi (C5) hasil solusi dalam konteks kehidupan nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m081",
@@ -1630,7 +1870,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan (C3) dan menganalisis (C4) metode optimasi dan model stokastik untuk menyelesaikan masalah di bidang ekonomi, industri, atau teknik, serta mengevaluasi (C5) hasil solusi dalam konteks kehidupan nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m082",
@@ -1639,7 +1881,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan (C3) dan menganalisis (C4) metode optimasi dan model stokastik untuk menyelesaikan masalah di bidang ekonomi, industri, atau teknik, serta mengevaluasi (C5) hasil solusi dalam konteks kehidupan nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m083",
@@ -1648,7 +1892,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan (C3) dan menganalisis (C4) metode optimasi dan model stokastik untuk menyelesaikan masalah di bidang ekonomi, industri, atau teknik, serta mengevaluasi (C5) hasil solusi dalam konteks kehidupan nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m084",
@@ -1657,7 +1903,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menerapkan (C3) dan menganalisis (C4) metode optimasi dan model stokastik untuk menyelesaikan masalah di bidang ekonomi, industri, atau teknik, serta mengevaluasi (C5) hasil solusi dalam konteks kehidupan nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m085",
@@ -1666,7 +1914,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) teorema geometri untuk merancang solusi masalah 2 dimensi di kehidupan sehari-hari, serta mengevaluasi (C5) relevansi solusi dalam konteks masalah nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m086",
@@ -1675,7 +1925,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) teorema geometri untuk merancang solusi masalah 2 dimensi di kehidupan sehari-hari, serta mengevaluasi (C5) relevansi solusi dalam konteks masalah nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m087",
@@ -1684,7 +1936,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) teorema geometri untuk merancang solusi masalah 2 dimensi di kehidupan sehari-hari, serta mengevaluasi (C5) relevansi solusi dalam konteks masalah nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m088",
@@ -1693,7 +1947,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) teorema geometri untuk merancang solusi masalah 2 dimensi di kehidupan sehari-hari, serta mengevaluasi (C5) relevansi solusi dalam konteks masalah nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m089",
@@ -1702,7 +1958,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) teorema geometri untuk merancang solusi masalah 2 dimensi di kehidupan sehari-hari, serta mengevaluasi (C5) relevansi solusi dalam konteks masalah nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m090",
@@ -1711,7 +1969,9 @@
       "outcomeId": "CPL-7",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) teorema geometri untuk merancang solusi masalah 2 dimensi di kehidupan sehari-hari, serta mengevaluasi (C5) relevansi solusi dalam konteks masalah nyata.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m091",
@@ -1720,7 +1980,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip-prinsip analisis data meliputi (dan tidak terbatas pada) konsep statistika deskriptif, inferensia dan proses stokastik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m092",
@@ -1729,7 +1991,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip-prinsip analisis data meliputi (dan tidak terbatas pada) konsep statistika deskriptif, inferensia dan proses stokastik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m093",
@@ -1738,7 +2002,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip-prinsip analisis data meliputi (dan tidak terbatas pada) konsep statistika deskriptif, inferensia dan proses stokastik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m094",
@@ -1747,7 +2013,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip-prinsip analisis data meliputi (dan tidak terbatas pada) konsep statistika deskriptif, inferensia dan proses stokastik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m095",
@@ -1756,7 +2024,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip-prinsip analisis data meliputi (dan tidak terbatas pada) konsep statistika deskriptif, inferensia dan proses stokastik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m096",
@@ -1765,7 +2035,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip-prinsip analisis data meliputi (dan tidak terbatas pada) konsep statistika deskriptif, inferensia dan proses stokastik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m097",
@@ -1774,7 +2046,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip-prinsip analisis data meliputi (dan tidak terbatas pada) konsep statistika deskriptif, inferensia dan proses stokastik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m098",
@@ -1783,7 +2057,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip-prinsip analisis data meliputi (dan tidak terbatas pada) konsep statistika deskriptif, inferensia dan proses stokastik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m099",
@@ -1792,7 +2068,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip komputasi yang tepat dalam proses penentuan solusi masalah dan pengambilan keputusan yang didukung bukti valid secara matematis dan data.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m100",
@@ -1801,7 +2079,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip komputasi yang tepat dalam proses penentuan solusi masalah dan pengambilan keputusan yang didukung bukti valid secara matematis dan data.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m101",
@@ -1810,7 +2090,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip komputasi yang tepat dalam proses penentuan solusi masalah dan pengambilan keputusan yang didukung bukti valid secara matematis dan data.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m102",
@@ -1819,7 +2101,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip komputasi yang tepat dalam proses penentuan solusi masalah dan pengambilan keputusan yang didukung bukti valid secara matematis dan data.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m103",
@@ -1828,7 +2112,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip komputasi yang tepat dalam proses penentuan solusi masalah dan pengambilan keputusan yang didukung bukti valid secara matematis dan data.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m104",
@@ -1837,7 +2123,9 @@
       "outcomeId": "CPL-8",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu mengaplikasikan (C3) prinsip komputasi yang tepat dalam proses penentuan solusi masalah dan pengambilan keputusan yang didukung bukti valid secara matematis dan data.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m105",
@@ -1846,7 +2134,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi kolaboratif yang efektif untuk menyampaikan hasil analisis matematis dari proyek kelompok secara formal dan terstruktur kepada audiens akademik dan profesional melalui presentasi lisan atau visual yang jelas dan kontekstual.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m106",
@@ -1855,7 +2145,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi akademik yang rigor dan formal untuk menjelaskan konsep dan dasar teoretis matematika secara lisan dan tertulis kepada audiens akademik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m107",
@@ -1864,7 +2156,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi akademik yang rigor dan formal untuk menjelaskan konsep dan dasar teoretis matematika secara lisan dan tertulis kepada audiens akademik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m108",
@@ -1873,7 +2167,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi akademik yang rigor dan formal untuk menjelaskan konsep dan dasar teoretis matematika secara lisan dan tertulis kepada audiens akademik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m109",
@@ -1882,7 +2178,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi akademik yang rigor dan formal untuk menjelaskan konsep dan dasar teoretis matematika secara lisan dan tertulis kepada audiens akademik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m110",
@@ -1891,7 +2189,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi akademik yang rigor dan formal untuk menjelaskan konsep dan dasar teoretis matematika secara lisan dan tertulis kepada audiens akademik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m111",
@@ -1900,7 +2200,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi akademik yang rigor dan formal untuk menjelaskan konsep dan dasar teoretis matematika secara lisan dan tertulis kepada audiens akademik.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m112",
@@ -1909,7 +2211,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi tulis yang formal dan terstruktur untuk menyusun proposal atau laporan (Kerja Praktik, Proposal Penelitian, Tugas Akhir) serta mempresentasikan hasilnya secara lisan kepada audiens akademik dan non-akademik dalam seminar atau forum.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m113",
@@ -1918,7 +2222,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi tulis yang formal dan terstruktur untuk menyusun proposal atau laporan (Kerja Praktik, Proposal Penelitian, Tugas Akhir) serta mempresentasikan hasilnya secara lisan kepada audiens akademik dan non-akademik dalam seminar atau forum.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m114",
@@ -1927,7 +2233,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi tulis yang formal dan terstruktur untuk menyusun proposal atau laporan (Kerja Praktik, Proposal Penelitian, Tugas Akhir) serta mempresentasikan hasilnya secara lisan kepada audiens akademik dan non-akademik dalam seminar atau forum.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m115",
@@ -1936,7 +2244,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi tulis yang formal dan terstruktur untuk menyusun proposal atau laporan (Kerja Praktik, Proposal Penelitian, Tugas Akhir) serta mempresentasikan hasilnya secara lisan kepada audiens akademik dan non-akademik dalam seminar atau forum.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m116",
@@ -1945,7 +2255,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi tulis yang formal dan terstruktur untuk menyusun proposal atau laporan (Kerja Praktik, Proposal Penelitian, Tugas Akhir) serta mempresentasikan hasilnya secara lisan kepada audiens akademik dan non-akademik dalam seminar atau forum.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m117",
@@ -1954,7 +2266,9 @@
       "outcomeId": "CPL-9",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menyesuaikan (C3) strategi komunikasi tulis yang formal dan terstruktur untuk menyusun proposal atau laporan (Kerja Praktik, Proposal Penelitian, Tugas Akhir) serta mempresentasikan hasilnya secara lisan kepada audiens akademik dan non-akademik dalam seminar atau forum.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m118",
@@ -1963,7 +2277,9 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) permasalahan secara kritis, membuat garis besar (C4) langkah-langkah penelitian, bekerja disiplin secara mandiri maupun dalam tim dan mampu menerapkan metode matematis yang dipelajari selama kuliah dan di luar perkuliahan secara terukur untuk memperoleh solusi dari masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m119",
@@ -1972,7 +2288,9 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) permasalahan secara kritis, membuat garis besar (C4) langkah-langkah penelitian, bekerja disiplin secara mandiri maupun dalam tim dan mampu menerapkan metode matematis yang dipelajari selama kuliah dan di luar perkuliahan secara terukur untuk memperoleh solusi dari masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m120",
@@ -1981,7 +2299,9 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) permasalahan secara kritis, membuat garis besar (C4) langkah-langkah penelitian, bekerja disiplin secara mandiri maupun dalam tim dan mampu menerapkan metode matematis yang dipelajari selama kuliah dan di luar perkuliahan secara terukur untuk memperoleh solusi dari masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m121",
@@ -1990,7 +2310,9 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) permasalahan secara kritis, membuat garis besar (C4) langkah-langkah penelitian, bekerja disiplin secara mandiri maupun dalam tim dan mampu menerapkan metode matematis yang dipelajari selama kuliah dan di luar perkuliahan secara terukur untuk memperoleh solusi dari masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m122",
@@ -1999,7 +2321,9 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu menganalisis (C4) permasalahan secara kritis, membuat garis besar (C4) langkah-langkah penelitian, bekerja disiplin secara mandiri maupun dalam tim dan mampu menerapkan metode matematis yang dipelajari selama kuliah dan di luar perkuliahan secara terukur untuk memperoleh solusi dari masalah.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m123",
@@ -2008,7 +2332,9 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memilih (A1) dan menerapkan (C3) metode komunikasi tepat, efektif dan efisien memanfaatkan teknologi terkini dalam mengkomunikasikan proses dan hasil penelitian.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
     },
     {
       "id": "m124",
@@ -2017,7 +2343,61 @@
       "outcomeId": "CPL-10",
       "trackIds": [
         "regular"
-      ]
+      ],
+      "description": "Mahasiswa mampu memilih (A1) dan menerapkan (C3) metode komunikasi tepat, efektif dan efisien memanfaatkan teknologi terkini dalam mengkomunikasikan proses dan hasil penelitian.",
+      "source": "Tabel 3.16 Kurikulum Matematika 2025-2029"
+    },
+    {
+      "id": "inst-cpl-4-cpmk-4-8-matematika-dasar",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
+      "courseId": "matematika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 28,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
+    },
+    {
+      "id": "inst-cpl-4-cpmk-4-10-matematika-dasar",
+      "code": "CPMK 4.10",
+      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral untuk menyusun langkah penyelesaian masalah matematis yang berkaitan dengan bidang sains dan teknik.",
+      "courseId": "matematika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 36,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
+    },
+    {
+      "id": "inst-cpl-4-cpmk-4-8-praktikum-kimia",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari.",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
+    },
+    {
+      "id": "inst-cpl-4-cpmk-4-10-praktikum-kimia",
+      "code": "CPMK 4.10",
+      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral untuk menyusun langkah penyelesaian masalah matematis yang berkaitan dengan bidang sains dan teknik.",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ],
+      "source": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025",
+      "weight": 20,
+      "weightSource": "Keputusan Rektor Institut Teknologi Sumatera Nomor 1421/IT9/KR.00.00/2025"
     }
   ],
   "sourceNotes": [
@@ -2032,11 +2412,6 @@
       "message": "Dokumen menetapkan minimal 29 SKS pilihan secara keseluruhan tetapi tidak menetapkan pembagian pilihan per semester. Untuk skenario Sarjana dengan batas simulator 20 SKS/semester dan total tepat 144 SKS, preset ini menempatkan pilihan 2 SKS pada semester 5, 9 SKS pada semester 6, dan 18 SKS pada semester 7. Ini kebijakan simulasi, bukan ketentuan resmi kurikulum."
     },
     {
-      "severity": "warning",
-      "code": "CPMK_WEIGHT_SIMULATION",
-      "message": "Dokumen kurikulum tidak memberikan bobot numerik CPMK ke CPL. Preset ini membagi 100% secara merata pada CPMK unik yang memiliki mapping aktif untuk setiap CPL. Bobot digunakan untuk membantu visualisasi dan pengujian perhitungan, bukan sebagai bobot resmi kurikulum."
-    },
-    {
       "severity": "info",
       "code": "SARJANA_MAX_20_SIMULATION",
       "message": "Preset menetapkan maxCreditsPerSemester=20 sebagai kebijakan simulator untuk program Sarjana. Nilai ini dapat diubah melalui JSON untuk program lain atau kebijakan akademik yang berbeda."
@@ -2045,11 +2420,6 @@
       "severity": "warning",
       "code": "ELECTIVE_CPMK_GAP",
       "message": "Tabel 3.16 tidak memetakan mata kuliah pilihan pada Tabel 3.14 ke CPMK/CPL secara eksplisit. Karena itu MK pilihan tetap muncul dalam paket studi, tetapi belum menambah benang CPMK-CPL pada simulator."
-    },
-    {
-      "severity": "warning",
-      "code": "CPMK4_UNASSIGNED",
-      "message": "Pada Tabel 3.16, CPMK 4.8 dan CPMK 4.10 tidak memiliki mata kuliah pada kolom Mata Kuliah. Keduanya tidak dimasukkan sebagai mapping karena schema simulator membutuhkan courseId."
     },
     {
       "severity": "warning",
@@ -2070,330 +2440,16 @@
       "severity": "warning",
       "code": "TABLE315_SOURCE_DRIFT",
       "message": "Tabel 3.15 memuat beberapa entri yang tidak lengkap/typo, misalnya MA25-320023 dan Teori Suku Bunga hanya ditulis '(CPL)' tanpa nomor. Mapping CPMK pada JSON ini mengambil Tabel 3.16 sebagai sumber utama, bukan menebak dari entri tersebut."
-    }
-  ],
-  "cpmkWeights": [
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-1",
-      "cpmkCode": "CPMK 1.1",
-      "weight": 25.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
     },
     {
-      "trackId": "regular",
-      "outcomeId": "CPL-1",
-      "cpmkCode": "CPMK 1.2",
-      "weight": 25.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+      "severity": "info",
+      "code": "KEPTOR_1421_CPL1_4",
+      "message": "CPL 1-4 serta redaksi CPMK institusional menggunakan Keputusan Rektor ITERA Nomor 1421/IT9/KR.00.00/2025. Bobot yang ditampilkan pada relasi CPMK-MK mengikuti bobot per mata kuliah dalam keputusan tersebut."
     },
     {
-      "trackId": "regular",
-      "outcomeId": "CPL-1",
-      "cpmkCode": "CPMK 1.3",
-      "weight": 25.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-1",
-      "cpmkCode": "CPMK 1.4",
-      "weight": 25.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.1",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.2",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.3",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.4",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.5",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.6",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.7",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.8",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.9",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.10",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.11",
-      "weight": 8.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-2",
-      "cpmkCode": "CPMK 2.12",
-      "weight": 8.333337,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-3",
-      "cpmkCode": "CPMK 3.1",
-      "weight": 20.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-3",
-      "cpmkCode": "CPMK 3.2",
-      "weight": 20.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-3",
-      "cpmkCode": "CPMK 3.3",
-      "weight": 20.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-3",
-      "cpmkCode": "CPMK 3.4",
-      "weight": 20.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-3",
-      "cpmkCode": "CPMK 3.5",
-      "weight": 20.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-4",
-      "cpmkCode": "CPMK 4.1",
-      "weight": 11.111111,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-4",
-      "cpmkCode": "CPMK 4.2",
-      "weight": 11.111111,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-4",
-      "cpmkCode": "CPMK 4.3",
-      "weight": 11.111111,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-4",
-      "cpmkCode": "CPMK 4.6",
-      "weight": 11.111111,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-4",
-      "cpmkCode": "CPMK 4.7",
-      "weight": 11.111111,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-4",
-      "cpmkCode": "CPMK 4.9",
-      "weight": 11.111111,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-4",
-      "cpmkCode": "CPMK 4.11",
-      "weight": 11.111111,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-4",
-      "cpmkCode": "CPMK 4.14",
-      "weight": 11.111111,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-4",
-      "cpmkCode": "CPMK 4.16",
-      "weight": 11.111112,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-5",
-      "cpmkCode": "CPMK 5.1",
-      "weight": 33.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-5",
-      "cpmkCode": "CPMK 5.2",
-      "weight": 33.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-5",
-      "cpmkCode": "CPMK 5.3",
-      "weight": 33.333334,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-6",
-      "cpmkCode": "CPMK 6.1",
-      "weight": 50.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-6",
-      "cpmkCode": "CPMK 6.2",
-      "weight": 50.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-7",
-      "cpmkCode": "CPMK 7.1",
-      "weight": 25.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-7",
-      "cpmkCode": "CPMK 7.2",
-      "weight": 25.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-7",
-      "cpmkCode": "CPMK 7.3",
-      "weight": 25.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-7",
-      "cpmkCode": "CPMK 7.4",
-      "weight": 25.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-8",
-      "cpmkCode": "CPMK 8.1",
-      "weight": 50.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-8",
-      "cpmkCode": "CPMK 8.2",
-      "weight": 50.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-9",
-      "cpmkCode": "CPMK 9.1",
-      "weight": 33.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-9",
-      "cpmkCode": "CPMK 9.2",
-      "weight": 33.333333,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-9",
-      "cpmkCode": "CPMK 9.3",
-      "weight": 33.333334,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-10",
-      "cpmkCode": "CPMK 10.1",
-      "weight": 50.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
-    },
-    {
-      "trackId": "regular",
-      "outcomeId": "CPL-10",
-      "cpmkCode": "CPMK 10.2",
-      "weight": 50.0,
-      "source": "SIMULATOR_EQUAL_WITHIN_MAPPED_CPMK"
+      "severity": "info",
+      "code": "PRODI_CPMK_TABLE316",
+      "message": "Untuk CPL 5-10, redaksi dan pemetaan CPMK-MK mengikuti Tabel 3.16 Dokumen Kurikulum Program Studi Matematika 2025-2029."
     }
   ]
 }

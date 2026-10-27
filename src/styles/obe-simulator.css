@@ -22,3 +22,9 @@
 @media(max-width:1100px){.obeSidebar{width:225px;flex-basis:225px}.obeContent{width:min(100% - 36px,1320px)}.obeMetricGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.obePortal{display:block}.obeSidebar{display:none}.obeTopbar{min-height:58px;padding:10px 15px}.obeTopbar__link{display:none}.obeMobileNav{position:sticky;top:58px;z-index:19;display:flex;gap:5px;overflow-x:auto;padding:8px 14px;border-bottom:1px solid var(--hairline);background:rgba(255,255,255,.96);scrollbar-width:none}.obeMobileNav a{flex:0 0 auto;padding:7px 10px;border-radius:var(--pill);color:var(--muted);text-decoration:none;font-size:9px}.obeMobileNav a.active{background:rgba(83,58,253,.09);color:var(--primary-deep);font-weight:500}.obeContent{width:min(100% - 28px,1320px);padding:26px 0 38px}.obePageHeading h1{font-size:28px}.obePanel{padding:15px}.obeSemesterGrid,.obeStructureGrid,.obeSchemaGrid{grid-template-columns:1fr}.obeMetricGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.obeIssue{grid-template-columns:1fr;gap:3px}.obeFooter{padding:16px 15px}.obeGraphScroll{height:68vh;min-height:500px}}
 @media(max-width:500px){.obeMetricGrid{grid-template-columns:1fr 1fr}.obeControlRow{align-items:stretch}.obeCountControls,.obeActionRow{width:100%}.obeBtn{flex:1}.obeWeightGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.obeGraphActions{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.obeGraphNode{cursor:help}
+.obeHoverTooltip{position:fixed;z-index:9999;width:min(520px,calc(100vw - 28px));max-height:60vh;overflow:auto;pointer-events:none;padding:11px 12px;border:1px solid rgba(148,163,184,.35);border-radius:10px;background:rgba(15,23,42,.96);color:#f8fafc;box-shadow:0 14px 40px rgba(15,23,42,.24);white-space:pre-wrap}
+.obeHoverTooltip strong{display:block;margin-bottom:6px;font-size:11px;color:#fff}
+.obeHoverTooltip span{display:block;font-size:10px;line-height:1.5;color:#dbe4ef}

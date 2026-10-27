@@ -55,6 +55,9 @@ export type CpmkMapping = {
   id: string;
   code: string;
   description?: string;
+  source?: string;
+  weight?: number;
+  weightSource?: string;
   courseId: string;
   outcomeId: string;
   trackIds: string[];
