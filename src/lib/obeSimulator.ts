@@ -98,6 +98,7 @@ export type ObeProgramConfig = {
     totalCredits: number;
     semesterCount: number;
     maxCreditsPerSemester?: number;
+    maxCreditsBySemester?: Record<string, number>;
     description?: string;
   };
   outcomes: ObeOutcome[];
@@ -161,6 +162,12 @@ export function programMaxCreditsPerSemester(config: ObeProgramConfig) {
   if (level === "sarjana" || level === "s1" || level === "bachelor" || level === "undergraduate") return 20;
 
   return undefined;
+}
+
+export function programMaxCreditsForSemester(config: ObeProgramConfig, semester: number) {
+  const specific = Number(config.program?.maxCreditsBySemester?.[String(semester)] ?? 0);
+  if (specific > 0) return specific;
+  return programMaxCreditsPerSemester(config);
 }
 
 export type ResolvedCpmkWeight = {
@@ -324,10 +331,10 @@ export function generateStudent(config: ObeProgramConfig, trackId: string, seque
   }
 
   const pools = new Map((config.coursePools ?? []).map((pool) => [pool.id, pool]));
-  const maxPerSemester = programMaxCreditsPerSemester(config);
   for (const rule of track.electiveRules ?? []) {
     const pool = pools.get(rule.poolId);
     if (!pool) continue;
+    const maxPerSemester = programMaxCreditsForSemester(config, rule.semester);
 
     const semesterUsed = enrollments
       .filter((item) => item.semester === rule.semester)

@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState, type ChangeEvent, type ReactNode 
 import { Link, NavLink, useLocation } from "react-router-dom";
 import dummyConfigJson from "../data/obe/obe-simulator-dummy.json";
 import magisterFisikaConfigJson from "../data/obe/magister-fisika-itera.json";
+import fisikaConfigJson from "../data/obe/fisika-itera-2025-2029.json";
 import matematikaConfigJson from "../data/obe/matematika-itera-2025-2029.json";
 import teknikLingkunganConfigJson from "../data/obe/teknik-lingkungan-itera-2025-2029.json";
 import {
@@ -16,6 +17,7 @@ import {
   getTrack,
   parseObeConfig,
   programMaxCreditsPerSemester,
+  programMaxCreditsForSemester,
   semesterCredits,
   studentTotalCredits,
   studentWeightCoverage,
@@ -29,6 +31,7 @@ import "../styles/obe-simulator.css";
 
 const BASE_PATH = "/research-products/obe-simulator";
 const MAGISTER_FISIKA_PATH = `${BASE_PATH}/magister-fisika`;
+const FISIKA_PATH = `${BASE_PATH}/fisika`;
 const MATEMATIKA_PATH = `${BASE_PATH}/matematika`;
 const TEKNIK_LINGKUNGAN_PATH = `${BASE_PATH}/teknik-lingkungan`;
 const STORAGE_KEY = "obe-simulator-program-v2";
@@ -36,7 +39,7 @@ const ROOT_STORAGE_KEY = "obe-simulator-root-dummy-v1";
 
 type PageKey = "simulator" | "program" | "settings";
 type ViewMode = "student" | "all" | `track:${string}`;
-type PresetKey = "magister-fisika" | "matematika" | "teknik-lingkungan" | null;
+type PresetKey = "magister-fisika" | "fisika" | "matematika" | "teknik-lingkungan" | null;
 
 type GraphEdge = {
   mapping: CpmkMapping;
@@ -56,6 +59,9 @@ function routeContext(pathname: string) {
   if (path === MAGISTER_FISIKA_PATH || path.startsWith(`${MAGISTER_FISIKA_PATH}/`)) {
     preset = "magister-fisika";
     routeBase = MAGISTER_FISIKA_PATH;
+  } else if (path === FISIKA_PATH || path.startsWith(`${FISIKA_PATH}/`)) {
+    preset = "fisika";
+    routeBase = FISIKA_PATH;
   } else if (path === MATEMATIKA_PATH || path.startsWith(`${MATEMATIKA_PATH}/`)) {
     preset = "matematika";
     routeBase = MATEMATIKA_PATH;
@@ -80,6 +86,7 @@ function storageKeyFor(preset: PresetKey) {
 
 function bundledConfig(preset: PresetKey): ObeProgramConfig {
   if (preset === "magister-fisika") return magisterFisikaConfigJson as ObeProgramConfig;
+  if (preset === "fisika") return fisikaConfigJson as ObeProgramConfig;
   if (preset === "matematika") return matematikaConfigJson as ObeProgramConfig;
   if (preset === "teknik-lingkungan") return teknikLingkunganConfigJson as ObeProgramConfig;
   return dummyConfigJson as ObeProgramConfig;
@@ -239,6 +246,7 @@ function SemesterPackages({
           const items = student.enrollments.filter((item) => item.semester === semester);
           const actual = semesterCredits(config, student, semester);
           const expected = Number(track?.expectedCreditsBySemester?.[String(semester)] ?? 0);
+          const maxCredits = programMaxCreditsForSemester(config, semester);
           const overMax = maxCredits != null && actual > maxCredits;
           const onTarget = !expected || actual === expected;
           return (
@@ -331,7 +339,8 @@ function GraphView({
     }>();
 
     for (const relation of relations) {
-      const key = `${relation.mapping.outcomeId}::${relation.mapping.code}`;
+      const descriptionKey = (relation.mapping.description ?? "").trim().replace(/\s+/g, " ");
+      const key = `${relation.mapping.outcomeId}::${relation.mapping.code}::${descriptionKey}`;
       if (!grouped.has(key)) {
         const resolved = resolveCpmkWeight(config, relation.mapping.outcomeId, relation.mapping.code, graphTrackIds);
         grouped.set(key, {

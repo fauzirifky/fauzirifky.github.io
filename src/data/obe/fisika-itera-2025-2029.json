@@ -1,0 +1,4097 @@
+{
+  "schemaVersion": "1.0.0",
+  "program": {
+    "id": "fisika-itera-2025-2029",
+    "name": "Fisika",
+    "institution": "Institut Teknologi Sumatera",
+    "faculty": "Fakultas Sains",
+    "degreeLevel": "sarjana",
+    "curriculum": "Kurikulum 2025-2029",
+    "creditUnit": "SKS",
+    "totalCredits": 144,
+    "semesterCount": 8,
+    "maxCreditsPerSemester": 24,
+    "maxCreditsBySemester": {
+      "1": 20,
+      "2": 20,
+      "3": 24,
+      "4": 24,
+      "5": 24,
+      "6": 24,
+      "7": 24,
+      "8": 24
+    },
+    "description": "Konfigurasi OBE Simulator Program Studi Sarjana Fisika ITERA. Relasi MK-CPMK-CPL mengikuti Tabel 3.19 dokumen kurikulum signed; ketidaksesuaian terhadap Tabel 3.8 dan Tabel 3.18 dicatat sebagai warning dan tidak dikoreksi secara diam-diam."
+  },
+  "outcomes": [
+    {
+      "id": "CPL-1",
+      "code": "CPL 1",
+      "label": "Beriman kepada Tuhan Yang Maha Esa dan menerapkan nilai-nilai Pancasila"
+    },
+    {
+      "id": "CPL-2",
+      "code": "CPL 2",
+      "label": "Setia kepada Negara Kesatuan Republik Indonesia dan adaptif terhadap perkembangan zaman dan kemasyarakatan"
+    },
+    {
+      "id": "CPL-3",
+      "code": "CPL 3",
+      "label": "Memberdayakan potensi Sumatera untuk kemajuan ilmu pengetahuan dan teknologi yang berdaya saing"
+    },
+    {
+      "id": "CPL-4",
+      "code": "CPL 4",
+      "label": "Menerapkan konsep dan keterampilan Matematika dan Sains Dasar untuk menentukan penyelesaian masalah secara logis, kritis, dan kreatif dalam mendukung inovasi sesuai bidang keilmuan."
+    },
+    {
+      "id": "CPL-5",
+      "code": "CPL 5",
+      "label": "Mampu menganalisis gejala-gejala fisis dengan berlandaskan pemahaman konsep dan prinsip pokok fisika klasik dan modern secara kritis dan sistematis."
+    },
+    {
+      "id": "CPL-6",
+      "code": "CPL 6",
+      "label": "Mampu memecahkan permasalahan fisis dengan menerapkan metode-metode matematika dan komputasi yang tepat dan logis sesuai fenomena yang menjadi subyek pembahasan."
+    },
+    {
+      "id": "CPL-7",
+      "code": "CPL 7",
+      "label": "Menguasai prinsip pokok instrumentasi serta mampu mengoperasikan dan menganalisis data instrumen fisika secara mandiri, bermutu, dan terukur."
+    },
+    {
+      "id": "CPL-8",
+      "code": "CPL 8",
+      "label": "Mampu mengaplikasikan pengetahuan yang dimiliki untuk mengidentifikasi masalah di bidang energi, material maju, atau kebencanaan serta mampu mengevaluasi potensi penerapannya dalam teknologi."
+    },
+    {
+      "id": "CPL-9",
+      "code": "CPL 9",
+      "label": "Mampu memformulasikan pemecahan masalah fisis melalui eksperimen terstruktur maupun berbasis projek secara mandiri dan berkelompok dengan memperhatikan metodologi dan etika ilmiah."
+    },
+    {
+      "id": "CPL-10",
+      "code": "CPL 10",
+      "label": "Mampu mengkaji implikasi ilmu fisika dalam pengembangan ilmu pengetahuan, teknologi, dan sosial dalam rangka menghasilkan solusi, gagasan, maupun prediksi suatu fenomena."
+    },
+    {
+      "id": "CPL-11",
+      "code": "CPL 11",
+      "label": "Mampu berkolaborasi dalam menghasilkan karya ilmiah dan mampu mendokumentasikan, mengamankan, dan mendiseminasikan data hasil kajian tersebut dalam bentuk laporan atau kertas kerja sesuai kaidah ilmiah baku."
+    }
+  ],
+  "courses": [
+    {
+      "id": "pengantar-keilmuan-fisika",
+      "code": "FI25-11001",
+      "name": "Pengantar Keilmuan Fisika",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "transformasi-keberlanjutan-sumatera",
+      "code": "WI25-00001",
+      "name": "Transformasi Keberlanjutan Sumatera",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "dasar-teknologi-digital",
+      "code": "WI25-00002",
+      "name": "Dasar Teknologi Digital",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "matematika-dasar",
+      "code": "WT25-00001",
+      "name": "Matematika Dasar",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "biologi-dasar",
+      "code": "WT25-00002",
+      "name": "Biologi Dasar",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "fisika-dasar",
+      "code": "WT25-00003",
+      "name": "Fisika Dasar",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "kimia-dasar",
+      "code": "WT25-00004",
+      "name": "Kimia Dasar",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-biologi",
+      "code": "WT25-00005",
+      "name": "Praktikum Biologi",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-kimia",
+      "code": "WT25-00006",
+      "name": "Praktikum Kimia",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "pengantar-fisika-matematika",
+      "code": "FI25-12001",
+      "name": "Pengantar Fisika Matematika",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "mekanika-1",
+      "code": "FI25-12002",
+      "name": "Mekanika 1",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "pengantar-listrik-magnet",
+      "code": "FI25-12003",
+      "name": "Pengantar Listrik Magnet",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-fisika-1",
+      "code": "FI25-12004",
+      "name": "Praktikum Fisika 1",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "pengenalan-komputasi",
+      "code": "WI25-00004",
+      "name": "Pengenalan Komputasi",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pola-hidup-sehat-dan-kebugaran-fisik",
+      "code": "WI25-00005",
+      "name": "Pola Hidup Sehat dan Kebugaran Fisik",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "bahasa-indonesia",
+      "code": "WU25-00001",
+      "name": "Bahasa Indonesia",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kewarganegaraan",
+      "code": "WU25-00003",
+      "name": "Kewarganegaraan",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "agama",
+      "code": "WU25-00004",
+      "name": "Agama",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "fisika-matematika-1",
+      "code": "FI25-21001",
+      "name": "Fisika Matematika 1",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "mekanika-2",
+      "code": "FI25-21002",
+      "name": "Mekanika 2",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "listrik-magnet",
+      "code": "FI25-21003",
+      "name": "Listrik Magnet",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "elektronika-dasar-1",
+      "code": "FI25-21004",
+      "name": "Elektronika Dasar 1",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-elektronika-1",
+      "code": "FI25-21005",
+      "name": "Praktikum Elektronika 1",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "statistika-dasar",
+      "code": "FI25-21006",
+      "name": "Statistika Dasar",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "etika-akademik-dan-literasi-digital",
+      "code": "FI25-21101",
+      "name": "Etika Akademik dan Literasi Digital",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengantar-fisika-teori",
+      "code": "FI25-21201",
+      "name": "Pengantar Fisika Teori",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengantar-fisika-bumi",
+      "code": "FI25-21301",
+      "name": "Pengantar Fisika Bumi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengantar-fisika-material",
+      "code": "FI25-21401",
+      "name": "Pengantar Fisika Material",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengantar-fisika-instrumentasi",
+      "code": "FI25-21501",
+      "name": "Pengantar Fisika Instrumentasi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "bahasa-inggris-interdisipliner",
+      "code": "WI25-00003",
+      "name": "Bahasa Inggris Interdisipliner",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "pancasila",
+      "code": "WU25-00002",
+      "name": "Pancasila",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "fisika-matematika-2",
+      "code": "FI25-22001",
+      "name": "Fisika Matematika 2",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "fisika-termal",
+      "code": "FI25-22002",
+      "name": "Fisika Termal",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "fisika-modern",
+      "code": "FI25-22003",
+      "name": "Fisika Modern",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "elektronika-dasar-2",
+      "code": "FI25-22004",
+      "name": "Elektronika Dasar 2",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-elektronika-2",
+      "code": "FI25-22005",
+      "name": "Praktikum Elektronika 2",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-fisika-2",
+      "code": "FI25-22006",
+      "name": "Praktikum Fisika 2",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "pemrograman-dan-metode-numerik",
+      "code": "FI25-22007",
+      "name": "Pemrograman dan Metode Numerik",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "komunikasi-ilmiah",
+      "code": "FI25-22101",
+      "name": "Komunikasi Ilmiah",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "teori-relativitas-khusus",
+      "code": "FI25-22201",
+      "name": "Teori Relativitas Khusus",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "teori-grup",
+      "code": "FI25-22202",
+      "name": "Teori Grup",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-nonlinear-dan-sistem-kompleks",
+      "code": "FI25-22203",
+      "name": "Fisika Nonlinear dan Sistem Kompleks",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-tanah-dan-batuan",
+      "code": "FI25-22301",
+      "name": "Fisika Tanah dan Batuan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "geologi-dasar",
+      "code": "FI25-22302",
+      "name": "Geologi Dasar",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "metode-elektrik",
+      "code": "FI25-22303",
+      "name": "Metode Elektrik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kuliah-lapangan-survey-non-elektromagnetik",
+      "code": "FI25-22304",
+      "name": "Kuliah Lapangan Survey Non Elektromagnetik",
+      "credits": 1,
+      "category": "elective"
+    },
+    {
+      "id": "energi-terbarukan-dan-biomassa",
+      "code": "FI25-22401",
+      "name": "Energi Terbarukan dan Biomassa",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "metode-sintesis-material",
+      "code": "FI25-22402",
+      "name": "Metode Sintesis Material",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-polimer-dan-komposit",
+      "code": "FI25-22403",
+      "name": "Fisika Polimer dan Komposit",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "sistem-sensor",
+      "code": "FI25-22501",
+      "name": "Sistem Sensor",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-metrologi-dan-kalibrasi",
+      "code": "FI25-22502",
+      "name": "Fisika Metrologi dan Kalibrasi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "visualisasi-teknik-untuk-sistem-instrumentasi",
+      "code": "FI25-22503",
+      "name": "Visualisasi Teknik untuk Sistem Instrumentasi",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "akuisisi-data-dan-pengolahan-sinyal",
+      "code": "FI25-22504",
+      "name": "Akuisisi Data dan Pengolahan Sinyal",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "gelombang-dan-optik",
+      "code": "FI25-31001",
+      "name": "Gelombang dan Optik",
+      "credits": 3,
+      "category": "required"
+    },
+    {
+      "id": "fisika-statistik",
+      "code": "FI25-31002",
+      "name": "Fisika Statistik",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "fisika-kuantum",
+      "code": "FI25-31003",
+      "name": "Fisika Kuantum",
+      "credits": 4,
+      "category": "required"
+    },
+    {
+      "id": "fisika-fluida",
+      "code": "FI25-31004",
+      "name": "Fisika Fluida",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "fisika-komputasi-1",
+      "code": "FI25-31005",
+      "name": "Fisika Komputasi 1",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-fisika-komputasi-1",
+      "code": "FI25-31006",
+      "name": "Praktikum Fisika Komputasi 1",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "metode-pengukuran-dan-pengolahan-data",
+      "code": "FI25-31101",
+      "name": "Metode Pengukuran dan Pengolahan Data",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "pengantar-teori-relativitas-umum",
+      "code": "FI25-31201",
+      "name": "Pengantar Teori Relativitas Umum",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "pengantar-kosmologi",
+      "code": "FI25-31202",
+      "name": "Pengantar Kosmologi",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "metode-magnetik",
+      "code": "FI25-31301",
+      "name": "Metode Magnetik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "metode-gravitasi",
+      "code": "FI25-31302",
+      "name": "Metode Gravitasi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "metode-elektromagnetik",
+      "code": "FI25-31303",
+      "name": "Metode Elektromagnetik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kuliah-lapangan-survey-elektromagnetik",
+      "code": "FI25-31304",
+      "name": "Kuliah Lapangan Survey Elektromagnetik",
+      "credits": 1,
+      "category": "elective"
+    },
+    {
+      "id": "praktikum-pengolahan-dan-penyajian-data-fisika-bumi",
+      "code": "FI25-31305",
+      "name": "Praktikum Pengolahan dan Penyajian Data Fisika Bumi",
+      "credits": 1,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-dan-teknologi-semikonduktor",
+      "code": "FI25-31401",
+      "name": "Fisika dan Teknologi Semikonduktor",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "karakterisasi-dan-analisis-material",
+      "code": "FI25-31402",
+      "name": "Karakterisasi dan Analisis Material",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "teknologi-material-nano",
+      "code": "FI25-31403",
+      "name": "Teknologi Material Nano",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-laser",
+      "code": "FI25-31404",
+      "name": "Fisika Laser",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "sistem-logika-dan-digital",
+      "code": "FI25-31501",
+      "name": "Sistem Logika dan Digital",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "mikrokontroller",
+      "code": "FI25-31502",
+      "name": "Mikrokontroller",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "sistem-kendali",
+      "code": "FI25-31503",
+      "name": "Sistem Kendali",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "user-interface-untuk-sistem-instrumentasi",
+      "code": "FI25-31504",
+      "name": "User Interface untuk Sistem Instrumentasi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-zat-padat",
+      "code": "FI25-32001",
+      "name": "Fisika Zat Padat",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "fisika-inti",
+      "code": "FI25-32002",
+      "name": "Fisika Inti",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "metode-penelitian-fisika",
+      "code": "FI25-32003",
+      "name": "Metode Penelitian Fisika",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "studium-generale",
+      "code": "FI25-32004",
+      "name": "Studium Generale",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "fisika-komputasi-2",
+      "code": "FI25-32005",
+      "name": "Fisika Komputasi 2",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "praktikum-fisika-komputasi-2",
+      "code": "FI25-32006",
+      "name": "Praktikum Fisika Komputasi 2",
+      "credits": 1,
+      "category": "required"
+    },
+    {
+      "id": "studi-mandiri-terpantau",
+      "code": "FI25-32101",
+      "name": "Studi Mandiri Terpantau",
+      "credits": 1,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-kuantum-lanjut",
+      "code": "FI25-32201",
+      "name": "Fisika Kuantum Lanjut",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "mekanika-kuantum-relativistik",
+      "code": "FI25-32202",
+      "name": "Mekanika Kuantum Relativistik",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-lingkungan-dan-bencana-alam",
+      "code": "FI25-32301",
+      "name": "Fisika Lingkungan dan Bencana Alam",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "seismologi-dan-kegempaan",
+      "code": "FI25-32302",
+      "name": "Seismologi dan Kegempaan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-gunung-api",
+      "code": "FI25-32303",
+      "name": "Fisika Gunung Api",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-panas-bumi",
+      "code": "FI25-32304",
+      "name": "Fisika Panas Bumi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-material-bahan-alam",
+      "code": "FI25-32401",
+      "name": "Fisika Material Bahan Alam",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "fisika-dan-teknologi-karbon",
+      "code": "FI25-32402",
+      "name": "Fisika dan Teknologi Karbon",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "komputasi-paralel",
+      "code": "FI25-32403",
+      "name": "Komputasi Paralel",
+      "credits": 3,
+      "category": "elective"
+    },
+    {
+      "id": "pemodelan-material-berbasis-ai",
+      "code": "FI25-32404",
+      "name": "Pemodelan Material Berbasis AI",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "metode-komputasi-fisika-material",
+      "code": "FI25-32405",
+      "name": "Metode Komputasi Fisika Material",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kecerdasan-buatan-dalam-instrumentasi",
+      "code": "FI25-32501",
+      "name": "Kecerdasan Buatan dalam Instrumentasi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "instrumentasi-berbasis-jaringan",
+      "code": "FI25-32502",
+      "name": "Instrumentasi Berbasis Jaringan",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "sistem-instrumentasi-berbasis-proyek",
+      "code": "FI25-32503",
+      "name": "Sistem Instrumentasi Berbasis Proyek",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "kkn",
+      "code": "WI25-00006",
+      "name": "KKN",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "karier-etika-dan-kewirausahaan",
+      "code": "WI25-00007",
+      "name": "Karier, Etika, dan Kewirausahaan",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "proposal-penelitian",
+      "code": "FI25-40001",
+      "name": "Proposal Penelitian",
+      "credits": 2,
+      "category": "required"
+    },
+    {
+      "id": "kerja-praktik",
+      "code": "FI25-40101",
+      "name": "Kerja Praktik",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "mlps-1",
+      "code": "KM0001",
+      "name": "MLPS 1",
+      "credits": 4,
+      "category": "elective"
+    },
+    {
+      "id": "mlps-2",
+      "code": "KM0002",
+      "name": "MLPS 2",
+      "credits": 4,
+      "category": "elective"
+    },
+    {
+      "id": "mlps-3",
+      "code": "KM0003",
+      "name": "MLPS 3",
+      "credits": 4,
+      "category": "elective"
+    },
+    {
+      "id": "seminar-mlps",
+      "code": "KM0004",
+      "name": "Seminar MLPS",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "leadership",
+      "code": "KM0006",
+      "name": "Leadership",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "asistensi",
+      "code": "KM0007",
+      "name": "Asistensi",
+      "credits": 2,
+      "category": "elective"
+    },
+    {
+      "id": "tugas-akhir",
+      "code": "FI25-40002",
+      "name": "Tugas Akhir",
+      "credits": 4,
+      "category": "required"
+    }
+  ],
+  "coursePools": [
+    {
+      "id": "kk-level-1",
+      "label": "MK Pilihan KK Level 1",
+      "courseIds": [
+        "pengantar-fisika-teori",
+        "pengantar-fisika-bumi",
+        "pengantar-fisika-material",
+        "pengantar-fisika-instrumentasi"
+      ]
+    },
+    {
+      "id": "kk-level-2",
+      "label": "MK Pilihan KK Level 2",
+      "courseIds": [
+        "teori-relativitas-khusus",
+        "teori-grup",
+        "fisika-nonlinear-dan-sistem-kompleks",
+        "fisika-tanah-dan-batuan",
+        "geologi-dasar",
+        "metode-elektrik",
+        "kuliah-lapangan-survey-non-elektromagnetik",
+        "energi-terbarukan-dan-biomassa",
+        "metode-sintesis-material",
+        "fisika-polimer-dan-komposit",
+        "sistem-sensor",
+        "fisika-metrologi-dan-kalibrasi",
+        "visualisasi-teknik-untuk-sistem-instrumentasi",
+        "akuisisi-data-dan-pengolahan-sinyal"
+      ]
+    },
+    {
+      "id": "kk-level-3",
+      "label": "MK Pilihan KK Level 3",
+      "courseIds": [
+        "pengantar-teori-relativitas-umum",
+        "pengantar-kosmologi",
+        "metode-magnetik",
+        "metode-gravitasi",
+        "metode-elektromagnetik",
+        "kuliah-lapangan-survey-elektromagnetik",
+        "praktikum-pengolahan-dan-penyajian-data-fisika-bumi",
+        "fisika-dan-teknologi-semikonduktor",
+        "karakterisasi-dan-analisis-material",
+        "teknologi-material-nano",
+        "fisika-laser",
+        "sistem-logika-dan-digital",
+        "mikrokontroller",
+        "sistem-kendali",
+        "user-interface-untuk-sistem-instrumentasi"
+      ]
+    },
+    {
+      "id": "kk-level-4",
+      "label": "MK Pilihan KK Level 4",
+      "courseIds": [
+        "fisika-kuantum-lanjut",
+        "mekanika-kuantum-relativistik",
+        "fisika-lingkungan-dan-bencana-alam",
+        "seismologi-dan-kegempaan",
+        "fisika-gunung-api",
+        "fisika-panas-bumi",
+        "fisika-material-bahan-alam",
+        "fisika-dan-teknologi-karbon",
+        "komputasi-paralel",
+        "pemodelan-material-berbasis-ai",
+        "metode-komputasi-fisika-material",
+        "kecerdasan-buatan-dalam-instrumentasi",
+        "instrumentasi-berbasis-jaringan",
+        "sistem-instrumentasi-berbasis-proyek"
+      ]
+    },
+    {
+      "id": "mlps",
+      "label": "Mata Kuliah Lintas Program Studi (MLPS)",
+      "courseIds": [
+        "mlps-1",
+        "mlps-2",
+        "mlps-3",
+        "seminar-mlps",
+        "leadership",
+        "asistensi"
+      ]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "regular",
+      "label": "Jalur Reguler",
+      "shortLabel": "REG",
+      "defaultStudentCount": 4,
+      "expectedCreditsBySemester": {
+        "1": 18,
+        "2": 20,
+        "3": 24,
+        "4": 24,
+        "5": 22,
+        "6": 20,
+        "7": 12,
+        "8": 4
+      },
+      "requiredCourses": [
+        {
+          "courseId": "transformasi-keberlanjutan-sumatera",
+          "semester": 1
+        },
+        {
+          "courseId": "dasar-teknologi-digital",
+          "semester": 1
+        },
+        {
+          "courseId": "matematika-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "biologi-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "fisika-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "kimia-dasar",
+          "semester": 1
+        },
+        {
+          "courseId": "praktikum-biologi",
+          "semester": 1
+        },
+        {
+          "courseId": "praktikum-kimia",
+          "semester": 1
+        },
+        {
+          "courseId": "pengantar-keilmuan-fisika",
+          "semester": 1
+        },
+        {
+          "courseId": "bahasa-indonesia",
+          "semester": 2
+        },
+        {
+          "courseId": "kewarganegaraan",
+          "semester": 2
+        },
+        {
+          "courseId": "agama",
+          "semester": 2
+        },
+        {
+          "courseId": "pengenalan-komputasi",
+          "semester": 2
+        },
+        {
+          "courseId": "pola-hidup-sehat-dan-kebugaran-fisik",
+          "semester": 2
+        },
+        {
+          "courseId": "pengantar-fisika-matematika",
+          "semester": 2
+        },
+        {
+          "courseId": "mekanika-1",
+          "semester": 2
+        },
+        {
+          "courseId": "pengantar-listrik-magnet",
+          "semester": 2
+        },
+        {
+          "courseId": "praktikum-fisika-1",
+          "semester": 2
+        },
+        {
+          "courseId": "pancasila",
+          "semester": 3
+        },
+        {
+          "courseId": "bahasa-inggris-interdisipliner",
+          "semester": 3
+        },
+        {
+          "courseId": "fisika-matematika-1",
+          "semester": 3
+        },
+        {
+          "courseId": "mekanika-2",
+          "semester": 3
+        },
+        {
+          "courseId": "listrik-magnet",
+          "semester": 3
+        },
+        {
+          "courseId": "elektronika-dasar-1",
+          "semester": 3
+        },
+        {
+          "courseId": "praktikum-elektronika-1",
+          "semester": 3
+        },
+        {
+          "courseId": "statistika-dasar",
+          "semester": 3
+        },
+        {
+          "courseId": "etika-akademik-dan-literasi-digital",
+          "semester": 3
+        },
+        {
+          "courseId": "fisika-matematika-2",
+          "semester": 4
+        },
+        {
+          "courseId": "fisika-termal",
+          "semester": 4
+        },
+        {
+          "courseId": "fisika-modern",
+          "semester": 4
+        },
+        {
+          "courseId": "elektronika-dasar-2",
+          "semester": 4
+        },
+        {
+          "courseId": "praktikum-elektronika-2",
+          "semester": 4
+        },
+        {
+          "courseId": "praktikum-fisika-2",
+          "semester": 4
+        },
+        {
+          "courseId": "pemrograman-dan-metode-numerik",
+          "semester": 4
+        },
+        {
+          "courseId": "komunikasi-ilmiah",
+          "semester": 4
+        },
+        {
+          "courseId": "gelombang-dan-optik",
+          "semester": 5
+        },
+        {
+          "courseId": "fisika-statistik",
+          "semester": 5
+        },
+        {
+          "courseId": "fisika-kuantum",
+          "semester": 5
+        },
+        {
+          "courseId": "fisika-fluida",
+          "semester": 5
+        },
+        {
+          "courseId": "fisika-komputasi-1",
+          "semester": 5
+        },
+        {
+          "courseId": "praktikum-fisika-komputasi-1",
+          "semester": 5
+        },
+        {
+          "courseId": "metode-pengukuran-dan-pengolahan-data",
+          "semester": 5
+        },
+        {
+          "courseId": "kkn",
+          "semester": 6
+        },
+        {
+          "courseId": "karier-etika-dan-kewirausahaan",
+          "semester": 6
+        },
+        {
+          "courseId": "fisika-zat-padat",
+          "semester": 6
+        },
+        {
+          "courseId": "fisika-inti",
+          "semester": 6
+        },
+        {
+          "courseId": "metode-penelitian-fisika",
+          "semester": 6
+        },
+        {
+          "courseId": "studium-generale",
+          "semester": 6
+        },
+        {
+          "courseId": "fisika-komputasi-2",
+          "semester": 6
+        },
+        {
+          "courseId": "praktikum-fisika-komputasi-2",
+          "semester": 6
+        },
+        {
+          "courseId": "studi-mandiri-terpantau",
+          "semester": 6
+        },
+        {
+          "courseId": "proposal-penelitian",
+          "semester": 7
+        },
+        {
+          "courseId": "kerja-praktik",
+          "semester": 7
+        },
+        {
+          "courseId": "tugas-akhir",
+          "semester": 8
+        }
+      ],
+      "electiveRules": [
+        {
+          "semester": 3,
+          "poolId": "kk-level-1",
+          "targetCredits": 2,
+          "mode": "exact"
+        },
+        {
+          "semester": 4,
+          "poolId": "kk-level-2",
+          "targetCredits": 6,
+          "mode": "exact"
+        },
+        {
+          "semester": 5,
+          "poolId": "kk-level-3",
+          "targetCredits": 6,
+          "mode": "exact"
+        },
+        {
+          "semester": 6,
+          "poolId": "kk-level-4",
+          "targetCredits": 4,
+          "mode": "exact"
+        },
+        {
+          "semester": 7,
+          "poolId": "mlps",
+          "targetCredits": 8,
+          "mode": "exact"
+        }
+      ]
+    }
+  ],
+  "cpmks": [
+    {
+      "id": "fisika-cpl-1-cpmk-1-1-agama-001",
+      "code": "CPMK 1.1",
+      "description": "Mahasiswa mampu menerangkan esensi relasi manusia dengan Tuhan Yang Maha Esa, sesama manusia, dan lingkungan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "agama",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-1-cpmk-1-2-pancasila-002",
+      "code": "CPMK 1.2",
+      "description": "Mahasiswa mampu memahami nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan,dan keberagaman dalam kehidupan berbangsa dan bernegara",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "pancasila",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-1-cpmk-1-3-pancasila-003",
+      "code": "CPMK 1.3",
+      "description": "Mahasiswa mampu menerapkan nilai-nilai Pancasila dengan menunjukkan sikap toleransi, keadilan,dan keberagaman dalam kehidupan berbangsa dan bernegara",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "pancasila",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-1-cpmk-1-4-agama-004",
+      "code": "CPMK 1.4",
+      "description": "Mahasiswa terampil menganalisis permasalahan spiritualitas dan religiusitas melalui pengembangan budaya dan kesejahteraan masyarakat.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "agama",
+      "outcomeId": "CPL-1",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-1-kewarganegaraan-005",
+      "code": "CPMK 2.1",
+      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesia serta kedudukan dan tata bahasa indonesia (C2) (P2) (A2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "kewarganegaraan",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-1-bahasa-indonesia-006",
+      "code": "CPMK 2.1",
+      "description": "Mahasiswa mampu memahami konsep dan prinsip dasar Negara Kesatuan Republik Indonesia serta kedudukan dan tata bahasa indonesia (C2) (P2) (A2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "bahasa-indonesia",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-2-kewarganegaraan-007",
+      "code": "CPMK 2.2",
+      "description": "Mahasiswa mampu menjalankan peran sebagai warga negara melalui partisipasi aktif dalam masyarakat (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "kewarganegaraan",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-3-bahasa-indonesia-008",
+      "code": "CPMK 2.3",
+      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "bahasa-indonesia",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-3-pola-hidup-sehat-dan-kebugaran-fisik-009",
+      "code": "CPMK 2.3",
+      "description": "Mahasiswa mampu menerapkan kaidah penulisan ilmiah dengan menggunakan bahasa Indonesia yang baik dan benar, serta membiasakan pola hidup sehat dan meningkatkan kebugaran jasmani melalui olahraga yang mendukung aktivitas harian, kesehatan mental, dan penguatan nilai-nilai kebangsaan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "pola-hidup-sehat-dan-kebugaran-fisik",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-4-bahasa-inggris-interdisipliner-010",
+      "code": "CPMK 2.4",
+      "description": "Mahasiswa mampu menganalisis makna kata. (C4, P1)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "bahasa-inggris-interdisipliner",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-5-bahasa-inggris-interdisipliner-011",
+      "code": "CPMK 2.5",
+      "description": "Mahasiswa mampu menelaah unsur-unsur dan jenis-jenis paragraf (C4, P2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "bahasa-inggris-interdisipliner",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-6-kkn-012",
+      "code": "CPMK 2.6",
+      "description": "Mahasiswa mampu mengidentifikasi, menjelaskan, dan menganalisis potensi & permasalahan yang ditemui di lapangan/Masyarakat (C4) (A3) (P2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.100",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-7-kkn-013",
+      "code": "CPMK 2.7",
+      "description": "Mahasiswa mampu mengimplementasikan program kerja yang dirancang secara kolaboratif baik dengan Masyarakat ataupun tim KKN yang menerapkan konsep ilmiah dan berbasis ilmu pengetahuan teknologi (C4) (P4) (A3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-8-bahasa-inggris-interdisipliner-014",
+      "code": "CPMK 2.8",
+      "description": "Mahasiswa mampu menyusun paraphrase dan summary (C6, P2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "bahasa-inggris-interdisipliner",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-9-bahasa-inggris-interdisipliner-015",
+      "code": "CPMK 2.9",
+      "description": "Mahasiswa mampu menulis esai dengan outline dan argumentasi (C6, P2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "bahasa-inggris-interdisipliner",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-10-kkn-016",
+      "code": "CPMK 2.10",
+      "description": "Mahasiswa mampu merancang program pemberdayaan berbasis kebutuhan Masyarakat di Lokasi KKN (C6) (P4) (A3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-11-kkn-017",
+      "code": "CPMK 2.11",
+      "description": "Mahasiswa mampu mengevaluasi dan menyusun laporan hasil program kerja secara sistematis (C6) (P5) (A4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "kkn",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-2-cpmk-2-12-pola-hidup-sehat-dan-kebugaran-fisik-018",
+      "code": "CPMK 2.12",
+      "description": "Mahasiswa mampu mengintegrasikan teknologi dan keterampilan olahraga untuk beradaptasi dengan perkembangan zaman secara kreatif dan inovatif.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "pola-hidup-sehat-dan-kebugaran-fisik",
+      "outcomeId": "CPL-2",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-1-transformasi-keberlanjutan-sumatera-019",
+      "code": "CPMK 3.1",
+      "description": "Mahasiswa mampu memahami prinsip transformasi dan pembangunan berkelanjutan, konsep dasar infrastruktur komputer, internet, keamanan data dan informasi, sistem operasi, serta basis data; menganalisis peran teknologi tersebut dalam perubahan sosial, ekonomi, dan lingkungan di wilayah Sumatera; serta memahami struktur dasar pemrograman menggunakan bahasa C++.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "transformasi-keberlanjutan-sumatera",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-1-pengenalan-komputasi-020",
+      "code": "CPMK 3.1",
+      "description": "Mahasiswa mampu memahami prinsip transformasi dan pembangunan berkelanjutan, konsep dasar infrastruktur komputer, internet, keamanan data dan informasi, sistem operasi, serta basis data; menganalisis peran teknologi tersebut dalam perubahan sosial, ekonomi, dan lingkungan di wilayah Sumatera; serta memahami struktur dasar pemrograman menggunakan bahasa C++.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "pengenalan-komputasi",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-1-dasar-teknologi-digital-021",
+      "code": "CPMK 3.1",
+      "description": "Mahasiswa mampu memahami prinsip transformasi dan pembangunan berkelanjutan, konsep dasar infrastruktur komputer, internet, keamanan data dan informasi, sistem operasi, serta basis data; menganalisis peran teknologi tersebut dalam perubahan sosial, ekonomi, dan lingkungan di wilayah Sumatera; serta memahami struktur dasar pemrograman menggunakan bahasa C++.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "dasar-teknologi-digital",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-2-transformasi-keberlanjutan-sumatera-022",
+      "code": "CPMK 3.2",
+      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "transformasi-keberlanjutan-sumatera",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-2-karier-etika-dan-kewirausahaan-023",
+      "code": "CPMK 3.2",
+      "description": "Mahasiswa mampu mengidentifikasi tantangan dan peluang keberlanjutan di Sumatera dalam mendukung pembangunan berkelanjutan dari perspektif ilmu pengetahuan, teknologi, dan bisnis",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.101",
+      "courseId": "karier-etika-dan-kewirausahaan",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-3-dasar-teknologi-digital-024",
+      "code": "CPMK 3.3",
+      "description": "Mahasiswa mampu menerapkan etika dan sikap dalam penggunaan teknologi informasi dan internet yang berkelanjutan terhadap lingkungan; menggunakan perangkat lunak perkantoran untuk mengolah dokumen teks, data, dan presentasi; memanfaatkan komputasi di berbagai bidang keilmuan dengan pendekatan prosedural; menggunakan representasi visual, percabangan, perulangan, dan array dalam pembuatan program sederhana untuk menyelesaikan berbagai permasalahan; serta menerapkan prinsip-prinsip etika profesional di lingkungan kerja dan menyelesaikan dilema etik melalui analisis kasus.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.102",
+      "courseId": "dasar-teknologi-digital",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-3-karier-etika-dan-kewirausahaan-025",
+      "code": "CPMK 3.3",
+      "description": "Mahasiswa mampu menerapkan etika dan sikap dalam penggunaan teknologi informasi dan internet yang berkelanjutan terhadap lingkungan; menggunakan perangkat lunak perkantoran untuk mengolah dokumen teks, data, dan presentasi; memanfaatkan komputasi di berbagai bidang keilmuan dengan pendekatan prosedural; menggunakan representasi visual, percabangan, perulangan, dan array dalam pembuatan program sederhana untuk menyelesaikan berbagai permasalahan; serta menerapkan prinsip-prinsip etika profesional di lingkungan kerja dan menyelesaikan dilema etik melalui analisis kasus.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.102",
+      "courseId": "karier-etika-dan-kewirausahaan",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-4-dasar-teknologi-digital-026",
+      "code": "CPMK 3.4",
+      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.102",
+      "courseId": "dasar-teknologi-digital",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-4-karier-etika-dan-kewirausahaan-027",
+      "code": "CPMK 3.4",
+      "description": "Mahasiswa mampu menganalisis penerapan teknologi informasi dan kecerdasan buatan dalam kehidupan sehari-hari serta tren masa depan dunia kerja, dan mengembangkan perencanaan serta manajemen karier secara adaptif",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.102",
+      "courseId": "karier-etika-dan-kewirausahaan",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-3-cpmk-3-5-transformasi-keberlanjutan-sumatera-028",
+      "code": "CPMK 3.5",
+      "description": "Mengusulkan ide inovatif berbasis teknologi dengan mempertimbangkan prinsip keseimbangan antara pertumbuhan ekonomi, pelestarian lingkungan, dan kesejahteraan sosial.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.102",
+      "courseId": "transformasi-keberlanjutan-sumatera",
+      "outcomeId": "CPL-3",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-1-kimia-dasar-029",
+      "code": "CPMK 4.1",
+      "description": "Mahasiswa mampu menghubungkan pemahaman mengenai konsep dasar dan stoikiometri kimia, kimia larutan, struktur atom dan tabel periodik unsur, struktur molekul dan ikatan kimia, serta termodinamika, teori gas, dan kinetika molekul dengan fenomena alam yang terjadi di sekitar",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.102",
+      "courseId": "kimia-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-2-fisika-dasar-030",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.102",
+      "courseId": "fisika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-2-biologi-dasar-031",
+      "code": "CPMK 4.2",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar mekanika, gelombang, termodinamika, listrik magnet, dan optik serta mengaplikasikannya dalam menyelesaikan permasalahan fisika sederhana; serta memahami konsep biologi dari tingkat molekul, sel, hingga organisme",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.102",
+      "courseId": "biologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-3-biologi-dasar-032",
+      "code": "CPMK 4.3",
+      "description": "Mahasiswa mampu memahami peran penting biodiversitas dan interaksi makhluk hidup dengan lingkungannya; penggunaan mikroskop dan aplikasinya dalam pengamatan jaringan dasar; proses biologis pada sel, reproduksi sel, dan pewarisan sifat",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.102",
+      "courseId": "biologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-6-praktikum-kimia-033",
+      "code": "CPMK 4.6",
+      "description": "Mahasiswa mampu mengoperasikan alat-alat laboratorium kimia dasar dengan prosedur yang benar serta menerapkan teknik-teknik dasar laboratorium, termasuk teknik pengukuran, pencampuran, dan pemisahan, sesuai dengan kaidah keselamatan kerja di laboratorium.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-7-praktikum-kimia-034",
+      "code": "CPMK 4.7",
+      "description": "Mahasiswa mampu melakukan percobaan kimia dasar untuk memahami konsep stoikiometri, termodinamika kimia, dan kinetika gas, serta menganalisis hasil percobaan secara kuantitatif dan kualitatif menggunakan prinsip-prinsip ilmiah.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-8-matematika-dasar-035",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "matematika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-8-praktikum-kimia-036",
+      "code": "CPMK 4.8",
+      "description": "Mahasiswa mampu menghitung nilai limit, turunan, dan integral pada fungsi sederhana untuk mengukur laju perubahan dan akumulasi nilai dalam konteks kehidupan sehari-hari. (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-9-matematika-dasar-037",
+      "code": "CPMK 4.9",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "matematika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-9-praktikum-kimia-038",
+      "code": "CPMK 4.9",
+      "description": "Mahasiswa mampu menginterpretasikan penggunaan operasi aritmatika dan aljabar, konsep fungsi, koordinat geometri, serta geometri dasar dalam kehidupan sehari-hari; serta menganalisis data eksperimen untuk menjelaskan fenomena kimia berdasarkan sifat fisik zat, perubahan energi, dan hukum-hukum dasar kimia, serta menyajikan hasil pengamatan dan analisis secara sistematis dalam bentuk laporan ilmiah",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-10-matematika-dasar-039",
+      "code": "CPMK 4.10",
+      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral untuk menyusun langkah penyelesaian masalah matematis yang berkaitan dengan bidang sains dan teknik (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "matematika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-10-praktikum-kimia-040",
+      "code": "CPMK 4.10",
+      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral untuk menyusun langkah penyelesaian masalah matematis yang berkaitan dengan bidang sains dan teknik (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "praktikum-kimia",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-14-biologi-dasar-041",
+      "code": "CPMK 4.14",
+      "description": "Mahasiswa mampu mengaplikasikan pengetahuan biologi dalam proses desain sistem dengan konsep biomimikri (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "biologi-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-4-cpmk-4-16-fisika-dasar-042",
+      "code": "CPMK 4.16",
+      "description": "Mampu berpikir kritis, logis, sistematis, dan terstruktur dalam menyelesaikan masalah-masalah sistem fisis (A4, P2).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.103",
+      "courseId": "fisika-dasar",
+      "outcomeId": "CPL-4",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-1-mekanika-1-043",
+      "code": "CPMK 5.1",
+      "description": "Mahasiswa mampu menerapkan konsep gerak linear, gerak dua/tiga dimensi, dan vektor untuk menyelesaikan persoalan kinematika dasar",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "mekanika-1",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-2-mekanika-1-044",
+      "code": "CPMK 5.2",
+      "description": "Mahasiswa mampu menerapkan hukum Newton dan gaya gesek untuk memecahkan permasalahan dinamika partikel",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "mekanika-1",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-3-mekanika-1-045",
+      "code": "CPMK 5.3",
+      "description": "Mahasiswa mampu menganalisis penerapan hukum kekekalan energi dan momentum pada sistem partikel dan benda tegar",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "mekanika-1",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-4-mekanika-1-046",
+      "code": "CPMK 5.4",
+      "description": "Mahasiswa mampu menganalisis fenomena kesetimbangan, elastisitas, osilasi, dan gelombang dalam konteks sistem mekanika",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "mekanika-1",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-5-pengantar-listrik-magnet-047",
+      "code": "CPMK 5.5",
+      "description": "Mahasiswa mampu menganalisis persoalan yang berkaitan dengan konsep kelistrikan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "pengantar-listrik-magnet",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-6-pengantar-listrik-magnet-048",
+      "code": "CPMK 5.6",
+      "description": "Mahasiswa mampu menganalisis persoalan yang berkaitan dengan konsep kemagnetan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "pengantar-listrik-magnet",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-7-pengantar-listrik-magnet-049",
+      "code": "CPMK 5.7",
+      "description": "Mahasiswa mampu menganalisis konsep dasar induksi elektromagnetik",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "pengantar-listrik-magnet",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-8-mekanika-2-050",
+      "code": "CPMK 5.8",
+      "description": "Mahasiswa mampu menerapkan konsep dasar kinematika, dinamika, serta hukum-hukum gerak untuk menyelesaikan persoalan-persoalan fisika klasik, termasuk gerak dalam kerangka inersia dan non-inersia.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "mekanika-2",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-9-mekanika-2-051",
+      "code": "CPMK 5.9",
+      "description": "Mahasiswa mampu menerapkan konsep kerja, energi, serta gaya sentral dan energi potensial efektif dalam analisis gerak benda, termasuk penyelesaian persamaan gerak pada berbagai jenis potensial.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "mekanika-2",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-10-mekanika-2-052",
+      "code": "CPMK 5.10",
+      "description": "Mahasiswa mampu menganalisis dinamika sistem partikel, termasuk konsep pusat massa, momentum linear dan sudut, serta torka dalam sistem multi-partikel, dan menyelesaikan persoalan tumbukan serta hamburan.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "mekanika-2",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-11-mekanika-2-053",
+      "code": "CPMK 5.11",
+      "description": "Mahasiswa mampu menggunakan formalisme Lagrange dan Hamilton untuk menyelesaikan persoalan-persoalan fisika klasik, seperti osilasi terkopel dan gerak relatif, dengan pendekatan matematis yang tepat.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.104",
+      "courseId": "mekanika-2",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-12-listrik-magnet-054",
+      "code": "CPMK 5.12",
+      "description": "Mahasiswa mampu menelaah medan listrik dan potensial listrik dari berbagai distribusi muatan.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.105",
+      "courseId": "listrik-magnet",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-13-listrik-magnet-055",
+      "code": "CPMK 5.13",
+      "description": "Mahasiswa mampu menelaah medan magnet dan potensial magnet dari berbagai distribusi arus.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.105",
+      "courseId": "listrik-magnet",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-14-listrik-magnet-056",
+      "code": "CPMK 5.14",
+      "description": "Mahasiswa mampu menganalisis fenomena kelistrikan dan kemagnetan pada bahan.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.105",
+      "courseId": "listrik-magnet",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-15-listrik-magnet-057",
+      "code": "CPMK 5.15",
+      "description": "Mahasiswa mampu mengevaluasi persamaan Maxwell dan konsekuensinya pada gelombang elektromagnetik.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.105",
+      "courseId": "listrik-magnet",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-16-fisika-termal-058",
+      "code": "CPMK 5.16",
+      "description": "Mahasiswa mampu menjelaskan teori kinetik gas dari sudut pandang makroskopik dan mikroskopik, memahami kesetimbangan termal dan ruang lingkup termodinamika, serta mengaplikasikan konsep dan metode pengukuran temperatur dalam sistem termodinamika sederhana.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.105",
+      "courseId": "fisika-termal",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-17-fisika-termal-059",
+      "code": "CPMK 5.17",
+      "description": "Mahasiswa mampu menganalisis perubahan keadaan sistem termodinamika menggunakan diagram PV, PT, dan PVT, memahami proses kuasi-statik dalam kerja sistem hidrostatik, serta menjelaskan hubungan antara kalor, kerja, dan energi dalam hukum pertama termodinamika.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.105",
+      "courseId": "fisika-termal",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-18-fisika-termal-060",
+      "code": "CPMK 5.18",
+      "description": "Mahasiswa mampu menerapkan hukum kedua termodinamika dalam mesin kalor seperti mesin Stirling dan mesin uap, memahami konsep entropi dan keterbalikan proses, serta menganalisis perubahan fase zat murni menggunakan persamaan Clapeyron dan Kirchhoff.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.105",
+      "courseId": "fisika-termal",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-19-fisika-modern-061",
+      "code": "CPMK 5.19",
+      "description": "Mahasiswa mampu menerapkan suatu fenomena fisis sebagai fenomena klasik atau fenomena modern.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.105",
+      "courseId": "fisika-modern",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-20-fisika-modern-062",
+      "code": "CPMK 5.20",
+      "description": "Mahasiswa mampu menganalisis konsep-konsep dasar teori kuantum dalam persamaan Schrodinger untuk kasus-kasus sederhana.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.105",
+      "courseId": "fisika-modern",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-21-gelombang-dan-optik-063",
+      "code": "CPMK 5.21",
+      "description": "Mahasiswa mampu menganalisis propagasi gelombang pada media elastis satu dan dua dimensi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "gelombang-dan-optik",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-22-gelombang-dan-optik-064",
+      "code": "CPMK 5.22",
+      "description": "Mahasiswa mampu menganalisis fenomena gelombang akustik dalam fluida dan padatan, serta impedansi akustik dan efek Doppler dalam konteks gelombang suara.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "gelombang-dan-optik",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-23-gelombang-dan-optik-065",
+      "code": "CPMK 5.23",
+      "description": "Mahasiswa mampu menerapkan prinsip gelombang elektromagnetik, termasuk persamaan Maxwell dalam konteks refleksi, refraksi, dan propagasi gelombang dalam berbagai media.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "gelombang-dan-optik",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-24-gelombang-dan-optik-066",
+      "code": "CPMK 5.24",
+      "description": "Mahasiswa mampu menerapkan prinsip interferensi dan difraksi berbagai fenomena optik dalam teknologi optik modern.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "gelombang-dan-optik",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-25-fisika-statistik-067",
+      "code": "CPMK 5.25",
+      "description": "Mahasiswa mampu mengaplikasikan konsep teoritis Fisika Statistik secara umum",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "fisika-statistik",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-26-fisika-statistik-068",
+      "code": "CPMK 5.26",
+      "description": "Mahasiswa mampu menganalisis konsep teoritis distribusi partikel berbagai tinjauan statistik: Statistik Klasik (Maxwell-Boltzmann) serta distribusi Statistik Kuantum (Bose-Einstein dan Fermi-Dirac)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "fisika-statistik",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-27-fisika-kuantum-069",
+      "code": "CPMK 5.27",
+      "description": "Mahasiswa mampu membandingkan prinsip dasar dari fisika kuantum dan fisika klasik.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "fisika-kuantum",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-28-fisika-kuantum-070",
+      "code": "CPMK 5.28",
+      "description": "Mahasiswa mampu menggunakan konsep fungsi gelombang dan operator untuk menyelesaikan persamaan Schrodinger dalam sistem satu dan tiga dimensi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "fisika-kuantum",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-29-fisika-kuantum-071",
+      "code": "CPMK 5.29",
+      "description": "Mahasiswa mampu menganalisis konsep momentum sudut dan spin dalam sistem kuantum.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "fisika-kuantum",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-30-fisika-fluida-072",
+      "code": "CPMK 5.30",
+      "description": "Mahasiswa mampu menerapkan konsep streakline, streamline dan pathline dalam penyelesaian kasus fluida ideal",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "fisika-fluida",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-31-fisika-fluida-073",
+      "code": "CPMK 5.31",
+      "description": "Mahasiswa mampu menerapkan persamaan Navier-Stokes dalam berbagai kasus dinamika fluida",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.106",
+      "courseId": "fisika-fluida",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-32-fisika-fluida-074",
+      "code": "CPMK 5.32",
+      "description": "Mahasiswa mampu menganalisis aliran fluida viskos, inkompresibel dan turbulensi",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "fisika-fluida",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-33-fisika-zat-padat-075",
+      "code": "CPMK 5.33",
+      "description": "Mahasiswa memiliki pengetahuan tentang struktur periodik (kristal) dan memahami besaran fisis yang dimilikinya",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "fisika-zat-padat",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-34-fisika-zat-padat-076",
+      "code": "CPMK 5.34",
+      "description": "mahasiswa mampu memahami getaran kristal dan pengaruhnya terhadap sifat material.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "fisika-zat-padat",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-35-fisika-zat-padat-077",
+      "code": "CPMK 5.35",
+      "description": "mahasiswa mampu menjelaskan konsep dasar pita energi dan pengaruhnya terhdap sifat-sifat material",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "fisika-zat-padat",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-36-fisika-inti-078",
+      "code": "CPMK 5.36",
+      "description": "Mahasiswa mampu menerapkan konsep dasar fisika inti seperti model inti atom",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "fisika-inti",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-37-fisika-inti-079",
+      "code": "CPMK 5.37",
+      "description": "Mahasiswa mampu menganalisis massa inti, energi ikat, dan ukuran inti untuk memahami kestabilan inti atom.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "fisika-inti",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-5-cpmk-5-38-fisika-inti-080",
+      "code": "CPMK 5.38",
+      "description": "Mahasiswa mampu menganalisis reaksi inti, gaya-gaya inti, deteksi radiasi, serta fenomena fisika neutron dan fisi untuk memahami proses transformasi energi dalam sistem inti.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "fisika-inti",
+      "outcomeId": "CPL-5",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-1-pengantar-fisika-matematika-081",
+      "code": "CPMK 6.1",
+      "description": "Mahasiswa mampu menerapkan konsep limit, turunan, dan integral dasar untuk menyelesaikan permasalahan matematis dasar dalam konteks fisika klasik (misalnya kecepatan, percepatan, dan perpindahan). (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "pengantar-fisika-matematika",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-2-pengantar-fisika-matematika-082",
+      "code": "CPMK 6.2",
+      "description": "Mahasiswa mampu menganalisis sifat-sifat fungsi melalui grafik dan turunan untuk menentukan titik kritis, interval meningkat/menurun, serta interpretasi fisis dari perubahan suatu besaran. (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "pengantar-fisika-matematika",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-3-pengantar-fisika-matematika-083",
+      "code": "CPMK 6.3",
+      "description": "Mahasiswa mampu menganalisis berbagai bentuk tak tentu dan integral tak wajar dalam konteks penerapan pada gejala fisis yang bersifat limitasi atau tak hingga. (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "pengantar-fisika-matematika",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-4-fisika-matematika-1-084",
+      "code": "CPMK 6.4",
+      "description": "Mahasiswa mampu memahami dan menerapkan konsep-konsep dasar deret matematika dan bilangan kompleks dalam menyelesaikan masalah fisika.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.107",
+      "courseId": "fisika-matematika-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-5-fisika-matematika-1-085",
+      "code": "CPMK 6.5",
+      "description": "Mahasiswa mampu menggunakan prinsip aljabar linear dan diferensial parsial untuk memodelkan dan menyelesaikan permasalahan dalam fisika.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "fisika-matematika-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-6-fisika-matematika-1-086",
+      "code": "CPMK 6.6",
+      "description": "Mahasiswa mampu memahami dan mengaplikasikan prinsip integral lipat dan analisis vector dalam berbagai aplikasi fisika, termasuk perhitungan luas, volume, dan momen inersia.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "fisika-matematika-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-7-fisika-matematika-1-087",
+      "code": "CPMK 6.7",
+      "description": "Mahasiswa mampu menganalisis dan menyelesaikan permasalahan fisika menggunakan deret Fourier dan persamaan diferensial biasa.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "fisika-matematika-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-8-statistika-dasar-088",
+      "code": "CPMK 6.8",
+      "description": "Mahasiswa mampu mengklasifikasikan, menyajikan, dan menganalisis data menggunakan ukuran pemusatan dan penyebaran dalam bentuk tabel maupun grafik. (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "statistika-dasar",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-9-statistika-dasar-089",
+      "code": "CPMK 6.9",
+      "description": "Mahasiswa mampu menerapkan konsep peluang, permutasi, kombinasi, dan kaidah pencacahan untuk menghitung probabilitas kejadian sederhana maupun kejadian bersyarat. (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "statistika-dasar",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-10-statistika-dasar-090",
+      "code": "CPMK 6.10",
+      "description": "Mahasiswa mampu menganalisis dan menghitung peluang berdasarkan distribusi peluang diskret dan kontinu, termasuk distribusi binomial, normal, dan regresi linier sederhana. (C4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "statistika-dasar",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-11-fisika-matematika-2-091",
+      "code": "CPMK 6.11",
+      "description": "Mahasiswa mampu menerapkan kalkulus variasi dan transformasi koordinat untuk optimasi dan analisis sistem fisis.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "fisika-matematika-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-12-fisika-matematika-2-092",
+      "code": "CPMK 6.12",
+      "description": "Mahasiswa mampu menggunakan fungsi khusus (Gamma, Beta, Bessel, Legendre) dan solusi deret untuk menyelesaikan persamaan diferensial biasa.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "fisika-matematika-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-13-fisika-matematika-2-093",
+      "code": "CPMK 6.13",
+      "description": "Mahasiswa mampu memecahkan persamaan diferensial parsial (laplace, Difusi, Gelombang) dengan metode separasi variabel.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "fisika-matematika-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-14-fisika-matematika-2-094",
+      "code": "CPMK 6.14",
+      "description": "Mahasiswa mampu menerapkan fungsi kompleks (analitik, residu, konformal) dalam penyelesaian masalah fisika",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.108",
+      "courseId": "fisika-matematika-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-15-pemrograman-dan-metode-numerik-095",
+      "code": "CPMK 6.15",
+      "description": "Mahasiswa dapat mengimplementasikan dasar-dasar metode numerik dalam menyelesaikan pemodelan fisis nonlinear, linier, dan pencocokan kurva",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.109",
+      "courseId": "pemrograman-dan-metode-numerik",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-16-pemrograman-dan-metode-numerik-096",
+      "code": "CPMK 6.16",
+      "description": "Mahasiswa mampu memecahkan dengan metode numerik pada kasus modeling sistem fisis sederhana",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.109",
+      "courseId": "pemrograman-dan-metode-numerik",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-17-fisika-komputasi-1-097",
+      "code": "CPMK 6.17",
+      "description": "Mampu menganalisis dan menerapkan metode numerik untuk menyelesaikan persamaan diferensial biasa (ODE) dan persamaan beda hingga dalam berbagai permasalahan fisika.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.109",
+      "courseId": "fisika-komputasi-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-18-fisika-komputasi-1-098",
+      "code": "CPMK 6.18",
+      "description": "Mampu menjelaskan konsep dasar dan penerapan metode integrasi numerik serta metode elemen hingga dalam menyelesaikan persoalan integral dan persamaan diferensial parsial.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.109",
+      "courseId": "fisika-komputasi-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-19-praktikum-fisika-komputasi-1-099",
+      "code": "CPMK 6.19",
+      "description": "Mampu memahami konsep metode numerik dan mengimplementasikannya dalam bentuk program komputer untuk menyelesaikan persoalan fisis menggunakan integrasi numerik, persamaan beda hingga, dan metode elemen hingga, serta menampilkan hasilnya secara visual.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.109",
+      "courseId": "praktikum-fisika-komputasi-1",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-20-fisika-komputasi-2-100",
+      "code": "CPMK 6.20",
+      "description": "Mampu menjelaskan konsep dan prinsip metode numerik lanjutan seperti Fast Fourier Transform, pencarian akar nonlinier, optimisasi, serta metode iteratif dalam sistem aljabar linear dan penyelesaian PDE.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.109",
+      "courseId": "fisika-komputasi-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-21-fisika-komputasi-2-101",
+      "code": "CPMK 6.21",
+      "description": "Mampu menganalisis dan menerapkan teknik visualisasi dan pembelajaran mesin untuk memahami dan memodelkan fenomena fisis.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.109",
+      "courseId": "fisika-komputasi-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-6-cpmk-6-22-praktikum-fisika-komputasi-2-102",
+      "code": "CPMK 6.22",
+      "description": "Mampu mengembangkan program komputasi untuk menyelesaikan masalah fisis menggunakan FFT, metode iteratif, optimisasi, dan PDE, serta menyajikan hasil dalam bentuk visual atau animasi interaktif dengan mempertimbangkan prinsip etika akademik dan keterampilan kolaboratif.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.109",
+      "courseId": "praktikum-fisika-komputasi-2",
+      "outcomeId": "CPL-6",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-1-elektronika-dasar-1-103",
+      "code": "CPMK 7.1",
+      "description": "Mahasiswa mampu menerapkan hukum dasar dan metode analisis rangkaian DC (Ohm, KCL/KVL, pembagian arus/tegangan, rangkaian delta–wye, analisis nodal/mesh) untuk menghitung arus dan tegangan pada rangkaian kompleks. (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.110",
+      "courseId": "elektronika-dasar-1",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-2-elektronika-dasar-1-104",
+      "code": "CPMK 7.2",
+      "description": "Mahasiswa mampu menggunakan teorema rangkaian (superposisi, Thevenin, Norton, dan transfer daya maksimum) untuk menyederhanakan dan merancang rangkaian DC. (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.110",
+      "courseId": "elektronika-dasar-1",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-3-elektronika-dasar-1-105",
+      "code": "CPMK 7.3",
+      "description": "Mahasiswa mampu menganalisis respons transient rangkaian orde satu dan kedua (RC, RL, RLC), menentukan konstanta waktu, sifat overdamped/underdamped/critically damped, serta interpretasi kurva waktu-tegangan/arus. (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.110",
+      "courseId": "elektronika-dasar-1",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-4-elektronika-dasar-1-106",
+      "code": "CPMK 7.4",
+      "description": "Mahasiswa mampu menganalisis karakteristik dan fungsionalitas konfigurasi dasar op-amp (inverting, non-inverting, penjumlah, diferensiator) serta rangkaian pasif reaktif (kapasitor/induktor) dalam konteks aplikasi integrator dan diferensiator. (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.110",
+      "courseId": "elektronika-dasar-1",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-5-praktikum-elektronika-1-107",
+      "code": "CPMK 7.5",
+      "description": "Mahasiswa mampu menganalisis arus dan tegangan pada rangkaian RLC melalui analisis node, mesh dan superposisi serta dapat menganalisa rangkaian dasar op-amp (C4, p3, p4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.110",
+      "courseId": "praktikum-elektronika-1",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-6-elektronika-dasar-2-108",
+      "code": "CPMK 7.6",
+      "description": "Mahasiswa mampu menjelaskan karakteristik bahan semikonduktor, prinsip kerja dioda (ideal dan real), serta fungsi dasar penyearah dan filter dalam sistem catu daya DC. (c2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.110",
+      "courseId": "elektronika-dasar-2",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-7-elektronika-dasar-2-109",
+      "code": "CPMK 7.7",
+      "description": "Mahasiswa mampu menerapkan teori dioda khusus (zener, LED, optoelektronik) dalam merancang rangkaian pengatur tegangan dan isolator sinyal berbasis optocoupler. (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.110",
+      "courseId": "elektronika-dasar-2",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-8-elektronika-dasar-2-110",
+      "code": "CPMK 7.8",
+      "description": "Mahasiswa mampu menganalisis dan merancang rangkaian bias transistor BJT serta menentukan titik kerja (Q-point) dalam konfigurasi penguat dasar. (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.110",
+      "courseId": "elektronika-dasar-2",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-9-elektronika-dasar-2-111",
+      "code": "CPMK 7.9",
+      "description": "Mahasiswa mampu menganalisis karakteristik dan kinerja penguat diferensial, termasuk parameter input, common-mode gain, dan kestabilan arus menggunakan current mirror.(c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.110",
+      "courseId": "elektronika-dasar-2",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-10-praktikum-elektronika-2-112",
+      "code": "CPMK 7.10",
+      "description": "Mahasiswa mampu menganalisis performa rangkaian penguat transistor dan op-amp (gain, impedansi, linieritas, titik kerja) dari hasil simulasi atau eksperimen, serta menyajikan laporan analisis dalam bentuk grafik dan interpretasi data. (c4, p4, p5)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.111",
+      "courseId": "praktikum-elektronika-2",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-11-metode-pengukuran-dan-pengolahan-data-113",
+      "code": "CPMK 7.11",
+      "description": "Mahasiswa mampu menerapkan prinsip-prinsip dasar pengukuran dan ketidakpastian dalam pengukuran fisika (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.111",
+      "courseId": "metode-pengukuran-dan-pengolahan-data",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-12-metode-pengukuran-dan-pengolahan-data-114",
+      "code": "CPMK 7.12",
+      "description": "Mahasiswa mampu mengolah data hasil pengukuran menggunakan teknik statistik dasar dan propagasi kesalahan (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.111",
+      "courseId": "metode-pengukuran-dan-pengolahan-data",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-7-cpmk-7-13-metode-pengukuran-dan-pengolahan-data-115",
+      "code": "CPMK 7.13",
+      "description": "Mahasiswa mampu menganalisis dan menyajikan hasil pengukuran secara Ilmiah dan Visual (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.111",
+      "courseId": "metode-pengukuran-dan-pengolahan-data",
+      "outcomeId": "CPL-7",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-5-metode-penelitian-fisika-116",
+      "code": "CPMK 8.5",
+      "description": "Mahasiswa mampu menyusun dan menulis rancangan penelitian",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "metode-penelitian-fisika",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-6-proposal-penelitian-117",
+      "code": "CPMK 8.6",
+      "description": "Mampu merancang proposal penelitian dengan mengidentifikasi permasalahan nyata, serta mengevaluasi potensi solusi atau penerapan teknologinya berdasarkan kajian ilmiah.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-7-tugas-akhir-118",
+      "code": "CPMK 8.7",
+      "description": "Mampu mengidentifikasi dan menganalisis permasalahan nyata, serta mengevaluasi potensi penerapan teknologi sebagai solusi dalam bentuk karya ilmiah yang sistematis.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-8-pengantar-fisika-teori-119",
+      "code": "CPMK 8.8",
+      "description": "Mahasiswa mampu menerapkan prinsip-prinsip dasar fisika teori untuk memahami fenomena fisis berdasarkan pendekatan klasik, kuantum, dan relativistik (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "pengantar-fisika-teori",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-8-pengantar-fisika-bumi-120",
+      "code": "CPMK 8.8",
+      "description": "Mahasiswa mampu menjelaskan struktur internal Bumi (kerak, mantel, inti) beserta sifat fisiknya, serta menjelaskan konsep arus eddy dan keterkaitannya dalam memahami karakteristik fisik lapisan-lapisan Bumi melalui pendekatan metode geofisika.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "pengantar-fisika-bumi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-8-pengantar-fisika-material-121",
+      "code": "CPMK 8.8",
+      "description": "Mahasiswa mampu mengklasifikasikan struktur dasar material",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "pengantar-fisika-material",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-8-pengantar-fisika-instrumentasi-122",
+      "code": "CPMK 8.8",
+      "description": "Mampu menerapkan prinsip dasar pengukuran dan kesalahan dalam pengukuran fisik serta menggunakan dan menginterpretasikan hasil pengukuran dari alat ukur elektronik dan analog (voltmeter, ammeter, ohmmeter, osiloskop) (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "pengantar-fisika-instrumentasi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-9-pengantar-fisika-teori-123",
+      "code": "CPMK 8.9",
+      "description": "Mahasiswa mampu menganalisis konsep-konsep dasar fisika teori, mulai dari mekanika klasik hingga mekanika kuantum dan relativitas, sebagai fondasi fisika modern (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "pengantar-fisika-teori",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-9-pengantar-fisika-bumi-124",
+      "code": "CPMK 8.9",
+      "description": "Mahasiswa mampu menjelaskan prinsip fisis dalam metode geofisika dan menganalisis bagaimana metode pengukurannya.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "pengantar-fisika-bumi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-9-pengantar-fisika-material-125",
+      "code": "CPMK 8.9",
+      "description": "Mahasiswa mampu menganalisis sifat-sifat fisis material",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.112",
+      "courseId": "pengantar-fisika-material",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-9-pengantar-fisika-instrumentasi-126",
+      "code": "CPMK 8.9",
+      "description": "Mampu menganalisis karakteristik transduser dan sensor dalam sistem instrumentasi elektronik serta menganalisis data akuisisi untuk mengidentifikasi faktor yang mempengaruhi akurasi dan presisi pengukuran (C4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "pengantar-fisika-instrumentasi",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-10-teori-relativitas-khusus-127",
+      "code": "CPMK 8.10",
+      "description": "Mahasiswa mampu menerapkan prinsip dasar teori relativitas khusus (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "teori-relativitas-khusus",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-10-fisika-tanah-dan-batuan-128",
+      "code": "CPMK 8.10",
+      "description": "Memahami berbagai besaran fisis tanah dan batuan, serta mampu mengaplikasikan berbagai metode dan pendekatan untuk mengukur besaran-besaran tersebut.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "fisika-tanah-dan-batuan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-10-energi-terbarukan-dan-biomassa-129",
+      "code": "CPMK 8.10",
+      "description": "Mahasiswa mampu mengklasifikasikan jenis dan sumber energi dalam kehidupan dan kaitannya dengan ilmu fisika",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "energi-terbarukan-dan-biomassa",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-10-sistem-sensor-130",
+      "code": "CPMK 8.10",
+      "description": "Mahasiswa mampu prinsip dasar dan bagian-bagian sistem instrumentasi serta memahami gambaran lengkap tentang sensor, yang meliputi konsep dasar tentang sensor, karakteristiknya, faktor-faktor yang mempengaruhi kerja sensor (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "sistem-sensor",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-11-teori-relativitas-khusus-131",
+      "code": "CPMK 8.11",
+      "description": "Mahasiswa mampu menganalisis teori relativitas khusus pada dinamika partikel dan elektromagnetisme (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "teori-relativitas-khusus",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-11-fisika-tanah-dan-batuan-132",
+      "code": "CPMK 8.11",
+      "description": "Mampu menganalisa hubungan antar besaran sifat fisis tanah dan batuan.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "fisika-tanah-dan-batuan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-11-energi-terbarukan-dan-biomassa-133",
+      "code": "CPMK 8.11",
+      "description": "Mahasiswa mampu menerapkan prinsip-prinsip fisika material dalam pemanfaatan energi baru dan terbarukan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "energi-terbarukan-dan-biomassa",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-11-sistem-sensor-134",
+      "code": "CPMK 8.11",
+      "description": "Mahasiswa mampu menjelaskan beberapa rangkaian elektronik yang dipakai untuk membangun sistem sensor (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "sistem-sensor",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-12-pengantar-teori-relativitas-umum-135",
+      "code": "CPMK 8.12",
+      "description": "Mahasiswa mampu menjelaskan prinsip dasar teori relativitas umum (C2).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "pengantar-teori-relativitas-umum",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-12-fisika-tanah-dan-batuan-136",
+      "code": "CPMK 8.12",
+      "description": "Mampu mengevaluasi besaran fisis tanah dan batuan.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.113",
+      "courseId": "fisika-tanah-dan-batuan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-12-energi-terbarukan-dan-biomassa-137",
+      "code": "CPMK 8.12",
+      "description": "Mahasiswa mampu menganalisis sifat-sifat fisik dan struktur material untuk aplikasi bidang energi",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "energi-terbarukan-dan-biomassa",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-12-sistem-sensor-138",
+      "code": "CPMK 8.12",
+      "description": "Mahasiswa mampu merancang dan membangun sistem sensor (c6)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "sistem-sensor",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-13-pengantar-teori-relativitas-umum-139",
+      "code": "CPMK 8.13",
+      "description": "Mahasiswa mampu menggambarkan ruang-waktu sebagai struktur geometris yang mendeskripsikan gravitasi (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "pengantar-teori-relativitas-umum",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-13-geologi-dasar-140",
+      "code": "CPMK 8.13",
+      "description": "Mahasiswa mampu menerapkan konsep-konsep dasar geologi dalam mengidentifikasi kondisi geologi lapangan.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "geologi-dasar",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-13-fisika-dan-teknologi-semikonduktor-141",
+      "code": "CPMK 8.13",
+      "description": "Mahasiswa mampu menjelaskan struktur atom dan perkembangan model atom dan menjelaskan struktur kristal pada semikonduktor.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "fisika-dan-teknologi-semikonduktor",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-13-sistem-logika-dan-digital-142",
+      "code": "CPMK 8.13",
+      "description": "Mahasiswa mampu menerapkan konsep dasar logika digital, seperti gerbang logika dan aljabar Boolean, dalam merancang rangkaian logika sederhana (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "sistem-logika-dan-digital",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-14-pengantar-teori-relativitas-umum-143",
+      "code": "CPMK 8.14",
+      "description": "Mahasiswa mampu menganalisis solusi sederhana dari persamaan medan dan fenomena gravitasi (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "pengantar-teori-relativitas-umum",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-14-geologi-dasar-144",
+      "code": "CPMK 8.14",
+      "description": "Mahasiswa mampu menentukan jenis, deskripsi dan klasifikasi batuan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "geologi-dasar",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-14-fisika-dan-teknologi-semikonduktor-145",
+      "code": "CPMK 8.14",
+      "description": "Mahasiswa mampu memahami konsep pita energi pada semikonduktor dan karakteristik semikonduktor intrinsik dan ekstrinsik.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "fisika-dan-teknologi-semikonduktor",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-14-sistem-logika-dan-digital-146",
+      "code": "CPMK 8.14",
+      "description": "Mahasiswa mampu mengimplementasikan sistem digital menggunakan rangkaian kombinasi dan sekuensial untuk aplikasi fisika (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "sistem-logika-dan-digital",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-15-fisika-kuantum-lanjut-147",
+      "code": "CPMK 8.15",
+      "description": "Mahasiswa mampu menerapkan formalisme operator dan notasi Dirac dalam fisika kuantum (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.114",
+      "courseId": "fisika-kuantum-lanjut",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-15-metode-magnetik-148",
+      "code": "CPMK 8.15",
+      "description": "Mahasiswa mampu menerapkan teori dasar medan magnetic untuk pengukuran medan magnet secara langsung",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "metode-magnetik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-15-fisika-dan-teknologi-semikonduktor-149",
+      "code": "CPMK 8.15",
+      "description": "Mahasiswa mampu menghitung besaran listrik dari semikonduktor intrinsik dan ekstrinsik serta persambungan PN.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "fisika-dan-teknologi-semikonduktor",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-15-sistem-logika-dan-digital-150",
+      "code": "CPMK 8.15",
+      "description": "Mahasiswa mampu menganalisis dan mengevaluasi performa serta logika kerja dari suatu sistem digital yang terdiri atas kombinasi dan rangkaian sekuensial (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "sistem-logika-dan-digital",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-16-fisika-kuantum-lanjut-151",
+      "code": "CPMK 8.16",
+      "description": "Mahasiswa mampu menganalisis dinamika sistem kuantum (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "fisika-kuantum-lanjut",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-16-metode-magnetik-152",
+      "code": "CPMK 8.16",
+      "description": "Mahasiswa mampu menerapkan koreksi dasa magnetic, rekduksi ke bidang horizontal dan transformasi fourier untuk pengolahan data lapangan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "metode-magnetik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-16-fisika-laser-153",
+      "code": "CPMK 8.16",
+      "description": "Menjelaskan konsep dasar pembangkitan dan penguatan cahaya dalam laser.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "fisika-laser",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-16-instrumentasi-berbasis-jaringan-154",
+      "code": "CPMK 8.16",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar dan fungsi instrumentasi dalam jaringan. (c2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "instrumentasi-berbasis-jaringan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-17-fisika-kuantum-lanjut-155",
+      "code": "CPMK 8.17",
+      "description": "Mahasiswa mampu menganalisis sistem kuantum menggunakan teori perturbasi, struktur spin, momentum sudut total, dan sistem banyak partikel (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "fisika-kuantum-lanjut",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-17-metode-magnetik-156",
+      "code": "CPMK 8.17",
+      "description": "Mahasiswa mampu memodelkan hasil perhitungan untuk mendapatkan citra bawah permukaan berdasarkan data magnetik",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "metode-magnetik",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-17-fisika-laser-157",
+      "code": "CPMK 8.17",
+      "description": "Menganalisis rancangan dan karakteristik berbagai jenis laser.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "fisika-laser",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-17-instrumentasi-berbasis-jaringan-158",
+      "code": "CPMK 8.17",
+      "description": "Mahasiswa mampu merancang, merekayasa, dan menganalisis sistem instrumentasi berbasis jaringan secara terintegrasi. (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "instrumentasi-berbasis-jaringan",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-18-fisika-kuantum-lanjut-159",
+      "code": "CPMK 8.18",
+      "description": "Mahasiswa mampu mengevaluasi prinsip-prinsip fisika kuantum pada berbagai aplikasi dalam konteks fisika modern dan teknologi (C5).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.115",
+      "courseId": "fisika-kuantum-lanjut",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-18-fisika-lingkungan-dan-bencana-alam-160",
+      "code": "CPMK 8.18",
+      "description": "Mahasiswa mampu mengidentifikasi jenis-jenis bencana dan faktor pemicunya dalam sudut pandang fisika",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.116",
+      "courseId": "fisika-lingkungan-dan-bencana-alam",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-18-fisika-laser-161",
+      "code": "CPMK 8.18",
+      "description": "Mengaplikasikan prinsip laser dalam pemecahan masalah di bidang teknologi dan eksperimen",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.116",
+      "courseId": "fisika-laser",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-19-fisika-lingkungan-dan-bencana-alam-162",
+      "code": "CPMK 8.19",
+      "description": "Mahasiswa mampu mengkaji kerawanan bencana di lingkungan sekitar serta memberi penjelsan penyebab dan upaya mitigasinya berkaitan dengan konsep fisis",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.116",
+      "courseId": "fisika-lingkungan-dan-bencana-alam",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-19-fisika-material-bahan-alam-163",
+      "code": "CPMK 8.19",
+      "description": "Mahasiswa mampu mengklasifikasikan sifat fisik material dan bahan alam.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.116",
+      "courseId": "fisika-material-bahan-alam",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-20-fisika-lingkungan-dan-bencana-alam-164",
+      "code": "CPMK 8.20",
+      "description": "Mahasiswa mampu menganalisa kejadian bencana dan memberikan rekomendasi mitigasinya",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.116",
+      "courseId": "fisika-lingkungan-dan-bencana-alam",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-20-fisika-material-bahan-alam-165",
+      "code": "CPMK 8.20",
+      "description": "Mahasiswa mampu menelaah konsep fisika dalam pengembangan material dan bahan alam.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.116",
+      "courseId": "fisika-material-bahan-alam",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-21-fisika-dan-teknologi-karbon-166",
+      "code": "CPMK 8.21",
+      "description": "Mahasiswa mampu menerapkan struktur, sifat fisis dan kimia karbon serta proses sintesisnya.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.116",
+      "courseId": "fisika-dan-teknologi-karbon",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-8-cpmk-8-22-fisika-dan-teknologi-karbon-167",
+      "code": "CPMK 8.22",
+      "description": "Mahasiswa mampu menganalisis potensi aplikasi Karbon dalam sel surya berdasarkan karakteristik struktur dan proses sintesisnya.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.116",
+      "courseId": "fisika-dan-teknologi-karbon",
+      "outcomeId": "CPL-8",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-3-praktikum-elektronika-2-168",
+      "code": "CPMK 9.3",
+      "description": "Mahasiswa mampu merangkai dan menguji rangkaian penyearah (half-wave, full-wave, bridge) dan filter sederhana (RC/LC) menggunakan dioda dan komponen pasif, serta mengukur karakteristik output (tegangan DC, ripple, efisiensi) dengan alat ukur digital. (c3, p3, p4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.117",
+      "courseId": "praktikum-elektronika-2",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-4-praktikum-fisika-2-169",
+      "code": "CPMK 9.4",
+      "description": "Mahasiswa mampu melakukan dan menganalisis eksperimen fisika modern pada topik Interferometer Michelson, Radiasi Termal, Percobaan Sinar Katode, Tetes Milikan, Efek Fotolistrik, Percobaan Hamburan Rutherford, Percobaan Sinar Gamma dan Percobaan Franck-Hertz dengan Merkuri",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.117",
+      "courseId": "praktikum-fisika-2",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-5-metode-penelitian-fisika-170",
+      "code": "CPMK 9.5",
+      "description": "mahasiswa diharapkan memiliki kepercayaan diri dan kemampuan untuk melakukan proses pembelajaran secara mandiri",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.117",
+      "courseId": "metode-penelitian-fisika",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-6-kuliah-lapangan-survey-non-elektromagnetik-171",
+      "code": "CPMK 9.6",
+      "description": "Mahasiswa mampu menginvestigasi struktur bawah permukaan menggunakan metode non elektromagnetik",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.117",
+      "courseId": "kuliah-lapangan-survey-non-elektromagnetik",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-6-metode-sintesis-material-172",
+      "code": "CPMK 9.6",
+      "description": "Mahasiswa mampu memahami prinsip pokok dan metode pemrosesan material",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.117",
+      "courseId": "metode-sintesis-material",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-6-visualisasi-teknik-untuk-sistem-instrumentasi-173",
+      "code": "CPMK 9.6",
+      "description": "Mahasiswa mampu menjelaskan komponen utama arsitektur sistem instrumentasi elektronik. (c2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.117",
+      "courseId": "visualisasi-teknik-untuk-sistem-instrumentasi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-7-metode-gravitasi-174",
+      "code": "CPMK 9.7",
+      "description": "Memahami dan mengaplikasikan dasar-dasar dalam metode gravitasi dalam eksplorasi energi, lingkungan, dan mitigasi bencana.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.117",
+      "courseId": "metode-gravitasi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-7-metode-sintesis-material-175",
+      "code": "CPMK 9.7",
+      "description": "Mahasiswa mampu mensintesis material dengan metode yang dikuasai",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.117",
+      "courseId": "metode-sintesis-material",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-7-visualisasi-teknik-untuk-sistem-instrumentasi-176",
+      "code": "CPMK 9.7",
+      "description": "Mahasiswa mampu mengimplementasikan rangkaian instrumentasi sederhana menggunakan simulasi atau praktik langsung. (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.117",
+      "courseId": "visualisasi-teknik-untuk-sistem-instrumentasi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-8-metode-gravitasi-177",
+      "code": "CPMK 9.8",
+      "description": "Melaksanakan dan mengelola sebuah survei metode gravitasi yang meliputi langkah-langkah ilmiah dalam akuisis, pengolahan, dan interpretasi data.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "metode-gravitasi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-8-teknologi-material-nano-178",
+      "code": "CPMK 9.8",
+      "description": "Mahasiswa mampu menerapkan prinsip dasar nanoteknologi dan nanomaterial dengan metode sintesis dan teknik karakterisasi menggunakan pendekatan ilmiah.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "teknologi-material-nano",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-8-visualisasi-teknik-untuk-sistem-instrumentasi-179",
+      "code": "CPMK 9.8",
+      "description": "Mahasiswa mampu menganalisis dan merancang sistem akuisisi data berbasis sensor dan mikrokontroler. (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "visualisasi-teknik-untuk-sistem-instrumentasi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-9-metode-gravitasi-180",
+      "code": "CPMK 9.9",
+      "description": "Mampu melakukan interpretasi data sebuah survei metode gravitasi berupa pembuatan model problem maju dan balik (inverse problem) sederhana, serta terampil dalam pemakaian komputer untuk keperluan penyelesaian masalah dan kamunikasi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "metode-gravitasi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-9-teknologi-material-nano-181",
+      "code": "CPMK 9.9",
+      "description": "Mahasiswa mampu menganalisis hubungan antara sifat fungsional nanomaterial dan aplikasinya dalam bidang teknologi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "teknologi-material-nano",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-9-visualisasi-teknik-untuk-sistem-instrumentasi-182",
+      "code": "CPMK 9.9",
+      "description": "Mahasiswa mampu membuat desain perangkat dan casing alat menggunakan perangkat lunak desain 3D dan mencetaknya dengan 3D printer.(c6)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "visualisasi-teknik-untuk-sistem-instrumentasi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-10-kuliah-lapangan-survey-elektromagnetik-183",
+      "code": "CPMK 9.10",
+      "description": "Mahasiswa mampu menginvestigasi struktur bawah permukaan menggunakan metode elektromagnetik",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "kuliah-lapangan-survey-elektromagnetik",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-10-teknologi-material-nano-184",
+      "code": "CPMK 9.10",
+      "description": "Mahasiswa mampu mensintesis dan karakterisasi nanomaterial menggunakan metode laboratorium standar.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "teknologi-material-nano",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-10-akuisisi-data-dan-pengolahan-sinyal-185",
+      "code": "CPMK 9.10",
+      "description": "Mahasiswa mampu menerapkan prinsip dasar konversi sinyal fisik menjadi sinyal listrik melalui sensor dan transduser dalam sistem akuisisi data. (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "akuisisi-data-dan-pengolahan-sinyal",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-11-praktikum-pengolahan-dan-penyajian-data-fisika-bumi-186",
+      "code": "CPMK 9.11",
+      "description": "Mahasiswa mampu memproduksi grafik dan peta dengan standar kualitas tinggi",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.118",
+      "courseId": "praktikum-pengolahan-dan-penyajian-data-fisika-bumi",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-11-komputasi-paralel-187",
+      "code": "CPMK 9.11",
+      "description": "Mahasiswa mampu mengimplementasikan algoritma komputasi paralel untuk menyelesaikan persoalan numerik dalam fisika, seperti pemecahan persamaan diferensial atau simulasi dinamika partikel.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "komputasi-paralel",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-11-akuisisi-data-dan-pengolahan-sinyal-188",
+      "code": "CPMK 9.11",
+      "description": "Mahasiswa mampu mengimplementasikan metode konversi analog-ke-digital dan frekuensi-ke-kode pada sistem multikanal dengan memperhatikan efisiensi dan akurasi. (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "akuisisi-data-dan-pengolahan-sinyal",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-12-komputasi-paralel-189",
+      "code": "CPMK 9.12",
+      "description": "Mahasiswa mampu menganalisis performa program paralel dalam konteks simulasi fisika berdasarkan aspek efisiensi, kecepatan komputasi, dan skalabilitas.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "komputasi-paralel",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-12-akuisisi-data-dan-pengolahan-sinyal-190",
+      "code": "CPMK 9.12",
+      "description": "Mahasiswa mampu menganalisis karakteristik dan kinerja filter analog (low-pass, high-pass, band-pass, dan notch) dalam pemrosesan sinyal analog. (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "akuisisi-data-dan-pengolahan-sinyal",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-13-komputasi-paralel-191",
+      "code": "CPMK 9.13",
+      "description": "Mahasiswa mampu menganalisis struktur algoritma fisika numerik untuk menentukan potensi paralelisasi dan strategi optimasinya dalam lingkungan komputasi paralel.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "komputasi-paralel",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-13-akuisisi-data-dan-pengolahan-sinyal-192",
+      "code": "CPMK 9.13",
+      "description": "Mahasiswa mampu mengevaluasi performa sistem akuisisi data cerdas berdasarkan pengaruh interferensi, noise, dan teknik reduksinya dalam konteks pengolahan sinyal.(c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "akuisisi-data-dan-pengolahan-sinyal",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-14-mikrokontroller-193",
+      "code": "CPMK 9.14",
+      "description": "Mahasiswa dapat mengaplikasikan prinsip dasar mikrokontroler dan fungsinya dalam sistem instrumentasi fisika (c3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "mikrokontroller",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-15-mikrokontroller-194",
+      "code": "CPMK 9.15",
+      "description": "Mahasiswa dapat menganalisis performa sistem mikrokontroler dalam mendukung aplikasi instrumentasi fisika (c4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "mikrokontroller",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-16-mikrokontroller-195",
+      "code": "CPMK 9.16",
+      "description": "Mengimplementasikan antarmuka mikrokontroler dengan sensor dan aktuator dalam bentuk sistem sederhana (c3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "mikrokontroller",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-17-sistem-instrumentasi-berbasis-proyek-196",
+      "code": "CPMK 9.17",
+      "description": "Mahasiswa mampu menerapkan prinsip kerja sensor dan sistem kontrol dalam merancang blok sistem instrumentasi sederhana. (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.119",
+      "courseId": "sistem-instrumentasi-berbasis-proyek",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-18-sistem-instrumentasi-berbasis-proyek-197",
+      "code": "CPMK 9.18",
+      "description": "Mahasiswa mampu menganalisis data hasil pengukuran dan melakukan kalibrasi pada sistem instrumentasi untuk memastikan akurasi dan ketelusuran pengukuran. (C4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.120",
+      "courseId": "sistem-instrumentasi-berbasis-proyek",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-19-sistem-instrumentasi-berbasis-proyek-198",
+      "code": "CPMK 9.19",
+      "description": "Mahasiswa mampu merancang dan membuat prototipe sistem instrumentasi berbasis sensor dan kontrol untuk menyelesaikan permasalahan aplikasi nyata. (C6)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.120",
+      "courseId": "sistem-instrumentasi-berbasis-proyek",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-20-kerja-praktik-199",
+      "code": "CPMK 9.20",
+      "description": "Mampu memformulasi pemecahan masalah fisis melalui eksperimen terstruktur maupun berbasis proyek, baik secara mandiri maupun berkelompok, dengan mengintegrasikan prinsip-prinsip fisika dan memperhatikan aspek teknis dan praktis dari masalah yang dihadapi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.120",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-21-kerja-praktik-200",
+      "code": "CPMK 9.21",
+      "description": "Mampu mengaplikasikan metodologi ilmiah yang tepat dalam merancang dan melaksanakan eksperimen atau proyek penelitian, serta memperhatikan etika ilmiah dalam pengumpulan, analisis, dan pelaporan data hasil kerja praktik, dengan menyusun laporan yang sesuai kaidah penulisan ilmiah dan mendiseminasikan hasil penelitian secara profesional.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.120",
+      "courseId": "kerja-praktik",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-9-cpmk-9-22-mlps-1-201",
+      "code": "CPMK 9.22",
+      "description": "Mahasiswa mampu menerapkan konsep dan prinsip fisika atau keilmuan terkait dalam dunia kerja atau proyek studi independen secara profesional, serta mengevaluasi hasil kinerjanya berdasarkan kebutuhan dan permasalahan nyata yang dihadapi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.120",
+      "courseId": "mlps-1",
+      "outcomeId": "CPL-9",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-1-studium-generale-202",
+      "code": "CPMK 10.1",
+      "description": "Mahasiswa mampu menentukan isu-isu strategis dan perkembangan terkini dalam bidang Fisika dan ilmu pengetahuan terkait melalui kegiatan seminar ilmiah.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "studium-generale",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-2-studium-generale-203",
+      "code": "CPMK 10.2",
+      "description": "Mahasiswa mampu menganalisis berbagai materi seminar/webinar yang telah diikuti secara sistematis.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "studium-generale",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-3-proposal-penelitian-204",
+      "code": "CPMK 10.3",
+      "description": "Mampu merumuskan usulan pemecahan masalah fisis melalui perencanaan eksperimen atau proyek penelitian secara mandiri atau kelompok, dengan menerapkan metodologi dan etika ilmiah.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-4-tugas-akhir-205",
+      "code": "CPMK 10.4",
+      "description": "Mampu melaksanakan penelitian teori dan/atau eksperimen secara terbimbing dengan mengkaji dan mengintegrasikan prinsip-prinsip fisika untuk menghasilkan solusi, gagasan inovatif, atau prediksi fenomena, yang selanjutnya dituangkan dalam karya ilmiah secara sistematis dan sesuai kaidah akademik.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-5-teori-grup-206",
+      "code": "CPMK 10.5",
+      "description": "Mahasiswa mampu menerapkan konsep dasar teori grup, termasuk struktur grup, subgrup, dan homomorfisme, dalam menganalisis sistem fisika yang memiliki simetri (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "teori-grup",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-5-metode-elektrik-207",
+      "code": "CPMK 10.5",
+      "description": "Memahami dan mengaplikasikan dasar-dasar dalam metode elektrik dalam eksplorasi energi, lingkungan, air tanah, dan mitigasi bencana.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "metode-elektrik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-5-fisika-polimer-dan-komposit-208",
+      "code": "CPMK 10.5",
+      "description": "Mahasiswa mampu mengklasifikasikan material polimer dan komposit dalam berbagai bidang kehidupan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "fisika-polimer-dan-komposit",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-5-fisika-metrologi-dan-kalibrasi-209",
+      "code": "CPMK 10.5",
+      "description": "Mahasiswa dapat menerapkan konsep dasar metrologi dan ketidakpastian pengukuran(c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "fisika-metrologi-dan-kalibrasi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-6-teori-grup-210",
+      "code": "CPMK 10.6",
+      "description": "Mahasiswa mampu menganalisis teori representasi grup, termasuk karakter dan teorema ortogonalitas, dalam simetri fisika seperti rotasi ruang dan struktur kristal (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "teori-grup",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-6-metode-elektrik-211",
+      "code": "CPMK 10.6",
+      "description": "Melaksanakan dan mengelola sebuah survei metode elektrik yang meliputi langkah-langkah ilmiah dalam akuisis, pengolahan, dan interpretasi data.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.121",
+      "courseId": "metode-elektrik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-6-fisika-polimer-dan-komposit-212",
+      "code": "CPMK 10.6",
+      "description": "Mahasiswa mampu menganalisis masalah yang berkaitan dengan material polimer dan komposit",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "fisika-polimer-dan-komposit",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-6-fisika-metrologi-dan-kalibrasi-213",
+      "code": "CPMK 10.6",
+      "description": "Mahasiswa dapat mengaplikasikan prinsip ketertelusuran dan standar kalibrasi(c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "fisika-metrologi-dan-kalibrasi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-7-teori-grup-214",
+      "code": "CPMK 10.7",
+      "description": "Mampu menganalisis aplikasi teori grup pada bidang fisika (C4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "teori-grup",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-7-metode-elektrik-215",
+      "code": "CPMK 10.7",
+      "description": "Mampu melakukan interpretasi data sebuah survei metode elektrik berupa pembuatan model problem maju dan balik (inverse problem) sederhana, serta terampil dalam pemakaian komputer untuk keperluan penyelesaian masalah dan komunikasi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "metode-elektrik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-7-karakterisasi-dan-analisis-material-216",
+      "code": "CPMK 10.7",
+      "description": "Mahasiswa mampu menjelaskan prinsip pencitraan (imaging), Hamburan (scattering) dan spektroskopi suatu material.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "karakterisasi-dan-analisis-material",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-7-fisika-metrologi-dan-kalibrasi-217",
+      "code": "CPMK 10.7",
+      "description": "Mahasiswa dapat menganalisis hasil kalibrasi dan Mengevaluasi prosedur kalibrasi(c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "fisika-metrologi-dan-kalibrasi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-8-fisika-nonlinear-dan-sistem-kompleks-218",
+      "code": "CPMK 10.8",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar sistem dinamik nonlinier (C2).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "fisika-nonlinear-dan-sistem-kompleks",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-8-metode-elektromagnetik-219",
+      "code": "CPMK 10.8",
+      "description": "Mahasiswa mampu menjelaskan konsep dasar gelombang EM dan persamaan Maxwell.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "metode-elektromagnetik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-8-karakterisasi-dan-analisis-material-220",
+      "code": "CPMK 10.8",
+      "description": "Mahasiswa mampu menganalisis data hasil XRD, SEM, dan UV-Vis.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "karakterisasi-dan-analisis-material",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-8-sistem-kendali-221",
+      "code": "CPMK 10.8",
+      "description": "Mahasiswa mampu menerapkan konsep dasar sistem kendali, termasuk pemodelan, fungsi alih, dan analisis stabilitas, dalam merancang sistem kendali sederhana. (C3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "sistem-kendali",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-9-fisika-nonlinear-dan-sistem-kompleks-222",
+      "code": "CPMK 10.9",
+      "description": "Mahasiswa mampu menerapkan teori chaos dan gelombang nonlinier pada sistem fisika yang relevan (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.122",
+      "courseId": "fisika-nonlinear-dan-sistem-kompleks",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-9-metode-elektromagnetik-223",
+      "code": "CPMK 10.9",
+      "description": "Mahasiswa mampu menjelaskan konsep metode VLF, GeoRadar, Magnetotelurik, CSAMT, AMT.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "metode-elektromagnetik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-9-pemodelan-material-berbasis-ai-224",
+      "code": "CPMK 10.9",
+      "description": "Mahasiswa mampu mengaplikasikan metode pembelajaran mesin (machine learning) untuk memodelkan dan memprediksi sifat fisis material berdasarkan data simulasi atau eksperimen.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "pemodelan-material-berbasis-ai",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-9-sistem-kendali-225",
+      "code": "CPMK 10.9",
+      "description": "Mahasiswa mampu menganalisis performa sistem kendali dalam domain waktu dan frekuensi untuk mengevaluasi kestabilan dan kualitas respons sistem. (C4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "sistem-kendali",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-10-fisika-nonlinear-dan-sistem-kompleks-226",
+      "code": "CPMK 10.10",
+      "description": "Mahasiswa mampu menganalisis sistem komples dalam konteks multidisipliner dengan metode analitik dan numerik (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "fisika-nonlinear-dan-sistem-kompleks",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-10-metode-elektromagnetik-227",
+      "code": "CPMK 10.10",
+      "description": "Mahasiswa mampu mengolah dan melakukan pemodelan data salah satu teknik pengukuran EM.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "metode-elektromagnetik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-10-pemodelan-material-berbasis-ai-228",
+      "code": "CPMK 10.10",
+      "description": "Menganalisis relevansi dan kualitas fitur (feature selection) dalam dataset material untuk meningkatkan performa model prediktif berbasis AI.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "pemodelan-material-berbasis-ai",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-10-sistem-kendali-229",
+      "code": "CPMK 10.10",
+      "description": "Mahasiswa mampu merancang, membangun, dan mempresentasikan prototipe sistem kendali berbasis sensor dan aktuator untuk menyelesaikan permasalahan rekayasa sederhana. (C6)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "sistem-kendali",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-11-pengantar-kosmologi-230",
+      "code": "CPMK 10.11",
+      "description": "Mahasiswa mampu menerapkan dasar-dasar geometri dan prinsip fisika yang digunakan dalam model-model kosmologi standar (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "pengantar-kosmologi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-11-seismologi-dan-kegempaan-231",
+      "code": "CPMK 10.11",
+      "description": "Mahasiswa mampu mengetahui konsep dasar seismologi dan mampu mennghitung parameter-parameter dalam kegempaan",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "seismologi-dan-kegempaan",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-11-metode-komputasi-fisika-material-232",
+      "code": "CPMK 10.11",
+      "description": "Mahasiswa mampu menelaah prinsip dasar metode Density Functional Theory (DFT)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "metode-komputasi-fisika-material",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-11-user-interface-untuk-sistem-instrumentasi-233",
+      "code": "CPMK 10.11",
+      "description": "Mahasiswa diharapkan dapat menggunakan pengetahuan dan perangkat lunak untuk membuat dan menjalankan UI yang dapat berinteraksi dengan sistem fisik (sensor dan aktuator)(c3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.123",
+      "courseId": "user-interface-untuk-sistem-instrumentasi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-12-pengantar-kosmologi-234",
+      "code": "CPMK 10.12",
+      "description": "Mahasiswa mampu menganalisis evolusi alam semesta dan observasi kosmologi (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.124",
+      "courseId": "pengantar-kosmologi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-12-seismologi-dan-kegempaan-235",
+      "code": "CPMK 10.12",
+      "description": "Mahasiswa mampu menerapkan pengetahuan tentang seismologi dan kegempaan yang dikaitkan dengan kondisi lokal geologi untuk mengevaluasi kerawanan bencana gempa bumi di suatu tempat",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.124",
+      "courseId": "seismologi-dan-kegempaan",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-12-metode-komputasi-fisika-material-236",
+      "code": "CPMK 10.12",
+      "description": "Mahasiswa mampu mengimplementasikan dan menganalisis simulasi sifat-sifat fisis material menggunakan perangkat lunak berbasis DFT",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.124",
+      "courseId": "metode-komputasi-fisika-material",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-12-user-interface-untuk-sistem-instrumentasi-237",
+      "code": "CPMK 10.12",
+      "description": "Mahasiswa mampu mengevaluasi dan membandingkan desain UI berdasarkan prinsip desain dan efektivitas penggunaan dalam sistem nyata.(c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.124",
+      "courseId": "user-interface-untuk-sistem-instrumentasi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-13-mekanika-kuantum-relativistik-238",
+      "code": "CPMK 10.13",
+      "description": "Mahasiswa mampu menjelaskan persamaan medan relativistik dan formulasi Lagrangian beserta simetri dan struktur gaugenya dalam konteks teori medan kuantum (C2).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.124",
+      "courseId": "mekanika-kuantum-relativistik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-13-fisika-gunung-api-239",
+      "code": "CPMK 10.13",
+      "description": "Mahasiswa mampu mengetahui tempat dan proses pembentukan dan pergerakan magma dan dapat mengkaitkannya dengan tektonisme serta tipe-tipe letusan gunung berapi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.124",
+      "courseId": "fisika-gunung-api",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-13-kecerdasan-buatan-dalam-instrumentasi-240",
+      "code": "CPMK 10.13",
+      "description": "Mahasiswa dapat mengimplementasikan konsep dasar kecerdasan buatan dan aplikasinya dalam instrumentasi fisika serta algoritma machine learning untuk analisis data eksperimen (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.124",
+      "courseId": "kecerdasan-buatan-dalam-instrumentasi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-14-mekanika-kuantum-relativistik-241",
+      "code": "CPMK 10.14",
+      "description": "Mahasiswa mampu menerapkan prosedur kuantisasi medan melalui pendekatan kanonik dan integral lintasan pada berbagai jenis medan (skalar, vektor, dan spinor) (C3).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.124",
+      "courseId": "mekanika-kuantum-relativistik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-14-fisika-gunung-api-242",
+      "code": "CPMK 10.14",
+      "description": "Mahasiswa mampu mengetahui, menganalisis data hasil observasi, mengevaluasi kejadian erupsi gunung api dan menilai bahaya dari erupsi gunung api.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.124",
+      "courseId": "fisika-gunung-api",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-14-kecerdasan-buatan-dalam-instrumentasi-243",
+      "code": "CPMK 10.14",
+      "description": "Mahasiswa dapat mendesain sistem instrumentasi berbasis AI (c4)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "kecerdasan-buatan-dalam-instrumentasi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-15-mekanika-kuantum-relativistik-244",
+      "code": "CPMK 10.15",
+      "description": "Mahasiswa mampu menganalisis fenomena perusakan simetri spontan dalam teori medan kuantum dan aplikasinya pada model-model medan seperti model Weinberg-Salam (C4).",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "mekanika-kuantum-relativistik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-15-fisika-panas-bumi-245",
+      "code": "CPMK 10.15",
+      "description": "Mahasiswa mampu mengklasifikasikan berbagai sistem panas bumi",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "fisika-panas-bumi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-15-kecerdasan-buatan-dalam-instrumentasi-246",
+      "code": "CPMK 10.15",
+      "description": "Mahasiswa dapat mengintegrasikan model AI ke dalam platform embedded secara praktis (c3)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "kecerdasan-buatan-dalam-instrumentasi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-16-mekanika-kuantum-relativistik-247",
+      "code": "CPMK 10.16",
+      "description": "Mahasiswa mampu memahami teori penyatuan agung. (C2)",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "mekanika-kuantum-relativistik",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-16-fisika-panas-bumi-248",
+      "code": "CPMK 10.16",
+      "description": "Mahasiswa mampu menerapkan berbagai metode geokimia dalam penentuan potensi, geotermometer dan karakterisasi fluida panas bumi",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "fisika-panas-bumi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-17-fisika-panas-bumi-249",
+      "code": "CPMK 10.17",
+      "description": "Mahasiswa mampu menentukan berbagai metode geofisika untuk eksplorasi panas bumi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "fisika-panas-bumi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-18-studi-mandiri-terpantau-250",
+      "code": "CPMK 10.18",
+      "description": "Mahasiswa mampu mengkaji literatur secara mandiri, menyusun laporan dan mempresentasikan hasil studi mandiri yang diperoleh secara terstruktur.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "studi-mandiri-terpantau",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-19-mlps-2-251",
+      "code": "CPMK 10.19",
+      "description": "Mahasiswa mampu melaksanakan penelitian fisika secara mandiri atau berkelompok dengan memperhatikan kaidah ilmiah, etika penelitian, dan potensi kontribusi terhadap pengembangan ilmu pengetahuan dan teknologi.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "mlps-2",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-19-mlps-3-252",
+      "code": "CPMK 10.19",
+      "description": "Mahasiswa mampu mengidentifikasi permasalahan sosial dan menerapkan pendekatan ilmiah berbasis fisika atau sains untuk memberikan kontribusi nyata dalam kegiatan sosial yang berdampak pada masyarakat.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "mlps-3",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-20-leadership-253",
+      "code": "CPMK 10.20",
+      "description": "Mahasiswa mampu menunjukkan kepemimpinan, kemampuan manajerial, dan kerja sama tim dalam menjalankan peran organisasi internal kampus yang berorientasi pada pengembangan karakter dan kompetensi profesional.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.125",
+      "courseId": "leadership",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-10-cpmk-10-21-asistensi-254",
+      "code": "CPMK 10.21",
+      "description": "Mahasiswa mampu menjalankan peran sebagai asisten dosen dalam kegiatan pembelajaran, penelitian, atau pengabdian kepada masyarakat secara bertanggung jawab dan profesional, serta mampu merefleksikan kontribusinya terhadap peningkatan mutu akademik.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.126",
+      "courseId": "asistensi",
+      "outcomeId": "CPL-10",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-11-cpmk-11-1-etika-akademik-dan-literasi-digital-255",
+      "code": "CPMK 11.1",
+      "description": "Memahami literasi dan etika digital, transformasi digital, konsep dan sistem digital untuk berkomunikasi, berkolaborasi, melakukan penelusuran, mengkonsumsi, membuat, dan mendistribusikan informasi dalam dunia digital secara efektif dan positif.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.126",
+      "courseId": "etika-akademik-dan-literasi-digital",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-11-cpmk-11-2-etika-akademik-dan-literasi-digital-256",
+      "code": "CPMK 11.2",
+      "description": "Memahami prinsip-prinsip literasi data, artificial intellegence (AI) machine learning, dan deep learning, serta memanfaatkan AI untuk riset dan penulisan karya ilmiah secara efektif dan beretika.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.126",
+      "courseId": "etika-akademik-dan-literasi-digital",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-11-cpmk-11-3-etika-akademik-dan-literasi-digital-257",
+      "code": "CPMK 11.3",
+      "description": "Menghayati, menghormati, dan menegakkan integritas dan etika akademik dalam melakukan riset, proyek, dan publikasi ilmiah.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.126",
+      "courseId": "etika-akademik-dan-literasi-digital",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-11-cpmk-11-4-komunikasi-ilmiah-258",
+      "code": "CPMK 11.4",
+      "description": "Mampu menjelaskan teknik komunikasi ilmiah, dan menyusun sejenis tulisan ilmiah, poster yang efektif.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.126",
+      "courseId": "komunikasi-ilmiah",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-11-cpmk-11-5-komunikasi-ilmiah-259",
+      "code": "CPMK 11.5",
+      "description": "Mengaplikasikan teknik presentasi yang efektif menggunakan bahasa indonesia dan bahasa inggris.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.126",
+      "courseId": "komunikasi-ilmiah",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-11-cpmk-11-6-proposal-penelitian-260",
+      "code": "CPMK 11.6",
+      "description": "Mampu menyusun dan mendiseminasikan proposal penelitian secara kolaboratif berdasarkan kaidah ilmiah yang baku, dengan mendokumentasikan data pendukung secara sistematis dan etis.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.126",
+      "courseId": "proposal-penelitian",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    },
+    {
+      "id": "fisika-cpl-11-cpmk-11-7-tugas-akhir-261",
+      "code": "CPMK 11.7",
+      "description": "Mampu berkolaborasi dalam menyusun, mendokumentasikan, dan mendiseminasikan karya ilmiah hasil kajian secara sistematis sesuai kaidah penulisan ilmiah dan etika akademik.",
+      "source": "Tabel 3.19 Dokumen Kurikulum Sarjana Fisika 2025-2029, PDF p.126",
+      "courseId": "tugas-akhir",
+      "outcomeId": "CPL-11",
+      "trackIds": [
+        "regular"
+      ]
+    }
+  ],
+  "sourceNotes": [
+    {
+      "severity": "info",
+      "code": "SOURCE_T319",
+      "message": "Relasi MK-CPMK-CPL pada JSON ini mengikuti Tabel 3.19. Bobot CPMK tidak diisi karena Tabel 3.19 tidak memuat bobot/persentase CPMK."
+    },
+    {
+      "severity": "info",
+      "code": "STRUCTURE_144",
+      "message": "Struktur simulasi mengikuti Tabel 3.12-3.16: 109 SKS MK wajib dan 35 SKS MK pilihan/MLPS, total 144 SKS. Paket semester target: 18, 20, 24, 24, 22, 20, 12, 4 SKS."
+    },
+    {
+      "severity": "warning",
+      "code": "T38_T319_GAPS",
+      "message": "Audit Tabel 3.8 terhadap Tabel 3.19 menemukan 15 pasangan CPL-MK yang dicentang pada Tabel 3.8 tetapi tidak mempunyai relasi CPMK pada Tabel 3.19: CPL-10 -> Visualisasi Teknik untuk Sistem Instrumentasi (FI25-22503); CPL-10 -> Komputasi Paralel (FI25-32403); CPL-11 -> Seminar MLPS (KM0004); CPL-4 -> Praktikum Biologi (WT25-00005); CPL-8 -> Pengantar Keilmuan Fisika (FI25-11001); CPL-9 -> Praktikum Fisika 1 (FI25-12004); CPL-9 -> Praktikum Elektronika 1 (FI25-21005); CPL-9 -> Geologi Dasar (FI25-22302); CPL-9 -> Fisika Metrologi dan Kalibrasi (FI25-22502); CPL-9 -> Praktikum Fisika Komputasi 1 (FI25-31006); CPL-9 -> Praktikum Fisika Komputasi 2 (FI25-32006); CPL-9 -> Seismologi dan Kegempaan (FI25-32302); CPL-9 -> Fisika dan Teknologi Karbon (FI25-32402); CPL-9 -> Kecerdasan Buatan dalam Instrumentasi (FI25-32501); CPL-9 -> Instrumentasi Berbasis Jaringan (FI25-32502)."
+    },
+    {
+      "severity": "warning",
+      "code": "T38_T319_CONFLICTS",
+      "message": "Audit menemukan 8 pasangan CPL-MK pada Tabel 3.19 yang berbeda dari CPL yang dicentang pada Tabel 3.8: CPL-10 -> Fisika Metrologi dan Kalibrasi (FI25-22502); CPL-10 -> Seismologi dan Kegempaan (FI25-32302); CPL-10 -> Kecerdasan Buatan dalam Instrumentasi (FI25-32501); CPL-8 -> Geologi Dasar (FI25-22302); CPL-8 -> Fisika dan Teknologi Karbon (FI25-32402); CPL-8 -> Instrumentasi Berbasis Jaringan (FI25-32502); CPL-9 -> Visualisasi Teknik untuk Sistem Instrumentasi (FI25-22503); CPL-9 -> Komputasi Paralel (FI25-32403)."
+    },
+    {
+      "severity": "warning",
+      "code": "UNMAPPED_COURSES_T319",
+      "message": "Empat MK pada katalog tidak memiliki relasi CPMK sama sekali di Tabel 3.19: Pengantar Keilmuan Fisika (FI25-11001), Praktikum Fisika 1 (FI25-12004), Praktikum Biologi (WT25-00005), dan Seminar MLPS (KM0004)."
+    },
+    {
+      "severity": "warning",
+      "code": "CPMK_CODE_REUSE",
+      "message": "Tabel 3.19 memakai ulang 34 kode CPMK untuk redaksi CPMK yang berbeda. Contoh: CPMK 8.8-8.18 dan sejumlah CPMK 9.x/10.x. Simulator harus membedakan node berdasarkan kode + redaksi, bukan kode saja."
+    },
+    {
+      "severity": "info",
+      "code": "NORMALIZATION",
+      "message": "Singkatan/penulisan pada Tabel 3.19 dinormalisasi ke nama MK katalog tanpa mengubah substansi, misalnya KWN -> Kewarganegaraan, B. Indonesia -> Bahasa Indonesia, P.H.S.K.F. -> Pola Hidup Sehat dan Kebugaran Fisik, dan Studium General -> Studium Generale."
+    }
+  ]
+}
