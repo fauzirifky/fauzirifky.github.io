@@ -47,6 +47,11 @@ type GraphEdge = {
   studentIds: string[];
 };
 
+function cpmkNodeKey(outcomeId: string, code: string, description?: string) {
+  const descriptionKey = (description ?? "").trim().replace(/\s+/g, " ");
+  return `${outcomeId}::${code}::${descriptionKey}`;
+}
+
 function cleanPath(pathname: string) {
   return pathname.replace(/\/index\.html$/i, "").replace(/\/+$/, "") || "/";
 }
@@ -339,8 +344,7 @@ function GraphView({
     }>();
 
     for (const relation of relations) {
-      const descriptionKey = (relation.mapping.description ?? "").trim().replace(/\s+/g, " ");
-      const key = `${relation.mapping.outcomeId}::${relation.mapping.code}::${descriptionKey}`;
+      const key = cpmkNodeKey(relation.mapping.outcomeId, relation.mapping.code, relation.mapping.description);
       if (!grouped.has(key)) {
         const resolved = resolveCpmkWeight(config, relation.mapping.outcomeId, relation.mapping.code, graphTrackIds);
         grouped.set(key, {
@@ -561,7 +565,7 @@ function GraphView({
           })}
 
           {relations.map((edge) => {
-            const key = `${edge.mapping.outcomeId}::${edge.mapping.code}`;
+            const key = cpmkNodeKey(edge.mapping.outcomeId, edge.mapping.code, edge.mapping.description);
             const y2 = positions.cpmk.get(key); const y3 = positions.course.get(edge.mapping.courseId);
             if (y2 == null || y3 == null) return null;
             const style = lineStyle(edge.count);
