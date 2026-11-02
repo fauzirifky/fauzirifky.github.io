@@ -375,6 +375,12 @@ img{max-width:100%}
 .recordTable tbody th a{color:var(--ink);text-decoration:none}
 .recordTable tbody th a:hover{color:var(--primary-deep)}
 .recordTable tbody th small{display:block;margin-top:4px;color:var(--muted);font-size:8px;font-weight:400;line-height:1.4}
+.publicationDownload{flex:0 0 auto}
+.publicationTable .publicationAuthors{min-width:300px;max-width:440px;white-space:normal;line-height:1.5}
+.publicationAuthors > span{display:block}
+.publicationAuthors > span + span{margin-top:7px}
+.publicationAuthors small{display:block;margin-bottom:2px;color:var(--muted);font-size:8px;text-transform:uppercase;letter-spacing:.04em}
+.publicationAuthors strong{color:var(--primary-deep);font-weight:650}
 .fundingTable th:nth-child(2){min-width:420px}
 .portalDataNote{display:flex;flex-wrap:wrap;gap:5px 18px;margin-top:18px;padding:0 3px;color:var(--muted);font-size:9px}
 .portalFooter{display:flex;justify-content:space-between;gap:20px;padding:20px 30px;border-top:1px solid var(--hairline);background:white;color:var(--muted);font-size:9px}

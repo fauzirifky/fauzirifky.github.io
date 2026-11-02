@@ -14,6 +14,7 @@ import {
   type SintaLevel,
   type SintaIndex,
 } from "../lib/sintaDashboard";
+import { downloadPublicationExcel, type PublicationExcelRow } from "../lib/publicationExcel";
 
 const BASE_PATH = "/research-products/sinta-matematika-itera";
 const SETTINGS_STORAGE_KEY = "sinta-dashboard-settings-v2";
@@ -133,6 +134,54 @@ function sortRecords(items: OwnedRecord[]) {
     const yearDifference = (yearOf(b.record) ?? 0) - (yearOf(a.record) ?? 0);
     return yearDifference || recordTitle(a).localeCompare(recordTitle(b), "id-ID");
   });
+}
+
+type PublicationGroup = {
+  key: string;
+  item: OwnedRecord;
+  sourceAuthors: string[];
+  dtpsAuthors: Array<{ name: string; position: string }>;
+};
+
+function publicationGroupKey(item: OwnedRecord) {
+  const normalizedTitle = recordTitle(item)
+    .toLocaleLowerCase("id-ID")
+    .normalize("NFKD")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+  return `${item.kind}:${yearOf(item.record) ?? "na"}:${normalizedTitle}`;
+}
+
+function groupPublications(items: OwnedRecord[]) {
+  const groups = new Map<string, PublicationGroup>();
+  items.forEach((item) => {
+    const key = publicationGroupKey(item);
+    const current = groups.get(key) ?? { key, item, sourceAuthors: [], dtpsAuthors: [] };
+    const sourceAuthor = item.record.creator?.trim();
+    if (sourceAuthor && !current.sourceAuthors.some((name) => name.toLocaleLowerCase("id-ID") === sourceAuthor.toLocaleLowerCase("id-ID"))) {
+      current.sourceAuthors.push(sourceAuthor);
+    }
+    if (!current.dtpsAuthors.some((author) => author.name.toLocaleLowerCase("id-ID") === item.ownerName.toLocaleLowerCase("id-ID"))) {
+      current.dtpsAuthors.push({ name: item.ownerName, position: item.record.author_order?.trim() || "—" });
+    }
+    groups.set(key, current);
+  });
+  return [...groups.values()]
+    .map((group) => ({ ...group, dtpsAuthors: [...group.dtpsAuthors].sort((a, b) => a.name.localeCompare(b.name, "id-ID")) }))
+    .sort((a, b) => (yearOf(b.item.record) ?? 0) - (yearOf(a.item.record) ?? 0) || recordTitle(a.item).localeCompare(recordTitle(b.item), "id-ID"));
+}
+
+function publicationExcelRows(groups: PublicationGroup[]): PublicationExcelRow[] {
+  return groups.map((group) => ({
+    year: yearOf(group.item.record) ?? "—",
+    title: recordTitle(group.item),
+    publication: group.item.record.publication?.trim() || "—",
+    index: group.item.record.classification || (group.item.kind === "scopus" ? "Scopus" : "SINTA"),
+    sourceAuthor: group.sourceAuthors.join("; ") || "—",
+    dtpsAuthors: group.dtpsAuthors.map((author) => author.name).join("; "),
+    authorPositions: group.dtpsAuthors.map((author) => `${author.name} (${author.position})`).join("; "),
+    url: group.item.record.url,
+  }));
 }
 
 function CountPair({ unique, nonUnique }: { unique: number; nonUnique: number }) {
@@ -449,9 +498,13 @@ function PublicationPage({ summary, scopus, garuda, sintaLabel, periodLabel }: {
   sintaLabel: string;
   periodLabel: string;
 }) {
-  const sintaAccreditedUnique = sortRecords(garuda.unique);
+  const sintaAccreditedUnique = groupPublications(garuda.nonUnique);
   const sintaAccreditedNonUnique = garuda.nonUnique;
-  const scopusUnique = sortRecords(scopus.unique);
+  const scopusUnique = groupPublications(scopus.nonUnique);
+  const downloadExcel = () => downloadPublicationExcel([
+    { name: "Scopus", rows: publicationExcelRows(scopusUnique) },
+    { name: "SINTA Nasional", rows: publicationExcelRows(sintaAccreditedUnique) },
+  ], periodLabel);
   return (
     <>
       <PageHeading eyebrow="Publikasi ilmiah" title={`Scopus dan ${sintaLabel}`}>
@@ -459,30 +512,33 @@ function PublicationPage({ summary, scopus, garuda, sintaLabel, periodLabel }: {
       </PageHeading>
       <div className="metricGrid portalMetricGrid portalMetricGrid--three">
         <article className="metricCard"><span>Scopus unik</span><strong>{scopusUnique.length}</strong><small>{scopus.nonUnique.length} nonunik</small></article>
-        <article className="metricCard"><span>First author</span><strong>{scopusUnique.filter((item) => isFirstAuthor(item.record)).length}</strong><small>{scopus.nonUnique.filter((item) => isFirstAuthor(item.record)).length} nonunik</small></article>
+        <article className="metricCard"><span>First author DTPS</span><strong>{scopusUnique.filter((group) => group.dtpsAuthors.some((author) => /^\s*1\s+of\s+\d+/i.test(author.position))).length}</strong><small>{scopus.nonUnique.filter((item) => isFirstAuthor(item.record)).length} kemunculan profil</small></article>
         <article className="metricCard"><span>{sintaLabel}</span><strong>{sintaAccreditedUnique.length}</strong><small>{sintaAccreditedNonUnique.length} nonunik</small></article>
       </div>
       <section className="portalPanel">
-        <div className="portalPanel__heading"><div><span className="microLabel">Per tahun</span><h2>Ringkasan publikasi</h2></div></div>
+        <div className="portalPanel__heading portalPanel__heading--actions"><div><span className="microLabel">Per tahun</span><h2>Ringkasan publikasi</h2><p>Periode aktif {periodLabel}; pengaturan default tiga tahun mencakup publikasi sejak 2024.</p></div><button className="btn publicationDownload" type="button" onClick={downloadExcel}>Unduh Excel</button></div>
         <div className="dataTableWrap"><table className="dataTable"><thead><tr><th>Tahun</th><th>Scopus</th><th>First author</th><th>{sintaLabel}</th></tr></thead><tbody>
           {summary.years.map((row) => <tr key={row.year}><th>{row.year}</th><td><CountPair unique={row.scopusUnique} nonUnique={row.scopusNonUnique} /></td><td><CountPair unique={row.scopusFirstUnique} nonUnique={row.scopusFirstNonUnique} /></td><td><CountPair unique={row.sintaAccreditedUnique} nonUnique={row.sintaAccreditedNonUnique} /></td></tr>)}
           {!summary.years.length ? <EmptyRow columns={4} /> : null}
         </tbody></table></div>
       </section>
-      <PublicationTable title="Publikasi Scopus unik" items={scopusUnique} />
-      <PublicationTable title={`Publikasi ${sintaLabel} unik`} items={sintaAccreditedUnique} />
-      <aside className="methodNote"><strong>Catatan.</strong> First author berasal dari field <code>author_order</code>. Corresponding author belum tersedia pada JSON sumber sehingga tidak disimpulkan secara otomatis.</aside>
+      <PublicationTable title="Publikasi Scopus unik" groups={scopusUnique} />
+      <PublicationTable title={`Publikasi ${sintaLabel} unik`} groups={sintaAccreditedUnique} />
+      <aside className="methodNote"><strong>Catatan.</strong> Nama dosen Matematika ITERA dihimpun dari profil tempat publikasi ditemukan dan ditampilkan tebal. Field <code>creator</code> hanya ditampilkan sebagai penulis yang tercatat pada sumber; JSON SINTA tidak menyediakan daftar penulis lengkap maupun corresponding author.</aside>
     </>
   );
 }
 
-function PublicationTable({ title, items }: { title: string; items: OwnedRecord[] }) {
+function PublicationTable({ title, groups }: { title: string; groups: PublicationGroup[] }) {
   return (
     <section className="portalPanel">
-      <div className="portalPanel__heading"><div><span className="microLabel">Daftar publikasi</span><h2>{title}</h2></div><span className="panelCount">{items.length} rekaman</span></div>
-      <div className="dataTableWrap"><table className="dataTable recordTable"><thead><tr><th>Tahun</th><th>Judul</th><th>Indeks</th><th>Posisi penulis</th></tr></thead><tbody>
-        {items.map((item) => <tr key={`${item.kind}-${item.record.id ?? item.record.url ?? recordTitle(item)}`}><td>{yearOf(item.record) ?? "—"}</td><th>{item.record.url ? <a href={item.record.url} target="_blank" rel="noreferrer">{recordTitle(item)}</a> : recordTitle(item)}<small>{item.record.publication || item.ownerName}</small></th><td>{item.record.classification || (item.kind === "scopus" ? "Scopus" : "SINTA")}</td><td>{item.record.author_order || "—"}</td></tr>)}
-        {!items.length ? <EmptyRow columns={4} /> : null}
+      <div className="portalPanel__heading"><div><span className="microLabel">Daftar publikasi</span><h2>{title}</h2></div><span className="panelCount">{groups.length} rekaman</span></div>
+      <div className="dataTableWrap"><table className="dataTable recordTable publicationTable"><thead><tr><th>Tahun</th><th>Judul</th><th>Penulis terdeteksi</th><th>Indeks</th></tr></thead><tbody>
+        {groups.map((group) => {
+          const item = group.item;
+          return <tr key={group.key}><td>{yearOf(item.record) ?? "—"}</td><th>{item.record.url ? <a href={item.record.url} target="_blank" rel="noreferrer">{recordTitle(item)}</a> : recordTitle(item)}<small>{item.record.publication || "Sumber publikasi tidak tercantum"}</small></th><td className="publicationAuthors">{group.sourceAuthors.length ? <span><small>Penulis tercatat</small>{group.sourceAuthors.join("; ")}</span> : null}<span><small>Dosen Matematika ITERA</small>{group.dtpsAuthors.map((author, index) => <span key={author.name}>{index ? "; " : ""}<strong>{author.name}</strong>{author.position !== "—" ? ` (${author.position})` : ""}</span>)}</span></td><td>{item.record.classification || (item.kind === "scopus" ? "Scopus" : "SINTA")}</td></tr>;
+        })}
+        {!groups.length ? <EmptyRow columns={4} /> : null}
       </tbody></table></div>
     </section>
   );
