@@ -271,5 +271,26 @@
         "type": "blob"
       }
     ]
+  },
+  "partial-differential-equations": {
+    "repo": "Persamaan-Diferensial-Parsial",
+    "branch": "main",
+    "tree": [
+      {
+        "path": "matlab/week-09-wave-visualization.m",
+        "sha": "6bff1c6dfd305c843929ca5ea5a754e427aa61f0",
+        "type": "blob"
+      },
+      {
+        "path": "slides/week-06-pendekatan-numerik-pdp-orde-1/week-06-pendekatan-numerik-pdp-orde-1.pdf",
+        "sha": "f528ae6fa4989e6b3fc8b8229cd18d759876dc8b",
+        "type": "blob"
+      },
+      {
+        "path": "slides/week-09-persamaan-gelombang/week-09-persamaan-gelombang.pdf",
+        "sha": "6c291cf391138043866792342821f0a2f060a84e",
+        "type": "blob"
+      }
+    ]
   }
 }

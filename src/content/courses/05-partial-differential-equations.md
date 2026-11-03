@@ -51,10 +51,10 @@ Menghubungkan model PDP → kajian analitik → diskretisasi numerik → simulas
 | 3 | Dr. Dewi Suhika, M.Sc. | PDP orde 1: persamaan/garis karakteristik | - |
 | 4 | Dear Michiko Mutiara Noor, M.Si. | PDP orde 1: transformasi koordinat | - |
 | 5 | Dear Michiko Mutiara Noor, M.Si. | Responsi dan pengayaan Case #1 | - |
-| 6 | Rifky Fauzi | Pendekatan numerik PDP orde 1: beda hingga, CFL singkat, simulasi dan penyajian hasil | [Slide Minggu 6](/materials/pdp/week-06-pendekatan-numerik-pdp-orde-1.pdf) |
+| 6 | Rifky Fauzi | Pendekatan numerik PDP orde 1: beda hingga, CFL singkat, simulasi dan penyajian hasil | [Slide Minggu 6](https://raw.githubusercontent.com/fauzirifky/Persamaan-Diferensial-Parsial/main/slides/week-06-pendekatan-numerik-pdp-orde-1/week-06-pendekatan-numerik-pdp-orde-1.pdf) |
 | 7 | Dear Michiko Mutiara Noor, M.Si. | Pelaporan Case #1 | - |
 | 8 | - | Ujian Tengah Semester | - |
-| 9 | Rifky Fauzi | Beberapa model PDP orde 2 dan pengumuman Case #2 | - |
+| 9 | Rifky Fauzi | Beberapa model PDP orde 2 dan pengumuman Case #2 | [Slide Persamaan Gelombang](https://raw.githubusercontent.com/fauzirifky/Persamaan-Diferensial-Parsial/main/slides/week-09-persamaan-gelombang/week-09-persamaan-gelombang.pdf) |
 | 10 | Rifky Fauzi | Pendekatan numerik PDP orde 2 (i): persamaan panas 1D dengan beda hingga | - |
 | 11 | Rifky Fauzi | Pendekatan numerik PDP orde 2 (ii): persamaan gelombang 1D dengan beda hingga | - |
 | 12 | Rifky Fauzi | Responsi dan pengayaan Case #2 | - |
@@ -65,4 +65,4 @@ Menghubungkan model PDP → kajian analitik → diskretisasi numerik → simulas
 
 ## Bahan Ajar
 
-<!-- Materi ditautkan langsung pada jadwal pertemuan ketika tersedia. -->
+Materi PDF dan kode praktikum ditampilkan otomatis dari [repositori Persamaan Diferensial Parsial](https://github.com/fauzirifky/Persamaan-Diferensial-Parsial) pada bagian **Bahan Ajar & Praktikum**. Daftar berkas diperiksa ulang ketika halaman dibuka, sehingga penambahan slide di repositori juga dapat ditemukan tanpa memperbarui website secara manual.
