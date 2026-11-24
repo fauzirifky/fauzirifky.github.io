@@ -33,14 +33,14 @@ Menghubungkan model PDP → kajian analitik → diskretisasi numerik → simulas
 - PDP orde 1: persamaan transport, metode garis karakteristik, dan transformasi koordinat
 - Pendekatan numerik PDP orde 1: beda hingga upwind, interpretasi CFL, visualisasi, dan validasi terhadap solusi analitik
 - Beberapa model dan klasifikasi PDP orde 2: hiperbolik, parabolik, dan eliptik
-- Pendekatan numerik PDP orde 2: persamaan panas 1D dan persamaan gelombang 1D
+- Pendekatan numerik PDP orde 2: beda hingga untuk masalah parabolik dan eliptik, stabilitas, konsistensi, konvergensi, serta verifikasi terhadap solusi analitik
 - Separasi variabel dan deret Fourier
 - Pemodelan, simulasi MATLAB, visualisasi, dan interpretasi hasil melalui Case-Based Method
 
 ## Daftar Project
 
 - Case #1 (sebelum UTS) — transport/konservasi pada sungai atau saluran di sekitar ITERA, termasuk isu banjir atau pencemaran sesuai model yang dipilih kelompok; kajian mencakup formulasi model, karakteristik, dan simulasi numerik.
-- Case #2 (setelah UTS) — fenomena yang dimodelkan dengan PDP orde 2; tema yang disarankan adalah perpindahan panas atau perambatan gelombang agar hasil numerik dapat dihubungkan kembali dengan separasi variabel dan deret Fourier.
+- Case #2 (setelah UTS) — pemodelan fenomena nyata dengan PDP orde 2 berbantuan AI; mahasiswa wajib merumuskan asumsi dan makna setiap suku, membangun benchmark analitik pada kasus yang disederhanakan, memverifikasi metode numerik terhadap benchmark tersebut, lalu mensimulasikan dan menginterpretasikan kasus yang lebih kompleks.
 
 ## Rencana Pertemuan
 
@@ -54,13 +54,13 @@ Menghubungkan model PDP → kajian analitik → diskretisasi numerik → simulas
 | 6 | Rifky Fauzi | Pendekatan numerik PDP orde 1: beda hingga, CFL singkat, simulasi dan penyajian hasil | [Slide Minggu 6](https://raw.githubusercontent.com/fauzirifky/Persamaan-Diferensial-Parsial/main/slides/week-06-pendekatan-numerik-pdp-orde-1/week-06-pendekatan-numerik-pdp-orde-1.pdf) |
 | 7 | Dear Michiko Mutiara Noor, M.Si. | Pelaporan Case #1 | - |
 | 8 | - | Ujian Tengah Semester | - |
-| 9 | Rifky Fauzi | Beberapa model PDP orde 2 dan pengumuman Case #2 | [Slide Persamaan Gelombang](https://raw.githubusercontent.com/fauzirifky/Persamaan-Diferensial-Parsial/main/slides/week-09-persamaan-gelombang/week-09-persamaan-gelombang.pdf) |
-| 10 | Rifky Fauzi | Pendekatan numerik PDP orde 2 (i): persamaan panas 1D dengan beda hingga | - |
-| 11 | Rifky Fauzi | Pendekatan numerik PDP orde 2 (ii): persamaan gelombang 1D dengan beda hingga | - |
-| 12 | Rifky Fauzi | Responsi dan pengayaan Case #2 | - |
-| 13 | Dear Michiko Mutiara Noor, M.Si. | PDP orde 2 hiperbolik: separasi variabel | - |
-| 14 | Dear Michiko Mutiara Noor, M.Si. | Deret Fourier | - |
-| 15 | Rifky Fauzi | Pelaporan Case #2 | - |
+| 9 | Rifky Fauzi | Persamaan gelombang: pemodelan fisis, klasifikasi, bentuk kanonik, dan solusi analitik | [Slide Persamaan Gelombang](https://raw.githubusercontent.com/fauzirifky/Persamaan-Diferensial-Parsial/main/slides/week-09-persamaan-gelombang/week-09-persamaan-gelombang.pdf) |
+| 10 | Dear Michiko Mutiara Noor, M.Si. | Deret Fourier: fungsi periodik, koefisien Fourier, dan interval umum | - |
+| 11 | Dear Michiko Mutiara Noor, M.Si. | Perluasan fungsi, deret Fourier, dan persamaan panas dengan separasi variabel | - |
+| 12 | Rifky Fauzi | Metode beda hingga untuk PDP parabolik dan eliptik: stabilitas, konsistensi, konvergensi, dan verifikasi | [Slide Metode Numerik PDP Orde 2](https://raw.githubusercontent.com/fauzirifky/Persamaan-Diferensial-Parsial/main/slides/week-12-metode-numerik-pdp-orde-2/week-12-metode-numerik-pdp-orde-2.pdf) |
+| 13 | Rifky Fauzi | Responsi dan pengayaan Case #2 berbantuan AI | - |
+| 14 | Rifky Fauzi | Pengembangan dan verifikasi simulasi Case #2 | - |
+| 15 | Rifky Fauzi | Pelaporan Case #2 dan mathematical-computational defense | - |
 | 16 | - | Ujian Akhir Semester | - |
 
 ## Bahan Ajar
